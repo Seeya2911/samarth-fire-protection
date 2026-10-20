@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 8080;
+const rootDir = path.join(__dirname, '..');
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -26,7 +27,7 @@ const server = http.createServer((req, res) => {
     pathname = '/index.html';
   }
   
-  let filePath = path.join(__dirname, pathname);
+  let filePath = path.join(rootDir, pathname);
   
   // If the path has no extension, try loading it as an HTML page
   let ext = path.extname(filePath);
