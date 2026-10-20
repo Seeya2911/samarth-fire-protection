@@ -1,0 +1,120 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-brand-ivory text-brand-charcoalDark font-body antialiased selection:bg-brand-ember selection:text-white;
+  }
+
+  h1 {
+    @apply font-body font-extrabold text-[#1D2023] tracking-tight;
+  }
+
+  h2 {
+    @apply font-body font-bold text-[#1D2023] tracking-tight;
+  }
+
+  h3, h4 {
+    @apply font-body font-semibold text-[#1D2023] tracking-tight;
+  }
+}
+
+@layer utilities {
+  /* Dynamic Backgrounds */
+  .bg-canvas-ivory {
+    background-color: #FDFBF7;
+  }
+  .bg-canvas-cream {
+    background-color: #F1E6CE;
+  }
+  .bg-canvas-charcoal {
+    background-color: #1D2023;
+  }
+  .bg-canvas-maroon {
+    background-color: #5C1520;
+  }
+
+  /* Typography shortcuts */
+  .font-heading-extrabold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  .font-heading-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+  .font-heading-semibold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Process steps / Stats numbers */
+  .font-numeric {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+
+  .font-signage {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  /* Physical Evidence/Inspection Tag style */
+  .inspection-tag {
+    position: relative;
+    transform: rotate(-1.5deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .inspection-tag:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  .inspection-tag-hole {
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #1D2023; /* Same as dark bg to simulate hole */
+    border: 2.5px solid #D9A441;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
+    z-index: 10;
+  }
+
+  .inspection-tag-string {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 30px;
+    background-color: #D9A441;
+    border-radius: 1px;
+    z-index: 5;
+  }
+
+  /* Thin Hazard Stripe dividers */
+  .hazard-stripe-divider {
+    height: 8px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #5C1520,
+      #5C1520 8px,
+      #D9A441 8px,
+      #D9A441 16px
+    );
+    border: none;
+    margin: 2rem 0;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-[#FDFBF7];
+  }
+}

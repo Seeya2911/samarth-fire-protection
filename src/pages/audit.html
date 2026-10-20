@@ -1,0 +1,290 @@
+---
+title: "Fire Safety Audit & Risk Assessment Mumbai | Samarth Fire"
+description: "Schedule a professional fire safety audit. Complete our risk assessment request form or report a broken fire system for immediate rectification."
+active: "contact"
+schema: {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Fire Safety Audit Request",
+  "description": "Form page to request building safety audits, report broken equipment, and contact Samarth Fire Protection System.",
+  "url": "https://samarthfire.in/audit.html"
+}
+scripts: |
+  <script>
+    function handleAuditSubmit(event) {
+      event.preventDefault();
+      document.getElementById('audit-form').classList.add('hidden');
+      document.getElementById('audit-success').classList.remove('hidden');
+      console.log('Audit requested:', {
+        name: document.getElementById('audit-prop-name').value,
+        phone: document.getElementById('audit-phone').value,
+        type: document.getElementById('audit-prop-type').value,
+        req: document.getElementById('audit-service-needed').value
+      });
+    }
+    
+    function handleTroubleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('trouble-form').classList.add('hidden');
+      document.getElementById('trouble-success').classList.remove('hidden');
+      console.log('Fault reported:', {
+        name: document.getElementById('trouble-prop-name').value,
+        phone: document.getElementById('trouble-phone').value,
+        system: document.getElementById('trouble-system').value
+      });
+    }
+  </script>
+---
+
+<!-- Header Page Title (Maroon Brand background) -->
+<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Audit Desk</span>
+    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Site Assessments & Rectification</h1>
+    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Book a physical walkthrough &bull; Report emergency system faults</p>
+  </div>
+</section>
+
+<!-- Main Audit Desk Forms Section (Warm Ivory background) -->
+<section class="py-24 bg-brand-ivory text-[#1D2023]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- Left Column: Form 1 - Request Audit (White Card) -->
+      <div class="lg:col-span-7 bg-white p-8 rounded-lg border border-brand-paper shadow-sm text-brand-maroonDark">
+        <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-2">Request a Site Assessment & Audit</h2>
+        <p class="text-xs text-brand-maroonDark/70 leading-relaxed mb-6 font-body">
+          Fill out this form to schedule a physical walkthrough by Sameer M. Kangutkar. We will evaluate compliance gaps and issue a technical report.
+        </p>
+
+        <!-- Audit Request Form -->
+        <form id="audit-form" class="space-y-6 text-xs font-mono" onsubmit="handleAuditSubmit(event)">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Property Name -->
+            <div>
+              <label for="audit-prop-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Building/Society Name *</label>
+              <input type="text" id="audit-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+            <!-- Contact Person -->
+            <div>
+              <label for="audit-contact-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Contact Person Name *</label>
+              <input type="text" id="audit-contact-name" required placeholder="e.g. Secretary / Manager" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Mobile Number -->
+            <div>
+              <label for="audit-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Phone Number *</label>
+              <input type="tel" id="audit-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+            <!-- Email -->
+            <div>
+              <label for="audit-email" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Email Address</label>
+              <input type="email" id="audit-email" placeholder="e.g. info@building.com" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <!-- Property Type -->
+            <div>
+              <label for="audit-prop-type" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Property Type *</label>
+              <select id="audit-prop-type" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+                <option value="">Select Property Type</option>
+                <option value="Residential">Residential Society</option>
+                <option value="Commercial">Commercial Block / Mall</option>
+                <option value="Industrial">Industrial Factory</option>
+                <option value="Hospital">Hospital / Clinic</option>
+                <option value="School">School / College</option>
+                <option value="Warehouse">Warehouse / Storage</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <!-- Location -->
+            <div>
+              <label for="audit-location" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Location *</label>
+              <select id="audit-location" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+                <option value="">Select Location</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Thane">Thane</option>
+                <option value="Other">Other MMR</option>
+              </select>
+            </div>
+            <!-- Approximate Size -->
+            <div>
+              <label for="audit-size" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Approx. Size (Sq. Ft.)</label>
+              <input type="text" id="audit-size" placeholder="e.g. 50,000 sq ft" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+          </div>
+
+          <!-- Existing Systems Present (Checkboxes) -->
+          <div>
+            <label class="block text-brand-maroon uppercase tracking-wider mb-3 font-semibold">Existing Systems Installed (Select all that apply)</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-[11px] text-brand-maroonDark/80">
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Fire Alarm" class="accent-brand-maroon">
+                <span>Fire Alarm Panel</span>
+              </label>
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Hydrant" class="accent-brand-maroon">
+                <span>Hydrant Line</span>
+              </label>
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Sprinkler" class="accent-brand-maroon">
+                <span>Sprinkler Net</span>
+              </label>
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Extinguishers" class="accent-brand-maroon">
+                <span>Extinguishers</span>
+              </label>
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Suppression" class="accent-brand-maroon">
+                <span>Gas Suppression</span>
+              </label>
+              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
+                <input type="checkbox" name="system" value="Not Sure" class="accent-brand-maroon">
+                <span>Not Sure</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- What is needed -->
+          <div>
+            <label for="audit-service-needed" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Primary Requirement *</label>
+            <select id="audit-service-needed" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <option value="">Select Requirement</option>
+              <option value="New Installation">New Fire Safety Installation</option>
+              <option value="Audit Walkthrough">Physical Audit & Gap Assessment</option>
+              <option value="System Rectification">System Overhaul & Rectification</option>
+              <option value="Bi-Annual AMC">Bi-Annual Maintenance Contract (AMC)</option>
+              <option value="Form A / B NOC">NOC Compliance Support (Form A / B)</option>
+              <option value="Troubleshooting">Emergency Troubleshooting Assistance</option>
+            </select>
+          </div>
+
+          <!-- Preferred Date & Time Picker -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="audit-date" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Preferred Walkthrough Date *</label>
+              <input type="date" id="audit-date" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            </div>
+            <div>
+              <label for="audit-time" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Preferred Time Slot *</label>
+              <select id="audit-time" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+                <option value="">Select Time Slot</option>
+                <option value="Morning">Morning (10:00 AM - 1:00 PM)</option>
+                <option value="Afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+                <option value="Evening">Evening (4:00 PM - 7:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Photo upload placeholder -->
+          <div>
+            <label for="audit-upload" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Upload Current Layout or Site Photo (Optional)</label>
+            <input type="file" id="audit-upload" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 file:bg-brand-paper file:text-brand-maroon file:border-0 file:rounded file:px-3 file:py-1.5 file:mr-4 file:cursor-pointer file:font-semibold">
+            <span class="block text-[10px] text-brand-maroonDark/50 mt-1 font-body">Accepted formats: PDF, JPG, PNG (Max 5MB)</span>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-ember hover:bg-red-700 text-white font-nav uppercase tracking-wider text-xs font-bold py-3.5 rounded transition-all focus-ring shadow-lg hover:shadow-brand-ember/25">
+            Submit Assessment Request
+          </button>
+        </form>
+
+        <!-- Success Banner -->
+        <div id="audit-success" class="hidden bg-brand-paper border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
+          <svg class="h-10 w-10 text-green-600 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Audit Request Submitted</h3>
+          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
+            Thank you. Your assessment details have been registered. Sameer M. Kangutkar will review your property configuration and contact you to schedule a physical walkthrough.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Form 2 - Troubleshoot Repair (Cream Card) -->
+      <div id="troubleshoot" class="lg:col-span-5 bg-brand-paper p-8 rounded-lg border border-brand-paper text-brand-maroonDark">
+        <div class="flex items-center space-x-2 text-brand-maroon mb-4">
+          <svg class="h-6 w-6 text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Fire System Not Working?</h2>
+        </div>
+        <p class="text-xs text-brand-maroonDark/80 leading-relaxed mb-6 font-body">
+          Is your building experiencing continuous buzzer alarms, wet riser pipeline pressure drops, or sensor loop line failures? Submit details here.
+        </p>
+
+        <!-- Troubleshooting form -->
+        <form id="trouble-form" class="space-y-4 text-xs font-mono" onsubmit="handleTroubleSubmit(event)">
+          
+          <!-- Property Name -->
+          <div>
+            <label for="trouble-prop-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Building/Society Name *</label>
+            <input type="text" id="trouble-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 focus:outline-none focus:border-brand-maroon">
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Location -->
+            <div>
+              <label for="trouble-location" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Location *</label>
+              <select id="trouble-location" required class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-3 py-2.5 focus:outline-none focus:border-brand-maroon">
+                <option value="">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Thane">Thane</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <!-- Contact Number -->
+            <div>
+              <label for="trouble-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Contact Phone *</label>
+              <input type="tel" id="trouble-phone" required placeholder="e.g. 9967101472" class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-3 py-2.5 focus:outline-none focus:border-brand-maroon">
+            </div>
+          </div>
+
+          <!-- System Affected -->
+          <div>
+            <label for="trouble-system" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">System Affected *</label>
+            <select id="trouble-system" required class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 focus:outline-none focus:border-brand-maroon">
+              <option value="">Select Affected System</option>
+              <option value="Fire Alarm Panel">Fire Alarm Panel (Continuous Buzzer)</option>
+              <option value="Wet Riser / Hydrant">Wet Riser Hydrant (Pipe leak / Pump fault)</option>
+              <option value="Sprinkler System">Sprinkler Network (Leakage / Valving)</option>
+              <option value="Booster Pumps">Pumps Station (Electrical / Starter fault)</option>
+              <option value="Other">Other System Fault</option>
+            </select>
+          </div>
+
+          <!-- Problem Description -->
+          <div>
+            <label for="trouble-desc" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Explain the Fault *</label>
+            <textarea id="trouble-desc" required rows="4" placeholder="Explain the fault details here (e.g. Alarm panel zone 4 showing ground fault circuit short, hydrant pipeline dropping pressure below 4 bar)." class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon font-body text-xs"></textarea>
+          </div>
+
+          <!-- Submit troubleshooting -->
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white font-nav uppercase tracking-wider text-xs font-bold py-3 rounded transition-colors focus-ring">
+            File Troubleshooting Request
+          </button>
+        </form>
+
+        <!-- Troubleshooting Success -->
+        <div id="trouble-success" class="hidden bg-white border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
+          <svg class="h-10 w-10 text-brand-ember mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Troubleshoot Logged</h3>
+          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body">
+            Fault filed successfully. An engineering team will contact you to inspect the system issues.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

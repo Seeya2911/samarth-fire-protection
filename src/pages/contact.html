@@ -1,0 +1,166 @@
+---
+title: "Contact Samarth Fire Protection System Malad | Government Agency"
+description: "Get in touch with Samarth Fire Protection System in Malad East, Mumbai. Contact us via phone, email, or WhatsApp. View our registered address and map."
+active: "contact"
+schema: {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Samarth Fire Protection System",
+  "description": "Contact methods including phone, email, and Google map interface for Samarth Fire Protection System in Malad, Mumbai.",
+  "url": "https://samarthfire.in/contact.html"
+}
+scripts: |
+  <script>
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('contact-success').classList.remove('hidden');
+      console.log('Contact form submitted:', {
+        name: document.getElementById('contact-name').value,
+        phone: document.getElementById('contact-phone').value,
+        msg: document.getElementById('contact-msg').value
+      });
+    }
+  </script>
+---
+
+<!-- Header Page Title (Maroon Brand background) -->
+<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Reach Our Engineers</span>
+    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Contact Us</h1>
+    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Licensed Compliance &bull; Audit Schedules &bull; Operations Desk</p>
+  </div>
+</section>
+
+<!-- Contact Form and Details (Warm Ivory background) -->
+<section class="py-24 bg-brand-ivory text-[#1D2023]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- Left Column: Form (White Card) -->
+      <div class="lg:col-span-7 bg-white p-8 rounded-lg border border-brand-paper shadow-sm text-brand-maroonDark">
+        <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-2">Send a Message</h2>
+        <p class="text-xs text-brand-maroonDark/70 leading-relaxed mb-6 font-body">
+          Do you have a question about building inspections, extinguisher hydro-testing, or system maintenance? Submit details below to get a technical callback.
+        </p>
+
+        <!-- Contact Form -->
+        <form id="contact-form" class="space-y-6 text-xs font-mono" onsubmit="handleContactSubmit(event)">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Name -->
+            <div>
+              <label for="contact-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Your Name *</label>
+              <input type="text" id="contact-name" required placeholder="e.g. Sameer Shinde" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+            </div>
+            <!-- Phone -->
+            <div>
+              <label for="contact-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Phone Number *</label>
+              <input type="tel" id="contact-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="contact-email" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Email Address</label>
+            <input type="email" id="contact-email" placeholder="e.g. client@society.com" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+          </div>
+
+          <!-- Subject -->
+          <div>
+            <label for="contact-subject" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Subject / Subject Area *</label>
+            <select id="contact-subject" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+              <option value="">Select Subject Area</option>
+              <option value="Audit Walkthrough">Schedule a Site Audit Walkthrough</option>
+              <option value="Form A / B NOC">Form A / Form B Certification NOC</option>
+              <option value="Repair / Troubleshooting">Repair & Alarm Troubleshooting</option>
+              <option value="Extinguisher Refilling">Extinguisher Recharging & HPT</option>
+              <option value="AMC Maintenance">Preventative AMC Maintenance</option>
+              <option value="Other Question">Other General safety question</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="contact-msg" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Your Message *</label>
+            <textarea id="contact-msg" required rows="5" placeholder="Explain your building's fire safety question or requirements here (e.g. requesting a quote for compliance checks on hydrants system)." class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon font-body text-xs"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-ember hover:bg-red-700 text-white font-nav uppercase tracking-wider text-xs font-bold py-3.5 rounded transition-all focus-ring shadow">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success Banner -->
+        <div id="contact-success" class="hidden bg-brand-paper border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
+          <svg class="h-10 w-10 text-green-600 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Message Sent Successfully</h3>
+          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
+            Thank you. Your message has been logged. Our Malad office staff will route details to Sameer sir or our engineers to schedule a response callback.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Corporate Details -->
+      <div class="lg:col-span-5 space-y-8 font-mono text-sm text-brand-maroonDark">
+        
+        <div class="bg-white p-6 rounded border border-brand-paper shadow-sm space-y-6">
+          <h3 class="font-headline font-bold text-xl text-brand-maroon border-b border-brand-paper pb-3 uppercase">Office Channels</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
+              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
+                <strong>Registered Office:</strong><br>
+                C/611, Parekh Nagar, CTS 710, Pathan Wadi,<br>
+                Malad (East), Mumbai – 400097
+              </span>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
+              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
+                <strong>Phones:</strong><br>
+                9967101472 &bull; 9403049381 &bull; 8097247249
+              </span>
+            </div>
+
+            <div class="flex items-start">
+              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
+              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
+                <strong>Email:</strong><br>
+                samarthfireprotectionsystem@gmail.com
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-brand-paper p-6 rounded border border-brand-gold/30 font-mono text-xs space-y-2 text-brand-maroonDark">
+          <strong class="block text-brand-maroon font-nav text-sm mb-2 uppercase">Official Identifiers</strong>
+          <div>&bull; GSTIN: 27APXPK0844G1ZJ</div>
+          <div>&bull; PAN: APXPK0844G</div>
+          <div>&bull; MSME Udyam Registered</div>
+        </div>
+
+        <!-- Google Map embed (light/default mode) -->
+        <div class="h-60 rounded border border-brand-paper overflow-hidden relative shadow-sm">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4239855581896!2d72.859666!3d19.1824479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d62d2ea789%3A0xe5a3637e1b5fa868!2sParekh%20Nagar%2C%20Malad%20East%2C%20Mumbai%2C%20Maharashtra%20400097!5e0!3m2!1sen!2sin!4v1724150000000!5m2!1sen!2sin" 
+            class="w-full h-full border-0 transition-opacity" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Samarth Fire office location in Malad East">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
