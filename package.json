@@ -2,14 +2,14 @@
   "name": "samarth-fire-website",
   "version": "1.0.0",
   "description": "Website for Samarth Fire Protection System",
-  "main": "build.js",
+  "main": "server.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
     "build:html": "node build.js",
     "build": "npm run build:css && npm run build:html",
     "start": "node server.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.4.1"
   }
 }
