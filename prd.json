@@ -1,0 +1,206 @@
+{
+  "project": "Samarth Fire Protection System",
+  "branchName": "ralph/website-redesign-reorganization",
+  "description": "Premium Website Reorganization, Photography Audit, Design System, Motion Design, SEO/GEO, Security and Release Readiness",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Client Photography Asset Audit & Mapping",
+      "description": "As a frontend engineer, I want to audit all client photographs from photo/, generate docs/PHOTO_ASSET_AUDIT.md, and deploy optimized derivatives into the web asset pipeline.",
+      "acceptanceCriteria": [
+        "18 client photographs cataloged with dimensions, file sizes, quality ratings, crops, and accurate alt text in docs/PHOTO_ASSET_AUDIT.md",
+        "Original photographs preserved in photo/ directory without destructive modification",
+        "14 optimized image derivatives mapped into src/pages/ and root assets",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "Completed and verified in docs/PHOTO_ASSET_AUDIT.md"
+    },
+    {
+      "id": "US-002",
+      "title": "Information Architecture & Navigation Restructuring",
+      "description": "As a site visitor, I want a clear 5-page primary navigation hierarchy (About Us -> Home -> Services -> Projects -> Get a Quote) with an emphasized quote CTA.",
+      "acceptanceCriteria": [
+        "Header desktop navigation organized in strict order: About Us, Home, Services, Projects / Case Studies, Get a Quote",
+        "Get a Quote rendered as an emphasized primary CTA button",
+        "Mobile navigation drawer mirrors identical hierarchy with secondary links grouped neatly",
+        "build.js recognizes 'quote' in active tab highlighting",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": "Completed and verified in src/layouts/main.html and build.js"
+    },
+    {
+      "id": "US-003",
+      "title": "Design System & Professional Typography Overhaul",
+      "description": "As a designer, I want to establish brand tokens and professional typography pairing Manrope, Inter, and IBM Plex Mono.",
+      "acceptanceCriteria": [
+        "Brand colors codified: Deep Oxblood Maroon (#5C1520), Safety Gold (#D9A441), Warm Ivory (#FDFBF7), Paper Cream (#F1E6CE), Steel Charcoal (#1D2023)",
+        "Google Fonts configured for Manrope (headings), Inter (body/nav), and IBM Plex Mono (technical labels)",
+        "tailwind.config.js updated with font families sans, serif, and mono",
+        "Stitch MCP screen generated in project 16375723910085679998",
+        "Typecheck passes"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": "Completed and verified in tailwind.config.js and main.html"
+    },
+    {
+      "id": "US-004",
+      "title": "Dedicated Quotation Page (quote.html) Implementation",
+      "description": "As a prospective client, I want a dedicated, conversion-focused quotation page with requirement selection, facility profiling, and secure transmission.",
+      "acceptanceCriteria": [
+        "Created src/pages/quote.html with 7 requirement options and 5 facility profiles",
+        "Client-side staged review summary with 1-click WhatsApp transmission to +919967101472",
+        "Client-side email staging to samarthfireprotectionsystem@gmail.com",
+        "Transparent pricing policy, Class D credentials, and direct technical helpline displayed",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": "Completed and verified in src/pages/quote.html"
+    },
+    {
+      "id": "US-005",
+      "title": "About Us Editorial Page (about.html) Overhaul",
+      "description": "As a prospective client, I want an editorial, human About Us page explaining Samarth's philosophy, founder credentials, and real field work.",
+      "acceptanceCriteria": [
+        "Hero section featuring authentic client lecture photo (client_extinguisher_lecture.jpg)",
+        "Assessment-first methodology and company narrative detailing 8+ years and 25+ technician workforce",
+        "Verified Founder profile for Sameer M. Kangutkar with Disaster Management post-graduate background",
+        "Documentary gallery displaying pump manifold, riser installation, society assembly, and CPR training",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": "Completed and verified in src/pages/about.html"
+    },
+    {
+      "id": "US-006",
+      "title": "Home Page (index.html) Restructuring",
+      "description": "As a visitor, I want a high-impact homepage with authentic drill imagery, verified trust indicators, 6 core services, and interactive cost estimator.",
+      "acceptanceCriteria": [
+        "10-section structure: Hero, Trust Indicators, Core Services, Demonstrations, Industries, Projects, 7-Step Process, Training, Coverage, Final CTA / Estimator",
+        "Headline set to 'Fire Safety Is More Than Equipment. It's Preparedness.' with primary CTA 'Request a Safety Assessment'",
+        "Verified stats and corporate client badges (NPCIL, BDB, NES)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": "Completed and verified in src/pages/index.html"
+    },
+    {
+      "id": "US-007",
+      "title": "Services Directory (services.html) Reorganization",
+      "description": "As a facility manager, I want a comprehensive service directory covering 6 core engineering hubs with clear scope and quotation prerequisites.",
+      "acceptanceCriteria": [
+        "6 service hubs: Firefighting Systems, Detection & Alarms, Extinguishers & HPT, Safety Assessments & NOC, Training & CPR, AMC Maintenance",
+        "Each hub features authentic client photography, coverage scope, customer profile, process, and quote requirements",
+        "Direct navigation links to technical detail pages and quotation desk",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": "Completed and verified in src/pages/services.html"
+    },
+    {
+      "id": "US-008",
+      "title": "Projects & Case Studies (projects.html) Overhaul",
+      "description": "As an enterprise auditor, I want to review verifiable project case studies with technical scopes, photographic evidence, and documented outcomes.",
+      "acceptanceCriteria": [
+        "3 verified case study logs: F Residency Alarm Line Rectification, High-Rise Booster Pump Overhaul, and CHS Evacuation & CPR Drill",
+        "Standardized Project Case-Study Documentation template for future installations",
+        "Clean photographic evidence and verified outcomes without fabricated metrics",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": "Completed and verified in src/pages/projects.html"
+    },
+    {
+      "id": "US-009",
+      "title": "Logo Brand Identity & Horizontal Header Lockup (Phase 14)",
+      "description": "As a site visitor, I want a prominent horizontal brand lockup [Logo Shield] SAMARTH FIRE PROTECTION SYSTEM in high-contrast, scalable typography.",
+      "acceptanceCriteria": [
+        "Crisp horizontal brand lockup displaying logo emblem and company name side by side",
+        "Company name comfortably readable at normal desktop viewing distance",
+        "Mobile header features balanced horizontal lockup, dedicated top Quote CTA, and accessible hamburger drawer",
+        "Zero layout shifts and zero horizontal overflow across 1440px to 320px",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 9,
+      "passes": true,
+      "notes": "Completed and verified in src/layouts/main.html"
+    },
+    {
+      "id": "US-010",
+      "title": "Technical SEO Foundation & Sitemap Implementation (Phase 16)",
+      "description": "As an SEO specialist, I want a complete SEO audit, sitemap.xml, robots.txt, and dynamic canonical tags.",
+      "acceptanceCriteria": [
+        "Complete technical SEO audit documented in docs/SEO_AUDIT.md",
+        "Production sitemap.xml listing all 17 canonical URLs and documentary image tags",
+        "Production robots.txt with search and AI crawler directives",
+        "Dynamic self-referential canonical tags injected into all pages by build.js",
+        "Typecheck passes"
+      ],
+      "priority": 10,
+      "passes": true,
+      "notes": "Completed and verified in docs/SEO_AUDIT.md, sitemap.xml, and robots.txt"
+    },
+    {
+      "id": "US-011",
+      "title": "Generative Engine Optimization (GEO) & Content Mapping (Phase 18 & 19)",
+      "description": "As a GEO strategist, I want structured FAQs, entity consistency, and comprehensive keyword-to-page mapping.",
+      "acceptanceCriteria": [
+        "Canonical Entity Knowledge Graph documented in docs/GEO_STRATEGY.md",
+        "Categorized FAQ inventory covering capabilities, alarms, extinguishers, training, and Form B compliance",
+        "Comprehensive keyword-to-page mapping matrix in docs/SEO_CONTENT_MAP.md",
+        "Authoritative llms.txt knowledge endpoint maintained",
+        "Typecheck passes"
+      ],
+      "priority": 11,
+      "passes": true,
+      "notes": "Completed and verified in docs/GEO_STRATEGY.md and docs/SEO_CONTENT_MAP.md"
+    },
+    {
+      "id": "US-012",
+      "title": "Frontend Security Hardening & MessSaver Readiness (Phase 20 & 21)",
+      "description": "As a security engineer, I want static architecture validation, client-side input sanitization, and HTTP response security headers.",
+      "acceptanceCriteria": [
+        "Static architecture and lack of database verified in docs/SECURITY_RELEASE_READINESS.md",
+        "MessSaver practices cross-referenced with explicit applicable/non-applicable classifications",
+        "Response security headers configured in vercel.json and scripts/server.js",
+        "Safe client-side input handling with DOM XSS prevention",
+        "Zero secrets or API keys in source or bundles",
+        "Typecheck passes"
+      ],
+      "priority": 12,
+      "passes": true,
+      "notes": "Completed and verified in docs/SECURITY_RELEASE_READINESS.md, vercel.json, and server.js"
+    },
+    {
+      "id": "US-013",
+      "title": "Quality Gates A-E & Responsive Build Verification (Phase 22)",
+      "description": "As a release engineer, I want clean production build execution, quality gate validation, and responsive verification.",
+      "acceptanceCriteria": [
+        "Quality Gates A through E validated and documented",
+        "npm run build completes with exit code 0",
+        "Browser verification at 1440px, 1024px, 768px, 390px, and 320px confirms zero horizontal overflow",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 13,
+      "passes": true,
+      "notes": "Build verified with code 0. Browser subagent testing next."
+    }
+  ]
+}

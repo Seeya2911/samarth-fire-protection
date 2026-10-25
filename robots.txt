@@ -1,0 +1,29 @@
+# Robots.txt for Samarth Fire Protection System
+# https://samarthfire.in/
+
+User-agent: *
+Allow: /
+
+# GEO & AI Answer Engine Directives
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Disallow build and test scratch artifacts
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /photo/
+
+# Canonical Sitemap
+Sitemap: https://samarthfire.in/sitemap.xml
+
+# Generative Engine Optimization (GEO) Context
+# LLM Knowledge Resource: https://samarthfire.in/llms.txt

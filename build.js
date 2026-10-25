@@ -38,10 +38,10 @@ files.forEach(file => {
   // Read page content
   const contentRaw = fs.readFileSync(filePath, 'utf8');
 
-  // Handle plain text files (e.g. llms.txt) without layout wrapper
-  if (file === 'llms.txt' || file.endsWith('.txt')) {
+  // Handle plain text and XML files (e.g. llms.txt, robots.txt, sitemap.xml) without layout wrapper
+  if (file === 'llms.txt' || file === 'robots.txt' || file.endsWith('.txt') || file.endsWith('.xml')) {
     fs.writeFileSync(path.join(distDir, file), contentRaw, 'utf8');
-    console.log(`Generated Text File: ${file}`);
+    console.log(`Generated Direct File: ${file}`);
     return;
   }
 
@@ -51,36 +51,70 @@ files.forEach(file => {
 
   if (contentRaw.trim().startsWith('---')) {
     const parts = contentRaw.split('---');
-    // parts[0] is empty because it starts with '---'
     const fmText = parts[1];
-    // Rejoin the rest in case content contains '---'
     content = parts.slice(2).join('---').trim();
 
-    // Parse lines
-    fmText.split('\n').forEach(line => {
+    // Extract multi-line JSON schema if present
+    let schemaString = '{}';
+    let textToParse = fmText;
+    const schemaStart = fmText.indexOf('schema:');
+    if (schemaStart !== -1) {
+      const firstBrace = fmText.indexOf('{', schemaStart);
+      if (firstBrace !== -1) {
+        let depth = 0;
+        let endBrace = -1;
+        for (let i = firstBrace; i < fmText.length; i++) {
+          if (fmText[i] === '{') depth++;
+          else if (fmText[i] === '}') {
+            depth--;
+            if (depth === 0) {
+              endBrace = i;
+              break;
+            }
+          }
+        }
+        if (endBrace !== -1) {
+          schemaString = fmText.substring(firstBrace, endBrace + 1);
+          // Remove the schema block from simple key-value parsing
+          textToParse = fmText.substring(0, schemaStart) + fmText.substring(endBrace + 1);
+        }
+      }
+    }
+    frontmatter.schema = schemaString;
+
+    // Extract multi-line scripts if present
+    const scriptsStart = textToParse.indexOf('scripts:');
+    if (scriptsStart !== -1) {
+      let rawScripts = textToParse.substring(scriptsStart + 8).trim();
+      if (rawScripts.startsWith('|')) {
+        rawScripts = rawScripts.substring(1).trim();
+      }
+      frontmatter.scripts = rawScripts;
+      textToParse = textToParse.substring(0, scriptsStart);
+    }
+
+    // Parse simple key-values
+    textToParse.split('\n').forEach(line => {
       const idx = line.indexOf(':');
       if (idx > -1) {
         const key = line.substring(0, idx).trim();
         let value = line.substring(idx + 1).trim();
-        // Remove surrounding quotes if present
         value = value.replace(/^['"]|['"]$/g, '');
-        frontmatter[key] = value;
+        if (key && !frontmatter[key]) {
+          frontmatter[key] = value;
+        }
       }
     });
   }
 
-  // Parse schema (can span multiple lines, let's look for a block if needed, or read from frontmatter)
-  let schemaString = '{}';
-  if (frontmatter.schema) {
-    schemaString = frontmatter.schema;
-  }
+  const schemaString = frontmatter.schema || '{}';
 
   // Build the page
   let pageHtml = layout;
 
   // Replace active tab highlighting classes
   const activeTab = frontmatter.active || '';
-  const activeTabs = ['home', 'about', 'process', 'services', 'compliance', 'projects', 'resources', 'contact'];
+  const activeTabs = ['home', 'about', 'process', 'services', 'compliance', 'projects', 'resources', 'contact', 'quote'];
   
   activeTabs.forEach(tab => {
     const placeholder = `{{active_${tab}}}`;
@@ -98,6 +132,8 @@ files.forEach(file => {
   });
 
   // Inject page parameters
+  const canonicalUrl = frontmatter.canonical || (file === 'index.html' ? 'https://samarthfire.in/' : `https://samarthfire.in/${file}`);
+  pageHtml = pageHtml.replace(/{{canonical}}/g, canonicalUrl);
   pageHtml = pageHtml.replace(/{{title}}/g, frontmatter.title || 'Samarth Fire Protection System');
   pageHtml = pageHtml.replace(/{{description}}/g, frontmatter.description || 'Government Licensed Fire Safety Agency in Malad East, Mumbai');
   pageHtml = pageHtml.replace(/{{schema}}/g, schemaString);

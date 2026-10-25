@@ -2,11 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap');
 
 @layer base {
   body {
-    @apply bg-brand-ivory text-brand-charcoalDark font-body antialiased selection:bg-brand-ember selection:text-white;
+    @apply bg-brand-ivory text-brand-charcoalDark font-body antialiased selection:bg-brand-maroon selection:text-white;
   }
 
   h1 {
@@ -63,10 +63,52 @@
     font-family: 'Bebas Neue', sans-serif;
   }
 
+  /* Interactive Card Lift */
+  .card-lift {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -8px rgba(29, 32, 35, 0.12), 0 4px 12px -2px rgba(29, 32, 35, 0.06);
+  }
+
+  /* Glassmorphism Accents */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-dark {
+    background: rgba(29, 32, 35, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Motion Design: Scroll Reveal */
+  .reveal-init {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  
+  .reveal-init.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Delay utility classes for staggered reveals */
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .delay-500 { transition-delay: 500ms; }
+
   /* Physical Evidence/Inspection Tag style */
   .inspection-tag {
     position: relative;
-    transform: rotate(-1.5deg);
+    transform: rotate(-1deg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -81,7 +123,7 @@
     transform: translateX(-50%);
     width: 14px;
     height: 14px;
-    background-color: #1D2023; /* Same as dark bg to simulate hole */
+    background-color: #1D2023;
     border: 2.5px solid #D9A441;
     border-radius: 50%;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
@@ -102,7 +144,7 @@
 
   /* Thin Hazard Stripe dividers */
   .hazard-stripe-divider {
-    height: 8px;
+    height: 6px;
     background: repeating-linear-gradient(
       -45deg,
       #5C1520,
@@ -111,10 +153,28 @@
       #D9A441 16px
     );
     border: none;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
 
   .focus-ring {
     @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-[#FDFBF7];
+  }
+}
+
+/* Accessibility: Strict Respect for Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .card-lift:hover {
+    transform: none !important;
   }
 }

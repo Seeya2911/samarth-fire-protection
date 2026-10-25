@@ -13,25 +13,54 @@ scripts: |
   <script>
     function handleAuditSubmit(event) {
       event.preventDefault();
+      const propName = document.getElementById('audit-prop-name').value;
+      const contactPerson = document.getElementById('audit-contact-name').value;
+      const phone = document.getElementById('audit-phone').value;
+      const propType = document.getElementById('audit-prop-type').value;
+      const serviceNeeded = document.getElementById('audit-service-needed').value;
+      const notes = document.getElementById('audit-notes').value || 'None';
+
+      const text = `*New Site Assessment Request - Samarth Fire*%0A` +
+        `• Property: ${encodeURIComponent(propName)}%0A` +
+        `• Contact Person: ${encodeURIComponent(contactPerson)}%0A` +
+        `• Phone: ${encodeURIComponent(phone)}%0A` +
+        `• Property Type: ${encodeURIComponent(propType)}%0A` +
+        `• Scope: ${encodeURIComponent(serviceNeeded)}%0A` +
+        `• Notes: ${encodeURIComponent(notes)}`;
+
       document.getElementById('audit-form').classList.add('hidden');
-      document.getElementById('audit-success').classList.remove('hidden');
-      console.log('Audit requested:', {
-        name: document.getElementById('audit-prop-name').value,
-        phone: document.getElementById('audit-phone').value,
-        type: document.getElementById('audit-prop-type').value,
-        req: document.getElementById('audit-service-needed').value
-      });
+      const successBox = document.getElementById('audit-success');
+      successBox.classList.remove('hidden');
+
+      const waBtn = document.getElementById('audit-wa-btn');
+      if (waBtn) waBtn.href = `https://wa.me/919967101472?text=${text}`;
+
+      const mailBtn = document.getElementById('audit-mail-btn');
+      if (mailBtn) {
+        const body = `Property: ${propName}\nContact: ${contactPerson}\nPhone: ${phone}\nType: ${propType}\nScope: ${serviceNeeded}\nNotes: ${notes}`;
+        mailBtn.href = `mailto:samarthfireprotectionsystem@gmail.com?subject=Audit Request: ${encodeURIComponent(propName)}&body=${encodeURIComponent(body)}`;
+      }
     }
     
     function handleTroubleSubmit(event) {
       event.preventDefault();
+      const propName = document.getElementById('trouble-prop-name').value;
+      const phone = document.getElementById('trouble-phone').value;
+      const system = document.getElementById('trouble-system').value;
+      const desc = document.getElementById('trouble-desc').value;
+
+      const text = `*URGENT: Fire System Breakdown Reported - Samarth Fire*%0A` +
+        `• Property: ${encodeURIComponent(propName)}%0A` +
+        `• Phone: ${encodeURIComponent(phone)}%0A` +
+        `• Failing System: ${encodeURIComponent(system)}%0A` +
+        `• Fault Description: ${encodeURIComponent(desc)}`;
+
       document.getElementById('trouble-form').classList.add('hidden');
-      document.getElementById('trouble-success').classList.remove('hidden');
-      console.log('Fault reported:', {
-        name: document.getElementById('trouble-prop-name').value,
-        phone: document.getElementById('trouble-phone').value,
-        system: document.getElementById('trouble-system').value
-      });
+      const successBox = document.getElementById('trouble-success');
+      successBox.classList.remove('hidden');
+
+      const waBtn = document.getElementById('trouble-wa-btn');
+      if (waBtn) waBtn.href = `https://wa.me/919967101472?text=${text}`;
     }
   </script>
 ---
@@ -194,15 +223,23 @@ scripts: |
           </button>
         </form>
 
-        <!-- Success Banner -->
-        <div id="audit-success" class="hidden bg-brand-paper border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
-          <svg class="h-10 w-10 text-green-600 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <!-- Staged Walkthrough State -->
+        <div id="audit-success" class="hidden bg-brand-paper border border-brand-gold/60 text-brand-maroon p-6 rounded-lg text-center mt-6 space-y-4">
+          <svg class="h-10 w-10 text-brand-maroon mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Audit Request Submitted</h3>
-          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
-            Thank you. Your assessment details have been registered. Sameer M. Kangutkar will review your property configuration and contact you to schedule a physical walkthrough.
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Assessment Details Staged</h3>
+          <p class="text-xs text-brand-charcoalDark/80 leading-relaxed font-body max-w-md mx-auto">
+            Your walkthrough request has been formatted for Principal Consultant Sameer M. Kangutkar. Transmit directly to our technical desk:
           </p>
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a id="audit-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center space-x-2 bg-green-700 hover:bg-green-800 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+              <span>Transmit via WhatsApp</span>
+            </a>
+            <a id="audit-mail-btn" href="#" class="flex-1 inline-flex items-center justify-center space-x-2 bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+              <span>Send via Email</span>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -272,15 +309,23 @@ scripts: |
           </button>
         </form>
 
-        <!-- Troubleshooting Success -->
-        <div id="trouble-success" class="hidden bg-white border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
-          <svg class="h-10 w-10 text-brand-ember mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <!-- Emergency Fault Staged State -->
+        <div id="trouble-success" class="hidden bg-white border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6 space-y-4">
+          <svg class="h-10 w-10 text-brand-maroon mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
           </svg>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Troubleshoot Logged</h3>
-          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body">
-            Fault filed successfully. An engineering team will contact you to inspect the system issues.
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Emergency Fault Staged</h3>
+          <p class="text-xs text-brand-charcoalDark/80 leading-relaxed font-body">
+            Urgent fault details formatted. Transmit directly via WhatsApp or call our emergency hotline:
           </p>
+          <div class="flex flex-col gap-2.5 pt-2">
+            <a id="trouble-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-red-700 hover:bg-red-800 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+              <span>Send Fault Alert via WhatsApp</span>
+            </a>
+            <a href="tel:+919967101472" class="inline-flex items-center justify-center space-x-1.5 bg-brand-charcoalDark text-white font-mono text-xs font-bold py-2.5 px-4 rounded">
+              <span>Call Duty Engineer: 9967101472</span>
+            </a>
+          </div>
         </div>
 
       </div>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Primary Landing Page -->
+  <url>
+    <loc>https://samarthfire.in/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://samarthfire.in/client_drill_live.jpg</image:loc>
+      <image:title>Samarth Fire Live Fire Safety Demonstration Mumbai</image:title>
+    </image:image>
+  </url>
+
+  <!-- 1. About Us -->
+  <url>
+    <loc>https://samarthfire.in/about.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc>
+      <image:title>Samarth Fire Founder Sameer M. Kangutkar Safety Lecture</image:title>
+    </image:image>
+  </url>
+
+  <!-- 2. Get a Quote (Conversion Hub) -->
+  <url>
+    <loc>https://samarthfire.in/quote.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 3. Core Services Hub -->
+  <url>
+    <loc>https://samarthfire.in/services.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc>
+      <image:title>Dual Booster Pump Manifold Assembly Samarth Fire</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Projects & Case Studies -->
+  <url>
+    <loc>https://samarthfire.in/projects.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc>
+      <image:title>Hydrant Landing Valve Pressure Test Case Study</image:title>
+    </image:image>
+  </url>
+
+  <!-- Comprehensive Technical Service Hubs -->
+  <url>
+    <loc>https://samarthfire.in/fire-fighting.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/detection-alarm.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/extinguishing.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/passive-protection.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/compliance-certification.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/training-preparedness.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc>
+      <image:title>Hands-On Hose Reel Fire Safety Drill Samarth Fire</image:title>
+    </image:image>
+  </url>
+
+  <!-- Supporting Authority Pages -->
+  <url>
+    <loc>https://samarthfire.in/audit.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/founder.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/certifications.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/process.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/resources.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/contact.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

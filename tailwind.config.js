@@ -19,11 +19,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Manrope', 'Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
-        nav: ['Oswald', 'sans-serif'],
-        numeric: ['Oswald', 'sans-serif'],
-        signage: ['"Bebas Neue"', 'sans-serif'],
+        nav: ['Inter', 'sans-serif'],
+        numeric: ['Manrope', 'Inter', 'sans-serif'],
+        signage: ['Manrope', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       }
     },

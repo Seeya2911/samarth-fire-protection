@@ -1,0 +1,323 @@
+---
+title: "Get a Fire Protection Quotation & Estimate Mumbai | Samarth Fire"
+description: "Request an itemized quotation for fire hydrants, alarms, extinguishers, AMC maintenance, or Form B compliance certification from Maharashtra Fire Services Class D agency."
+active: "quote"
+schema: {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Get a Fire Safety Quotation",
+  "description": "Request itemized quotations for fire protection installations, maintenance contracts, and compliance certifications in Mumbai.",
+  "url": "https://samarthfire.in/quote.html"
+}
+scripts: |
+  <script>
+    function handleQuoteForm(event) {
+      event.preventDefault();
+      
+      const req = document.getElementById('q-requirement').value;
+      const facility = document.getElementById('q-facility').value;
+      const name = document.getElementById('q-name').value;
+      const org = document.getElementById('q-org').value;
+      const phone = document.getElementById('q-phone').value;
+      const email = document.getElementById('q-email').value || 'Not provided';
+      const loc = document.getElementById('q-location').value;
+      const desc = document.getElementById('q-desc').value;
+
+      // Build WhatsApp message
+      const text = `*New Quotation Request - Samarth Fire Protection System*%0A` +
+        `• Requirement: ${encodeURIComponent(req)}%0A` +
+        `• Facility Type: ${encodeURIComponent(facility)}%0A` +
+        `• Contact Name: ${encodeURIComponent(name)}%0A` +
+        `• Organization: ${encodeURIComponent(org)}%0A` +
+        `• Phone: ${encodeURIComponent(phone)}%0A` +
+        `• Email: ${encodeURIComponent(email)}%0A` +
+        `• Location: ${encodeURIComponent(loc)}%0A` +
+        `• Scope Details: ${encodeURIComponent(desc)}`;
+
+      document.getElementById('quote-form-wrap').classList.add('hidden');
+      const successBox = document.getElementById('quote-success-wrap');
+      successBox.classList.remove('hidden');
+
+      // Populate review details
+      document.getElementById('rev-req').textContent = req;
+      document.getElementById('rev-facility').textContent = facility;
+      document.getElementById('rev-client').textContent = `${name} (${org})`;
+      document.getElementById('rev-phone').textContent = phone;
+      document.getElementById('rev-loc').textContent = loc;
+      
+      const waBtn = document.getElementById('rev-wa-btn');
+      waBtn.href = `https://wa.me/919967101472?text=${text}`;
+
+      const mailBtn = document.getElementById('rev-mail-btn');
+      const mailBody = `Requirement: ${req}\nFacility: ${facility}\nClient: ${name} (${org})\nPhone: ${phone}\nLocation: ${loc}\nDetails: ${desc}`;
+      mailBtn.href = `mailto:samarthfireprotectionsystem@gmail.com?subject=Quotation Request from ${encodeURIComponent(org || name)}&body=${encodeURIComponent(mailBody)}`;
+
+      console.log('Quote Request Staged:', { req, facility, name, org, phone, email, loc, desc });
+    }
+  </script>
+---
+
+<!-- Header Page Title (Maroon Brand background) -->
+<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Itemized & Transparent Pricing</span>
+    <h1 class="font-headline font-bold text-3xl sm:text-5xl tracking-tight text-white">Get a Project Quotation</h1>
+    <p class="text-xs sm:text-sm font-mono text-brand-gold/90 mt-3 max-w-2xl leading-relaxed">
+      Licensed Class D Agency (MFS/LA/RF-34/RD-35) &bull; Rapid Walkthroughs Across MMR &bull; Pan-India Extinguisher Dispatch
+    </p>
+  </div>
+</section>
+
+<!-- Quotation Workspace Section -->
+<section class="py-20 bg-brand-ivory text-brand-charcoalDark">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Left Column: Quotation Form / Review Card -->
+      <div class="lg:col-span-8 bg-white p-8 sm:p-10 rounded-xl border border-brand-paper shadow-sm">
+        
+        <div id="quote-form-wrap">
+          <div class="border-b border-brand-paper pb-6 mb-8">
+            <h2 class="font-headline font-bold text-2xl text-brand-maroon">Request Scope & Cost Breakdown</h2>
+            <p class="text-xs sm:text-sm text-brand-charcoalDark/75 mt-2 font-body leading-relaxed">
+              Select your system requirement and facility type. We provide itemized quotations listing exact material standards, labor codes, and regulatory filings without hidden margins.
+            </p>
+          </div>
+
+          <form id="quote-form" onsubmit="handleQuoteForm(event)" class="space-y-6">
+            
+            <!-- Requirement & Facility Type -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="q-requirement" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  System Requirement *
+                </label>
+                <select id="q-requirement" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                  <option value="">Select Requirement</option>
+                  <option value="Firefighting Systems (Hydrants / Sprinklers)">Firefighting Systems (Hydrants, Wet Risers, Pumps)</option>
+                  <option value="Fire Detection & Alarm Panels">Fire Detection & Alarm Loops (Addressable / Conventional)</option>
+                  <option value="Fire Extinguishers (Supply / Refill / HPT)">Fire Extinguishers (Supply, Recharging & Hydro-Testing)</option>
+                  <option value="Safety Assessment & Compliance Audit">Safety Assessment & Life-Safety Compliance Audit</option>
+                  <option value="Training & Evacuation Drills">Training & Preparedness (CPR & Community Fire Drills)</option>
+                  <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC / Bi-Annual Form B)</option>
+                  <option value="Other / Multi-System Overhaul">Other / Multi-System Turnkey Overhaul</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="q-facility" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Facility Type *
+                </label>
+                <select id="q-facility" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                  <option value="">Select Facility</option>
+                  <option value="Residential Society (CHS)">Residential Society (CHS / High-Rise)</option>
+                  <option value="Commercial Office / IT Park">Commercial Office / IT Park / Retail Mall</option>
+                  <option value="Industrial Factory / Warehouse">Industrial Factory / Warehouse / Plant</option>
+                  <option value="Educational / Healthcare Institution">Educational School / College / Hospital</option>
+                  <option value="Hospitality / Hotel / Restaurant">Hospitality / Hotel / Restaurant</option>
+                  <option value="Other Facility">Other Facility</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Client Identity -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="q-name" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Contact Person *
+                </label>
+                <input type="text" id="q-name" required placeholder="e.g. Sameer Shinde (Secretary)" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+              </div>
+
+              <div>
+                <label for="q-org" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Society / Organization Name *
+                </label>
+                <input type="text" id="q-org" required placeholder="e.g. Royal Palms CHS / Acme Logistics" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+              </div>
+            </div>
+
+            <!-- Contact Channels -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div>
+                <label for="q-phone" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Phone Number *
+                </label>
+                <input type="tel" id="q-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+              </div>
+
+              <div>
+                <label for="q-email" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Email Address
+                </label>
+                <input type="email" id="q-email" placeholder="e.g. committee@society.com" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+              </div>
+
+              <div>
+                <label for="q-location" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                  Site Location *
+                </label>
+                <select id="q-location" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                  <option value="">Select Region</option>
+                  <option value="Mumbai (Western Suburbs)">Mumbai (Western Suburbs)</option>
+                  <option value="Mumbai (Eastern Suburbs)">Mumbai (Eastern Suburbs)</option>
+                  <option value="Mumbai (South / Central)">Mumbai (South / Central)</option>
+                  <option value="Thane & Mira-Bhayandar">Thane & Mira-Bhayandar</option>
+                  <option value="Navi Mumbai & Raigad">Navi Mumbai & Raigad</option>
+                  <option value="Rest of Maharashtra">Rest of Maharashtra</option>
+                  <option value="Pan-India Dispatch">Pan-India (Equipment Supply)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Scope Details -->
+            <div>
+              <label for="q-desc" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                Scope Description & Building Details *
+              </label>
+              <textarea id="q-desc" required rows="4" placeholder="Briefly specify number of floors, existing equipment condition, urgent deadlines (e.g. Form B renewal due this month, 32 extinguishers needing hydro-testing, or booster pump pressure failure)." class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon"></textarea>
+            </div>
+
+            <!-- Submit Options -->
+            <div class="pt-4 flex flex-col sm:flex-row gap-4">
+              <button type="submit" class="flex-1 bg-brand-maroon hover:bg-brand-maroonDark text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-brand-maroon/20 transition-all focus-ring text-center">
+                Review & Stage Quotation
+              </button>
+              <a href="audit.html" class="inline-flex items-center justify-center bg-white border border-brand-paper hover:bg-brand-paper/40 text-brand-charcoalDark py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider transition-colors">
+                Book Physical Walkthrough Instead
+              </a>
+            </div>
+
+            <p class="text-[11px] font-mono text-brand-charcoalDark/60 text-center">
+              🔒 Safe & Direct: Your requirements are processed directly by Samarth Fire's engineering desk. No third-party data sharing.
+            </p>
+          </form>
+        </div>
+
+        <!-- Success & Review State -->
+        <div id="quote-success-wrap" class="hidden space-y-6">
+          <div class="bg-brand-paper border border-brand-gold/40 p-6 rounded-lg text-center">
+            <svg class="h-12 w-12 text-brand-maroon mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3 class="font-headline font-bold text-2xl text-brand-maroon">Quotation Request Staged</h3>
+            <p class="text-xs text-brand-charcoalDark/80 font-body max-w-lg mx-auto mt-2">
+              Your project parameters have been formatted for our engineering desk. To receive an immediate response or schedule an audit walkthrough, send details directly via WhatsApp or Email:
+            </p>
+          </div>
+
+          <!-- Staged Summary Table -->
+          <div class="bg-brand-ivory p-6 rounded-lg border border-brand-paper font-mono text-xs space-y-3">
+            <div class="flex justify-between border-b border-brand-paper pb-2">
+              <span class="text-brand-charcoalDark/70">Requirement:</span>
+              <strong id="rev-req" class="text-brand-maroon text-right"></strong>
+            </div>
+            <div class="flex justify-between border-b border-brand-paper pb-2">
+              <span class="text-brand-charcoalDark/70">Facility Profile:</span>
+              <span id="rev-facility" class="font-semibold text-right"></span>
+            </div>
+            <div class="flex justify-between border-b border-brand-paper pb-2">
+              <span class="text-brand-charcoalDark/70">Contact / Society:</span>
+              <span id="rev-client" class="font-semibold text-right"></span>
+            </div>
+            <div class="flex justify-between border-b border-brand-paper pb-2">
+              <span class="text-brand-charcoalDark/70">Phone Number:</span>
+              <span id="rev-phone" class="font-semibold text-right"></span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/70">Location:</span>
+              <span id="rev-loc" class="font-semibold text-right"></span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a id="rev-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-green-700 hover:bg-green-800 text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow transition-all">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.073.043.419-.101.824z"/></svg>
+              <span>Transmit via WhatsApp</span>
+            </a>
+            <a id="rev-mail-btn" href="#" class="flex items-center justify-center space-x-2 bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow transition-all">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>Send via Email</span>
+            </a>
+          </div>
+
+          <div class="text-center pt-2">
+            <button onclick="location.reload()" class="font-mono text-xs text-brand-maroon hover:underline">
+              &larr; Fill another quotation request
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Licensing & Trust Strip -->
+      <div class="lg:col-span-4 space-y-6">
+        
+        <!-- Credential Badge Card -->
+        <div class="bg-brand-maroon text-white p-6 rounded-xl border border-brand-maroonDark shadow-sm">
+          <span class="font-mono text-[10px] text-brand-gold uppercase tracking-widest font-bold block mb-1">STATE COMPLIANCE AUTHORITY</span>
+          <h3 class="font-headline font-bold text-xl text-white">Class D Licensed Agency</h3>
+          <p class="font-mono text-xs text-white/80 mt-2">
+            Licence No: <strong class="text-brand-gold">MFS/LA/RF-34/RD-35</strong><br>
+            Directorate of Maharashtra Fire Services
+          </p>
+
+          <div class="mt-4 pt-4 border-t border-white/10 text-xs text-white/70 space-y-2">
+            <div class="flex items-center space-x-2">
+              <span class="text-brand-gold">&bull;</span>
+              <span>Form A Installation Clearance</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-brand-gold">&bull;</span>
+              <span>Bi-Annual Form B Maintenance Filing</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-brand-gold">&bull;</span>
+              <span>Direct Municipal Fire Officer Submission</span>
+            </div>
+          </div>
+
+          <button onclick="openLicenseModal()" class="mt-6 w-full py-2.5 bg-brand-gold hover:bg-yellow-500 text-brand-maroonDark font-body text-xs font-bold uppercase tracking-wider rounded transition-colors">
+            Inspect Official License
+          </button>
+        </div>
+
+        <!-- Cost Transparency Promise -->
+        <div class="bg-white p-6 rounded-xl border border-brand-paper shadow-sm space-y-4">
+          <h4 class="font-headline font-bold text-lg text-brand-maroon">Our Quotation Policy</h4>
+          
+          <div class="space-y-3 font-body text-xs text-brand-charcoalDark/80">
+            <div class="flex items-start space-x-2">
+              <span class="text-brand-ember font-bold mt-0.5">&bull;</span>
+              <p><strong>Itemized Bills:</strong> Every estimate specifies pipe gauge, pump horsepower, valve classes, and labor separately.</p>
+            </div>
+            <div class="flex items-start space-x-2">
+              <span class="text-brand-ember font-bold mt-0.5">&bull;</span>
+              <p><strong>No Hidden Margins:</strong> No undisclosed liaison or administrative surcharges.</p>
+            </div>
+            <div class="flex items-start space-x-2">
+              <span class="text-brand-ember font-bold mt-0.5">&bull;</span>
+              <p><strong>Assessment-Led:</strong> We recommend only equipment mandated by NBC and Maharashtra Fire Service standards.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Assistance Card -->
+        <div class="bg-brand-paper p-6 rounded-xl border border-brand-gold/30">
+          <span class="font-mono text-[10px] text-brand-maroon uppercase tracking-widest font-bold block mb-1">DIRECT TECHNICAL DESK</span>
+          <p class="font-body text-xs text-brand-charcoalDark/80 mb-3">Prefer discussing your requirements directly with our senior engineers?</p>
+          <a href="tel:+919967101472" class="inline-flex items-center space-x-2 text-brand-maroon hover:text-brand-maroonDark font-body text-sm font-bold">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Call: +91 9967101472</span>
+          </a>
+          <span class="block font-mono text-[10px] text-brand-charcoalDark/60 mt-1">Malad East, Mumbai &bull; Operations: 9:00 AM - 8:00 PM</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
