@@ -57,31 +57,41 @@ scripts: |
   </script>
 ---
 
-<!-- Header Page Title (Maroon Brand background) -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Itemized & Transparent Pricing</span>
-    <h1 class="font-headline font-bold text-3xl sm:text-5xl tracking-tight text-white">Get a Project Quotation</h1>
-    <p class="text-xs sm:text-sm font-mono text-brand-gold/90 mt-3 max-w-2xl leading-relaxed">
-      Licensed Class D Agency (MFS/LA/RF-34/RD-35) &bull; Rapid Walkthroughs Across MMR &bull; Pan-India Extinguisher Dispatch
+<!-- Sunlit Warm Aesthetic Hero -->
+<section class="relative bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-rose-50/20 py-16 sm:py-20 border-b border-amber-100/80 text-slate-900 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="inline-flex items-center space-x-2 bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-xs mb-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-amber-700">Direct Engineering Estimate</span>
+    </div>
+    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl leading-tight">
+      Itemized Quotation &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Transparent Pricing</span>
+    </h1>
+    <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
+      Maharashtra Fire Services Licensed Agency (MFS/LA/RF-34/RD-35) &bull; Rapid Walkthroughs Across Mumbai Metropolitan Region &bull; Pan-India Extinguisher Dispatch
     </p>
   </div>
 </section>
 
 <!-- Quotation Workspace Section -->
-<section class="py-20 bg-brand-ivory text-brand-charcoalDark">
+<section class="py-16 sm:py-20 bg-slate-50 text-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
       <!-- Left Column: Quotation Form / Review Card -->
-      <div class="lg:col-span-8 bg-white p-8 sm:p-10 rounded-xl border border-brand-paper shadow-sm">
+      <div class="lg:col-span-8 bg-white p-7 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm">
         
         <div id="quote-form-wrap">
-          <div class="border-b border-brand-paper pb-6 mb-8">
-            <h2 class="font-headline font-bold text-2xl text-brand-maroon">Request Scope & Cost Breakdown</h2>
-            <p class="text-xs sm:text-sm text-brand-charcoalDark/75 mt-2 font-body leading-relaxed">
-              Select your system requirement and facility type. We provide itemized quotations listing exact material standards, labor codes, and regulatory filings without hidden margins.
+          <div class="border-b border-slate-100 pb-6 mb-8">
+            <div class="inline-flex items-center space-x-2 font-mono text-xs font-bold text-brand-ember uppercase tracking-wider mb-1">
+              <span>CONFIGURATOR</span>
+              <span>&bull;</span>
+              <span>ZERO HIDDEN MARGINS</span>
+            </div>
+            <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Request Scope & Cost Breakdown</h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 font-body leading-relaxed">
+              Select your system requirement and facility type. We supply itemized quotations listing exact material standards, labor codes, and regulatory filings without hidden margins.
             </p>
           </div>
 
@@ -90,10 +100,10 @@ scripts: |
             <!-- Requirement & Facility Type -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label for="q-requirement" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-requirement" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   System Requirement *
                 </label>
-                <select id="q-requirement" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <select id="q-requirement" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
                   <option value="">Select Requirement</option>
                   <option value="Firefighting Systems (Hydrants / Sprinklers)">Firefighting Systems (Hydrants, Wet Risers, Pumps)</option>
                   <option value="Fire Detection & Alarm Panels">Fire Detection & Alarm Loops (Addressable / Conventional)</option>
@@ -106,10 +116,10 @@ scripts: |
               </div>
 
               <div>
-                <label for="q-facility" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-facility" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Facility Type *
                 </label>
-                <select id="q-facility" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <select id="q-facility" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
                   <option value="">Select Facility</option>
                   <option value="Residential Society (CHS)">Residential Society (CHS / High-Rise)</option>
                   <option value="Commercial Office / IT Park">Commercial Office / IT Park / Retail Mall</option>
@@ -124,41 +134,41 @@ scripts: |
             <!-- Client Identity -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label for="q-name" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-name" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Contact Person *
                 </label>
-                <input type="text" id="q-name" required placeholder="e.g. Sameer Shinde (Secretary)" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <input type="text" id="q-name" required placeholder="e.g. Sameer Shinde (Secretary)" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
               </div>
 
               <div>
-                <label for="q-org" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-org" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Society / Organization Name *
                 </label>
-                <input type="text" id="q-org" required placeholder="e.g. Royal Palms CHS / Acme Logistics" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <input type="text" id="q-org" required placeholder="e.g. Royal Palms CHS / Acme Logistics" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
               </div>
             </div>
 
             <!-- Contact Channels -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div>
-                <label for="q-phone" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-phone" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Phone Number *
                 </label>
-                <input type="tel" id="q-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <input type="tel" id="q-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
               </div>
 
               <div>
-                <label for="q-email" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-email" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Email Address
                 </label>
-                <input type="email" id="q-email" placeholder="e.g. committee@society.com" class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <input type="email" id="q-email" placeholder="e.g. committee@society.com" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
               </div>
 
               <div>
-                <label for="q-location" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+                <label for="q-location" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Site Location *
                 </label>
-                <select id="q-location" required class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon">
+                <select id="q-location" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
                   <option value="">Select Region</option>
                   <option value="Mumbai (Western Suburbs)">Mumbai (Western Suburbs)</option>
                   <option value="Mumbai (Eastern Suburbs)">Mumbai (Eastern Suburbs)</option>
@@ -173,23 +183,23 @@ scripts: |
 
             <!-- Scope Details -->
             <div>
-              <label for="q-desc" class="block font-mono text-xs text-brand-maroon font-bold uppercase tracking-wider mb-2">
+              <label for="q-desc" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                 Scope Description & Building Details *
               </label>
-              <textarea id="q-desc" required rows="4" placeholder="Briefly specify number of floors, existing equipment condition, urgent deadlines (e.g. Form B renewal due this month, 32 extinguishers needing hydro-testing, or booster pump pressure failure)." class="w-full bg-brand-ivory border border-brand-paper rounded-lg p-3 text-xs font-body text-brand-charcoalDark focus:border-brand-maroon focus:outline-none focus:ring-1 focus:ring-brand-maroon"></textarea>
+              <textarea id="q-desc" required rows="4" placeholder="Briefly specify number of floors, existing equipment condition, urgent deadlines (e.g. Form B renewal due this month, 32 extinguishers needing hydro-testing, or booster pump pressure failure)." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all"></textarea>
             </div>
 
             <!-- Submit Options -->
             <div class="pt-4 flex flex-col sm:flex-row gap-4">
-              <button type="submit" class="flex-1 bg-brand-maroon hover:bg-brand-maroonDark text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-brand-maroon/20 transition-all focus-ring text-center">
+              <button type="submit" class="flex-1 bg-gradient-to-r from-brand-ember to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all focus-ring text-center">
                 Review & Stage Quotation
               </button>
-              <a href="audit.html" class="inline-flex items-center justify-center bg-white border border-brand-paper hover:bg-brand-paper/40 text-brand-charcoalDark py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider transition-colors">
+              <a href="audit.html" class="inline-flex items-center justify-center bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider transition-colors">
                 Book Physical Walkthrough Instead
               </a>
             </div>
 
-            <p class="text-[11px] font-mono text-brand-charcoalDark/60 text-center">
+            <p class="text-[11px] font-mono text-slate-500 text-center">
               🔒 Safe & Direct: Your requirements are processed directly by Samarth Fire's engineering desk. No third-party data sharing.
             </p>
           </form>
@@ -197,54 +207,56 @@ scripts: |
 
         <!-- Success & Review State -->
         <div id="quote-success-wrap" class="hidden space-y-6">
-          <div class="bg-brand-paper border border-brand-gold/40 p-6 rounded-lg text-center">
-            <svg class="h-12 w-12 text-brand-maroon mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <h3 class="font-headline font-bold text-2xl text-brand-maroon">Quotation Request Staged</h3>
-            <p class="text-xs text-brand-charcoalDark/80 font-body max-w-lg mx-auto mt-2">
+          <div class="bg-emerald-50 border border-emerald-200 p-6 rounded-2xl text-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <h3 class="font-headline font-bold text-2xl text-slate-900">Quotation Request Staged</h3>
+            <p class="text-xs text-slate-600 font-body max-w-lg mx-auto mt-2">
               Your project parameters have been formatted for our engineering desk. To receive an immediate response or schedule an audit walkthrough, send details directly via WhatsApp or Email:
             </p>
           </div>
 
           <!-- Staged Summary Table -->
-          <div class="bg-brand-ivory p-6 rounded-lg border border-brand-paper font-mono text-xs space-y-3">
-            <div class="flex justify-between border-b border-brand-paper pb-2">
-              <span class="text-brand-charcoalDark/70">Requirement:</span>
-              <strong id="rev-req" class="text-brand-maroon text-right"></strong>
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 font-mono text-xs space-y-3">
+            <div class="flex justify-between border-b border-slate-200/80 pb-2">
+              <span class="text-slate-500">Requirement:</span>
+              <strong id="rev-req" class="text-brand-ember text-right font-bold"></strong>
             </div>
-            <div class="flex justify-between border-b border-brand-paper pb-2">
-              <span class="text-brand-charcoalDark/70">Facility Profile:</span>
-              <span id="rev-facility" class="font-semibold text-right"></span>
+            <div class="flex justify-between border-b border-slate-200/80 pb-2">
+              <span class="text-slate-500">Facility Profile:</span>
+              <span id="rev-facility" class="font-semibold text-right text-slate-800"></span>
             </div>
-            <div class="flex justify-between border-b border-brand-paper pb-2">
-              <span class="text-brand-charcoalDark/70">Contact / Society:</span>
-              <span id="rev-client" class="font-semibold text-right"></span>
+            <div class="flex justify-between border-b border-slate-200/80 pb-2">
+              <span class="text-slate-500">Contact / Society:</span>
+              <span id="rev-client" class="font-semibold text-right text-slate-800"></span>
             </div>
-            <div class="flex justify-between border-b border-brand-paper pb-2">
-              <span class="text-brand-charcoalDark/70">Phone Number:</span>
-              <span id="rev-phone" class="font-semibold text-right"></span>
+            <div class="flex justify-between border-b border-slate-200/80 pb-2">
+              <span class="text-slate-500">Phone Number:</span>
+              <span id="rev-phone" class="font-semibold text-right text-slate-800"></span>
             </div>
             <div class="flex justify-between">
-              <span class="text-brand-charcoalDark/70">Location:</span>
-              <span id="rev-loc" class="font-semibold text-right"></span>
+              <span class="text-slate-500">Location:</span>
+              <span id="rev-loc" class="font-semibold text-right text-slate-800"></span>
             </div>
           </div>
 
           <!-- Action Buttons -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a id="rev-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-green-700 hover:bg-green-800 text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow transition-all">
+            <a id="rev-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-lg shadow-emerald-600/20 transition-all">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.073.043.419-.101.824z"/></svg>
               <span>Transmit via WhatsApp</span>
             </a>
-            <a id="rev-mail-btn" href="#" class="flex items-center justify-center space-x-2 bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white py-3.5 px-6 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow transition-all">
+            <a id="rev-mail-btn" href="#" class="flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow transition-all">
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               <span>Send via Email</span>
             </a>
           </div>
 
           <div class="text-center pt-2">
-            <button onclick="location.reload()" class="font-mono text-xs text-brand-maroon hover:underline">
+            <button onclick="location.reload()" class="font-mono text-xs text-brand-ember hover:underline">
               &larr; Fill another quotation request
             </button>
           </div>
@@ -256,39 +268,40 @@ scripts: |
       <div class="lg:col-span-4 space-y-6">
         
         <!-- Credential Badge Card -->
-        <div class="bg-brand-maroon text-white p-6 rounded-xl border border-brand-maroonDark shadow-sm">
-          <span class="font-mono text-[10px] text-brand-gold uppercase tracking-widest font-bold block mb-1">STATE COMPLIANCE AUTHORITY</span>
+        <div class="bg-gradient-to-b from-[#0F172A] to-[#0A0F1D] text-white p-6 sm:p-7 rounded-2xl border border-slate-700/80 shadow-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-brand-ember/10 rounded-full blur-2xl pointer-events-none"></div>
+          <span class="font-mono text-[10px] text-amber-400 uppercase tracking-widest font-bold block mb-1">STATE COMPLIANCE AUTHORITY</span>
           <h3 class="font-headline font-bold text-xl text-white">Class D Licensed Agency</h3>
-          <p class="font-mono text-xs text-white/80 mt-2">
-            Licence No: <strong class="text-brand-gold">MFS/LA/RF-34/RD-35</strong><br>
+          <p class="font-mono text-xs text-slate-300 mt-2">
+            Licence No: <strong class="text-amber-400">MFS/LA/RF-34/RD-35</strong><br>
             Directorate of Maharashtra Fire Services
           </p>
 
-          <div class="mt-4 pt-4 border-t border-white/10 text-xs text-white/70 space-y-2">
+          <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-300 space-y-2">
             <div class="flex items-center space-x-2">
-              <span class="text-brand-gold">&bull;</span>
+              <span class="text-brand-ember font-bold">&bull;</span>
               <span>Form A Installation Clearance</span>
             </div>
             <div class="flex items-center space-x-2">
-              <span class="text-brand-gold">&bull;</span>
+              <span class="text-brand-ember font-bold">&bull;</span>
               <span>Bi-Annual Form B Maintenance Filing</span>
             </div>
             <div class="flex items-center space-x-2">
-              <span class="text-brand-gold">&bull;</span>
+              <span class="text-brand-ember font-bold">&bull;</span>
               <span>Direct Municipal Fire Officer Submission</span>
             </div>
           </div>
 
-          <button onclick="openLicenseModal()" class="mt-6 w-full py-2.5 bg-brand-gold hover:bg-yellow-500 text-brand-maroonDark font-body text-xs font-bold uppercase tracking-wider rounded transition-colors">
+          <button onclick="openLicenseModal()" class="mt-6 w-full py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-headline text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md">
             Inspect Official License
           </button>
         </div>
 
         <!-- Cost Transparency Promise -->
-        <div class="bg-white p-6 rounded-xl border border-brand-paper shadow-sm space-y-4">
-          <h4 class="font-headline font-bold text-lg text-brand-maroon">Our Quotation Policy</h4>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+          <h4 class="font-headline font-bold text-lg text-slate-900">Our Quotation Policy</h4>
           
-          <div class="space-y-3 font-body text-xs text-brand-charcoalDark/80">
+          <div class="space-y-3 font-body text-xs text-slate-600">
             <div class="flex items-start space-x-2">
               <span class="text-brand-ember font-bold mt-0.5">&bull;</span>
               <p><strong>Itemized Bills:</strong> Every estimate specifies pipe gauge, pump horsepower, valve classes, and labor separately.</p>
@@ -305,14 +318,14 @@ scripts: |
         </div>
 
         <!-- Phone Assistance Card -->
-        <div class="bg-brand-paper p-6 rounded-xl border border-brand-gold/30">
-          <span class="font-mono text-[10px] text-brand-maroon uppercase tracking-widest font-bold block mb-1">DIRECT TECHNICAL DESK</span>
-          <p class="font-body text-xs text-brand-charcoalDark/80 mb-3">Prefer discussing your requirements directly with our senior engineers?</p>
-          <a href="tel:+919967101472" class="inline-flex items-center space-x-2 text-brand-maroon hover:text-brand-maroonDark font-body text-sm font-bold">
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+          <span class="font-mono text-[10px] text-brand-ember uppercase tracking-widest font-bold block mb-1">DIRECT TECHNICAL DESK</span>
+          <p class="font-body text-xs text-slate-600 mb-3">Prefer discussing your requirements directly with our senior engineers?</p>
+          <a href="tel:+919967101472" class="inline-flex items-center space-x-2 text-slate-900 hover:text-brand-ember font-headline text-sm font-bold transition-colors">
+            <svg class="h-4 w-4 text-brand-ember" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call: +91 9967101472</span>
           </a>
-          <span class="block font-mono text-[10px] text-brand-charcoalDark/60 mt-1">Malad East, Mumbai &bull; Operations: 9:00 AM - 8:00 PM</span>
+          <span class="block font-mono text-[10px] text-slate-400 mt-1">Malad East, Mumbai &bull; Operations: 9:00 AM - 8:00 PM</span>
         </div>
 
       </div>

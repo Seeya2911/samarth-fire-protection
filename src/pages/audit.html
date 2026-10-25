@@ -18,7 +18,8 @@ scripts: |
       const phone = document.getElementById('audit-phone').value;
       const propType = document.getElementById('audit-prop-type').value;
       const serviceNeeded = document.getElementById('audit-service-needed').value;
-      const notes = document.getElementById('audit-notes').value || 'None';
+      const notesEl = document.getElementById('audit-notes');
+      const notes = notesEl ? notesEl.value : 'None';
 
       const text = `*New Site Assessment Request - Samarth Fire*%0A` +
         `• Property: ${encodeURIComponent(propName)}%0A` +
@@ -65,62 +66,76 @@ scripts: |
   </script>
 ---
 
-<!-- Header Page Title (Maroon Brand background) -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Audit Desk</span>
-    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Site Assessments & Rectification</h1>
-    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Book a physical walkthrough &bull; Report emergency system faults</p>
+<!-- Sunlit Sky Blue Aesthetic Hero -->
+<section class="relative bg-gradient-to-br from-sky-50/90 via-blue-50/40 to-indigo-50/20 py-16 sm:py-20 border-b border-sky-100/80 text-slate-900 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="inline-flex items-center space-x-2 bg-white/90 border border-sky-200 px-3.5 py-1.5 rounded-full shadow-xs mb-3">
+      <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-blue-700">On-Site Technical Audit Desk</span>
+    </div>
+    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl leading-tight">
+      Site Assessments &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">System Rectification</span>
+    </h1>
+    <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
+      Book an on-site physical engineering walkthrough across Mumbai &bull; Report continuous alarm buzzers &amp; hydraulic pressure drops for rapid emergency response
+    </p>
   </div>
 </section>
 
-<!-- Main Audit Desk Forms Section (Warm Ivory background) -->
-<section class="py-24 bg-brand-ivory text-[#1D2023]">
+<!-- Main Audit Desk Forms Section -->
+<section class="py-16 sm:py-20 bg-slate-50 text-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Left Column: Form 1 - Request Audit (White Card) -->
-      <div class="lg:col-span-7 bg-white p-8 rounded-lg border border-brand-paper shadow-sm text-brand-maroonDark">
-        <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-2">Request a Site Assessment & Audit</h2>
-        <p class="text-xs text-brand-maroonDark/70 leading-relaxed mb-6 font-body">
-          Fill out this form to schedule a physical walkthrough by Sameer M. Kangutkar. We will evaluate compliance gaps and issue a technical report.
-        </p>
+      <!-- Left Column: Form 1 - Request Audit -->
+      <div class="lg:col-span-7 bg-white p-7 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm">
+        <div class="border-b border-slate-100 pb-6 mb-6">
+          <div class="inline-flex items-center space-x-2 font-mono text-xs font-bold text-brand-cyan uppercase tracking-wider mb-1">
+            <span>ENGINEERING AUDIT</span>
+            <span>&bull;</span>
+            <span>LICENSED CLASS D INSPECTORS</span>
+          </div>
+          <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Request a Site Assessment & Audit</h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 font-body leading-relaxed">
+            Fill out this form to schedule a physical walkthrough by Sameer M. Kangutkar. We evaluate compliance gaps, pipe pressures, detector loops, and issue an itemized technical report.
+          </p>
+        </div>
 
         <!-- Audit Request Form -->
-        <form id="audit-form" class="space-y-6 text-xs font-mono" onsubmit="handleAuditSubmit(event)">
+        <form id="audit-form" class="space-y-6 text-xs" onsubmit="handleAuditSubmit(event)">
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <!-- Property Name -->
             <div>
-              <label for="audit-prop-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Building/Society Name *</label>
-              <input type="text" id="audit-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-prop-name" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Building/Society Name *</label>
+              <input type="text" id="audit-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
             <!-- Contact Person -->
             <div>
-              <label for="audit-contact-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Contact Person Name *</label>
-              <input type="text" id="audit-contact-name" required placeholder="e.g. Secretary / Manager" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-contact-name" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Contact Person Name *</label>
+              <input type="text" id="audit-contact-name" required placeholder="e.g. Secretary / Manager" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <!-- Mobile Number -->
             <div>
-              <label for="audit-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Phone Number *</label>
-              <input type="tel" id="audit-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-phone" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Phone Number *</label>
+              <input type="tel" id="audit-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
             <!-- Email -->
             <div>
-              <label for="audit-email" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Email Address</label>
-              <input type="email" id="audit-email" placeholder="e.g. info@building.com" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-email" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Email Address</label>
+              <input type="email" id="audit-email" placeholder="e.g. info@building.com" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
             <!-- Property Type -->
             <div>
-              <label for="audit-prop-type" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Property Type *</label>
-              <select id="audit-prop-type" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
-                <option value="">Select Property Type</option>
+              <label for="audit-prop-type" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Property Type *</label>
+              <select id="audit-prop-type" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
+                <option value="">Select Type</option>
                 <option value="Residential">Residential Society</option>
                 <option value="Commercial">Commercial Block / Mall</option>
                 <option value="Industrial">Industrial Factory</option>
@@ -132,9 +147,9 @@ scripts: |
             </div>
             <!-- Location -->
             <div>
-              <label for="audit-location" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Location *</label>
-              <select id="audit-location" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
-                <option value="">Select Location</option>
+              <label for="audit-location" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Location *</label>
+              <select id="audit-location" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
+                <option value="">Select Region</option>
                 <option value="Mumbai">Mumbai</option>
                 <option value="Navi Mumbai">Navi Mumbai</option>
                 <option value="Thane">Thane</option>
@@ -143,37 +158,37 @@ scripts: |
             </div>
             <!-- Approximate Size -->
             <div>
-              <label for="audit-size" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Approx. Size (Sq. Ft.)</label>
-              <input type="text" id="audit-size" placeholder="e.g. 50,000 sq ft" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-size" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Approx. Size</label>
+              <input type="text" id="audit-size" placeholder="e.g. 50,000 sq ft" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
           </div>
 
-          <!-- Existing Systems Present (Checkboxes) -->
+          <!-- Existing Systems Present -->
           <div>
-            <label class="block text-brand-maroon uppercase tracking-wider mb-3 font-semibold">Existing Systems Installed (Select all that apply)</label>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-[11px] text-brand-maroonDark/80">
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Fire Alarm" class="accent-brand-maroon">
-                <span>Fire Alarm Panel</span>
+            <label class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Existing Systems Installed</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 font-mono text-xs text-slate-700">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Fire Alarm" class="accent-brand-cyan">
+                <span>Alarm Panel</span>
               </label>
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Hydrant" class="accent-brand-maroon">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Hydrant" class="accent-brand-cyan">
                 <span>Hydrant Line</span>
               </label>
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Sprinkler" class="accent-brand-maroon">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Sprinkler" class="accent-brand-cyan">
                 <span>Sprinkler Net</span>
               </label>
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Extinguishers" class="accent-brand-maroon">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Extinguishers" class="accent-brand-cyan">
                 <span>Extinguishers</span>
               </label>
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Suppression" class="accent-brand-maroon">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Suppression" class="accent-brand-cyan">
                 <span>Gas Suppression</span>
               </label>
-              <label class="flex items-center space-x-2 bg-brand-ivory p-2.5 rounded border border-brand-paper cursor-pointer hover:border-brand-maroon transition-colors">
-                <input type="checkbox" name="system" value="Not Sure" class="accent-brand-maroon">
+              <label class="flex items-center space-x-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-cyan transition-colors">
+                <input type="checkbox" name="system" value="Not Sure" class="accent-brand-cyan">
                 <span>Not Sure</span>
               </label>
             </div>
@@ -181,8 +196,8 @@ scripts: |
 
           <!-- What is needed -->
           <div>
-            <label for="audit-service-needed" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Primary Requirement *</label>
-            <select id="audit-service-needed" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+            <label for="audit-service-needed" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Primary Requirement *</label>
+            <select id="audit-service-needed" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
               <option value="">Select Requirement</option>
               <option value="New Installation">New Fire Safety Installation</option>
               <option value="Audit Walkthrough">Physical Audit & Gap Assessment</option>
@@ -193,15 +208,21 @@ scripts: |
             </select>
           </div>
 
+          <!-- Notes Textarea -->
+          <div>
+            <label for="audit-notes" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Specific Observations or Notes</label>
+            <textarea id="audit-notes" rows="3" placeholder="Specify any known faults, recent municipal notices, or access constraints." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all"></textarea>
+          </div>
+
           <!-- Preferred Date & Time Picker -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
-              <label for="audit-date" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Preferred Walkthrough Date *</label>
-              <input type="date" id="audit-date" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-date" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Preferred Walkthrough Date *</label>
+              <input type="date" id="audit-date" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
             </div>
             <div>
-              <label for="audit-time" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Preferred Time Slot *</label>
-              <select id="audit-time" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon focus:ring-1 focus:ring-brand-maroon">
+              <label for="audit-time" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Preferred Time Slot *</label>
+              <select id="audit-time" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
                 <option value="">Select Time Slot</option>
                 <option value="Morning">Morning (10:00 AM - 1:00 PM)</option>
                 <option value="Afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
@@ -212,31 +233,33 @@ scripts: |
 
           <!-- Photo upload placeholder -->
           <div>
-            <label for="audit-upload" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Upload Current Layout or Site Photo (Optional)</label>
-            <input type="file" id="audit-upload" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 file:bg-brand-paper file:text-brand-maroon file:border-0 file:rounded file:px-3 file:py-1.5 file:mr-4 file:cursor-pointer file:font-semibold">
-            <span class="block text-[10px] text-brand-maroonDark/50 mt-1 font-body">Accepted formats: PDF, JPG, PNG (Max 5MB)</span>
+            <label for="audit-upload" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Upload Current Layout or Site Photo (Optional)</label>
+            <input type="file" id="audit-upload" class="w-full bg-slate-50 border border-slate-200 text-slate-700 rounded-xl px-4 py-2.5 file:bg-slate-200 file:text-slate-800 file:border-0 file:rounded-lg file:px-3 file:py-1.5 file:mr-4 file:cursor-pointer file:font-semibold text-xs">
+            <span class="block text-[10px] text-slate-500 mt-1">Accepted formats: PDF, JPG, PNG (Max 5MB)</span>
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-ember hover:bg-red-700 text-white font-nav uppercase tracking-wider text-xs font-bold py-3.5 rounded transition-all focus-ring shadow-lg hover:shadow-brand-ember/25">
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-brand-cyan to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-headline uppercase tracking-wider text-xs font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-teal-500/20 focus-ring">
             Submit Assessment Request
           </button>
         </form>
 
         <!-- Staged Walkthrough State -->
-        <div id="audit-success" class="hidden bg-brand-paper border border-brand-gold/60 text-brand-maroon p-6 rounded-lg text-center mt-6 space-y-4">
-          <svg class="h-10 w-10 text-brand-maroon mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Assessment Details Staged</h3>
-          <p class="text-xs text-brand-charcoalDark/80 leading-relaxed font-body max-w-md mx-auto">
+        <div id="audit-success" class="hidden bg-emerald-50 border border-emerald-200 text-slate-800 p-6 rounded-2xl text-center mt-6 space-y-4">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Assessment Details Staged</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-body max-w-md mx-auto">
             Your walkthrough request has been formatted for Principal Consultant Sameer M. Kangutkar. Transmit directly to our technical desk:
           </p>
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
-            <a id="audit-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center space-x-2 bg-green-700 hover:bg-green-800 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+            <a id="audit-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-headline text-xs font-bold uppercase tracking-wider py-3.5 px-4 rounded-xl shadow transition-all">
               <span>Transmit via WhatsApp</span>
             </a>
-            <a id="audit-mail-btn" href="#" class="flex-1 inline-flex items-center justify-center space-x-2 bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+            <a id="audit-mail-btn" href="#" class="flex-1 inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white font-headline text-xs font-bold uppercase tracking-wider py-3.5 px-4 rounded-xl shadow transition-all">
               <span>Send via Email</span>
             </a>
           </div>
@@ -244,16 +267,16 @@ scripts: |
 
       </div>
 
-      <!-- Right Column: Form 2 - Troubleshoot Repair (Cream Card) -->
-      <div id="troubleshoot" class="lg:col-span-5 bg-brand-paper p-8 rounded-lg border border-brand-paper text-brand-maroonDark">
-        <div class="flex items-center space-x-2 text-brand-maroon mb-4">
-          <svg class="h-6 w-6 text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-          <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Fire System Not Working?</h2>
+      <!-- Right Column: Form 2 - Emergency Troubleshoot Desk -->
+      <div id="troubleshoot" class="lg:col-span-5 bg-gradient-to-b from-[#180B0B] to-[#0A0505] p-7 sm:p-8 rounded-2xl border border-red-500/30 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-36 h-36 bg-red-600/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="flex items-center space-x-2.5 text-red-400 mb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+          <span class="font-mono text-xs font-bold tracking-widest uppercase">EMERGENCY FAULT DESK</span>
         </div>
-        <p class="text-xs text-brand-maroonDark/80 leading-relaxed mb-6 font-body">
-          Is your building experiencing continuous buzzer alarms, wet riser pipeline pressure drops, or sensor loop line failures? Submit details here.
+        <h2 class="font-headline font-black text-2xl sm:text-3xl tracking-tight text-white mb-2">Fire System Not Working?</h2>
+        <p class="text-xs text-slate-300 leading-relaxed mb-6 font-body">
+          Continuous buzzer alarms, wet riser pipeline pressure drops, or sensor loop line failures? Submit details immediately for duty engineer callback.
         </p>
 
         <!-- Troubleshooting form -->
@@ -261,15 +284,15 @@ scripts: |
           
           <!-- Property Name -->
           <div>
-            <label for="trouble-prop-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Building/Society Name *</label>
-            <input type="text" id="trouble-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 focus:outline-none focus:border-brand-maroon">
+            <label for="trouble-prop-name" class="block text-slate-300 uppercase tracking-wider mb-2 font-semibold text-[11px]">Building/Society Name *</label>
+            <input type="text" id="trouble-prop-name" required placeholder="e.g. F Residency CHS" class="w-full bg-slate-900/90 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition-colors">
           </div>
 
           <div class="grid grid-cols-2 gap-4">
             <!-- Location -->
             <div>
-              <label for="trouble-location" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Location *</label>
-              <select id="trouble-location" required class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-3 py-2.5 focus:outline-none focus:border-brand-maroon">
+              <label for="trouble-location" class="block text-slate-300 uppercase tracking-wider mb-2 font-semibold text-[11px]">Location *</label>
+              <select id="trouble-location" required class="w-full bg-slate-900/90 border border-slate-700 text-white rounded-xl px-3 py-3 focus:outline-none focus:border-red-500 transition-colors">
                 <option value="">Select</option>
                 <option value="Mumbai">Mumbai</option>
                 <option value="Navi Mumbai">Navi Mumbai</option>
@@ -279,15 +302,15 @@ scripts: |
             </div>
             <!-- Contact Number -->
             <div>
-              <label for="trouble-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Contact Phone *</label>
-              <input type="tel" id="trouble-phone" required placeholder="e.g. 9967101472" class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-3 py-2.5 focus:outline-none focus:border-brand-maroon">
+              <label for="trouble-phone" class="block text-slate-300 uppercase tracking-wider mb-2 font-semibold text-[11px]">Contact Phone *</label>
+              <input type="tel" id="trouble-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-900/90 border border-slate-700 text-white rounded-xl px-3 py-3 focus:outline-none focus:border-red-500 transition-colors">
             </div>
           </div>
 
           <!-- System Affected -->
           <div>
-            <label for="trouble-system" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">System Affected *</label>
-            <select id="trouble-system" required class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-2.5 focus:outline-none focus:border-brand-maroon">
+            <label for="trouble-system" class="block text-slate-300 uppercase tracking-wider mb-2 font-semibold text-[11px]">System Affected *</label>
+            <select id="trouble-system" required class="w-full bg-slate-900/90 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition-colors">
               <option value="">Select Affected System</option>
               <option value="Fire Alarm Panel">Fire Alarm Panel (Continuous Buzzer)</option>
               <option value="Wet Riser / Hydrant">Wet Riser Hydrant (Pipe leak / Pump fault)</option>
@@ -299,30 +322,32 @@ scripts: |
 
           <!-- Problem Description -->
           <div>
-            <label for="trouble-desc" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Explain the Fault *</label>
-            <textarea id="trouble-desc" required rows="4" placeholder="Explain the fault details here (e.g. Alarm panel zone 4 showing ground fault circuit short, hydrant pipeline dropping pressure below 4 bar)." class="w-full bg-white border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon font-body text-xs"></textarea>
+            <label for="trouble-desc" class="block text-slate-300 uppercase tracking-wider mb-2 font-semibold text-[11px]">Explain the Fault *</label>
+            <textarea id="trouble-desc" required rows="4" placeholder="Explain the fault details here (e.g. Alarm panel zone 4 showing ground fault circuit short, hydrant pipeline dropping pressure below 4 bar)." class="w-full bg-slate-900/90 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 font-body text-xs transition-colors"></textarea>
           </div>
 
           <!-- Submit troubleshooting -->
-          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-charcoalDark hover:bg-brand-charcoalDark/85 text-white font-nav uppercase tracking-wider text-xs font-bold py-3 rounded transition-colors focus-ring">
-            File Troubleshooting Request
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-headline uppercase tracking-wider text-xs font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-red-600/30">
+            File Troubleshooting Alert
           </button>
         </form>
 
         <!-- Emergency Fault Staged State -->
-        <div id="trouble-success" class="hidden bg-white border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6 space-y-4">
-          <svg class="h-10 w-10 text-brand-maroon mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Emergency Fault Staged</h3>
-          <p class="text-xs text-brand-charcoalDark/80 leading-relaxed font-body">
+        <div id="trouble-success" class="hidden bg-slate-900 border border-red-500/50 text-white p-6 rounded-xl text-center mt-6 space-y-4">
+          <div class="w-10 h-10 rounded-full bg-red-950/80 border border-red-500 text-red-400 flex items-center justify-center mx-auto">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-white">Emergency Fault Staged</h3>
+          <p class="text-xs text-slate-300 leading-relaxed font-body">
             Urgent fault details formatted. Transmit directly via WhatsApp or call our emergency hotline:
           </p>
           <div class="flex flex-col gap-2.5 pt-2">
-            <a id="trouble-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-red-700 hover:bg-red-800 text-white font-body text-xs font-bold uppercase tracking-wider py-3 px-4 rounded shadow transition-all">
+            <a id="trouble-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-headline text-xs font-bold uppercase tracking-wider py-3 px-4 rounded-xl shadow transition-all">
               <span>Send Fault Alert via WhatsApp</span>
             </a>
-            <a href="tel:+919967101472" class="inline-flex items-center justify-center space-x-1.5 bg-brand-charcoalDark text-white font-mono text-xs font-bold py-2.5 px-4 rounded">
+            <a href="tel:+919967101472" class="inline-flex items-center justify-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold py-2.5 px-4 rounded-xl border border-slate-700 transition-colors">
               <span>Call Duty Engineer: 9967101472</span>
             </a>
           </div>

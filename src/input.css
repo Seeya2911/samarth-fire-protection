@@ -2,15 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
 
 @layer base {
   body {
-    @apply bg-brand-ivory text-brand-charcoalDark font-body antialiased selection:bg-brand-maroon selection:text-white;
+    @apply bg-white text-slate-800 font-body antialiased selection:bg-orange-500 selection:text-white;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline text-brand-charcoalDark tracking-tight;
+    @apply font-headline text-slate-900 tracking-tight;
   }
 
   h1 {
@@ -31,159 +31,51 @@
 }
 
 @layer utilities {
-  /* Dynamic Backgrounds */
-  .bg-canvas-ivory {
-    background-color: #FDFBF7;
-  }
-  .bg-canvas-cream {
-    background-color: #F1E6CE;
-  }
-  .bg-canvas-charcoal {
-    background-color: #1D2023;
-  }
-  .bg-canvas-maroon {
-    background-color: #5C1520;
-  }
-
   /* Typography shortcuts */
   .font-heading-extrabold {
-    font-family: 'Manrope', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
     font-weight: 800;
   }
   
   .font-heading-bold {
-    font-family: 'Manrope', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
     font-weight: 700;
   }
 
   .font-heading-semibold {
-    font-family: 'Manrope', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
     font-weight: 600;
   }
 
   /* Process steps / Stats numbers */
   .font-numeric {
-    font-family: 'Manrope', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
     font-weight: 700;
   }
 
   .font-signage {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
     font-weight: 800;
   }
 
-  /* Interactive Card Lift */
+  /* Interactive Aesthetic Card Lift */
   .card-lift {
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
   }
   .card-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 32px -8px rgba(29, 32, 35, 0.12), 0 4px 12px -2px rgba(29, 32, 35, 0.06);
+    box-shadow: 0 16px 30px -8px rgba(15, 23, 42, 0.08), 0 6px 12px -3px rgba(234, 88, 12, 0.06);
   }
 
-  /* Glassmorphism Accents */
+  /* Glassmorphism & Soft Cards */
   .glass-card {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
 
-  .glass-card-dark {
-    background: rgba(29, 32, 35, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-  }
-
-  /* Motion Design: Scroll Reveal */
-  .reveal-init {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: opacity, transform;
-  }
-  
-  .reveal-init.revealed {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Delay utility classes for staggered reveals */
-  .delay-100 { transition-delay: 100ms; }
-  .delay-200 { transition-delay: 200ms; }
-  .delay-300 { transition-delay: 300ms; }
-  .delay-400 { transition-delay: 400ms; }
-  .delay-500 { transition-delay: 500ms; }
-
-  /* Physical Evidence/Inspection Tag style */
-  .inspection-tag {
-    position: relative;
-    transform: rotate(-1deg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .inspection-tag:hover {
-    transform: rotate(0deg) scale(1.02);
-  }
-
-  .inspection-tag-hole {
-    position: absolute;
-    top: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 14px;
-    height: 14px;
-    background-color: #1D2023;
-    border: 2.5px solid #D9A441;
-    border-radius: 50%;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
-    z-index: 10;
-  }
-
-  .inspection-tag-string {
-    position: absolute;
-    top: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-    height: 30px;
-    background-color: #D9A441;
-    border-radius: 1px;
-    z-index: 5;
-  }
-
-  /* Thin Hazard Stripe dividers */
-  .hazard-stripe-divider {
-    height: 6px;
-    background: repeating-linear-gradient(
-      -45deg,
-      #5C1520,
-      #5C1520 8px,
-      #D9A441 8px,
-      #D9A441 16px
-    );
-    border: none;
-    margin: 1.5rem 0;
-  }
-
+  /* Accessible Focus Rings */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-[#FDFBF7];
-  }
-}
-
-/* Accessibility: Strict Respect for Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-  .reveal-init {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
-  .card-lift:hover {
-    transform: none !important;
+    @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white;
   }
 }

@@ -24,53 +24,60 @@ scripts: |
   </script>
 ---
 
-<!-- Header Page Title (Maroon Brand background) -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Reach Our Engineers</span>
-    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Contact Us</h1>
-    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Licensed Compliance &bull; Audit Schedules &bull; Operations Desk</p>
+<!-- Header Page Title (Sunlit, Warm Aesthetic) -->
+<section class="bg-gradient-to-br from-red-50/90 via-orange-50/40 to-amber-50/20 py-16 sm:py-20 border-b border-slate-200/80 text-slate-900 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="inline-flex items-center space-x-2 bg-white/90 border border-red-200 px-3.5 py-1.5 rounded-full shadow-xs mb-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-red-700">Reach Our Engineers</span>
+    </div>
+    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900">
+      Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Samarth Fire</span>
+    </h1>
+    <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
+      Licensed Compliance Desk &bull; Bi-Annual Form B Audit Schedules &bull; 24/7 Field Engineering Operations
+    </p>
   </div>
 </section>
 
-<!-- Contact Form and Details (Warm Ivory background) -->
-<section class="py-24 bg-brand-ivory text-[#1D2023]">
+<!-- Contact Form and Details (Light Clean Canvas) -->
+<section class="py-16 sm:py-20 bg-slate-50/60 text-slate-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
       
       <!-- Left Column: Form (White Card) -->
-      <div class="lg:col-span-7 bg-white p-8 rounded-lg border border-brand-paper shadow-sm text-brand-maroonDark">
-        <h2 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-2">Send a Message</h2>
-        <p class="text-xs text-brand-maroonDark/70 leading-relaxed mb-6 font-body">
-          Do you have a question about building inspections, extinguisher hydro-testing, or system maintenance? Submit details below to get a technical callback.
+      <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-xl text-slate-800">
+        <h2 class="font-headline font-black text-2xl tracking-tight text-slate-900 mb-2">Send an Enquiry</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-8 font-body">
+          Do you have a question about building inspections, extinguisher hydro-testing, or system maintenance? Submit details below to get an engineer callback.
         </p>
 
         <!-- Contact Form -->
-        <form id="contact-form" class="space-y-6 text-xs font-mono" onsubmit="handleContactSubmit(event)">
+        <form id="contact-form" class="space-y-6 text-xs font-headline" onsubmit="handleContactSubmit(event)">
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <!-- Name -->
             <div>
-              <label for="contact-name" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Your Name *</label>
-              <input type="text" id="contact-name" required placeholder="e.g. Sameer Shinde" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+              <label for="contact-name" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Your Name *</label>
+              <input type="text" id="contact-name" required placeholder="e.g. Sameer Shinde" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
             </div>
             <!-- Phone -->
             <div>
-              <label for="contact-phone" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Phone Number *</label>
-              <input type="tel" id="contact-phone" required placeholder="e.g. 9967101472" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+              <label for="contact-phone" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Phone Number *</label>
+              <input type="tel" id="contact-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
             </div>
           </div>
 
           <!-- Email -->
           <div>
-            <label for="contact-email" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Email Address</label>
-            <input type="email" id="contact-email" placeholder="e.g. client@society.com" class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+            <label for="contact-email" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Email Address</label>
+            <input type="email" id="contact-email" placeholder="e.g. client@society.com" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
           </div>
 
           <!-- Subject -->
           <div>
-            <label for="contact-subject" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Subject / Subject Area *</label>
-            <select id="contact-subject" required class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon">
+            <label for="contact-subject" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Subject / Subject Area *</label>
+            <select id="contact-subject" required class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
               <option value="">Select Subject Area</option>
               <option value="Audit Walkthrough">Schedule a Site Audit Walkthrough</option>
               <option value="Form A / B NOC">Form A / Form B Certification NOC</option>
@@ -83,23 +90,25 @@ scripts: |
 
           <!-- Message -->
           <div>
-            <label for="contact-msg" class="block text-brand-maroon uppercase tracking-wider mb-2 font-semibold">Your Message *</label>
-            <textarea id="contact-msg" required rows="5" placeholder="Explain your building's fire safety question or requirements here (e.g. requesting a quote for compliance checks on hydrants system)." class="w-full bg-brand-ivory border border-brand-paper text-brand-maroonDark rounded px-4 py-3 focus:outline-none focus:border-brand-maroon font-body text-xs"></textarea>
+            <label for="contact-msg" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Your Message *</label>
+            <textarea id="contact-msg" required rows="5" placeholder="Explain your building's fire safety question or requirements here (e.g. requesting a quote for compliance checks on hydrants system)." class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 font-body text-sm"></textarea>
           </div>
 
           <!-- Submit -->
-          <button type="submit" class="w-full inline-flex justify-center items-center bg-brand-ember hover:bg-red-700 text-white font-nav uppercase tracking-wider text-xs font-bold py-3.5 rounded transition-all focus-ring shadow">
+          <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline uppercase tracking-wider text-xs font-bold py-4 rounded-xl transition-all focus-ring shadow-md shadow-red-500/20">
             Send Message
           </button>
         </form>
 
         <!-- Success Banner -->
-        <div id="contact-success" class="hidden bg-brand-paper border border-brand-gold text-brand-maroon p-6 rounded-lg text-center mt-6">
-          <svg class="h-10 w-10 text-green-600 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Message Sent Successfully</h3>
-          <p class="text-xs text-brand-maroonDark/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
+        <div id="contact-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 p-8 rounded-2xl text-center mt-6">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-emerald-900">Message Sent Successfully</h3>
+          <p class="text-sm text-emerald-800/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
             Thank you. Your message has been logged. Our Malad office staff will route details to Sameer sir or our engineers to schedule a response callback.
           </p>
         </div>
@@ -107,51 +116,72 @@ scripts: |
       </div>
 
       <!-- Right Column: Corporate Details -->
-      <div class="lg:col-span-5 space-y-8 font-mono text-sm text-brand-maroonDark">
+      <div class="lg:col-span-5 space-y-6 text-sm text-slate-700">
         
-        <div class="bg-white p-6 rounded border border-brand-paper shadow-sm space-y-6">
-          <h3 class="font-headline font-bold text-xl text-brand-maroon border-b border-brand-paper pb-3 uppercase">Office Channels</h3>
+        <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md space-y-6">
+          <h3 class="font-headline font-black text-lg text-slate-900 border-b border-slate-100 pb-3 uppercase tracking-wide">Office Channels</h3>
           
           <div class="space-y-4">
             <div class="flex items-start">
-              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
-              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
-                <strong>Registered Office:</strong><br>
+              <div class="w-8 h-8 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 font-bold">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <span class="text-xs sm:text-sm text-slate-600 leading-relaxed font-body">
+                <strong class="text-slate-900 font-headline block mb-0.5">Registered Office</strong>
                 C/611, Parekh Nagar, CTS 710, Pathan Wadi,<br>
                 Malad (East), Mumbai – 400097
               </span>
             </div>
             
             <div class="flex items-start">
-              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
-              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
-                <strong>Phones:</strong><br>
-                9967101472 &bull; 9403049381 &bull; 8097247249
+              <div class="w-8 h-8 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 font-bold">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <span class="text-xs sm:text-sm text-slate-600 leading-relaxed font-body">
+                <strong class="text-slate-900 font-headline block mb-0.5">Direct Lines</strong>
+                <a href="tel:+919967101472" class="hover:text-red-600 font-bold font-mono">9967101472</a> &bull; 
+                <a href="tel:+919403049381" class="hover:text-red-600 font-mono">9403049381</a> &bull; 
+                <a href="tel:+918097247249" class="hover:text-red-600 font-mono">8097247249</a>
               </span>
             </div>
 
             <div class="flex items-start">
-              <div class="text-brand-maroon mr-3 mt-0.5">&bull;</div>
-              <span class="text-xs text-brand-maroonDark/80 leading-relaxed">
-                <strong>Email:</strong><br>
-                samarthfireprotectionsystem@gmail.com
+              <div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 font-bold">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <span class="text-xs sm:text-sm text-slate-600 leading-relaxed font-body">
+                <strong class="text-slate-900 font-headline block mb-0.5">Official Email</strong>
+                <a href="mailto:samarthfireprotectionsystem@gmail.com" class="hover:text-red-600 font-mono break-all">samarthfireprotectionsystem@gmail.com</a>
               </span>
             </div>
           </div>
         </div>
 
-        <div class="bg-brand-paper p-6 rounded border border-brand-gold/30 font-mono text-xs space-y-2 text-brand-maroonDark">
-          <strong class="block text-brand-maroon font-nav text-sm mb-2 uppercase">Official Identifiers</strong>
-          <div>&bull; GSTIN: 27APXPK0844G1ZJ</div>
-          <div>&bull; PAN: APXPK0844G</div>
-          <div>&bull; MSME Udyam Registered</div>
+        <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-3xl border border-amber-200/80 font-body text-xs space-y-2 text-slate-700 shadow-sm">
+          <strong class="block text-slate-900 font-headline text-sm mb-2 uppercase tracking-wide">Statutory Identifiers</strong>
+          <div class="flex justify-between border-b border-amber-200/60 pb-1.5 font-mono">
+            <span>Licence:</span>
+            <strong class="text-red-600">MFS/LA/RF-34/RD-35</strong>
+          </div>
+          <div class="flex justify-between border-b border-amber-200/60 pb-1.5 font-mono">
+            <span>GSTIN:</span>
+            <strong>27APXPK0844G1ZJ</strong>
+          </div>
+          <div class="flex justify-between border-b border-amber-200/60 pb-1.5 font-mono">
+            <span>PAN:</span>
+            <strong>APXPK0844G</strong>
+          </div>
+          <div class="flex justify-between pt-0.5 font-mono">
+            <span>Enterprise:</span>
+            <strong class="text-emerald-700">MSME Udyam Registered</strong>
+          </div>
         </div>
 
-        <!-- Google Map embed (light/default mode) -->
-        <div class="h-60 rounded border border-brand-paper overflow-hidden relative shadow-sm">
+        <!-- Google Map embed (clean rounded frame) -->
+        <div class="h-64 rounded-3xl border-2 border-white overflow-hidden relative shadow-lg">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4239855581896!2d72.859666!3d19.1824479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d62d2ea789%3A0xe5a3637e1b5fa868!2sParekh%20Nagar%2C%20Malad%20East%2C%20Mumbai%2C%20Maharashtra%20400097!5e0!3m2!1sen!2sin!4v1724150000000!5m2!1sen!2sin" 
-            class="w-full h-full border-0 transition-opacity" 
+            class="w-full h-full border-0" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
