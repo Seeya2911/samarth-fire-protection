@@ -49,22 +49,22 @@
 <body class="bg-brand-ivory text-[#1D2023] font-body antialiased flex flex-col min-h-screen">
 
   <!-- Regulatory Credential Eyebrow Bar -->
-  <div class="bg-[#1D2023] text-white text-[11px] font-mono py-2 px-4 border-b border-brand-gold/30">
+  <div class="bg-[#1D2023] text-white text-[11px] font-body py-2 px-4 border-b border-brand-gold/30">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex items-center space-x-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#5C1520] text-brand-gold border border-brand-gold/30">
-          CLASS D LICENSED AGENCY
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#5C1520] text-brand-gold border border-brand-gold/30 uppercase tracking-wider">
+          Class D Licensed Agency
         </span>
-        <span class="text-white/80">Govt. Licence No: <strong class="text-brand-gold">MFS/LA/RF-34/RD-35</strong> &bull; Maharashtra Fire Services</span>
+        <span class="text-white/80">Govt. Licence: <strong class="text-brand-gold font-mono">MFS/LA/RF-34/RD-35</strong> &bull; Directorate of Maharashtra Fire Services</span>
       </div>
-      <div class="flex items-center space-x-4 text-white/70">
-        <span class="hidden md:inline">Malad East, Mumbai</span>
-        <a href="tel:+919967101472" class="hover:text-brand-gold transition-colors flex items-center space-x-1 font-semibold text-white">
-          <svg class="h-3 w-3 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          <span>9967101472</span>
+      <div class="flex items-center space-x-4 text-white/75 text-xs">
+        <span class="hidden md:inline font-medium">Malad East, Mumbai</span>
+        <a href="tel:+919967101472" class="hover:text-brand-gold transition-colors flex items-center space-x-1.5 font-semibold text-white">
+          <svg class="h-3.5 w-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="font-mono">9967101472</span>
         </a>
-        <span>/</span>
-        <a href="tel:+918097247249" class="hover:text-brand-gold transition-colors text-white">8097247249</a>
+        <span class="text-white/40">/</span>
+        <a href="tel:+918097247249" class="hover:text-brand-gold transition-colors text-white font-mono">8097247249</a>
       </div>
     </div>
   </div>
@@ -72,106 +72,132 @@
   <!-- Main Sticky Header -->
   <header id="main-header" class="sticky top-0 z-40 bg-brand-ivory/95 border-b border-brand-paper backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 sm:h-24 transition-all duration-300" id="header-container">
+      <div class="flex items-center justify-between h-20 transition-all duration-300" id="header-container">
         
-        <!-- Logo and Brand Info: Horizontal Brand Lockup -->
-        <a href="index.html" class="flex items-center space-x-2.5 sm:space-x-3.5 group focus-ring rounded-lg p-1 transition-transform" aria-label="Samarth Fire Protection System Homepage">
-          <div class="flex-shrink-0">
-            <img src="logo.png" class="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 object-contain drop-shadow-sm transition-transform group-hover:scale-105" alt="Samarth Fire Protection System Emblem" width="64" height="64">
-          </div>
-          <div class="flex flex-col justify-center min-w-0">
-            <div class="flex items-baseline space-x-1 sm:space-x-2">
-              <span class="font-heading font-black text-brand-maroon tracking-tight text-base sm:text-xl lg:text-[23px] xl:text-[25px] leading-none uppercase">
+        <!-- Logo and Brand Info: Clean Balanced Horizontal Brand Lockup -->
+        <a href="index.html" class="flex items-center space-x-3 group focus-ring rounded-lg p-1 transition-transform flex-shrink-0" aria-label="Samarth Fire Protection System Homepage">
+          <img src="logo.png" class="h-11 w-11 sm:h-12 sm:w-12 lg:h-13 lg:w-13 object-contain drop-shadow-sm transition-transform group-hover:scale-105" alt="Samarth Fire Protection System Emblem" width="52" height="52">
+          <div class="flex flex-col justify-center">
+            <div class="flex items-baseline space-x-1.5">
+              <span class="font-headline font-black text-brand-maroon tracking-tight text-lg sm:text-xl lg:text-[21px] leading-none uppercase">
                 SAMARTH
               </span>
-              <span class="font-heading font-extrabold text-brand-charcoalDark tracking-wide text-[10px] sm:text-xs lg:text-[14px] xl:text-[15px] leading-none uppercase">
+              <span class="font-headline font-extrabold text-brand-charcoalDark tracking-wide text-xs sm:text-[13px] lg:text-[14px] leading-none uppercase">
                 FIRE PROTECTION SYSTEM
               </span>
             </div>
-            <div class="flex items-center space-x-1.5 sm:space-x-2 mt-1 sm:mt-1.5">
-              <span class="font-heading font-semibold text-brand-charcoalDark/75 tracking-wider text-[8px] sm:text-[10px] lg:text-[11px] uppercase leading-none">
-                Engineering & Contracting
-              </span>
-              <span class="hidden sm:inline-block w-1 h-1 rounded-full bg-brand-gold"></span>
-              <span class="hidden sm:inline-block font-mono text-[9px] lg:text-[10px] text-brand-maroon font-bold tracking-wider uppercase">
-                Class D Licensed Agency
+            <div class="flex items-center space-x-2 mt-1">
+              <span class="font-body font-semibold text-brand-charcoalDark/70 tracking-widest text-[9px] sm:text-[10px] uppercase leading-none">
+                Engineering &bull; Contracting &bull; Compliance
               </span>
             </div>
           </div>
         </a>
 
-        <!-- Desktop Navigation: Reorganized in Strict Priority Order:
-             1. About Us
-             2. Home
-             3. Services (with comprehensive sub-service menu)
-             4. Projects / Case Studies
-             5. Get a Quote (Highlighted Main CTA)
-        -->
-        <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 font-body text-sm font-medium text-brand-charcoalDark/85">
+        <!-- Desktop Navigation: Balanced Spacing & Modern Sans-Serif Dropdown -->
+        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-7 font-body text-sm font-medium text-brand-charcoalDark/85">
           <!-- 1. About Us -->
-          <a href="about.html" class="hover:text-brand-maroon transition-colors py-2 text-[#3A3030] hover:text-brand-maroon transition-colors">About Us</a>
+          <a href="about.html" class="hover:text-brand-maroon transition-colors py-2 whitespace-nowrap text-[#3A3030] hover:text-brand-maroon transition-colors">About Us</a>
 
           <!-- 2. Home -->
-          <a href="index.html" class="hover:text-brand-maroon transition-colors py-2 text-[#3A3030] hover:text-brand-maroon transition-colors">Home</a>
+          <a href="index.html" class="hover:text-brand-maroon transition-colors py-2 whitespace-nowrap text-[#3A3030] hover:text-brand-maroon transition-colors">Home</a>
 
-          <!-- 3. Services Directory (with Mega-dropdown) -->
+          <!-- 3. Services Directory (with Refined Sans-Serif Dropdown) -->
           <div class="relative group">
-            <a href="services.html" class="hover:text-brand-maroon transition-colors flex items-center space-x-1 outline-none py-2 text-brand-maroon font-semibold border-b-2 border-brand-maroon pb-1">
+            <a href="services.html" class="hover:text-brand-maroon transition-colors flex items-center space-x-1 outline-none py-2 whitespace-nowrap text-brand-maroon font-semibold border-b-2 border-brand-maroon pb-1" aria-haspopup="true">
               <span>Services</span>
-              <svg class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <svg class="h-4 w-4 transition-transform group-hover:rotate-180 text-brand-charcoalDark/60 group-hover:text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
-            <!-- Dropdown menu -->
-            <div class="absolute left-0 mt-1 w-64 rounded-md bg-white shadow-xl border border-brand-paper/80 py-2 hidden group-hover:block z-50 font-mono text-[11px] uppercase tracking-wider font-semibold">
-              <a href="fire-fighting.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Fire Fighting & Hydrants</a>
-              <a href="detection-alarm.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Detection & Alarm Loops</a>
-              <a href="extinguishing.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Extinguishers & Hydro-Test</a>
-              <a href="passive-protection.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Passive Fire Stops & Doors</a>
-              <a href="compliance-certification.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Compliance & Form A/B NOC</a>
-              <a href="training-preparedness.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">CPR & Community Drills</a>
-              <a href="services.html" class="block px-4 py-2.5 border-t border-brand-paper mt-1 hover:bg-brand-paper/60 hover:text-brand-maroon transition-colors text-brand-maroon font-bold">Full Services Directory &rarr;</a>
+            <!-- Modern Dropdown Menu -->
+            <div class="absolute left-0 mt-1 w-72 rounded-xl bg-white/95 backdrop-blur-md shadow-2xl border border-brand-paper p-2 hidden group-hover:block z-50 font-body text-xs">
+              <a href="fire-fighting.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Fire Fighting & Hydrants</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Wet risers, booster pumps & sprinklers</span>
+                </div>
+              </a>
+              <a href="detection-alarm.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Detection & Alarm Loops</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Smoke sensors & panel troubleshooting</span>
+                </div>
+              </a>
+              <a href="extinguishing.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Extinguishers & Hydro-Test</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Refilling, HPT testing & ISI supply</span>
+                </div>
+              </a>
+              <a href="passive-protection.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Passive Fire Protection</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Fire doors & shaft firestop seals</span>
+                </div>
+              </a>
+              <a href="compliance-certification.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Form A / Form B NOC</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Statutory bi-annual MFS compliance</span>
+                </div>
+              </a>
+              <a href="training-preparedness.html" class="flex items-start space-x-2.5 p-2 rounded-lg hover:bg-brand-paper/40 transition-colors group/item">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-maroon mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform"></span>
+                <div>
+                  <span class="block font-semibold text-brand-charcoalDark group-hover/item:text-brand-maroon">Drills & Evacuation Training</span>
+                  <span class="block text-[11px] text-brand-charcoalDark/60">Hands-on safety drills & CPR workshops</span>
+                </div>
+              </a>
+              <a href="services.html" class="block px-3 py-2 border-t border-brand-paper mt-1 rounded hover:bg-brand-paper/60 text-brand-maroon font-bold text-[11px] uppercase tracking-wider text-center">
+                Full Services Directory &rarr;
+              </a>
             </div>
           </div>
 
           <!-- 4. Projects / Case Studies -->
-          <a href="projects.html" class="hover:text-brand-maroon transition-colors py-2 text-[#3A3030] hover:text-brand-maroon transition-colors">Projects / Case Studies</a>
+          <a href="projects.html" class="hover:text-brand-maroon transition-colors py-2 whitespace-nowrap text-[#3A3030] hover:text-brand-maroon transition-colors">Projects / Case Studies</a>
 
           <!-- Supporting Links Sub-menu -->
           <div class="relative group">
-            <button class="hover:text-brand-maroon transition-colors flex items-center space-x-1 outline-none py-2 text-brand-charcoalDark/70 hover:text-brand-maroon" aria-haspopup="true">
+            <button class="hover:text-brand-maroon transition-colors flex items-center space-x-1 outline-none py-2 text-brand-charcoalDark/75 hover:text-brand-maroon whitespace-nowrap" aria-haspopup="true">
               <span>More</span>
-              <svg class="h-3.5 w-3.5 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg class="h-3.5 w-3.5 transition-transform group-hover:rotate-180 text-brand-charcoalDark/60 group-hover:text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
               </svg>
             </button>
-            <div class="absolute right-0 mt-1 w-52 rounded-md bg-white shadow-xl border border-brand-paper/80 py-2 hidden group-hover:block z-50 font-mono text-[11px] uppercase tracking-wider font-semibold">
-              <a href="founder.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Founder Profile</a>
-              <a href="process.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">5-Step Process</a>
-              <a href="certifications.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Class D License</a>
-              <a href="resources.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">FAQs & Guides</a>
-              <a href="contact.html" class="block px-4 py-2 hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Contact Malad Desk</a>
+            <div class="absolute right-0 mt-1 w-56 rounded-xl bg-white/95 backdrop-blur-md shadow-2xl border border-brand-paper p-2 hidden group-hover:block z-50 font-body text-xs font-medium">
+              <a href="founder.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Founder Leadership</a>
+              <a href="process.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">5-Step Engineering Process</a>
+              <a href="certifications.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Class D License & Form N</a>
+              <a href="resources.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">FAQs & Safety Guide</a>
+              <a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/40 hover:text-brand-maroon transition-colors">Contact Malad Desk</a>
             </div>
           </div>
         </nav>
 
-        <!-- 5. Header Action CTA: Get a Quote (Main Primary CTA) -->
+        <!-- 5. Header Action CTAs: Get a Quote + Book Audit -->
         <div class="hidden lg:flex items-center space-x-3">
-          <a href="quote.html" class="inline-flex items-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white px-5 py-2.5 rounded font-body text-xs font-bold tracking-wider uppercase transition-all shadow-md hover:shadow-brand-maroon/20 focus-ring text-[#3A3030] hover:text-brand-maroon transition-colors">
+          <a href="quote.html" class="inline-flex items-center space-x-1.5 bg-brand-maroon hover:bg-brand-maroonDark text-white px-4 py-2.5 rounded-lg font-body text-xs font-bold tracking-wider uppercase transition-all shadow-sm hover:shadow-md focus-ring text-[#3A3030] hover:text-brand-maroon transition-colors whitespace-nowrap">
             <svg class="h-4 w-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
             <span>Get a Quote</span>
           </a>
-          <a href="audit.html" class="inline-flex items-center space-x-1.5 bg-white border border-brand-charcoalDark hover:bg-brand-paper/30 text-brand-charcoalDark px-4 py-2.5 rounded font-body text-xs font-bold tracking-wider uppercase transition-colors focus-ring">
+          <a href="audit.html" class="inline-flex items-center space-x-1.5 bg-white border border-brand-charcoalDark/30 hover:border-brand-maroon hover:text-brand-maroon text-brand-charcoalDark px-3.5 py-2.5 rounded-lg font-body text-xs font-bold tracking-wider uppercase transition-colors focus-ring whitespace-nowrap">
             <span>Book Audit</span>
           </a>
         </div>
 
         <!-- Mobile Header Controls: Compact Quote Button + Hamburger -->
         <div class="flex lg:hidden items-center space-x-2">
-          <a href="quote.html" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded bg-brand-maroon text-white font-body text-xs font-bold uppercase tracking-wider shadow-sm">
+          <a href="quote.html" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-brand-maroon text-white font-body text-xs font-bold uppercase tracking-wider shadow-sm">
             <span>Quote</span>
           </a>
-          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded text-brand-maroon hover:text-brand-ember hover:bg-brand-paper/50 focus-ring" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-brand-maroon hover:text-brand-ember hover:bg-brand-paper/50 focus-ring" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="block h-6 w-6" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -187,37 +213,37 @@
 
     <!-- Mobile Menu Drawer -->
     <div class="hidden lg:hidden bg-brand-ivory border-b border-brand-paper shadow-xl" id="mobile-menu">
-      <div class="px-4 pt-3 pb-4 space-y-1 sm:px-3 text-xs font-body font-semibold tracking-wide">
+      <div class="px-4 pt-3 pb-4 space-y-1 sm:px-3 text-sm font-body font-semibold">
         <!-- 1. About Us -->
-        <a href="about.html" class="block px-3 py-2 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">1. About Us</a>
+        <a href="about.html" class="block px-3 py-2.5 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">About Us</a>
         <!-- 2. Home -->
-        <a href="index.html" class="block px-3 py-2 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">2. Home</a>
+        <a href="index.html" class="block px-3 py-2.5 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Home</a>
         <!-- 3. Services -->
-        <a href="services.html" class="block px-3 py-2 rounded hover:bg-brand-paper/60 text-brand-maroon font-semibold border-b-2 border-brand-maroon pb-1">3. Services Directory</a>
+        <a href="services.html" class="block px-3 py-2.5 rounded-lg hover:bg-brand-paper/60 text-brand-maroon font-semibold border-b-2 border-brand-maroon pb-1">Services Directory</a>
         <!-- 4. Projects -->
-        <a href="projects.html" class="block px-3 py-2 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">4. Projects / Case Studies</a>
+        <a href="projects.html" class="block px-3 py-2.5 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Projects / Case Studies</a>
         
-        <div class="pt-2 border-t border-brand-paper/50 mt-2 space-y-1 text-[11px] font-mono uppercase text-brand-charcoalDark/75">
-          <a href="founder.html" class="block px-3 py-1.5 rounded hover:bg-brand-paper/60">Founder Profile</a>
-          <a href="certifications.html" class="block px-3 py-1.5 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Class D License & Form B</a>
-          <a href="process.html" class="block px-3 py-1.5 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">5-Step Lifecycle</a>
-          <a href="resources.html" class="block px-3 py-1.5 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">FAQ & Safety Guide</a>
-          <a href="contact.html" class="block px-3 py-1.5 rounded hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Contact Malad Desk</a>
+        <div class="pt-2 border-t border-brand-paper/60 mt-2 space-y-1 text-xs font-body font-medium text-brand-charcoalDark/80">
+          <a href="founder.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/60">Founder Leadership</a>
+          <a href="certifications.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Class D License & Form N</a>
+          <a href="process.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">5-Step Engineering Lifecycle</a>
+          <a href="resources.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">FAQ & Safety Guide</a>
+          <a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-brand-paper/60 text-[#3A3030] hover:text-brand-maroon transition-colors">Contact Malad Desk</a>
         </div>
       </div>
       <div class="pt-3 pb-5 border-t border-brand-paper px-4 flex flex-col space-y-2.5">
-        <a href="quote.html" class="flex items-center justify-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white py-3 rounded font-body text-xs font-bold uppercase tracking-wider shadow">
+        <a href="quote.html" class="flex items-center justify-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white py-3 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow">
           <svg class="h-4 w-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
           <span>Get a Quote / Estimate</span>
         </a>
-        <a href="audit.html" class="flex items-center justify-center space-x-2 bg-white border border-brand-maroon/20 text-brand-maroon py-2.5 rounded text-xs font-body tracking-wider font-semibold">
+        <a href="audit.html" class="flex items-center justify-center space-x-2 bg-white border border-brand-maroon/20 text-brand-maroon py-2.5 rounded-lg text-xs font-body tracking-wider font-semibold">
           <span>Book Site Assessment</span>
         </a>
-        <a href="tel:+919967101472" class="flex items-center justify-center space-x-2 bg-brand-charcoalDark text-white py-2 rounded text-xs font-mono tracking-wider font-medium">
+        <a href="tel:+919967101472" class="flex items-center justify-center space-x-2 bg-brand-charcoalDark text-white py-2.5 rounded-lg text-xs font-body tracking-wider font-medium">
           <svg class="h-3.5 w-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
-          <span>Direct Phone: 9967101472</span>
+          <span>Direct Desk: <strong class="font-mono">9967101472</strong></span>
         </a>
       </div>
     </div>
@@ -225,119 +251,325 @@
 
   <!-- Main Content Wrapper -->
   <main class="flex-grow">
-    <!-- Header Page Title -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+    <!-- 1. COMPACT SERVICE HERO -->
+<section class="relative bg-brand-ivory text-brand-charcoalDark pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-brand-paper overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Operational Life Safety</span>
-    <h1 class="font-headline font-bold text-4xl sm:text-5xl tracking-tight text-white">Training, Mock Drills & CPR Workshops</h1>
-    <p class="text-xs sm:text-sm font-mono text-brand-gold mt-3 uppercase tracking-widest">Hands-On Extinguisher Drills &bull; CPR Resuscitation &bull; Residential Safety Walks</p>
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center space-x-2 text-xs font-body text-brand-charcoalDark/60 mb-6" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-brand-maroon transition-colors">Home</a>
+      <span>/</span>
+      <a href="services.html" class="hover:text-brand-maroon transition-colors">Services</a>
+      <span>/</span>
+      <span class="text-brand-maroon font-semibold" aria-current="page">Training & Mock Drills</span>
+    </nav>
+
+    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+      
+      <!-- Left Column: Service Details & CTAs -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center space-x-2 bg-brand-paper/90 border border-brand-gold/40 px-3 py-1 rounded-full shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-brand-ember animate-pulse"></span>
+          <span class="font-body text-xs font-bold uppercase tracking-wider text-brand-maroon">
+            Occupant Preparedness &bull; Certified On-Site Drills
+          </span>
+        </div>
+
+        <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-[42px] tracking-tight text-brand-charcoalDark leading-[1.18]">
+          Fire Safety Training & Mock Drills
+        </h1>
+
+        <p class="text-base sm:text-lg text-brand-charcoalDark/85 font-body leading-relaxed max-w-xl">
+          Hands-on fire extinguisher operations, evacuation drills, live fire-pan suppression, and CPR workshops designed to build real-world muscle memory for housing societies, commercial towers, and schools across Mumbai.
+        </p>
+
+        <!-- Service Quick CTAs -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://wa.me/919967101472?text=Hello%20Samarth%20Fire%2C%20I%20would%20like%20to%20schedule%20a%20Fire%20Safety%20Drill%20for%20our%20premises." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all shadow-md hover:shadow-lg focus-ring">
+            <span>Schedule via WhatsApp</span>
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.761.813 2.806.813h.005c3.18 0 5.767-2.586 5.768-5.766 0-1.54-.599-2.989-1.688-4.079-1.09-1.089-2.539-1.688-4.095-1.681zm6.955 5.765c-.002 3.83-3.12 6.949-6.953 6.949-1.184 0-2.31-.301-3.327-.872l-3.705.971.989-3.61c-.636-1.055-.972-2.277-.972-3.438.002-3.83 3.12-6.949 6.953-6.949 1.856 0 3.602.724 4.915 2.037 1.312 1.314 2.035 3.059 2.035 4.915l-.035-.003z"/></svg>
+          </a>
+          <a href="quote.html" class="inline-flex items-center justify-center bg-white border-2 border-brand-paper hover:border-brand-maroon text-brand-maroon font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all focus-ring shadow-sm hover:bg-brand-paper/20">
+            <span>Request Drill Proposal</span>
+          </a>
+        </div>
+
+        <!-- Verified Licence & Regulatory Eyebrow -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-brand-maroon/15 pt-4 text-xs font-body text-brand-charcoalDark/75">
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-green-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Conducted by: <strong class="text-brand-maroon font-semibold">Certified Field Instructors</strong></span>
+          </div>
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span class="font-semibold">IS 2190 &amp; NBC 2016 Life Safety Guidelines</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Training Drill Equipment Visual -->
+      <div class="mt-8 lg:mt-0 lg:col-span-5 relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white card-lift">
+          <img src="client_hose_reel_drill.jpg" alt="Technician demonstrating high-pressure hose reel deployment during building fire safety drill" class="w-full h-[360px] object-cover object-center" width="480" height="360">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+          
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <span class="inline-block bg-brand-gold text-brand-charcoalDark text-[10px] font-body uppercase px-2 py-0.5 rounded font-bold mb-1 tracking-wider">
+              Field Practice Drill
+            </span>
+            <p class="text-xs font-body text-white/95 leading-relaxed">
+              Technician-led pressurized hose reel discharge and nozzle control training for society security and housekeeping staff.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- Main Content -->
-<section class="py-20 bg-brand-ivory text-[#1D2023]">
+<!-- 2. SYSTEM SPECIFICATIONS & DEFINITION -->
+<section class="py-16 bg-white text-brand-charcoalDark border-b border-brand-paper">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- Editorial Lead -->
-    <div class="max-w-3xl mb-14">
-      <div class="bg-brand-paper border-l-4 border-brand-maroon p-6 rounded-r mb-8 text-brand-maroonDark font-mono text-xs shadow-sm">
-        <p class="leading-relaxed">
-          <strong>The Real-World Principle:</strong> A housing society or commercial plant can possess high-end sprinklers and fire hydrants, but if residents, housekeeping, or security guards hesitate during the critical initial two minutes, catastrophe strikes. Samarth conducts hands-on, certified mock drills and first-aid/CPR training across Mumbai.
+    <!-- Definition Callout (Clean Modern Sans-Serif Block) -->
+    <div class="bg-brand-paper/50 border-l-4 border-brand-maroon p-6 rounded-r-2xl mb-14 text-brand-charcoalDark font-body text-sm leading-relaxed shadow-sm">
+      <div class="flex items-start space-x-3">
+        <div class="p-1 bg-brand-maroon text-brand-gold rounded mt-0.5 flex-shrink-0">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <p>
+          <strong class="text-brand-maroon font-bold font-headline">The Life Safety Principle:</strong> A housing society or commercial tower can possess high-capacity sprinklers and risers, but if occupants or security personnel hesitate during the first two minutes, catastrophe strikes. Samarth conducts hands-on, practical mock drills, controlled extinguisher discharges, and life-saving first-aid workshops across Mumbai.
         </p>
       </div>
-      <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight mb-4">
-        Real Equipment. Real Practice. Zero Hesitation.
-      </h2>
-      <p class="text-sm text-brand-charcoalDark/80 leading-relaxed font-body">
-        Our training isn't a passive slide presentation. We assemble residents and staff in open courtyards, light controlled tray fires, and place fire extinguishers directly into their hands to build muscle memory.
-      </p>
     </div>
 
-    <!-- Authentic Client Training Photo Gallery -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+    <!-- Core Training Modules Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 items-start">
       
-      <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
-        <div class="h-56 overflow-hidden">
-          <img src="client_drill_live.jpg" class="w-full h-full object-cover" alt="Resident operating fire extinguisher on live controlled fire with instructor guidance">
-        </div>
-        <div class="p-5">
-          <span class="font-mono text-[10px] text-brand-maroon font-bold uppercase block mb-1">Live Fire Simulation</span>
-          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Controlled Fire Discharges</h3>
-          <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
-            Residents practice pulling safety pins, aiming nozzles at the base of flame, and sweeping smoothly to extinguish active fires.
+      <!-- Left 8 Cols: 4 Training Capability Cards -->
+      <div class="lg:col-span-8 space-y-6">
+        <div>
+          <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">TRAINING CURRICULUM</span>
+          <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight">Structured Practical Modules</h2>
+          <p class="text-sm text-brand-charcoalDark/80 font-body mt-2 leading-relaxed">
+            Our training is not an abstract slide presentation. We assemble residents and staff in open compounds, explain equipment physics, and provide direct hands-on practice.
           </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+          
+          <div class="p-6 bg-brand-ivory/60 rounded-xl border border-brand-paper shadow-sm hover:border-brand-maroon/30 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold mb-4">
+              01
+            </div>
+            <h3 class="font-headline font-bold text-lg text-brand-charcoalDark mb-2">Evacuation Drills</h3>
+            <p class="text-xs text-brand-charcoalDark/75 font-body leading-relaxed">
+              Simulated building alarm triggers, designated assembly area rendezvous, smoke avoidance crawl postures, and stairwell crowd management.
+            </p>
+          </div>
+
+          <div class="p-6 bg-brand-ivory/60 rounded-xl border border-brand-paper shadow-sm hover:border-brand-maroon/30 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold mb-4">
+              02
+            </div>
+            <h3 class="font-headline font-bold text-lg text-brand-charcoalDark mb-2">Extinguisher Operation</h3>
+            <p class="text-xs text-brand-charcoalDark/75 font-body leading-relaxed">
+              Understanding Class A, B, and C fires, correct chemical selection (ABC Dry Powder vs. CO₂ gas), and the PASS operational protocol (Pull, Aim, Squeeze, Sweep).
+            </p>
+          </div>
+
+          <div class="p-6 bg-brand-ivory/60 rounded-xl border border-brand-paper shadow-sm hover:border-brand-maroon/30 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold mb-4">
+              03
+            </div>
+            <h3 class="font-headline font-bold text-lg text-brand-charcoalDark mb-2">Hydrant & Hose Running</h3>
+            <p class="text-xs text-brand-charcoalDark/75 font-body leading-relaxed">
+              Coupling canvas hoses, opening landing valves, managing nozzle water pressure kickback, and operating swing-type hose reel drums effectively.
+            </p>
+          </div>
+
+          <div class="p-6 bg-brand-ivory/60 rounded-xl border border-brand-paper shadow-sm hover:border-brand-maroon/30 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold mb-4">
+              04
+            </div>
+            <h3 class="font-headline font-bold text-lg text-brand-charcoalDark mb-2">Staff & Guard Certification</h3>
+            <p class="text-xs text-brand-charcoalDark/75 font-body leading-relaxed">
+              Formal attendance documentation, emergency contact protocol checklists, and certificate issuance for security agencies and facility management staff.
+            </p>
+          </div>
+
         </div>
       </div>
 
-      <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
-        <div class="h-56 overflow-hidden">
-          <img src="client_hose_reel_drill.jpg" class="w-full h-full object-cover" alt="Technician demonstrating pressurized hose reel deployment and nozzle handling during outdoor drill">
+      <!-- Right 4 Cols: Quick Drill Scope Card -->
+      <div class="lg:col-span-4 bg-brand-paper/40 border border-brand-paper rounded-2xl p-6 sm:p-7 space-y-6">
+        <div>
+          <span class="text-brand-maroon font-body font-bold text-xs uppercase tracking-wider block mb-1">Session Logistics</span>
+          <h3 class="font-headline font-bold text-xl text-brand-charcoalDark">What We Bring to Site</h3>
         </div>
-        <div class="p-5">
-          <span class="font-mono text-[10px] text-brand-maroon font-bold uppercase block mb-1">High-Pressure Operations</span>
-          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Hose Reel Deployment Drills</h3>
-          <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
-            Practical training on unreeling 30-meter high-pressure hose drums, controlling water branch nozzles, and operating landing valves under pressure.
-          </p>
-        </div>
-      </div>
 
-      <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
-        <div class="h-56 overflow-hidden">
-          <img src="client_extinguisher_lecture.jpg" class="w-full h-full object-cover" alt="Fire safety lecture conducted for women and senior citizens in housing complex">
-        </div>
-        <div class="p-5">
-          <span class="font-mono text-[10px] text-brand-maroon font-bold uppercase block mb-1">Community Inclusion</span>
-          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Demystifying Safety for All</h3>
-          <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
-            Dedicated sessions for homemakers, seniors, and domestic staff on domestic gas cylinder leaks, electrical breaker trips, and stairwell safety.
-          </p>
+        <ul class="space-y-3 font-body text-xs text-brand-charcoalDark/85">
+          <li class="flex items-start space-x-2">
+            <svg class="h-4 w-4 text-brand-maroon mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Refilled training extinguishers for hands-on operation</span>
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg class="h-4 w-4 text-brand-maroon mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Safety cones, boundary tape, and smoke markers</span>
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg class="h-4 w-4 text-brand-maroon mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Certified CPR training mannequins for chest compression practice</span>
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg class="h-4 w-4 text-brand-maroon mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Emergency procedure charts and bilingual handouts</span>
+          </li>
+        </ul>
+
+        <div class="border-t border-brand-maroon/15 pt-5">
+          <a href="quote.html" class="w-full inline-flex items-center justify-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white font-body text-xs font-bold py-3 px-4 rounded-xl uppercase tracking-wider transition-all shadow-sm">
+            <span>Get Drill Quotation</span>
+          </a>
         </div>
       </div>
 
     </div>
 
-    <!-- 4 Module Breakdown Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      <div class="p-5 bg-white rounded-xl border border-brand-paper shadow-sm">
-        <span class="block text-brand-maroon font-headline font-bold text-sm mb-2 uppercase">1. Evacuation Drills</span>
-        <p class="text-brand-charcoalDark/75 font-body text-xs leading-relaxed">
-          Simulated building alarm triggers, designated assembly area rendezvous, smoke avoidance postures, and staircase crowd control.
-        </p>
+    <!-- 3. REAL FIELD DRILL DOCUMENTATION -->
+    <div class="mb-16">
+      <div class="mb-8">
+        <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">FIELD DOCUMENTATION</span>
+        <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight">On-Site Drill Execution</h2>
+        <p class="text-sm text-brand-charcoalDark/80 font-body mt-1">Equipment operation and safety inspections conducted during residential society and facility drills.</p>
       </div>
-      <div class="p-5 bg-white rounded-xl border border-brand-paper shadow-sm">
-        <span class="block text-brand-maroon font-headline font-bold text-sm mb-2 uppercase">2. Cylinder Operation</span>
-        <p class="text-brand-charcoalDark/75 font-body text-xs leading-relaxed">
-          Difference between Class A, B, and C fires, correct chemical agent selection (Powder vs. CO2), and pressure gauge reading.
-        </p>
-      </div>
-      <div class="p-5 bg-white rounded-xl border border-brand-paper shadow-sm">
-        <span class="block text-brand-maroon font-headline font-bold text-sm mb-2 uppercase">3. Hydrant Hose Running</span>
-        <p class="text-brand-charcoalDark/75 font-body text-xs leading-relaxed">
-          Coupling canvas hoses, opening landing valves, managing nozzle water kickback, and operating swing-type hose reel drums.
-        </p>
-      </div>
-      <div class="p-5 bg-white rounded-xl border border-brand-paper shadow-sm">
-        <span class="block text-brand-maroon font-headline font-bold text-sm mb-2 uppercase">4. Staff Certification</span>
-        <p class="text-brand-charcoalDark/75 font-body text-xs leading-relaxed">
-          Formal attendance documentation and basic emergency responder verification for security agencies and facility staff.
-        </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
+          <div class="h-52 overflow-hidden">
+            <img src="client_hose_reel_drill.jpg" alt="Technician demonstrating high-pressure hose reel deployment and nozzle handling during outdoor drill" class="w-full h-full object-cover" width="380" height="208">
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-body text-brand-maroon font-bold uppercase tracking-wider block mb-1">High-Pressure Operations</span>
+            <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Hose Reel Deployment Drills</h3>
+            <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
+              Practical training on unreeling 30-meter high-pressure hose drums, controlling water branch nozzles, and operating landing valves under line pressure.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
+          <div class="h-52 overflow-hidden">
+            <img src="client_hydrant_valve_test.jpg" alt="Technician inspecting landing valve and testing water pressure during facility inspection" class="w-full h-full object-cover" width="380" height="208">
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-body text-brand-maroon font-bold uppercase tracking-wider block mb-1">Hydraulic Flow Verification</span>
+            <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Landing Valve & Flow Testing</h3>
+            <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
+              Demonstrating landing valve operation, lug coupling verification, and static/running pressure gauge readings for facility teams.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden border border-brand-paper shadow-sm card-lift">
+          <div class="h-52 overflow-hidden">
+            <img src="client_hosereel_floor_service.jpg" alt="Corridor floor fire hose reel and emergency valve inspection" class="w-full h-full object-cover" width="380" height="208">
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-body text-brand-maroon font-bold uppercase tracking-wider block mb-1">Floor-by-Floor Orientation</span>
+            <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Corridor Life Safety Inspection</h3>
+            <p class="text-xs text-brand-charcoalDark/75 leading-relaxed font-body">
+              Locating emergency exit signs, ensuring staircase fire doors remain unlocked and unobstructed, and verifying corridor hose reels.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- Booking CTA Banner -->
-    <div class="bg-brand-paper rounded-2xl p-8 sm:p-10 border border-brand-maroon/20 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <h3 class="font-headline font-bold text-2xl text-brand-charcoalDark mb-2">Book a Mock Drill for Your Society or Office</h3>
-        <p class="text-xs text-brand-charcoalDark/75 max-w-xl font-body leading-relaxed">
-          We bring training cylinders, safety cones, CPR equipment, and certified fire instructors right to your building compound on weekends or weekdays.
-        </p>
+    <!-- 4. FREQUENTLY ASKED QUESTIONS -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <div class="text-center mb-8">
+        <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">COMMON QUESTIONS</span>
+        <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight">Frequently Asked Questions</h2>
       </div>
-      <a href="https://wa.me/919967101472?text=Hello%20Samarth%20Fire%2C%20I%20would%20like%20to%20schedule%20a%20Fire%20Safety%20Drill%20for%20our%20premises." target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white px-6 py-3.5 rounded-lg font-body text-xs font-bold uppercase tracking-wider shadow-lg transition-all flex-shrink-0">
+
+      <div class="space-y-4">
+        <div class="bg-brand-paper/30 border border-brand-paper rounded-xl p-5">
+          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Can drills be conducted on Sunday mornings for housing societies?</h3>
+          <p class="font-body text-xs sm:text-sm text-brand-charcoalDark/80 leading-relaxed">
+            Yes. The majority of our residential housing society drills are conducted on Sunday mornings (typically 10:00 AM to 12:00 PM) when maximum residents, committee members, and domestic staff are present.
+          </p>
+        </div>
+
+        <div class="bg-brand-paper/30 border border-brand-paper rounded-xl p-5">
+          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Do you provide training certificates for commercial audit compliance?</h3>
+          <p class="font-body text-xs sm:text-sm text-brand-charcoalDark/80 leading-relaxed">
+            Yes. We issue formal training participation certificates and attendance rosters that fulfill fire audit, factory inspection, and municipal compliance requirements.
+          </p>
+        </div>
+
+        <div class="bg-brand-paper/30 border border-brand-paper rounded-xl p-5">
+          <h3 class="font-headline font-bold text-base text-brand-charcoalDark mb-2">Is the CPR training included in the standard mock drill?</h3>
+          <p class="font-body text-xs sm:text-sm text-brand-charcoalDark/80 leading-relaxed">
+            We offer both Fire-Only practical drills and comprehensive Fire + CPR/First-Aid workshops. During CPR sessions, certified instructors demonstrate chest compression rhythms on medical training mannequins.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. RELATED SERVICES DIRECTORY -->
+    <div class="border-t border-brand-paper pt-12">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+        <div>
+          <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">COMPREHENSIVE PROTECTION</span>
+          <h3 class="font-headline font-bold text-xl text-brand-charcoalDark">Explore Related Engineering Capabilities</h3>
+        </div>
+        <a href="services.html" class="inline-flex items-center text-xs font-body font-bold text-brand-maroon hover:text-brand-ember">
+          <span>View All Capabilities &rarr;</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="fire-fighting.html" class="p-5 bg-white rounded-xl border border-brand-paper hover:border-brand-maroon/40 shadow-sm transition-all group">
+          <h4 class="font-headline font-bold text-base text-brand-charcoalDark group-hover:text-brand-maroon mb-1">Fire Fighting Systems &rarr;</h4>
+          <p class="font-body text-xs text-brand-charcoalDark/70">Hydrants, wet risers, booster pumps, and sprinklers.</p>
+        </a>
+        <a href="extinguishing.html" class="p-5 bg-white rounded-xl border border-brand-paper hover:border-brand-maroon/40 shadow-sm transition-all group">
+          <h4 class="font-headline font-bold text-base text-brand-charcoalDark group-hover:text-brand-maroon mb-1">Fire Extinguishers &rarr;</h4>
+          <p class="font-body text-xs text-brand-charcoalDark/70">ABC Powder, CO₂, Foam cylinders and HPT pressure testing.</p>
+        </a>
+        <a href="detection-alarm.html" class="p-5 bg-white rounded-xl border border-brand-paper hover:border-brand-maroon/40 shadow-sm transition-all group">
+          <h4 class="font-headline font-bold text-base text-brand-charcoalDark group-hover:text-brand-maroon mb-1">Detection & Alarm &rarr;</h4>
+          <p class="font-body text-xs text-brand-charcoalDark/70">Optical smoke sensors, heat alarms, MCPs, and panels.</p>
+        </a>
+        <a href="compliance-certification.html" class="p-5 bg-white rounded-xl border border-brand-paper hover:border-brand-maroon/40 shadow-sm transition-all group">
+          <h4 class="font-headline font-bold text-base text-brand-charcoalDark group-hover:text-brand-maroon mb-1">Form B NOC Audits &rarr;</h4>
+          <p class="font-body text-xs text-brand-charcoalDark/70">Bi-annual statutory inspections and compliance renewals.</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 6. DIRECT ENQUIRY / BOOKING BANNER -->
+<section class="py-14 bg-brand-paper border-t border-brand-maroon/20 text-center">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+    <h3 class="font-headline font-bold text-2xl text-brand-charcoalDark">Book a Mock Drill for Your Society or Office</h3>
+    <p class="font-body text-xs sm:text-sm text-brand-charcoalDark/80 max-w-xl mx-auto">
+      We bring training cylinders, safety cones, CPR equipment, and certified fire instructors right to your building compound on weekends or weekdays.
+    </p>
+    <div class="pt-2 flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/919967101472?text=Hello%20Samarth%20Fire%2C%20I%20would%20like%20to%20schedule%20a%20Fire%20Safety%20Drill%20for%20our%20premises." target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white px-6 py-3.5 rounded-xl font-body text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all">
         <span>Schedule Via WhatsApp</span>
       </a>
+      <a href="quote.html" class="inline-flex items-center space-x-2 bg-white border border-brand-maroon/20 text-brand-maroon hover:border-brand-maroon px-6 py-3.5 rounded-xl font-body text-xs font-bold uppercase tracking-wider shadow-sm transition-all">
+        <span>Request Quote</span>
+      </a>
     </div>
-
   </div>
 </section>
   </main>

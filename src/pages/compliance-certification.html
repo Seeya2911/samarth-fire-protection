@@ -15,131 +15,279 @@ schema: {
 }
 ---
 
-<!-- Header Page Title (Maroon Brand background) -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+<!-- 1. COMPACT SERVICE HERO -->
+<section class="relative bg-brand-ivory text-brand-charcoalDark pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-brand-paper overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Service Details</span>
-    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Compliance & Certification</h1>
-    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Licensed Agency &bull; Form A & Form B Authorization</p>
-  </div>
-</section>
-
-<!-- System Description & Specification (Warm Ivory background) -->
-<section class="py-24 bg-brand-ivory text-[#1D2023]">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- GEO Definition Block (Cream background) -->
-    <div class="bg-brand-paper border-l-4 border-brand-maroon p-6 rounded-r mb-12 text-brand-maroonDark font-mono text-xs">
-      <p class="leading-relaxed">
-        <strong>Definition:</strong> Fire compliance and certification refers to the formal mechanical auditing of a property's active and passive fire safety assets to verify alignment with municipal regulations. Samarth Fire Protection System is a licensed agency authorized by the Directorate of Maharashtra Fire Service to execute inspections and issue Form A and Form B clearances in Mumbai.
-      </p>
-    </div>
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center space-x-2 text-xs font-body text-brand-charcoalDark/60 mb-6" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-brand-maroon transition-colors">Home</a>
+      <span>/</span>
+      <a href="services.html" class="hover:text-brand-maroon transition-colors">Services</a>
+      <span>/</span>
+      <span class="text-brand-maroon font-semibold" aria-current="page">Compliance &amp; Certification</span>
+    </nav>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 text-brand-maroonDark">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
       
-      <!-- Left specs list -->
-      <div class="md:col-span-2 space-y-6">
-        <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Government Licensing Framework</h3>
-        <p class="text-xs text-brand-maroonDark/80 leading-relaxed font-body">
-          We operate under license number <strong>MFS/LA/RF-34/RD-35</strong>. This license enables us to sign off on official safety declarations required by the municipal corporation and chief fire officer.
+      <!-- Left Column: Service Details & CTAs -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center space-x-2 bg-brand-paper/90 border border-brand-gold/40 px-3 py-1 rounded-full shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-brand-ember animate-pulse"></span>
+          <span class="font-body text-xs font-bold uppercase tracking-wider text-brand-maroon">
+            Maharashtra Fire Services &bull; Form A &amp; Form B Authority
+          </span>
+        </div>
+
+        <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-[42px] tracking-tight text-brand-charcoalDark leading-[1.18]">
+          Compliance &amp; Municipal Certification
+        </h1>
+
+        <p class="text-base sm:text-lg text-brand-charcoalDark/85 font-body leading-relaxed max-w-xl">
+          Authorized Class D inspections, Form A installation clearances, bi-annual Form B renewals (January &amp; July cycles), and liaison support for Mumbai housing societies and commercial complexes.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 font-mono text-xs">
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Form A Certificate</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Issued on completion of new system installation, confirming the network conforms to Maharashtra Fire Service specifications.</span>
+        <!-- Service Quick CTAs -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="quote.html" class="inline-flex items-center justify-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all shadow-md hover:shadow-lg focus-ring">
+            <span>Request Form B Audit Quote</span>
+            <svg class="h-4 w-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <button onclick="openLicenseModal()" class="inline-flex items-center justify-center bg-white border-2 border-brand-paper hover:border-brand-maroon text-brand-maroon font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all focus-ring shadow-sm hover:bg-brand-paper/20">
+            <span>Inspect Class D Licence</span>
+          </button>
+        </div>
+
+        <!-- Verified Licence & Regulatory Eyebrow -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-brand-maroon/15 pt-4 text-xs font-body text-brand-charcoalDark/75">
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-green-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Licence: <strong class="text-brand-maroon font-mono font-bold">MFS/LA/RF-34/RD-35</strong></span>
           </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Form B Certificate</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">A bi-annual declaration (filed every January and July) certifying that existing systems have been tested and remain in working order.</span>
-          </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">NOC Liaison Support</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Compiling test logs, layout maps, and technical details to support societies seeking provisional or final Fire NOCs.</span>
-          </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Safety Gap Audits</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">An exhaustive mechanical checkup listing missing alarms, dry risers, or expired extinguishers before government checkups.</span>
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span class="font-semibold">Valid 14 Jan 2026 – 13 Jan 2028</span>
           </div>
         </div>
       </div>
 
-      <!-- Right column: license box -->
-      <div class="bg-white border border-brand-paper rounded-lg p-6 h-fit text-center font-mono text-xs shadow-sm">
-        <h4 class="font-headline font-bold text-lg text-brand-maroon tracking-wide mb-3">LICENSE DETAILS</h4>
-        <div class="text-left space-y-2 mb-6 text-[10px] text-brand-maroonDark/70 border-b border-brand-paper pb-4">
-          <div><strong>License:</strong> MFS/LA/RF-34/RD-35</div>
-          <div><strong>Validity:</strong> 14 Jan 2026 – 13 Jan 2028</div>
-          <div><strong>Authority:</strong> MFS Directorate</div>
+      <!-- Right Column: Official Certificate Showcase Visual -->
+      <div class="mt-8 lg:mt-0 lg:col-span-5 relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white card-lift cursor-pointer" onclick="openLicenseModal()">
+          <div class="h-[360px] bg-brand-paper/40 flex items-center justify-center p-4">
+            <img src="license_page_1.png" alt="Government Class D fire safety license issued by Maharashtra Fire Services" class="max-h-full object-contain shadow rounded" width="300" height="340">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none"></div>
+          
+          <div class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+            <span class="inline-block bg-brand-gold text-brand-charcoalDark text-[10px] font-body uppercase px-2 py-0.5 rounded font-bold mb-1 tracking-wider">
+              Statutory Credential
+            </span>
+            <p class="text-xs font-body text-white/95 leading-relaxed">
+              Official Class D Licence issued by Directorate of Maharashtra Fire Services (Click to view full certificate).
+            </p>
+          </div>
         </div>
-        <button onclick="openLicenseModal()" class="w-full inline-block bg-brand-maroon hover:bg-brand-maroonDark text-white font-nav uppercase tracking-wider text-[11px] font-bold py-2.5 rounded transition-colors focus-ring">
-          Inspect License
-        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2. SYSTEM SPECIFICATIONS & DEFINITION -->
+<section class="py-16 bg-white text-brand-charcoalDark border-b border-brand-paper">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Definition Callout (Clean Modern Sans-Serif Block) -->
+    <div class="bg-brand-paper/50 border-l-4 border-brand-maroon p-6 rounded-r-2xl mb-14 text-brand-charcoalDark font-body text-sm leading-relaxed shadow-sm">
+      <div class="flex items-start space-x-3">
+        <div class="p-1 bg-brand-maroon text-brand-gold rounded mt-0.5 flex-shrink-0">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <p>
+          <strong class="text-brand-maroon font-bold font-headline">Engineering Definition:</strong> Fire compliance and certification refers to the formal mechanical auditing of a property's active and passive fire safety assets to verify alignment with municipal regulations. Samarth Fire Protection System is a licensed agency authorized by the Directorate of Maharashtra Fire Service to execute inspections and issue Form A and Form B clearances in Mumbai.
+        </p>
+      </div>
+    </div>
+
+    <!-- Core Engineering Capabilities Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 items-start">
+      
+      <!-- Left 8 Cols: 4 System Capability Cards -->
+      <div class="lg:col-span-8 space-y-6">
+        <div>
+          <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">CERTIFICATION DELIVERABLES</span>
+          <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight">Government Licensing Framework</h2>
+          <p class="text-sm text-brand-charcoalDark/80 font-body mt-2 leading-relaxed">
+            We operate under license number <strong class="font-mono text-brand-maroon">MFS/LA/RF-34/RD-35</strong>. This license enables us to sign off on official safety declarations required by the municipal corporation and chief fire officer.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-body">
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">01</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Form A Certificate</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Issued on completion of new system installation, confirming the network conforms to Maharashtra Fire Service specifications and municipal drawings.</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">02</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Form B Certificate</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">A bi-annual declaration (filed every January and July) certifying that existing systems have been tested and remain in working order under Section 3(3).</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">03</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">NOC Liaison Support</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Compiling test logs, layout maps, and technical details to support housing societies and commercial facilities seeking provisional or final Fire NOCs.</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">04</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Safety Gap Audits</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">An exhaustive mechanical checkup listing missing alarms, dry risers, low pressure valves, or expired extinguishers before government inspections.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 4 Cols: Statutory Service Panel -->
+      <div class="lg:col-span-4 bg-brand-paper/40 border border-brand-paper rounded-2xl p-6 sm:p-7 shadow-sm">
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center mb-3">
+            <svg class="h-6 w-6 text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <span class="font-body text-[10px] uppercase tracking-wider text-brand-maroon font-bold block mb-1">MUNICIPAL ACCREDITATION</span>
+          <h4 class="font-headline font-bold text-lg text-brand-charcoalDark tracking-wide mb-2">License Parameters</h4>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed mb-5 text-xs">
+            Directly authorized by the Maharashtra Fire Services Directorate for turnkey compliance certification.
+          </p>
+          
+          <div class="bg-white rounded-xl p-3 border border-brand-paper mb-5 text-left text-xs font-body space-y-1.5">
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Licence No:</span>
+              <span class="font-mono font-bold text-brand-maroon">MFS/LA/RF-34/RD-35</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Period:</span>
+              <span class="font-semibold text-brand-charcoalDark">14 Jan 2026 – 13 Jan 2028</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Authority:</span>
+              <span class="font-semibold text-green-700">MFS Directorate</span>
+            </div>
+          </div>
+
+          <button onclick="openLicenseModal()" class="w-full bg-brand-maroon hover:bg-brand-maroonDark text-white font-body uppercase tracking-wider text-xs font-bold py-3 rounded-xl transition-all focus-ring shadow-sm">
+            Inspect Official License &rarr;
+          </button>
+        </div>
       </div>
 
     </div>
 
     <!-- Authentic Field Execution & Committee Verification -->
-    <div class="border-t border-brand-paper pt-16 mb-16">
+    <div class="border-t border-brand-paper pt-14 mb-16">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="font-mono text-xs uppercase tracking-widest text-brand-maroon font-bold">MUNICIPAL COMPLIANCE IN PRACTICE</span>
-        <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mt-1">Form B Walkthroughs & Committee Review</h3>
-        <p class="text-xs text-brand-maroonDark/75 mt-2">Transparent technical presentations to housing society managing committees and commercial facility heads.</p>
+        <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">MUNICIPAL COMPLIANCE IN PRACTICE</span>
+        <h3 class="font-headline font-bold text-2xl sm:text-3xl tracking-tight text-brand-charcoalDark">Form B Walkthroughs &amp; Audits</h3>
+        <p class="text-xs sm:text-sm text-brand-charcoalDark/75 mt-2 font-body">Transparent technical presentations to housing society managing committees and commercial facility heads.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white rounded-lg border border-brand-paper overflow-hidden shadow-sm group">
+        <div class="bg-white rounded-xl border border-brand-paper overflow-hidden shadow-sm group card-lift">
           <div class="h-60 overflow-hidden">
-            <img src="client_hydrant_valve_test.jpg" alt="Technician inspecting landing valve and recording riser pressure logs for Form B verification" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="client_hydrant_valve_test.jpg" alt="Technician inspecting landing valve and recording riser pressure logs for Form B verification" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="560" height="240">
           </div>
           <div class="p-4">
-            <span class="font-nav text-xs font-bold text-brand-maroon uppercase block">Hydrant Line Pressure Calibration</span>
-            <p class="font-body text-[11px] text-brand-maroonDark/70 mt-1">Logging hydrostatic pressure readings and inspecting landing valves for statutory Form B bi-annual certification.</p>
+            <span class="font-headline text-xs font-bold text-brand-maroon uppercase block">Hydrant Line Pressure Calibration</span>
+            <p class="font-body text-[11px] text-brand-charcoalDark/75 mt-1 leading-relaxed">Logging hydrostatic pressure readings and inspecting landing valves for statutory Form B bi-annual certification.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg border border-brand-paper overflow-hidden shadow-sm group">
-          <div class="h-60 overflow-hidden bg-brand-paper/50 flex items-center justify-center p-2 cursor-pointer" onclick="openLicenseModal()">
-            <img src="license_page_1.png" alt="Government Class D fire safety license issued by Maharashtra Fire Services" class="h-full object-contain shadow group-hover:scale-105 transition-transform duration-500">
+        <div class="bg-white rounded-xl border border-brand-paper overflow-hidden shadow-sm group card-lift">
+          <div class="h-60 overflow-hidden bg-brand-paper/50 flex items-center justify-center p-3 cursor-pointer" onclick="openLicenseModal()">
+            <img src="license_page_1.png" alt="Government Class D fire safety license issued by Maharashtra Fire Services" class="h-full object-contain shadow group-hover:scale-105 transition-transform duration-500" width="300" height="230">
           </div>
           <div class="p-4">
             <div class="flex items-center justify-between">
-              <span class="font-nav text-xs font-bold text-brand-maroon uppercase">Official Class D Certificate</span>
-              <button onclick="openLicenseModal()" class="text-[10px] font-mono text-brand-ember hover:underline font-bold">Full View &rarr;</button>
+              <span class="font-headline text-xs font-bold text-brand-maroon uppercase">Official Class D Certificate</span>
+              <button onclick="openLicenseModal()" class="text-[10px] font-body text-brand-ember hover:underline font-bold uppercase tracking-wider">Full View &rarr;</button>
             </div>
-            <p class="font-body text-[11px] text-brand-maroonDark/70 mt-1">License MFS/LA/RF-34/RD-35 issued by Directorate of Maharashtra Fire Services, valid through January 2028.</p>
+            <p class="font-body text-[11px] text-brand-charcoalDark/75 mt-1 leading-relaxed">License MFS/LA/RF-34/RD-35 issued by Directorate of Maharashtra Fire Services, valid through January 2028.</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- FAQ Section (GEO rule) -->
-    <div class="border-t border-brand-paper pt-16 text-brand-maroonDark">
-      <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-8 text-center">Frequently Asked Questions</h3>
+    <div class="border-t border-brand-paper pt-14 max-w-3xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">MUNICIPAL &amp; TECHNICAL GUIDANCE</span>
+        <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-charcoalDark">Frequently Asked Questions</h3>
+      </div>
       
-      <div class="space-y-6 max-w-3xl mx-auto text-xs">
+      <div class="space-y-4 font-body text-xs">
         
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: What is Form A and when is it issued?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: What is Form A and when is it issued?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Form A is a certificate issued by a licensed agency on the completion of the installation of fire prevention and life safety measures. It certifies that the installation has been executed in accordance with approved municipal drawings and conforms to fire safety standards.
           </p>
         </div>
 
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: What is Form B and how often must a housing society file it?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: What is Form B and how often must a housing society file it?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Form B is a bi-annual clearance certificate. Under section 3(3) of the Maharashtra Fire Prevention Act, every owner or occupier of a building must submit a certificate from a licensed agency twice a year (every January and July) verifying that their fire safety installations are active and working.
           </p>
         </div>
 
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: What is the penalty for not filing Form B certificates?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: What is the penalty for not filing Form B certificates?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Failure to submit bi-annual Form B certificates is a violation of the Maharashtra Fire Act, which can result in the disconnection of utility services (power/water) to the building, prosecution, or cancellation of the occupancy clearance status.
           </p>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Related Services Directory & CTA -->
+    <div class="border-t border-brand-paper pt-14 mt-16 text-center">
+      <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-2">EXPLORE RELATED CAPABILITIES</span>
+      <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-charcoalDark mb-6">Complete Life-Safety Engineering</h3>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-10 text-left">
+        <a href="fire-fighting.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Fire Fighting Systems &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">Wet risers, booster pumps &amp; sprinklers</span>
+        </a>
+        <a href="extinguishing.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Extinguishers &amp; Hydro-Test &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">ISI cylinders, refilling &amp; pressure testing</span>
+        </a>
+        <a href="detection-alarm.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Detection &amp; Alarm Loops &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">Smoke sensors &amp; addressable panel wiring</span>
+        </a>
+      </div>
+
+      <div class="bg-brand-maroon text-white p-8 rounded-2xl max-w-4xl mx-auto shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="text-left">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-wider block mb-1">BI-ANNUAL COMPLIANCE CYCLE</span>
+          <h4 class="font-headline font-bold text-xl text-white">Need January or July Form B Certification?</h4>
+          <p class="text-xs text-white/80 mt-1">Our licensed inspectors audit all equipment and issue signed Form B certificates promptly.</p>
+        </div>
+        <div class="flex items-center space-x-3 flex-shrink-0">
+          <a href="audit.html" class="bg-brand-gold hover:bg-yellow-500 text-brand-charcoalDark font-body font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow focus-ring">
+            Book Form B Audit
+          </a>
+          <a href="tel:+919967101472" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-body font-semibold text-xs px-4 py-3 rounded-xl transition-all">
+            Call 9967101472
+          </a>
+        </div>
       </div>
     </div>
 

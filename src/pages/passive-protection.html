@@ -15,95 +15,243 @@ schema: {
 }
 ---
 
-<!-- Header Page Title (Maroon Brand background) -->
-<section class="bg-brand-maroon py-20 border-b border-brand-maroon/20 text-white">
+<!-- 1. COMPACT SERVICE HERO -->
+<section class="relative bg-brand-ivory text-brand-charcoalDark pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-brand-paper overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <span class="block font-mono text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Service Details</span>
-    <h1 class="font-headline font-bold text-4xl tracking-tight text-white">Passive Fire Protection</h1>
-    <p class="text-xs font-mono text-brand-gold mt-2 uppercase tracking-widest">Compartmentation &bull; Fire Rated Doors (FRD) &bull; Cable Seals</p>
-  </div>
-</section>
-
-<!-- System Description & Specification (Warm Ivory background) -->
-<section class="py-24 bg-brand-ivory text-[#1D2023]">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- GEO Definition Block (Cream background) -->
-    <div class="bg-brand-paper border-l-4 border-brand-maroon p-6 rounded-r mb-12 text-brand-maroonDark font-mono text-xs">
-      <p class="leading-relaxed">
-        <strong>Definition:</strong> Passive fire protection refers to structural safety components designed to contain fire, heat, and toxic smoke within localized building compartments using firedoors, structural barriers, electrical shaft fire-stops, and fire-resistant materials. Samarth Fire Protection System installs certified passive barriers to prevent structural failures and block smoke paths in Mumbai high-rises.
-      </p>
-    </div>
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center space-x-2 text-xs font-body text-brand-charcoalDark/60 mb-6" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-brand-maroon transition-colors">Home</a>
+      <span>/</span>
+      <a href="services.html" class="hover:text-brand-maroon transition-colors">Services</a>
+      <span>/</span>
+      <span class="text-brand-maroon font-semibold" aria-current="page">Passive Fire Protection</span>
+    </nav>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 text-brand-maroonDark">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
       
-      <!-- Left specs list -->
-      <div class="md:col-span-2 space-y-6">
-        <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon">Compartmentation Specifications</h3>
-        <p class="text-xs text-brand-maroonDark/80 leading-relaxed font-body">
-          While active systems extinguish fires, passive systems contain them. We secure electrical and mechanical pathways to block smoke chimney effects.
+      <!-- Left Column: Service Details & CTAs -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center space-x-2 bg-brand-paper/90 border border-brand-gold/40 px-3 py-1 rounded-full shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-brand-ember animate-pulse"></span>
+          <span class="font-body text-xs font-bold uppercase tracking-wider text-brand-maroon">
+            NBC 2016 Compartmentation &bull; Fire Rated Doors
+          </span>
+        </div>
+
+        <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-[42px] tracking-tight text-brand-charcoalDark leading-[1.18]">
+          Passive Fire Protection &amp; Shaft Stops
+        </h1>
+
+        <p class="text-base sm:text-lg text-brand-charcoalDark/85 font-body leading-relaxed max-w-xl">
+          Structural containment solutions, 60-120 minute fire-rated door (FRD) installations, vertical cable shaft penetration seals, and intumescent barriers to stop smoke migration in Mumbai high-rises.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 font-mono text-xs">
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Fire Rated Doors (FRD)</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Certified wooden or steel door assemblies rated for 60 to 120 minutes of heat resistance, complete with auto-closers and smoke seals.</span>
+        <!-- Service Quick CTAs -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="quote.html" class="inline-flex items-center justify-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all shadow-md hover:shadow-lg focus-ring">
+            <span>Get a Quote for this System</span>
+            <svg class="h-4 w-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="audit.html" class="inline-flex items-center justify-center bg-white border-2 border-brand-paper hover:border-brand-maroon text-brand-maroon font-body text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all focus-ring shadow-sm hover:bg-brand-paper/20">
+            <span>Schedule Shaft Inspection</span>
+          </a>
+        </div>
+
+        <!-- Verified Licence & Regulatory Eyebrow -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-brand-maroon/15 pt-4 text-xs font-body text-brand-charcoalDark/75">
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-green-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Licence: <strong class="text-brand-maroon font-mono font-bold">MFS/LA/RF-34/RD-35</strong></span>
           </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Shaft Fire-Stopping</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Sealing open gaps in vertical electrical and communication cabling ducts using fire-retardant mortars and intumescent pillows.</span>
-          </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Duct Fire Dampers</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Mechanical dampers installed in HVAC ducts that close automatically via thermal links to block hot gas pathways.</span>
-          </div>
-          <div class="p-4 bg-white rounded border border-brand-paper shadow-sm">
-            <span class="block text-brand-maroon font-nav text-sm mb-1 uppercase font-semibold">Intumescent Coatings</span>
-            <span class="block text-brand-maroonDark/70 font-body text-[11px] leading-relaxed">Specialized paint coatings applied to load-bearing structural steel that expand under heat to form an insulating carbon layer.</span>
+          <div class="flex items-center space-x-1.5">
+            <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span class="font-semibold">60–120 Min FRD Certified Assemblies</span>
           </div>
         </div>
       </div>
 
-      <!-- Right column: license box -->
-      <div class="bg-white border border-brand-paper rounded-lg p-6 h-fit text-center font-mono text-xs shadow-sm">
-        <h4 class="font-headline font-bold text-lg text-brand-maroon tracking-wide mb-3">BUILDING AUDITS</h4>
-        <p class="text-brand-maroonDark/70 font-body leading-relaxed mb-6 text-[11px]">
-          We inspect electrical shafts and exit corridors to locate broken structural barriers that compromise building clearances.
+      <!-- Right Column: Shaft Installation Showcase Visual -->
+      <div class="mt-8 lg:mt-0 lg:col-span-5 relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white card-lift">
+          <img src="client_riser_installation.jpg" alt="Technician fitting vertical riser pipeline and compartment barriers in high-rise utility shaft" class="w-full h-[360px] object-cover object-center" width="480" height="360">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+          
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <span class="inline-block bg-brand-gold text-brand-charcoalDark text-[10px] font-body uppercase px-2 py-0.5 rounded font-bold mb-1 tracking-wider">
+              Shaft Containment
+            </span>
+            <p class="text-xs font-body text-white/95 leading-relaxed">
+              Certified technician anchoring utility shaft pipe brackets and compartment seals in 22-storey building.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2. SYSTEM SPECIFICATIONS & DEFINITION -->
+<section class="py-16 bg-white text-brand-charcoalDark border-b border-brand-paper">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Definition Callout (Clean Modern Sans-Serif Block) -->
+    <div class="bg-brand-paper/50 border-l-4 border-brand-maroon p-6 rounded-r-2xl mb-14 text-brand-charcoalDark font-body text-sm leading-relaxed shadow-sm">
+      <div class="flex items-start space-x-3">
+        <div class="p-1 bg-brand-maroon text-brand-gold rounded mt-0.5 flex-shrink-0">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <p>
+          <strong class="text-brand-maroon font-bold font-headline">Engineering Definition:</strong> Passive fire protection refers to structural safety components designed to contain fire, heat, and toxic smoke within localized building compartments using firedoors, structural barriers, electrical shaft fire-stops, and fire-resistant materials. Samarth Fire Protection System installs certified passive barriers to prevent structural failures and block smoke paths in Mumbai high-rises.
         </p>
-        <a href="audit.html" class="w-full inline-block bg-brand-maroon hover:bg-brand-maroonDark text-white font-nav uppercase tracking-wider text-[11px] font-bold py-2.5 rounded transition-colors focus-ring">
-          Request Barrier Check
-        </a>
+      </div>
+    </div>
+
+    <!-- Core Engineering Capabilities Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 items-start">
+      
+      <!-- Left 8 Cols: 4 System Capability Cards -->
+      <div class="lg:col-span-8 space-y-6">
+        <div>
+          <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">COMPARTMENTATION CAPABILITIES</span>
+          <h2 class="font-headline font-bold text-2xl sm:text-3xl text-brand-charcoalDark tracking-tight">Compartmentation Specifications</h2>
+          <p class="text-sm text-brand-charcoalDark/80 font-body mt-2 leading-relaxed">
+            While active systems extinguish fires, passive systems contain them. We secure electrical and mechanical pathways to block smoke chimney effects.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-body">
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">01</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Fire Rated Doors (FRD)</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Certified wooden or steel door assemblies rated for 60 to 120 minutes of heat resistance, complete with auto-closers, panic exit devices, and intumescent smoke seals.</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">02</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Shaft Fire-Stopping</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Sealing open penetration gaps in vertical electrical and communication cabling ducts using fire-retardant mortars, intumescent pillows, and silicone batts.</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">03</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Duct Fire Dampers</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Mechanical dampers installed in HVAC ducts that close automatically via thermal links or motorized smoke triggers to block toxic fume distribution between floors.</p>
+          </div>
+
+          <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper shadow-sm card-lift">
+            <div class="w-8 h-8 rounded-lg bg-brand-maroon/10 text-brand-maroon flex items-center justify-center font-bold text-xs mb-3">04</div>
+            <h3 class="text-brand-maroon font-headline font-bold text-base mb-1.5">Intumescent Coatings</h3>
+            <p class="text-brand-charcoalDark/75 text-xs leading-relaxed">Specialized thin-film paint coatings applied to load-bearing structural steel members that expand under heat to form an insulating carbonaceous foam layer.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 4 Cols: Statutory Service Panel -->
+      <div class="lg:col-span-4 bg-brand-paper/40 border border-brand-paper rounded-2xl p-6 sm:p-7 shadow-sm">
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center mb-3">
+            <svg class="h-6 w-6 text-brand-maroon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <span class="font-body text-[10px] uppercase tracking-wider text-brand-maroon font-bold block mb-1">BUILDING AUDITS</span>
+          <h4 class="font-headline font-bold text-lg text-brand-charcoalDark tracking-wide mb-2">Compartmentation Check</h4>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed mb-5 text-xs">
+            We inspect electrical shafts, fire escape staircases, and exit corridors to locate unsealed penetrations that violate municipal building clearance.
+          </p>
+          
+          <div class="bg-white rounded-xl p-3 border border-brand-paper mb-5 text-left text-xs font-body space-y-1.5">
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Compliance:</span>
+              <span class="font-semibold text-brand-charcoalDark">NBC 2016 Part 4</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Licence No:</span>
+              <span class="font-mono font-bold text-brand-maroon">MFS/LA/RF-34/RD-35</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-brand-charcoalDark/60">Rating Range:</span>
+              <span class="font-semibold text-green-700">60 to 120 Minutes</span>
+            </div>
+          </div>
+
+          <a href="audit.html" class="block w-full bg-brand-maroon hover:bg-brand-maroonDark text-white font-body uppercase tracking-wider text-xs font-bold py-3 rounded-xl transition-all focus-ring shadow-sm">
+            Request Barrier Check &rarr;
+          </a>
+        </div>
       </div>
 
     </div>
 
     <!-- FAQ Section (GEO rule) -->
-    <div class="border-t border-brand-paper pt-16 text-brand-maroonDark">
-      <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-maroon mb-8 text-center">Frequently Asked Questions</h3>
+    <div class="border-t border-brand-paper pt-14 max-w-3xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-1">MUNICIPAL &amp; TECHNICAL GUIDANCE</span>
+        <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-charcoalDark">Frequently Asked Questions</h3>
+      </div>
       
-      <div class="space-y-6 max-w-3xl mx-auto text-xs">
+      <div class="space-y-4 font-body text-xs">
         
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: What is the difference between active and passive fire protection?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: What is the difference between active and passive fire protection?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Active fire protection systems require an action or trigger to operate (e.g. smoke triggering alarms, heat busting sprinklers, or operating fire extinguishers). Passive fire protection is structural and works without activation (e.g. fire doors containment, shaft mortar sealing, and fireproofing paints that delay fire spread).
           </p>
         </div>
 
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: Why are electrical shafts considered high-risk areas in high-rises?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: Why are electrical shafts considered high-risk areas in high-rises?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Electrical shafts run vertically through all floors of a building. If the gaps around the cables on each floor are not sealed with fire-resistant barrier materials, the shaft acts as a chimney. A fire in the basement will suck air and spread smoke and flames to the top floor within minutes.
           </p>
         </div>
 
-        <div class="border-b border-brand-paper pb-4">
-          <strong class="block text-brand-maroon mb-1 text-sm">Q: What are fire door ratings?</strong>
-          <p class="text-brand-maroonDark/75 font-body leading-relaxed">
+        <div class="p-5 bg-brand-ivory rounded-xl border border-brand-paper">
+          <strong class="block text-brand-maroon mb-1.5 text-sm font-headline font-bold">Q: What are fire door ratings?</strong>
+          <p class="text-brand-charcoalDark/80 font-body leading-relaxed">
             Fire door assemblies are tested and certified by laboratories to withstand heat, fire, and smoke penetration for specific durations. Common rating durations are 60 minutes, 90 minutes, and 120 minutes (1 or 2 hours), giving occupants time to evacuate safely.
           </p>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Related Services Directory & CTA -->
+    <div class="border-t border-brand-paper pt-14 mt-16 text-center">
+      <span class="font-body text-xs uppercase tracking-wider text-brand-maroon font-bold block mb-2">EXPLORE RELATED CAPABILITIES</span>
+      <h3 class="font-headline font-bold text-2xl tracking-tight text-brand-charcoalDark mb-6">Complete Life-Safety Engineering</h3>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-10 text-left">
+        <a href="fire-fighting.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Fire Fighting Systems &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">Wet risers, booster pumps &amp; sprinklers</span>
+        </a>
+        <a href="detection-alarm.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Detection &amp; Alarm Loops &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">Smoke sensors &amp; addressable panel wiring</span>
+        </a>
+        <a href="compliance-certification.html" class="p-4 bg-brand-ivory hover:bg-brand-paper/50 rounded-xl border border-brand-paper transition-all group card-lift">
+          <span class="font-headline font-bold text-xs text-brand-maroon block group-hover:text-brand-ember">Form A / Form B NOC &rarr;</span>
+          <span class="text-[11px] text-brand-charcoalDark/70 mt-1 block">Bi-annual statutory compliance endorsement</span>
+        </a>
+      </div>
+
+      <div class="bg-brand-maroon text-white p-8 rounded-2xl max-w-4xl mx-auto shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="text-left">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-wider block mb-1">STRUCTURAL AUDITS</span>
+          <h4 class="font-headline font-bold text-xl text-white">Need Shaft Sealing or Fire Door Certification?</h4>
+          <p class="text-xs text-white/80 mt-1">We inspect building utility shafts and supply certified fire-rated barrier assemblies.</p>
+        </div>
+        <div class="flex items-center space-x-3 flex-shrink-0">
+          <a href="quote.html" class="bg-brand-gold hover:bg-yellow-500 text-brand-charcoalDark font-body font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow focus-ring">
+            Request Quote
+          </a>
+          <a href="tel:+919967101472" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-body font-semibold text-xs px-4 py-3 rounded-xl transition-all">
+            Call 9967101472
+          </a>
+        </div>
       </div>
     </div>
 
