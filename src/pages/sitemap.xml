@@ -1,141 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Primary Landing Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://samarthfire.in/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://samarthfire.in/client_drill_live.jpg</image:loc>
-      <image:title>Samarth Fire Live Fire Safety Demonstration Mumbai</image:title>
-    </image:image>
+    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc><image:title>Samarth Fire Protection System field inspection</image:title></image:image>
   </url>
-
-  <!-- 1. About Us -->
   <url>
-    <loc>https://samarthfire.in/about.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/about</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc><image:title>Fire safety training and company overview</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/quote</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc>
-      <image:title>Samarth Fire Founder Sameer M. Kangutkar Safety Lecture</image:title>
-    </image:image>
   </url>
-
-  <!-- 2. Get a Quote (Conversion Hub) -->
   <url>
-    <loc>https://samarthfire.in/quote.html</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- 3. Core Services Hub -->
-  <url>
-    <loc>https://samarthfire.in/services.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/services</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc>
-      <image:title>Dual Booster Pump Manifold Assembly Samarth Fire</image:title>
-    </image:image>
+    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc><image:title>Fire protection engineering services</image:title></image:image>
   </url>
-
-  <!-- 4. Projects & Case Studies -->
   <url>
-    <loc>https://samarthfire.in/projects.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/projects</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc>
-      <image:title>Hydrant Landing Valve Pressure Test Case Study</image:title>
-    </image:image>
+    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc><image:title>Fire protection field project</image:title></image:image>
   </url>
-
-  <!-- Comprehensive Technical Service Hubs -->
   <url>
-    <loc>https://samarthfire.in/fire-fighting.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/fire-fighting</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/detection-alarm.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/detection-alarm</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/extinguishing.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/extinguishing</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/passive-protection.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/passive-protection</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/compliance-certification.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/compliance-certification</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/training-preparedness.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/training-preparedness</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc>
-      <image:title>Hands-On Hose Reel Fire Safety Drill Samarth Fire</image:title>
-    </image:image>
+    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc><image:title>Fire safety training and hose reel drill</image:title></image:image>
   </url>
-
-  <!-- Supporting Authority Pages -->
   <url>
-    <loc>https://samarthfire.in/audit.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/audit</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/founder.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/founder</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/certifications.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/certifications</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/process.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/process</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://samarthfire.in/resources.html</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://samarthfire.in/contact.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://samarthfire.in/resources</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://samarthfire.in/blog</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/contact</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/form-b-fire-safety-maharashtra</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/license_page_1.png</image:loc><image:title>Form B Fire Safety Certificate in Maharashtra: A Building Owner’s Guide</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/fire-safety-audit-building</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc><image:title>Fire Safety Audit Checklist for Buildings: What Owners and Facility Managers Should Review</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/fire-hydrant-maintenance-checklist</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc><image:title>Fire Hydrant System Maintenance Checklist for Facility Managers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/fire-alarm-fault-response</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc><image:title>Fire Alarm Panel Faults: Safe First Response for Building Teams</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/fire-extinguisher-inspection-guide</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc><image:title>Fire Extinguisher Inspection Guide: A Practical Checklist for Buildings</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://samarthfire.in/housing-society-fire-drill-guide</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image><image:loc>https://samarthfire.in/client_society_assembly.jpg</image:loc><image:title>Housing Society Fire Drill Guide: Planning a Safer Evacuation</image:title></image:image>
+  </url>
 </urlset>
