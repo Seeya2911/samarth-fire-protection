@@ -30,15 +30,6 @@
           "value": "1; mode=block"
         }
       ]
-    },
-    {
-      "source": "/(css|photo|.*\\.(jpg|png|svg|pdf|webp))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }

@@ -21,6 +21,9 @@ Allow: /
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /photo/
+Disallow: /docs/
+Disallow: /tasks/
+Disallow: /scripts/
 
 # Canonical Sitemap
 Sitemap: https://samarthfire.in/sitemap.xml
