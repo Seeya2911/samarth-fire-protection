@@ -13,13 +13,16 @@ scripts: |
   <script>
     function handleContactSubmit(event) {
       event.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const phone = document.getElementById('contact-phone').value.trim();
+      const message = document.getElementById('contact-msg').value.trim();
+      const body = `Hello Samarth Fire Team, my name is ${name}. My phone number is ${phone}. Enquiry: ${message}`;
+      const whatsappUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(body);
+      const emailUrl = 'mailto:samarthfireprotectionsystem@gmail.com?subject=' + encodeURIComponent('Website enquiry from ' + name) + '&body=' + encodeURIComponent(body);
+      document.getElementById('contact-whatsapp-link').href = whatsappUrl;
+      document.getElementById('contact-email-link').href = emailUrl;
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('contact-success').classList.remove('hidden');
-      console.log('Contact form submitted:', {
-        name: document.getElementById('contact-name').value,
-        phone: document.getElementById('contact-phone').value,
-        msg: document.getElementById('contact-msg').value
-      });
     }
   </script>
 ---
@@ -107,10 +110,11 @@ scripts: |
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 class="font-headline font-bold text-xl text-emerald-900">Message Sent Successfully</h3>
+          <h3 class="font-headline font-bold text-xl text-emerald-900">Your message is ready to send</h3>
           <p class="text-sm text-emerald-800/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
-            Thank you. Your message has been logged. Our Malad office staff will route details to Sameer sir or our engineers to schedule a response callback.
+            Your enquiry has not been sent yet. Choose WhatsApp or email below to open a prepared message, then press Send in that app.
           </p>
+          <div class="flex flex-wrap justify-center gap-3 mt-5"><a id="contact-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-5 py-3">Continue with WhatsApp</a><a id="contact-email-link" href="#" class="inline-flex rounded-lg border border-emerald-700 text-emerald-800 font-bold px-5 py-3">Open email draft</a></div>
         </div>
 
       </div>
