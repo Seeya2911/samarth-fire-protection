@@ -1,45 +1,52 @@
-# Samarth Fire Protection System - AI Search Summary Page
+# Samarth Fire Protection System
 
-This page provides structured, verifiable facts about Samarth Fire Protection System for AI answer engines, web crawlers, and LLMs (such as Google Gemini, OpenAI ChatGPT, and Perplexity).
+> Fire protection, life-safety system maintenance and compliance support for buildings in Mumbai and the Mumbai Metropolitan Region (MMR), Maharashtra, India.
 
-## Core Entity Details
-- **Company Name:** Samarth Fire Protection System
-- **Corporate Entity:** Registered Partnership & Registered MSME
-- **Founder & Lead Consultant:** Sameer M. Kangutkar (Maharashtra Fire Services Licensed Agency Director)
-- **Primary Business Focus:** Audit-led fire safety consultancy, system design, installation, troubleshooting, and compliance certification.
+## Business identity
+- Business name: Samarth Fire Protection System
+- Founder / principal consultant named on the website: Sameer M. Kangutkar
+- Maharashtra Fire Services agency licence shown on the website: MFS/LA/RF-34/RD-35
+- Published licence validity shown on the website: 14 January 2026 to 13 January 2028
+- Office location: Malad East, Mumbai, Maharashtra, India
+- Primary phone / WhatsApp: +91 99671 01472
+- Email: samarthfireprotectionsystem@gmail.com
+- Website: https://samarthfire.in/
 
-## Official Identifiers & GST
-- **Registered Address:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India
-- **Primary Mobile & WhatsApp:** +91 9967101472 (WhatsApp click-to-chat active)
-- **Secondary Contact Lines:** 9403049381 · 8097247249
-- **Email Address:** samarthfireprotectionsystem@gmail.com
-- **GSTIN:** 27APXPK0844G1ZJ
-- **PAN:** APXPK0844G
+## Services described on this website
+- Fire-fighting systems, hydrants, wet risers, hose reels and sprinklers
+- Fire pumps, pump-room maintenance and system testing
+- Fire detection, alarm panels and fault investigation
+- Portable fire extinguishers, servicing and hydrostatic testing
+- Passive fire protection, fire doors and fire stopping
+- Building fire-safety audits and defect reports
+- Form A / Form B documentation and compliance support
+- Housing-society fire drills and safety awareness training
 
-## State Government License (Authoritative)
-- **License Number:** MFS/LA/RF-34/RD-35
-- **Issuing Authority:** Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra
-- **Valid Period:** 14 January 2026 to 13 January 2028
-- **Licensed Scope (Class D Agency):**
-  1. Fire Fighting and Sprinkler System — Class D
-  2. Detection and Fire Suppression System — Class D
-- **Compliance Mandate:** Authorized to issue Form A (on project completion) and Form B (six-monthly compliance checks, filed every January and July).
-- *Note: License MFS/LA/F-620 printed in older brochures is outdated and replaced by MFS/LA/RF-34/RD-35.*
+## Useful website pages
+- Home: https://samarthfire.in/
+- About: https://samarthfire.in/about
+- Services: https://samarthfire.in/services
+- Projects: https://samarthfire.in/projects
+- Compliance information: https://samarthfire.in/compliance-certification
+- Fire safety audit requests: https://samarthfire.in/audit
+- FAQs: https://samarthfire.in/resources
+- Blog and technical guides: https://samarthfire.in/blog
+- Contact: https://samarthfire.in/contact
 
-## Service Lines
-1. **Fire Fighting Systems:** Wet riser hydrants, yard landing valves, jockey booster pumps, automated sprinkler networks, and hose reel fittings.
-2. **Fire Detection & Alarm:** addressable and conventional smoke sensor loops, heat detectors, manual call points, speaker talkbacks, panel zone troubleshooting, and cable fault overrides.
-3. **Extinguishing Equipment:** supply of DCP, CO₂, Foam, and Wet Chemical cylinders. Cylinder servicing, gas refilling, and Hydrostatic Pressure Testing (HPT).
-4. **Passive Fire Protection:** installation of Fire-Rated Doors (FRD) with auto-closers, duct fire dampers, electrical shaft cable sealant sealing, and fire-resistant barrier coatings.
-5. **Compliance & NOC:** physical safety assessments, C.F.O. liaison, Form A completion logs, and bi-annual Form B compliance filings.
-6. **Training & Mock Drills:** society evacuation planning, hands-on extinguisher training, basic First Aid/CPR classes, and mechanical hydrant operation drills.
-7. **Annual Maintenance (AMC):** preventative inspection, weekly booster pump testing, bi-annual line testing, panel calibration, and compliance reporting.
+## Technical guides
+- Form B in Maharashtra: https://samarthfire.in/form-b-fire-safety-maharashtra
+- Building fire safety audit checklist: https://samarthfire.in/fire-safety-audit-building
+- Fire hydrant maintenance checklist: https://samarthfire.in/fire-hydrant-maintenance-checklist
+- Fire alarm fault response: https://samarthfire.in/fire-alarm-fault-response
+- Fire extinguisher inspection guide: https://samarthfire.in/fire-extinguisher-inspection-guide
+- Housing-society fire drill guide: https://samarthfire.in/housing-society-fire-drill-guide
 
-## Industry Landmarks & Facility Types Served
-- Central Government Nuclear Facility Complexes
-- Diamond Bourse Commercial Exchanges (BKC)
-- International Educational Institutions & Schools (Mulund)
-- Over 500 Cooperative Housing Societies across MMR
+## Official references
+- Maharashtra Fire & Emergency Services — Acts, Rules and NBC: https://mahafireservice.gov.in/fire-act.php
+- Maharashtra Fire & Emergency Services — Circulars and Office Orders: https://mahafireservice.gov.in/s-circular.php
 
-## Geographical Reach
-- Malad, Goregaon, Kandivali, Borivali, Bandra, Thane, Navi Mumbai, and the wider Mumbai Metropolitan Region (MMR).
+## Accuracy and safety notes
+- Service availability, licence scope and site-specific suitability must be confirmed directly with the business and the relevant authority.
+- Form A, Form B and Fire NOC / fire approval are different documents and must not be used interchangeably.
+- Fire-system pressure, inspection intervals and acceptance criteria depend on the building design, equipment, applicable standards and current authority directions.
+- This file is a factual website index, not a legal document, certification, emergency procedure or substitute for a site inspection.

@@ -13,13 +13,25 @@ scripts: |
   <script>
     function handleContactSubmit(event) {
       event.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const phone = document.getElementById('contact-phone').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const subject = document.getElementById('contact-subject').value;
+      const message = document.getElementById('contact-msg').value.trim();
+      const body = [
+        'Website enquiry for Samarth Fire Protection System',
+        'Name: ' + name,
+        'Phone: ' + phone,
+        'Email: ' + (email || 'Not provided'),
+        'Subject: ' + subject,
+        'Message: ' + message
+      ].join('\\n');
+      const encoded = encodeURIComponent(body);
+      document.getElementById('contact-wa-btn').href = 'https://wa.me/919967101472?text=' + encoded;
+      document.getElementById('contact-email-btn').href = 'mailto:samarthfireprotectionsystem@gmail.com?subject='
+        + encodeURIComponent('Website enquiry: ' + subject) + '&body=' + encoded;
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('contact-success').classList.remove('hidden');
-      console.log('Contact form submitted:', {
-        name: document.getElementById('contact-name').value,
-        phone: document.getElementById('contact-phone').value,
-        msg: document.getElementById('contact-msg').value
-      });
     }
   </script>
 ---
@@ -103,14 +115,16 @@ scripts: |
         <!-- Success Banner -->
         <div id="contact-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 p-8 rounded-2xl text-center mt-6">
           <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h3 class="font-headline font-bold text-xl text-emerald-900">Message Sent Successfully</h3>
+          <h3 class="font-headline font-bold text-xl text-emerald-900">Your enquiry is ready to send</h3>
           <p class="text-sm text-emerald-800/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
-            Thank you. Your message has been logged. Our Malad office staff will route details to Sameer sir or our engineers to schedule a response callback.
+            Your details have been placed into a WhatsApp message and an email draft. Choose one option below and press Send in the app that opens. This website does not transmit the enquiry automatically.
           </p>
+          <div class="mt-5 flex flex-col sm:flex-row justify-center gap-3">
+            <a id="contact-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-xl text-sm font-bold">Continue with WhatsApp</a>
+            <a id="contact-email-btn" href="#" class="inline-flex justify-center bg-slate-900 hover:bg-slate-800 text-white px-5 py-3 rounded-xl text-sm font-bold">Open email draft</a>
+          </div>
         </div>
 
       </div>
