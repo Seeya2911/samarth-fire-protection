@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d">
+  <title id="t">Conventional versus addressable fire alarm system</title>
+  <desc id="d">Left: conventional panel shows only the zone in alarm. Right: addressable panel shows the exact device address, such as Floor 3, Corridor B, Detector 07.</desc>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}
+    .h{font-weight:700;font-size:15px}.s{font-size:12px;fill:#475569}.m{font-family:Courier New,monospace;font-size:13px;fill:#fde68a}
+  </style>
+  <rect width="800" height="440" fill="#fff"/>
+  <text x="24" y="34" class="h" style="font-size:20px">Conventional vs addressable — what the panel tells you</text>
+  <g transform="translate(24,56)">
+    <rect width="360" height="350" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="20" y="32" class="h">Conventional</text><text x="20" y="52" class="s">Devices wired in zones (loops by area)</text>
+    <rect x="20" y="70" width="320" height="86" rx="8" fill="#0f172a"/><text x="36" y="102" class="m">ZONE 3  —  FIRE</text><text x="36" y="128" class="m" style="fill:#94a3b8">Which device? Check the whole zone.</text>
+    <g><rect x="20" y="176" width="150" height="54" rx="8" fill="#fee2e2" stroke="#fca5a5"/><text x="95" y="198" class="s" text-anchor="middle">Zone 3 = one floor</text><text x="95" y="216" class="s" text-anchor="middle">many detectors</text>
+    <circle cx="206" cy="203" r="9" fill="#dc2626"/><circle cx="234" cy="203" r="9" fill="#cbd5e1"/><circle cx="262" cy="203" r="9" fill="#cbd5e1"/><circle cx="290" cy="203" r="9" fill="#cbd5e1"/><circle cx="318" cy="203" r="9" fill="#cbd5e1"/></g>
+    <text x="20" y="262" class="h" style="font-size:13px;fill:#047857">Good for</text><text x="20" y="282" class="s">Small buildings, shops, simple layouts</text>
+    <text x="20" y="310" class="h" style="font-size:13px;fill:#b91c1c">Limit</text><text x="20" y="330" class="s">Slower to locate the source in larger sites</text>
+  </g>
+  <g transform="translate(416,56)">
+    <rect width="360" height="350" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="20" y="32" class="h">Addressable</text><text x="20" y="52" class="s">Every device has its own digital address</text>
+    <rect x="20" y="70" width="320" height="86" rx="8" fill="#0f172a"/><text x="36" y="102" class="m">FIRE  F3-CORR-B  DET 07</text><text x="36" y="128" class="m" style="fill:#94a3b8">Exact device and location shown.</text>
+    <g><rect x="20" y="176" width="150" height="54" rx="8" fill="#dcfce7" stroke="#86efac"/><text x="95" y="198" class="s" text-anchor="middle">Loop with addresses</text><text x="95" y="216" class="s" text-anchor="middle">each device reports</text>
+    <circle cx="206" cy="203" r="9" fill="#cbd5e1"/><circle cx="234" cy="203" r="9" fill="#cbd5e1"/><circle cx="262" cy="203" r="9" fill="#dc2626"/><circle cx="290" cy="203" r="9" fill="#cbd5e1"/><circle cx="318" cy="203" r="9" fill="#cbd5e1"/></g>
+    <text x="20" y="262" class="h" style="font-size:13px;fill:#047857">Good for</text><text x="20" y="282" class="s">Multi-storey, large or complex buildings</text>
+    <text x="20" y="310" class="h" style="font-size:13px;fill:#b91c1c">Consider</text><text x="20" y="330" class="s">Higher initial cost; needs competent programming</text>
+  </g>
+</svg>

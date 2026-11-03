@@ -1,44 +1,39 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
+  "installCommand": "npm install --include=dev",
   "buildCommand": "npm run build",
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/faq", "destination": "/resources", "permanent": true },
+    { "source": "/blogs", "destination": "/blog", "permanent": true },
+    { "source": "/(.*)/index.html", "destination": "/$1", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/img/icon-32.png" },
+    { "source": "/(docs|scripts|src|tasks|photo|node_modules)/:path*", "destination": "/__not_found__" },
+    { "source": "/(prd\\.json|build\\.js|build\\.js\\.new|package\\.json|package-lock\\.json|tailwind\\.config\\.js|client_society_assembly\\.jpg|client_cpr_training\\.jpg)", "destination": "/__not_found__" }
+  ],
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=()"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
-    },
-    {
-      "source": "/(css|photo|.*\\.(jpg|png|svg|pdf|webp))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+      { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+      { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
+      { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
+      { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me; frame-ancestors 'self'; upgrade-insecure-requests" }
+    ]},
+    { "source": "/(.*)\\.(html)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
+    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }] },
+    { "source": "/(.*)\\.(jpg|jpeg|png|svg|webp|avif|ico|woff2)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }] },
+    { "source": "/css/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }] },
+    { "source": "/(sitemap\\.xml|feed\\.xml)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }, { "key": "X-Robots-Tag", "value": "noindex" }] },
+    { "source": "/(.*)\\.pdf", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }, { "key": "X-Robots-Tag", "value": "index, follow" }] },
+    { "source": "/(robots\\.txt|llms\\.txt|llms-full\\.txt|manifest\\.webmanifest)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }] }
   ]
 }

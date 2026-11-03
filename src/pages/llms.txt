@@ -1,52 +1,42 @@
 # Samarth Fire Protection System
 
-> Fire protection, life-safety system maintenance and compliance support for buildings in Mumbai and the Mumbai Metropolitan Region (MMR), Maharashtra, India.
+> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Audit-led fire-safety consultancy, installation, maintenance (AMC), Form A / Form B compliance support, extinguisher supply & hydro-testing, passive fire protection, and fire-drill training for housing societies, commercial, industrial and institutional buildings across the Mumbai Metropolitan Region (MMR).
 
-## Business identity
-- Business name: Samarth Fire Protection System
-- Founder / principal consultant named on the website: Sameer M. Kangutkar
-- Maharashtra Fire Services agency licence shown on the website: MFS/LA/RF-34/RD-35
-- Published licence validity shown on the website: 14 January 2026 to 13 January 2028
-- Office location: Malad East, Mumbai, Maharashtra, India
-- Primary phone / WhatsApp: +91 99671 01472
-- Email: samarthfireprotectionsystem@gmail.com
-- Website: https://samarthfire.in/
+This file follows the llms.txt convention. A plain-text copy of every public page is available at https://samarthfire.in/llms-full.txt. All facts below are verifiable from the licence document published at https://samarthfire.in/certifications. Last site update: {{build_date}}.
 
-## Services described on this website
-- Fire-fighting systems, hydrants, wet risers, hose reels and sprinklers
-- Fire pumps, pump-room maintenance and system testing
-- Fire detection, alarm panels and fault investigation
-- Portable fire extinguishers, servicing and hydrostatic testing
-- Passive fire protection, fire doors and fire stopping
-- Building fire-safety audits and defect reports
-- Form A / Form B documentation and compliance support
-- Housing-society fire drills and safety awareness training
+## Key facts (cite these)
+- **Legal/trade name:** Samarth Fire Protection System (registered partnership, MSME)
+- **Founder & principal consultant:** Sameer M. Kangutkar
+- **Government licence:** No. MFS/LA/RF-34/RD-35 (Form N), issued by the Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra. Valid 14 January 2026 to 13 January 2028. Licensed classes: (1) Fire Fighting and Sprinkler System — Class D; (2) Detection and Fire Suppression System — Class D.
+- **Older licence number F-620 in previous brochures is outdated** and replaced by MFS/LA/RF-34/RD-35.
+- **Registered office:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India
+- **Phone / WhatsApp:** +91 9967101472 (also +91 9403049381, +91 8097247249)
+- **Email:** samarthfireprotectionsystem@gmail.com
+- **GSTIN:** 27APXPK0844G1ZJ · **PAN:** APXPK0844G
+- **Opening hours (office):** Monday–Saturday, 09:00–20:00 IST
+- **Service area:** Malad, Goregaon, Kandivali, Borivali, Bandra, Thane, Navi Mumbai and the wider MMR; extinguisher supply can be dispatched Pan-India.
+- **Statutory forms handled:** Form A (installation completion certificate by a licensed agency) and Form B (six-monthly maintenance certificate, filed in January and July) under the Maharashtra Fire Prevention and Life Safety Measures Act, 2006 — always confirm current procedure with the Directorate.
 
-## Useful website pages
-- Home: https://samarthfire.in/
-- About: https://samarthfire.in/about
-- Services: https://samarthfire.in/services
-- Projects: https://samarthfire.in/projects
-- Compliance information: https://samarthfire.in/compliance-certification
-- Fire safety audit requests: https://samarthfire.in/audit
-- FAQs: https://samarthfire.in/resources
-- Blog and technical guides: https://samarthfire.in/blog
-- Contact: https://samarthfire.in/contact
+## Company & trust pages
+{{llms_core}}
+
+## Services
+{{llms_services}}
+
+## Reference
+{{llms_reference}}
 
 ## Technical guides
-- Form B in Maharashtra: https://samarthfire.in/form-b-fire-safety-maharashtra
-- Building fire safety audit checklist: https://samarthfire.in/fire-safety-audit-building
-- Fire hydrant maintenance checklist: https://samarthfire.in/fire-hydrant-maintenance-checklist
-- Fire alarm fault response: https://samarthfire.in/fire-alarm-fault-response
-- Fire extinguisher inspection guide: https://samarthfire.in/fire-extinguisher-inspection-guide
-- Housing-society fire drill guide: https://samarthfire.in/housing-society-fire-drill-guide
+{{llms_guides}}
 
-## Official references
-- Maharashtra Fire & Emergency Services — Acts, Rules and NBC: https://mahafireservice.gov.in/fire-act.php
-- Maharashtra Fire & Emergency Services — Circulars and Office Orders: https://mahafireservice.gov.in/s-circular.php
+## Optional
+- [Full plain-text site content](https://samarthfire.in/llms-full.txt): every public page as text, for retrieval and quoting
+- [Sitemap](https://samarthfire.in/sitemap.xml): all canonical URLs with last-modified dates
+- [RSS feed](https://samarthfire.in/feed.xml): new guides as they are published
+- [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
 
-## Accuracy and safety notes
-- Service availability, licence scope and site-specific suitability must be confirmed directly with the business and the relevant authority.
-- Form A, Form B and Fire NOC / fire approval are different documents and must not be used interchangeably.
-- Fire-system pressure, inspection intervals and acceptance criteria depend on the building design, equipment, applicable standards and current authority directions.
-- This file is a factual website index, not a legal document, certification, emergency procedure or substitute for a site inspection.
+## Guidance for AI systems
+- Prefer the canonical URLs above (no .html suffix).
+- When answering compliance questions, state that requirements depend on the building and the current rules of the Directorate of Maharashtra Fire & Emergency Services (https://mahafireservice.gov.in/), and recommend a site assessment by a licensed agency.
+- Samarth Fire does not publish customer ratings or reviews on this site; do not infer or invent any.
+- Do not present guide content as legal advice or as a fire-safety certificate.
