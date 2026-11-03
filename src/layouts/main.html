@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-IN" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
   <meta name="description" content="{{description}}">
   <meta name="author" content="Samarth Fire Protection System">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website">
+  <meta name="robots" content="{{robots}}">
+  <meta name="theme-color" content="#DC2626">
+  <meta name="geo.region" content="IN-MH">
+  <meta name="geo.placename" content="Malad East, Mumbai">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="{{og_type}}">
   <meta property="og:title" content="{{title}}">
   <meta property="og:description" content="{{description}}">
-  <meta property="og:image" content="https://samarthfire.in/client_hydrant_valve_test.jpg">
   <meta property="og:url" content="{{canonical}}">
   <meta property="og:site_name" content="Samarth Fire Protection System">
   <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:image:alt" content="{{og_image_alt}}">
+  {{og_image_dims}}
+  {{article_meta}}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{title}}">
   <meta name="twitter:description" content="{{description}}">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="twitter:image" content="{{og_image}}">
+  <meta name="twitter:image:alt" content="{{og_image_alt}}">
 
-  <!-- Canonical URL -->
+  <!-- Canonical, language & machine-readable alternates -->
   <link rel="canonical" href="{{canonical}}">
+  <link rel="alternate" hreflang="en-IN" href="{{canonical}}">
+  <link rel="alternate" hreflang="x-default" href="{{canonical}}">
+  <link rel="alternate" type="application/rss+xml" title="Samarth Fire — Fire Safety Guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
 
-  <!-- Favicon & Brand Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-  <link rel="apple-touch-icon" href="logo.png">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <!-- Icons & PWA metadata -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+  <link rel="apple-touch-icon" href="/img/icon-180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 
-  <!-- Google Fonts: Plus Jakarta Sans, Outfit, Inter, IBM Plex Mono -->
+  <!-- Fonts: non-blocking (print-media swap) so text paints immediately with the fallback stack -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"></noscript>
+
   <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- JSON-LD Schema Markup -->
-  <script type="application/ld+json">
-    {{schema}}
-  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- JSON-LD: one connected entity graph (Organization · WebSite · Founder · page nodes) -->
+  <script type="application/ld+json">{{schema}}</script>
 </head>
 <body class="bg-white text-slate-800 font-body antialiased flex flex-col min-h-screen">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-red-700 focus:font-bold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-xl">Skip to main content</a>
 
   <!-- 1. Top Regulatory Eyebrow Bar (Deep Navy with Saffron & Emerald Highlights) -->
   <div class="bg-slate-900 text-slate-300 text-[11px] font-body py-2 px-4 border-b border-slate-800">
@@ -174,6 +188,9 @@
           <!-- 4. Projects -->
           <a href="projects.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
 
+          <!-- 4b. Blog -->
+          <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Guides</a>
+
           <!-- 5. Secondary Links Dropdown -->
           <div class="relative group">
             <button type="button" class="hover:text-red-600 transition-colors flex items-center space-x-1 outline-none py-2 whitespace-nowrap" aria-haspopup="true">
@@ -235,6 +252,7 @@
         <!-- 4. Projects -->
         <a href="projects.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_projects}}">Projects / Case Studies</a>
         
+        <a href="blog.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_blog}}">Blog &amp; Guides</a>
         <div class="pt-2 border-t border-slate-100 mt-2 space-y-1 text-xs font-body font-medium text-slate-600">
           <a href="founder.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600">Founder Leadership</a>
           <a href="certifications.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_compliance}}">Class D License & Form N</a>
@@ -263,7 +281,7 @@
   </header>
 
   <!-- Main Content Wrapper -->
-  <main class="flex-grow">
+  <main id="main-content" class="flex-grow">
     {{content}}
   </main>
 
@@ -330,6 +348,8 @@
             <li><a href="certifications.html" class="hover:text-amber-400 transition-colors">&bull; Official Form N License</a></li>
             <li><a href="resources.html" class="hover:text-amber-400 transition-colors">&bull; Safety FAQ & Codes</a></li>
             <li><a href="blog.html" class="hover:text-amber-400 transition-colors">&bull; Technical Guides & Articles</a></li>
+            <li><a href="glossary.html" class="hover:text-amber-400 transition-colors">&bull; Fire Safety Glossary</a></li>
+            <li><a href="service-areas.html" class="hover:text-amber-400 transition-colors">&bull; Service Areas (MMR)</a></li>
           </ul>
         </div>
 
@@ -376,7 +396,9 @@
       <div class="border-t border-slate-800 mt-8 pt-6 flex flex-col md:flex-row justify-between text-[11px] text-slate-500">
         <p>&copy; 2026 Samarth Fire Protection System. All Rights Reserved. Engineered for Safety & Preparedness.</p>
         <div class="flex space-x-4 mt-2 md:mt-0 font-mono">
-          <a href="llms.txt" class="hover:text-amber-400 transition-colors underline">AI Crawler Summary (llms.txt)</a>
+          <a href="feed.xml" class="hover:text-amber-400 transition-colors underline">RSS</a>
+          <a href="sitemap.xml" class="hover:text-amber-400 transition-colors underline">Sitemap</a>
+          <a href="llms.txt" class="hover:text-amber-400 transition-colors underline">llms.txt</a>
         </div>
       </div>
 
