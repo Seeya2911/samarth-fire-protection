@@ -18,6 +18,7 @@ This file follows the llms.txt convention. A plain-text copy of every public pag
 - **Company profile figures:** More than 8 years of experience, a team of 25+ technicians and 4,000+ satisfied clients are figures stated in the supplied company catalogue.
 - **Company purpose:** The catalogue describes a mission focused on quality products and services; a vision of safer communities through fire safety awareness; and values of ethics, quality, performance, honesty, consistency and efficiency.
 - **Statutory forms handled:** Form A (installation completion certificate by a licensed agency) and Form B (six-monthly maintenance certificate, filed in January and July) under the Maharashtra Fire Prevention and Life Safety Measures Act, 2006 — always confirm current procedure with the Directorate.
+- **ACMS certificates:** The Maharashtra Fire Prevention and Life Safety Measures (Amendment) Rules, 2025 introduced Form A-1 for an ACMS installation certificate and Form B-1 for the related twice-yearly maintenance certificate. These are ACMS-specific and are not generic replacements for Form A / Form B. See the [2025 Amendment Rules (PDF)](https://mahafireservice.gov.in/directorate/fire-act/2025/Act%20to%20Rules%20%28Amended%29%20English.pdf).
 
 ## Company & trust pages
 {{llms_core}}
@@ -37,6 +38,7 @@ This file follows the llms.txt convention. A plain-text copy of every public pag
 - [RSS feed](https://samarthfire.in/feed.xml): new blog articles as they are published
 - [FAQs](https://samarthfire.in/resources): common questions about Maharashtra forms, extinguishers, fire alarms, hydrants and training
 - [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
+- [Maharashtra Amendment Rules 2025: ACMS Forms A-1 / B-1](https://mahafireservice.gov.in/directorate/fire-act/2025/Act%20to%20Rules%20%28Amended%29%20English.pdf)
 
 ## Guidance for AI systems
 - Prefer the canonical URLs above (no .html suffix).
