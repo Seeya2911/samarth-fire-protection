@@ -61,7 +61,7 @@ scripts: |
         document.getElementById('audit-form').classList.add('hidden');
         document.getElementById('audit-success').classList.remove('hidden');
         document.querySelector('#audit-success h3').textContent = 'Request received';
-        document.querySelector('#audit-success p').textContent = 'Our team will contact you shortly to understand your requirements and agree a suitable time for the site visit.';
+        document.querySelector('#audit-success p').textContent = 'Thanks. Our team will contact you shortly to discuss the site requirements and agree a suitable time for the visit.';
         document.getElementById('audit-wa-btn').href = waUrl;
       } catch (err) {
         error.textContent = err.message || 'We could not send your request. Please call or WhatsApp our team.';
@@ -279,7 +279,7 @@ scripts: |
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Your site visit request has been sent</h3>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Request received</h3>
           <p class="text-xs text-slate-600 leading-relaxed font-body max-w-md mx-auto">
             Your request has been received. Our team will contact you shortly to discuss your needs and confirm a suitable time.
           </p>

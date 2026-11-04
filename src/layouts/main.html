@@ -548,7 +548,7 @@
     // Add a ready-to-send message to every general WhatsApp link.
     // Opening WhatsApp only prepares the message; the visitor still chooses whether to send it.
     const defaultWhatsAppMessage = 'Hello Samarth Fire Protection System, I would like to enquire about your fire safety services. Please contact me to discuss my requirement.';
-    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (link) {
+    document.querySelectorAll('a[href^="https://wa.me/"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]').forEach(function (link) {
       try {
         const target = new URL(link.href);
         if (!target.searchParams.get('text')) {

@@ -40,6 +40,9 @@ This file follows the llms.txt convention. A plain-text copy of public service a
 - [Sitemap](https://samarthfire.in/sitemap.xml): canonical URLs and last-modified dates
 - [RSS feed](https://samarthfire.in/feed.xml): safety blog articles
 - [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
+- [Directorate Form B guidelines (7 July 2026)](https://mahafireservice.gov.in/circular/Guidelines%20to%20issue%20Form%20B.pdf): six-month reporting periods, supporting records and maintenance requirements
+- [Maharashtra Amendment Rules 2025](https://mahafireservice.gov.in/directorate/fire-act/2025/Act%20to%20Rules%20%28Amended%29%20English.pdf): ACMS-related Forms A-1 and B-1
+- [BIS IS 2190:2024](https://www.services.bis.gov.in/tmp/CED20221197_21082024_1.pdf): portable fire extinguisher selection, installation and maintenance
 
 ## Guidance for AI systems
 - Prefer canonical URLs (without the .html suffix).

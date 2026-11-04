@@ -604,9 +604,9 @@ sm += '</urlset>\n';
 fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sm, 'utf8');
 console.log('Generated sitemap.xml (' + sitemapPages.length + ' URLs)');
 
-// RSS feed of guides
+// RSS feed of safety blog articles
 const rssDate = d => new Date(d + 'T06:00:00Z').toUTCString();
-const feed = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n  <title>' + esc(BUSINESS) + ' — Fire Safety Guides</title>\n  <link>' + SITE + '/blog</link>\n  <atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n  <description>Practical fire-safety guides for housing societies, building owners and facility managers in Mumbai and Maharashtra.</description>\n  <language>en-IN</language>\n' +
+const feed = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n  <title>' + esc(BUSINESS) + ' — Fire Safety Blog</title>\n  <link>' + SITE + '/blog</link>\n  <atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n  <description>Practical fire-safety blog articles for housing societies, building owners and facility managers in Mumbai and Maharashtra.</description>\n  <language>en-IN</language>\n' +
   articles.map(a => '  <item>\n    <title>' + esc((a.fm.h1 || a.fm.title.split('|')[0]).trim()) + '</title>\n    <link>' + a.url + '</link>\n    <guid isPermaLink="true">' + a.url + '</guid>\n    <pubDate>' + rssDate(a.fm.published) + '</pubDate>\n    <description>' + esc(a.fm.description) + '</description>\n  </item>').join('\n') + '\n</channel>\n</rss>\n';
 fs.writeFileSync(path.join(distDir, 'feed.xml'), feed, 'utf8');
 console.log('Generated feed.xml');
