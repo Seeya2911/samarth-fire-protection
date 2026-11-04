@@ -36,10 +36,14 @@ const WITHHELD = new Set(['client_society_assembly.jpg', 'client_cpr_training.jp
     (text.match(/[A-Za-z0-9_\-]+\.(?:jpe?g|png)/gi) || []).forEach(f => referenced.add(f));
   });
   scan(path.join(root, 'src'));
-  const files = fs.readdirSync(root).filter(f => /\.(jpe?g|png)$/i.test(f) && referenced.has(f) && !SKIP.has(f) && !WITHHELD.has(f));
+  const sourceDir = path.join(root, 'src', 'pages');
+  const pagePhotos = fs.readdirSync(sourceDir).filter(f => /\.(jpe?g|png)$/i.test(f));
+  const rootPhotos = fs.readdirSync(root).filter(f => /\.(jpe?g|png)$/i.test(f));
+  const files = [...new Set([...pagePhotos, ...rootPhotos])].filter(f => referenced.has(f) && !SKIP.has(f) && !WITHHELD.has(f));
   for (const file of files) {
     const base = file.replace(/\.[^.]+$/, '');
-    const src = path.join(root, file);
+    const pageSource = path.join(root, 'src', 'pages', file);
+    const src = fs.existsSync(pageSource) ? pageSource : path.join(root, file);
     const meta = await sharp(src).metadata();
     const variants = [];
     const isLicense = /^license_page/.test(file); // documents: keep readable, WebP only, no AVIF blur
@@ -62,12 +66,15 @@ const WITHHELD = new Set(['client_society_assembly.jpg', 'client_cpr_training.jp
   }
 
   // Social share image: 1200x630 crop from an approved field photo
-  const ogSrc = path.join(root, 'client_hydrant_valve_test.jpg');
+  const ogName = 'client_hydrant_valve_test.jpg';
+  const ogPageSource = path.join(root, 'src', 'pages', ogName);
+  const ogSrc = fs.existsSync(ogPageSource) ? ogPageSource : path.join(root, ogName);
   await sharp(ogSrc).resize(1200, 630, { fit: 'cover', position: 'attention' }).jpeg({ quality: 82, mozjpeg: true }).toFile(path.join(outDir, 'og-default.jpg'));
   manifest['__og'] = { file: 'img/og-default.jpg', width: 1200, height: 630 };
 
   // Favicon / app icons from the brand mark
-  const logo = path.join(root, 'logo.png');
+  const logoPageSource = path.join(root, 'src', 'pages', 'logo.png');
+  const logo = fs.existsSync(logoPageSource) ? logoPageSource : path.join(root, 'logo.png');
   for (const s of [32, 180, 192, 512]) {
     await sharp(logo).resize(s, s, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 0 } }).png({ compressionLevel: 9 }).toFile(path.join(outDir, `icon-${s}.png`));
   }
