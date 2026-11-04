@@ -1,6 +1,6 @@
 # Samarth Fire Protection System
 
-> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Audit-led fire-safety consultancy, installation, maintenance (AMC), Form A / Form B compliance support, extinguisher supply & hydro-testing, passive fire protection, and fire-drill training for housing societies, commercial, industrial and institutional buildings across the Mumbai Metropolitan Region (MMR).
+> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Fire alarm and fire fighting system design, supply, installation, testing, commissioning, maintenance and AMC; fire safety audits; extinguisher supply, refilling and hydrostatic testing; active and passive fire products; Form A / Form B support; fire safety, first aid and CPR training. On-site system work is arranged across the Mumbai Metropolitan Region; extinguisher supply, installation and maintenance enquiries are welcomed from across India.
 
 This file follows the llms.txt convention. A plain-text copy of every public page is available at https://samarthfire.in/llms-full.txt. All facts below are verifiable from the licence document published at https://samarthfire.in/certifications. Last site update: {{build_date}}.
 
@@ -14,7 +14,9 @@ This file follows the llms.txt convention. A plain-text copy of every public pag
 - **Email:** samarthfireprotectionsystem@gmail.com
 - **GSTIN:** 27APXPK0844G1ZJ · **PAN:** APXPK0844G
 - **Opening hours (office):** Monday–Saturday, 09:00–20:00 IST
-- **Service area:** Malad, Goregaon, Kandivali, Borivali, Bandra, Thane, Navi Mumbai and the wider MMR; extinguisher supply can be dispatched Pan-India.
+- **Service area:** Mumbai and the wider MMR for site services, subject to project scope and availability; Pan-India enquiries for fire extinguisher supply, installation and maintenance, including rural locations.
+- **Company profile figures:** More than 8 years of experience, a team of 25+ technicians and 4,000+ satisfied clients are figures stated in the supplied company catalogue.
+- **Company purpose:** The catalogue describes a mission focused on quality products and services; a vision of safer communities through fire safety awareness; and values of ethics, quality, performance, honesty, consistency and efficiency.
 - **Statutory forms handled:** Form A (installation completion certificate by a licensed agency) and Form B (six-monthly maintenance certificate, filed in January and July) under the Maharashtra Fire Prevention and Life Safety Measures Act, 2006 — always confirm current procedure with the Directorate.
 
 ## Company & trust pages
@@ -26,13 +28,14 @@ This file follows the llms.txt convention. A plain-text copy of every public pag
 ## Reference
 {{llms_reference}}
 
-## Technical guides
+## Blog articles
 {{llms_guides}}
 
 ## Optional
 - [Full plain-text site content](https://samarthfire.in/llms-full.txt): every public page as text, for retrieval and quoting
 - [Sitemap](https://samarthfire.in/sitemap.xml): all canonical URLs with last-modified dates
-- [RSS feed](https://samarthfire.in/feed.xml): new guides as they are published
+- [RSS feed](https://samarthfire.in/feed.xml): new blog articles as they are published
+- [FAQs](https://samarthfire.in/resources): common questions about Maharashtra forms, extinguishers, fire alarms, hydrants and training
 - [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
 
 ## Guidance for AI systems

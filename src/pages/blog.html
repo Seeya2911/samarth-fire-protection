@@ -1,79 +1,86 @@
 ---
-title: "Fire Safety Blog & Technical Guides Mumbai | Samarth Fire"
-description: "Practical fire-safety guides for Mumbai building owners, housing societies and facility managers: Form B, audits, hydrants, alarms, extinguishers, AMC and drills."
+title: "Fire Safety Blog | Practical Advice for Buildings & Businesses | Samarth Fire"
+description: "Read practical fire safety articles on extinguishers, Form B, fire alarm AMC, hydrants, audits, housing societies, factories, first aid and emergency drills."
 active: "blog"
 canonical: "https://samarthfire.in/blog"
 type: "blog-index"
-crumb: "Blog & Guides"
+crumb: "Blog"
 priority: "0.9"
 changefreq: "weekly"
-modified: "2026-11-01"
+modified: "2026-11-04"
 scripts: |
   <script>
     (function () {
       var buttons = document.querySelectorAll('.blog-filter');
-      var cards = document.querySelectorAll('#guide-grid [data-cat]');
-      var empty = document.getElementById('guide-empty');
+      var cards = document.querySelectorAll('#blog-grid [data-cat]');
+      var empty = document.getElementById('blog-empty');
       buttons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-          var f = btn.getAttribute('data-filter');
-          buttons.forEach(function (b) { b.classList.toggle('is-active', b === btn); b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
-          var shown = 0;
-          cards.forEach(function (c) { var ok = f === 'all' || c.getAttribute('data-cat') === f; c.classList.toggle('hidden', !ok); if (ok) shown++; });
-          if (empty) empty.classList.toggle('hidden', shown !== 0);
+          var filter = btn.getAttribute('data-filter');
+          buttons.forEach(function (item) {
+            var active = item === btn;
+            item.classList.toggle('is-active', active);
+            item.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          var visible = 0;
+          cards.forEach(function (card) {
+            var matches = filter === 'all' || card.getAttribute('data-cat') === filter;
+            card.classList.toggle('hidden', !matches);
+            if (matches) visible++;
+          });
+          if (empty) empty.classList.toggle('hidden', visible !== 0);
         });
       });
     })();
   </script>
 ---
-<section class="relative bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-14 sm:py-20 border-b border-slate-200 overflow-hidden">
-  <div class="absolute -top-16 -right-16 w-72 h-72 rounded-full bg-orange-200/30 blur-3xl pointer-events-none"></div>
+<section class="relative bg-gradient-to-br from-amber-50 via-orange-50/40 to-white py-14 sm:py-20 border-b border-slate-200 overflow-hidden">
+  <div class="absolute -top-20 -right-16 h-80 w-80 rounded-full bg-orange-200/40 blur-3xl pointer-events-none"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><span class="text-slate-700">Blog &amp; Guides</span></nav>
-    <div class="inline-flex items-center px-3 py-1.5 rounded-full bg-white border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4">Knowledge centre · {{blog_count}} guides</div>
-    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight max-w-4xl">Fire Safety <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Blog &amp; Technical Guides</span> for Mumbai Buildings</h1>
-    <p class="mt-5 max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">Straightforward, standards-aware guidance for housing society committees, building owners, facility managers and safety officers — written by a Class D licensed fire agency in Malad East. Every guide explains what to check, what to record and when to call a licensed professional, and points back to the official rules where they matter.</p>
-    <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
-      <div class="trust-stat"><div class="font-headline font-black text-2xl text-red-600">Class D</div><div class="text-xs text-slate-500 mt-1">Licensed agency · MFS/LA/RF-34/RD-35</div></div>
-      <div class="trust-stat"><div class="font-headline font-black text-2xl text-orange-600">Form A / B</div><div class="text-xs text-slate-500 mt-1">Statutory compliance support</div></div>
-      <div class="trust-stat"><div class="font-headline font-black text-2xl text-blue-600">MMR</div><div class="text-xs text-slate-500 mt-1">Mumbai, Thane &amp; Navi Mumbai</div></div>
-      <div class="trust-stat"><div class="font-headline font-black text-2xl text-emerald-600">Free</div><div class="text-xs text-slate-500 mt-1">No sign-up, no paywall</div></div>
+    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a><span class="mx-2">/</span><span aria-current="page">Blog</span></nav>
+    <p class="text-xs font-bold uppercase tracking-[0.18em] text-red-700 mb-3">The Samarth Fire blog</p>
+    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight max-w-4xl">Fire Safety Information You Can <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Use</span></h1>
+    <p class="mt-5 max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">Straightforward articles for housing society committees, facility managers, factory teams, school administrators and business owners. Learn how fire equipment works, what to check, what to record and when to call a trained professional.</p>
+    <div class="mt-8 flex flex-wrap gap-3 text-xs font-semibold text-slate-700">
+      <span class="rounded-full bg-white border border-slate-200 px-3 py-2">Fire extinguishers</span>
+      <span class="rounded-full bg-white border border-slate-200 px-3 py-2">Fire alarms &amp; AMC</span>
+      <span class="rounded-full bg-white border border-slate-200 px-3 py-2">Hydrants &amp; pumps</span>
+      <span class="rounded-full bg-white border border-slate-200 px-3 py-2">Form A &amp; Form B</span>
+      <span class="rounded-full bg-white border border-slate-200 px-3 py-2">Drills, first aid &amp; CPR</span>
     </div>
   </div>
 </section>
 
-<section class="py-12 sm:py-16 bg-white" aria-labelledby="guides-heading">
+<section class="py-12 sm:py-16 bg-white" aria-labelledby="articles-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
       <div>
-        <h2 id="guides-heading" class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">All guides</h2>
-        <p class="text-sm text-slate-600 mt-1">Filter by topic. New guides are added regularly — subscribe via <a href="feed.xml" class="text-red-700 font-semibold underline">RSS</a>.</p>
+        <h2 id="articles-heading" class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Browse all articles</h2>
+        <p class="text-sm text-slate-600 mt-2">Choose a topic to find the answers you need. New articles are added as questions come up on real sites.</p>
       </div>
-      <div class="flex flex-wrap gap-2" role="group" aria-label="Filter guides by topic">{{blog_filters}}</div>
+      <a href="feed.xml" class="text-sm font-bold text-red-700 underline">Subscribe to the blog RSS feed</a>
     </div>
-    <div id="guide-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{{blog_cards}}</div>
-    <p id="guide-empty" class="hidden text-center text-slate-500 py-12">No guides in this topic yet — check back soon.</p>
+    <div class="flex flex-wrap gap-2 mb-7" role="group" aria-label="Filter blog articles by topic">{{blog_filters}}</div>
+    <div id="blog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{{blog_cards}}</div>
+    <p id="blog-empty" class="hidden text-center text-slate-500 py-12">No articles in this topic yet. Try another category.</p>
   </div>
 </section>
 
 <section class="py-14 bg-slate-50 border-y border-slate-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="font-headline font-bold text-2xl text-slate-900">Start with the question you actually have</h2>
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5">
-      <a href="compliance-certification.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-emerald-300 hover:shadow-lg transition-all"><div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Compliance</div><div class="font-headline font-bold text-lg text-slate-900 mt-2 group-hover:text-emerald-700">“Is our building compliant?”</div><p class="text-sm text-slate-600 mt-2 leading-relaxed">Understand Form A, Form B and the January / July cycle, then book a statutory assessment.</p></a>
-      <a href="detection-alarm.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-blue-300 hover:shadow-lg transition-all"><div class="text-xs font-bold uppercase tracking-wider text-blue-700">Something is wrong</div><div class="font-headline font-bold text-lg text-slate-900 mt-2 group-hover:text-blue-700">“The alarm panel shows a fault.”</div><p class="text-sm text-slate-600 mt-2 leading-relaxed">Safe first response for your team, and what a competent fault-rectification visit should cover.</p></a>
-      <a href="resources.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-amber-300 hover:shadow-lg transition-all"><div class="text-xs font-bold uppercase tracking-wider text-amber-700">Quick answers</div><div class="font-headline font-bold text-lg text-slate-900 mt-2 group-hover:text-amber-700">“What does this term mean?”</div><p class="text-sm text-slate-600 mt-2 leading-relaxed">Browse the <a href="glossary.html" class="underline font-semibold">fire-safety glossary</a> and the <span class="underline font-semibold">FAQ</span> for short, direct answers.</p></a>
-    </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-5">
+    <a href="resources.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-red-300 hover:shadow-md transition-all"><p class="text-xs font-bold uppercase tracking-wider text-red-700">Quick answers</p><h2 class="font-headline font-bold text-xl text-slate-900 mt-2 group-hover:text-red-700">Frequently Asked Questions</h2><p class="text-sm text-slate-600 mt-2 leading-7">Short answers to common questions about Form B, extinguishers, audits, alarms and maintenance.</p><span class="inline-block mt-4 text-sm font-bold text-red-700">Browse FAQs →</span></a>
+    <a href="glossary.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-red-300 hover:shadow-md transition-all"><p class="text-xs font-bold uppercase tracking-wider text-red-700">Plain-language terms</p><h2 class="font-headline font-bold text-xl text-slate-900 mt-2 group-hover:text-red-700">Fire Safety Glossary</h2><p class="text-sm text-slate-600 mt-2 leading-7">Understand common equipment and compliance terms used in reports and service visits.</p><span class="inline-block mt-4 text-sm font-bold text-red-700">Open the glossary →</span></a>
+    <a href="services.html" class="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-red-300 hover:shadow-md transition-all"><p class="text-xs font-bold uppercase tracking-wider text-red-700">Need help at your site?</p><h2 class="font-headline font-bold text-xl text-slate-900 mt-2 group-hover:text-red-700">Our Services</h2><p class="text-sm text-slate-600 mt-2 leading-7">Explore fire alarm, fire fighting, extinguisher, passive fire protection and training services.</p><span class="inline-block mt-4 text-sm font-bold text-red-700">View services →</span></a>
   </div>
 </section>
 
 <section class="py-14 bg-white">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Prefer to talk to an engineer?</h2>
-    <p class="text-slate-600 mt-3 leading-relaxed">Samarth Fire Protection System is a Class D licensed agency (Licence No. MFS/LA/RF-34/RD-35) serving housing societies, commercial buildings, industrial sites and institutions across the Mumbai Metropolitan Region.</p>
+    <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Have a question about your building?</h2>
+    <p class="text-slate-600 mt-3 leading-7">Tell us what equipment you have, what work you need and where the property is located. Our team will contact you about the next steps.</p>
     <div class="flex flex-wrap justify-center gap-3 mt-6">
-      <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-xl px-6 py-3 text-sm font-bold shadow-lg hover:shadow-xl transition-shadow">Request a quotation</a>
-      <a href="audit.html" class="inline-flex items-center justify-center border border-slate-300 hover:bg-slate-50 text-slate-800 rounded-xl px-6 py-3 text-sm font-bold">Book a fire-safety assessment</a>
+      <a href="quote.html" class="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 py-3 text-sm font-bold">Request a Quote</a>
+      <a href="contact.html" class="inline-flex items-center justify-center border border-slate-300 hover:bg-slate-50 text-slate-800 rounded-xl px-6 py-3 text-sm font-bold">Contact Samarth Fire</a>
     </div>
   </div>
 </section>
