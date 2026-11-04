@@ -52,6 +52,13 @@
 
   <!-- JSON-LD: one connected entity graph (Organization · WebSite · Founder · page nodes) -->
   <script type="application/ld+json">{{schema}}</script>
+  <style>
+    .service-nav > summary { list-style: none; cursor: pointer; }
+    .service-nav > summary::-webkit-details-marker { display: none; }
+    .service-nav .service-dropdown-menu { display: none; }
+    .service-nav[open] .service-dropdown-menu { display: block; }
+    .service-nav[open] > summary svg { transform: rotate(180deg); }
+  </style>
 </head>
 <body class="bg-white text-slate-800 font-body antialiased flex flex-col min-h-screen">
 
@@ -65,7 +72,7 @@
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>Class D Agency</span>
         </span>
-        <span class="text-slate-300">Govt. Licence: <strong class="text-amber-400 font-mono">MFS/LA/RF-34/RD-35</strong> &bull; Directorate of Maharashtra Fire Services</span>
+        <span class="text-slate-300">Fire alarm systems &bull; Fire fighting systems &bull; Safety training</span>
       </div>
       <div class="flex items-center space-x-4 text-slate-400 text-xs">
         <span class="hidden md:inline font-medium text-slate-400">HQ: Malad East, Mumbai</span>
@@ -100,114 +107,35 @@
             </div>
             <div class="flex items-center space-x-2 mt-1">
               <span class="font-body font-semibold text-slate-500 tracking-wider text-[9px] sm:text-[10px] uppercase leading-none">
-                Govt. Licensed Class D Agency &bull; Mumbai Fire Safety
+                Fire Safety Systems, Maintenance & Training
               </span>
             </div>
           </div>
         </a>
 
-        <!-- Desktop Navigation: Clean, Colorful, Inviting Menu & Dropdown -->
-        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-7 font-nav text-sm font-semibold text-slate-700">
-          <!-- 1. About Us -->
-          <a href="about.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_about}}">About Us</a>
-
-          <!-- 2. Home -->
+        <!-- Simple, click-to-open navigation -->
+        <nav class="hidden lg:flex items-center gap-5 font-nav text-sm font-semibold text-slate-700" aria-label="Main navigation">
           <a href="index.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_home}}">Home</a>
-
-          <!-- 3. Services Directory (with Colorful Aesthetic Dropdown) -->
-          <div class="relative group">
-            <a href="services.html" class="hover:text-red-600 transition-colors flex items-center space-x-1.5 outline-none py-2 whitespace-nowrap {{active_services}}" aria-haspopup="true">
+          <a href="about.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_about}}">About</a>
+          <details class="service-nav relative">
+            <summary class="flex items-center gap-1.5 cursor-pointer list-none py-2 hover:text-red-600 {{active_services}}">
               <span>Services</span>
-              <svg class="h-4 w-4 transition-transform group-hover:rotate-180 text-slate-400 group-hover:text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </a>
-            <!-- Aesthetic White Dropdown Menu with Colorful Service Badges -->
-            <div class="absolute left-0 mt-1 w-84 rounded-2xl bg-white shadow-2xl border border-slate-100 p-3 hidden group-hover:block z-50 font-body text-xs text-slate-800 divide-y divide-slate-100">
-              <div class="space-y-1 pb-2">
-                <a href="fire-fighting.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-rose-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-rose-600">Fire Fighting & Sprinklers</span>
-                    <span class="block text-[11px] text-slate-500">Hydrants, booster pumps & automatic lines</span>
-                  </div>
-                </a>
-                <a href="detection-alarm.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-blue-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-blue-600">Detection & Alarm Loops</span>
-                    <span class="block text-[11px] text-slate-500">Optical sensors & addressable panel audits</span>
-                  </div>
-                </a>
-                <a href="extinguishing.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-amber-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-amber-600">Extinguishers & Hydro-Testing</span>
-                    <span class="block text-[11px] text-slate-500">CO2, ABC powder refilling & HPT testing</span>
-                  </div>
-                </a>
-              </div>
-              <div class="space-y-1 pt-2">
-                <a href="passive-protection.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-purple-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-purple-600">Passive Fire Protection</span>
-                    <span class="block text-[11px] text-slate-500">Fire-rated doors, sealants & damper ducts</span>
-                  </div>
-                </a>
-                <a href="compliance-certification.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-emerald-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-emerald-600">Compliance & Form B</span>
-                    <span class="block text-[11px] text-slate-500">Official statutory bi-annual filing</span>
-                  </div>
-                </a>
-                <a href="training-preparedness.html" class="flex items-start space-x-3 p-2 rounded-xl hover:bg-orange-50/80 transition-colors group/item">
-                  <div class="w-7 h-7 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                  </div>
-                  <div>
-                    <span class="block font-bold text-slate-900 group-hover/item:text-orange-600">Training & Evacuation Drills</span>
-                    <span class="block text-[11px] text-slate-500">Live hose drills, CPR & staff coaching</span>
-                  </div>
-                </a>
-              </div>
+              <svg class="h-4 w-4 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.09 1.03l-4.25 4.5a.75.75 0 01-1.09 0l-4.25-4.5a.75.75 0 01.02-1.05z" clip-rule="evenodd"/></svg>
+            </summary>
+            <div class="service-dropdown-menu absolute left-0 top-full mt-1 w-72 rounded-2xl bg-white shadow-xl border border-slate-200 p-2 z-50 text-sm">
+              <a href="services.html" class="block rounded-xl px-3 py-2.5 font-bold text-red-700 hover:bg-red-50">All services</a>
+              <a href="detection-alarm.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire alarm systems</a>
+              <a href="fire-fighting.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire fighting systems</a>
+              <a href="extinguishing.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire extinguishers &amp; equipment</a>
+              <a href="passive-protection.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Passive fire protection</a>
+              <a href="audit.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire safety audits</a>
+              <a href="training-preparedness.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire safety, first aid &amp; CPR training</a>
             </div>
-          </div>
-
-          <!-- 4. Projects -->
+          </details>
+          <a href="industries.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_industries}}">Industries</a>
           <a href="projects.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
-
-          <!-- 4b. Blog -->
           <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Guides</a>
-
-          <!-- 5. Secondary Links Dropdown -->
-          <div class="relative group">
-            <button type="button" class="hover:text-red-600 transition-colors flex items-center space-x-1 outline-none py-2 whitespace-nowrap" aria-haspopup="true">
-              <span>More</span>
-              <svg class="h-3.5 w-3.5 transition-transform group-hover:rotate-180 text-slate-400 group-hover:text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="absolute right-0 mt-1 w-56 rounded-2xl bg-white shadow-xl border border-slate-100 p-2 hidden group-hover:block z-50 font-body text-xs text-slate-700">
-              <a href="founder.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">Founder Leadership</a>
-              <a href="process.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">7-Step Lifecycle</a>
-              <a href="certifications.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">Class D License & Form N</a>
-              <a href="resources.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">FAQs & Safety Guide</a>
-              <a href="blog.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">Blog & Technical Guides</a>
-              <a href="contact.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 transition-colors">Contact Malad Desk</a>
-            </div>
-          </div>
+          <a href="contact.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_contact}}">Contact</a>
         </nav>
 
         <!-- 5. Header Action CTAs: Vibrant Warm Coral & Royal Blue Buttons -->
@@ -240,45 +168,36 @@
       </div>
     </div>
 
-    <!-- Mobile Menu Drawer (Crisp White with Colorful Links) -->
+    <!-- Mobile menu: same links, with a tap-to-open Services list -->
     <div class="hidden lg:hidden bg-white border-b border-slate-200 shadow-xl text-slate-800" id="mobile-menu">
-      <div class="px-4 pt-3 pb-4 space-y-1 sm:px-3 text-sm font-headline font-semibold">
-        <!-- 1. About Us -->
-        <a href="about.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_about}}">About Us</a>
-        <!-- 2. Home -->
-        <a href="index.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_home}}">Home</a>
-        <!-- 3. Services -->
-        <a href="services.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_services}}">Services Directory</a>
-        <!-- 4. Projects -->
-        <a href="projects.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_projects}}">Projects / Case Studies</a>
-        
-        <a href="blog.html" class="block px-3 py-2.5 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_blog}}">Blog &amp; Guides</a>
-        <div class="pt-2 border-t border-slate-100 mt-2 space-y-1 text-xs font-body font-medium text-slate-600">
-          <a href="founder.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600">Founder Leadership</a>
-          <a href="certifications.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_compliance}}">Class D License & Form N</a>
-          <a href="process.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_process}}">7-Step Engineering Lifecycle</a>
-          <a href="resources.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_resources}}">FAQ & Safety Guide</a>
-          <a href="blog.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_blog}}">Blog & Technical Guides</a>
-          <a href="contact.html" class="block px-3 py-2 rounded-xl hover:bg-slate-50 hover:text-red-600 {{active_contact}}">Contact Malad Desk</a>
-        </div>
-      </div>
-      <div class="pt-3 pb-5 border-t border-slate-100 px-4 flex flex-col space-y-2.5">
-        <a href="quote.html" class="flex items-center justify-center space-x-2 bg-gradient-to-r from-red-600 to-orange-500 text-white py-3 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-md shadow-red-500/20">
-          <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-          <span>Get a Quote / Estimate</span>
-        </a>
-        <a href="audit.html" class="flex items-center justify-center space-x-2 bg-blue-50 border border-blue-200 text-blue-700 py-2.5 rounded-xl text-xs font-headline tracking-wider font-bold hover:bg-blue-100">
-          <span>Book Site Assessment</span>
-        </a>
-        <a href="tel:+919967101472" class="flex items-center justify-center space-x-2 bg-slate-900 text-white py-2.5 rounded-xl text-xs font-body tracking-wider font-medium">
-          <svg class="h-3.5 w-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-          <span>Direct Desk: <strong class="font-mono text-amber-400">9967101472</strong></span>
-        </a>
+      <nav class="px-4 pt-3 pb-4 space-y-1 text-sm font-headline font-semibold" aria-label="Mobile navigation">
+        <a href="index.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_home}}">Home</a>
+        <a href="about.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_about}}">About</a>
+        <details class="service-nav rounded-xl">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 py-2.5 hover:bg-slate-50 {{active_services}}">Services <span aria-hidden="true">⌄</span></summary>
+          <div class="service-dropdown-menu pl-4 pb-2 text-sm font-medium">
+            <a href="services.html" class="block rounded-lg px-3 py-2 text-red-700">All services</a>
+            <a href="detection-alarm.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Fire alarm systems</a>
+            <a href="fire-fighting.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Fire fighting systems</a>
+            <a href="extinguishing.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Extinguishers &amp; equipment</a>
+            <a href="passive-protection.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Passive fire protection</a>
+            <a href="audit.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Fire safety audits</a>
+            <a href="training-preparedness.html" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Training, first aid &amp; CPR</a>
+          </div>
+        </details>
+        <a href="industries.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_industries}}">Industries</a>
+        <a href="projects.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_projects}}">Projects</a>
+        <a href="blog.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_blog}}">Guides</a>
+        <a href="resources.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_resources}}">FAQs</a>
+        <a href="contact.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_contact}}">Contact</a>
+      </nav>
+      <div class="border-t border-slate-100 px-4 py-4 grid grid-cols-2 gap-2">
+        <a href="quote.html" class="flex items-center justify-center rounded-xl bg-red-600 px-3 py-3 text-xs font-bold uppercase tracking-wide text-white">Get a Quote</a>
+        <a href="audit.html" class="flex items-center justify-center rounded-xl border border-slate-300 px-3 py-3 text-xs font-bold text-slate-800">Book an Audit</a>
+        <a href="tel:+919967101472" class="col-span-2 flex items-center justify-center rounded-xl bg-slate-900 px-3 py-3 text-xs font-bold text-white">Call 99671 01472</a>
       </div>
     </div>
-  </header>
+    </header>
 
   <!-- Main Content Wrapper -->
   <main id="main-content" class="flex-grow">
@@ -396,6 +315,7 @@
       <div class="border-t border-slate-800 mt-8 pt-6 flex flex-col md:flex-row justify-between text-[11px] text-slate-500">
         <p>&copy; 2026 Samarth Fire Protection System. All Rights Reserved. Engineered for Safety & Preparedness.</p>
         <div class="flex space-x-4 mt-2 md:mt-0 font-mono">
+          <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors underline">Google Business Profile</a>
           <a href="feed.xml" class="hover:text-amber-400 transition-colors underline">RSS</a>
           <a href="sitemap.xml" class="hover:text-amber-400 transition-colors underline">Sitemap</a>
           <a href="llms.txt" class="hover:text-amber-400 transition-colors underline">llms.txt</a>
@@ -605,7 +525,27 @@
         revealElements.forEach(el => el.classList.add('revealed'));
       }
     });
-  </script>
+      // Email submissions are sent by a private server-side Vercel function.
+    window.submitSamarthLead = async function (payload) {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      let result = {};
+      try { result = await response.json(); } catch (_) {}
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'We could not send your request. Please call or WhatsApp our team.');
+      }
+      return result;
+    };
+
+    document.addEventListener('click', function (event) {
+      document.querySelectorAll('details.service-nav[open]').forEach(function (menu) {
+        if (!menu.contains(event.target)) menu.open = false;
+      });
+    });
+</script>
   
   {{scripts}}
 </body>

@@ -1,6 +1,6 @@
 ---
-title: "Contact Samarth Fire Protection System Malad | Government Agency"
-description: "Get in touch with Samarth Fire Protection System in Malad East, Mumbai. Contact us via phone, email, or WhatsApp. View our registered address and map."
+title: "Contact Samarth Fire Protection System | Mumbai & India"
+description: "Contact Samarth Fire for fire alarm and fire fighting installation, maintenance, AMC, equipment supply, audits and safety training. Based in Malad East, Mumbai."
 active: "contact"
 schema: {
   "@context": "https://schema.org",
@@ -11,27 +11,37 @@ schema: {
 }
 scripts: |
   <script>
-    function handleContactSubmit(event) {
+    async function handleContactSubmit(event) {
       event.preventDefault();
+      const form = document.getElementById('contact-form');
+      if (!form.reportValidity()) return;
       const name = document.getElementById('contact-name').value.trim();
       const phone = document.getElementById('contact-phone').value.trim();
       const email = document.getElementById('contact-email').value.trim();
       const subject = document.getElementById('contact-subject').value;
       const message = document.getElementById('contact-msg').value.trim();
-      const body = [
-        'Website enquiry for Samarth Fire Protection System',
-        'Name: ' + name,
-        'Phone: ' + phone,
-        'Email: ' + (email || 'Not provided'),
-        'Subject: ' + subject,
-        'Message: ' + message
-      ].join('\\n');
-      const encoded = encodeURIComponent(body);
-      document.getElementById('contact-wa-btn').href = 'https://wa.me/919967101472?text=' + encoded;
-      document.getElementById('contact-email-btn').href = 'mailto:samarthfireprotectionsystem@gmail.com?subject='
-        + encodeURIComponent('Website enquiry: ' + subject) + '&body=' + encoded;
-      document.getElementById('contact-form').classList.add('hidden');
-      document.getElementById('contact-success').classList.remove('hidden');
+      const button = form.querySelector('button[type="submit"]');
+      const error = document.getElementById('contact-error');
+      const waText = ['Hello Samarth Fire, I have sent a website enquiry.', 'Name: ' + name, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Subject: ' + subject, 'Message: ' + message].join('\n');
+      const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
+      error.classList.add('hidden');
+      document.getElementById('contact-error-wa').href = waUrl;
+      if (button) { button.disabled = true; button.textContent = 'Sending message…'; }
+      try {
+        await window.submitSamarthLead({
+          type: 'contact', name, phone, email, subject, message,
+          website: document.getElementById('contact-website').value
+        });
+        document.getElementById('contact-form').classList.add('hidden');
+        document.getElementById('contact-success').classList.remove('hidden');
+        document.getElementById('contact-wa-btn').href = waUrl;
+      } catch (err) {
+        error.textContent = err.message || 'We could not send your message. Please call or WhatsApp our team.';
+        error.classList.remove('hidden');
+        document.getElementById('contact-error-wa').classList.remove('hidden');
+      } finally {
+        if (button) { button.disabled = false; button.textContent = 'Send Message'; }
+      }
     }
   </script>
 ---
@@ -47,7 +57,7 @@ scripts: |
       Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Samarth Fire</span>
     </h1>
     <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
-      Licensed Compliance Desk &bull; Bi-Annual Form B Audit Schedules &bull; 24/7 Field Engineering Operations
+      Call, email or send a request. Tell us what your site needs and our team will follow up.
     </p>
   </div>
 </section>
@@ -106,24 +116,26 @@ scripts: |
             <textarea id="contact-msg" required rows="5" placeholder="Explain your building's fire safety question or requirements here (e.g. requesting a quote for compliance checks on hydrants system)." class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 font-body text-sm"></textarea>
           </div>
 
+          <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[10000px] h-px w-px" aria-hidden="true">
           <!-- Submit -->
           <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline uppercase tracking-wider text-xs font-bold py-4 rounded-xl transition-all focus-ring shadow-md shadow-red-500/20">
             Send Message
           </button>
         </form>
+        <p id="contact-error" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert"></p>
+        <a id="contact-error-wa" href="#" target="_blank" rel="noopener noreferrer" class="hidden mt-3 text-sm font-bold text-emerald-700 underline">Continue on WhatsApp instead</a>
 
         <!-- Success Banner -->
         <div id="contact-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 p-8 rounded-2xl text-center mt-6">
           <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h3 class="font-headline font-bold text-xl text-emerald-900">Your enquiry is ready to send</h3>
+          <h3 class="font-headline font-bold text-xl text-emerald-900">Your enquiry has been sent</h3>
           <p class="text-sm text-emerald-800/80 leading-relaxed mt-2 font-body max-w-md mx-auto">
-            Your details have been placed into a WhatsApp message and an email draft. Choose one option below and press Send in the app that opens. This website does not transmit the enquiry automatically.
+            Thank you. Your message has been emailed to the Samarth Fire team. We will get in touch using the contact details you provided.
           </p>
           <div class="mt-5 flex flex-col sm:flex-row justify-center gap-3">
             <a id="contact-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-xl text-sm font-bold">Continue with WhatsApp</a>
-            <a id="contact-email-btn" href="#" class="inline-flex justify-center bg-slate-900 hover:bg-slate-800 text-white px-5 py-3 rounded-xl text-sm font-bold">Open email draft</a>
           </div>
         </div>
 
@@ -190,6 +202,8 @@ scripts: |
             <strong class="text-emerald-700">MSME Udyam Registered</strong>
           </div>
         </div>
+
+        <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="inline-flex mb-4 text-sm font-bold text-red-700 underline">View our Google Business Profile</a>
 
         <!-- Google Map embed (clean rounded frame) -->
         <div class="h-64 rounded-3xl border-2 border-white overflow-hidden relative shadow-lg">

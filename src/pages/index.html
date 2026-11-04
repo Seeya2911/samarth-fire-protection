@@ -1,6 +1,6 @@
 ---
-title: "Samarth Fire Protection System | Licensed Fire Safety Agency Mumbai"
-description: "Directorate of Maharashtra Fire Services Licensed Class D Agency (MFS/LA/RF-34/RD-35). Fire protection systems, safety assessments, training, and maintenance."
+title: "Fire Safety Systems, AMC & Training in Mumbai | Samarth Fire"
+description: "Fire alarm and fire fighting system installation, maintenance and AMC, fire safety audits, extinguisher supply, passive fire products and first aid & CPR training from Samarth Fire, Mumbai."
 active: "home"
 schema: {
   "@context": "https://schema.org",
@@ -31,58 +31,6 @@ schema: {
     "closes": "20:00"
   }
 }
-scripts: |
-  <script>
-    // Interactive Fire Safety & Form B NOC Cost Estimator
-    function calculateEstimate() {
-      const propType = document.getElementById('calc-prop-type').value;
-      const floors = parseInt(document.getElementById('calc-floors').value) || 1;
-      
-      const formB = document.getElementById('calc-opt-formb').checked;
-      const extinguishers = document.getElementById('calc-opt-ext').checked;
-      const hydrantAmc = document.getElementById('calc-opt-hydrant').checked;
-      const alarms = document.getElementById('calc-opt-alarm').checked;
-
-      let baseLow = 0;
-      let baseHigh = 0;
-
-      // Base property multipliers
-      if (propType === 'residential') {
-        if (formB) { baseLow += 6000 + (floors * 400); baseHigh += 9500 + (floors * 600); }
-        if (extinguishers) { baseLow += 3500 + (floors * 350); baseHigh += 5500 + (floors * 500); }
-        if (hydrantAmc) { baseLow += 12000 + (floors * 800); baseHigh += 18000 + (floors * 1200); }
-        if (alarms) { baseLow += 5000 + (floors * 400); baseHigh += 8500 + (floors * 600); }
-      } else if (propType === 'commercial') {
-        if (formB) { baseLow += 9000 + (floors * 600); baseHigh += 14000 + (floors * 900); }
-        if (extinguishers) { baseLow += 5000 + (floors * 500); baseHigh += 8000 + (floors * 750); }
-        if (hydrantAmc) { baseLow += 18000 + (floors * 1200); baseHigh += 26000 + (floors * 1600); }
-        if (alarms) { baseLow += 8000 + (floors * 700); baseHigh += 13000 + (floors * 1000); }
-      } else { // Industrial / Warehouse
-        if (formB) { baseLow += 12000 + (floors * 800); baseHigh += 19000 + (floors * 1200); }
-        if (extinguishers) { baseLow += 7000 + (floors * 700); baseHigh += 11000 + (floors * 1000); }
-        if (hydrantAmc) { baseLow += 22000 + (floors * 1500); baseHigh += 34000 + (floors * 2000); }
-        if (alarms) { baseLow += 10000 + (floors * 900); baseHigh += 16000 + (floors * 1400); }
-      }
-
-      if (baseLow === 0) {
-        document.getElementById('calc-result-range').innerText = "₹0";
-        document.getElementById('whatsapp-calc-btn').setAttribute('href', "https://wa.me/919967101472?text=" + encodeURIComponent("Hi Samarth Fire, I would like to request a customized site audit."));
-        return;
-      }
-
-      const formattedLow = "₹" + baseLow.toLocaleString('en-IN');
-      const formattedHigh = "₹" + baseHigh.toLocaleString('en-IN');
-      document.getElementById('calc-result-range').innerText = formattedLow + " – " + formattedHigh;
-
-      // Update WhatsApp link with formatted summary
-      const summaryText = `Hello Samarth Fire Team, I used your online estimator for my building:\n- Type: ${propType.toUpperCase()}\n- Floors: ${floors}\n- Services: ${formB ? 'Form B NOC, ' : ''}${extinguishers ? 'Extinguishers HPT, ' : ''}${hydrantAmc ? 'Hydrant AMC, ' : ''}${alarms ? 'Alarm Testing' : ''}\nEstimated Range: ${formattedLow} - ${formattedHigh}. Please schedule a site audit.`;
-      document.getElementById('whatsapp-calc-btn').setAttribute('href', "https://wa.me/919967101472?text=" + encodeURIComponent(summaryText));
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      calculateEstimate();
-    });
-  </script>
 ---
 
 <!-- 1. SUNLIT, WARM, AESTHETIC & COLOURFUL HERO SECTION -->
@@ -101,17 +49,15 @@ scripts: |
         <div class="inline-flex items-center space-x-2 bg-white/90 border border-orange-200/90 px-3.5 py-1.5 rounded-full mb-6 shadow-xs backdrop-blur-sm">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span class="font-headline text-xs font-bold uppercase tracking-wider text-orange-700">
-            Directorate of Maharashtra Fire Services &bull; Class D Agency
+            Fire Safety Installation &bull; Maintenance &bull; Training
           </span>
         </div>
 
         <h1 class="font-headline font-black text-3xl sm:text-5xl lg:text-[54px] tracking-tight text-slate-900 leading-[1.12] mb-6">
-          Mission-Critical <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600">Fire Protection</span> &amp; Life-Safety Systems
-        </h1>
+          Fire Safety Systems &amp; Services for <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600">Buildings and Businesses</span></h1>
         
         <p class="text-base sm:text-lg text-slate-700 mb-8 leading-relaxed font-body max-w-xl">
-          Complete turnkey fire engineering, statutory Form B compliance certifications, high-pressure wet risers, and emergency mock drills for housing societies, commercial towers, and industrial plants across Mumbai &amp; MMR.
-        </p>
+          Fire alarm and fire fighting system installation, repairs and AMC, fire safety audits, extinguisher supply and maintenance, passive fire products, and practical safety training. Based in Mumbai, we also welcome fire extinguisher service enquiries from across India.</p>
         
         <!-- Hero Action CTAs (Vibrant Flame Red-Orange & Clean White Buttons) -->
         <div class="flex flex-col sm:flex-row gap-3.5 mb-10">
@@ -132,7 +78,7 @@ scripts: |
           </div>
           <div class="flex items-center space-x-2">
             <svg class="h-4 w-4 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <span class="font-semibold text-slate-800">8+ Years &bull; 4,000+ Premises Protected</span>
+            <span class="font-semibold text-slate-800">8+ Years of Experience &bull; 25+ Technicians</span>
           </div>
         </div>
       </div>
@@ -204,15 +150,15 @@ scripts: |
       </div>
 
       <div class="p-5 bg-white rounded-2xl border-t-4 border-amber-500 border-x border-b border-slate-200/80 shadow-xs text-center card-lift reveal-init delay-200">
-        <span class="block font-headline text-[11px] uppercase tracking-wider text-amber-600 font-bold mb-1">Skilled Field Force</span>
+        <span class="block font-headline text-[11px] uppercase tracking-wider text-amber-600 font-bold mb-1">Experienced Team</span>
         <span class="block font-headline text-3xl sm:text-4xl text-slate-900 font-extrabold">25+ Staff</span>
-        <span class="block text-xs text-slate-500 mt-1 font-body">Engineers, firemen &amp; certified fitters</span>
+        <span class="block text-xs text-slate-500 mt-1 font-body">Technicians, engineers, firemen &amp; operators</span>
       </div>
 
       <div class="p-5 bg-white rounded-2xl border-t-4 border-emerald-500 border-x border-b border-slate-200/80 shadow-xs text-center card-lift reveal-init delay-300">
-        <span class="block font-headline text-[11px] uppercase tracking-wider text-emerald-600 font-bold mb-1">Premises Serviced</span>
+        <span class="block font-headline text-[11px] uppercase tracking-wider text-emerald-600 font-bold mb-1">Satisfied Clients</span>
         <span class="block font-headline text-3xl sm:text-4xl text-slate-900 font-extrabold">4,000+</span>
-        <span class="block text-xs text-slate-500 mt-1 font-body">Residential societies, offices &amp; plants</span>
+        <span class="block text-xs text-slate-500 mt-1 font-body">As reported in the company catalogue</span>
       </div>
     </div>
 
@@ -220,25 +166,25 @@ scripts: |
     <div class="border-t border-slate-200 pt-8 reveal-init">
       <div class="text-center mb-5">
         <span class="text-xs font-mono uppercase tracking-widest text-slate-500 font-semibold">
-          Verified Installations &amp; Safety Engineering Projects Include:
+          Organisations named in our company profile:
         </span>
       </div>
       <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4 font-headline font-bold text-xs sm:text-sm text-slate-700">
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-          <span>Central Government Nuclear Facility Complex</span>
+          <span>Nuclear Power Corporation of India Limited</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-          <span>Premier Diamond Bourse Commercial Exchange, BKC</span>
+          <span>Bharat Diamond Bourse</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-          <span>Leading International IB School Campus, Mulund</span>
+          <span>NES International School</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-          <span>500+ Housing Societies Across Mumbai</span>
+          <span>Housing Societies &amp; Residential Buildings</span>
         </div>
       </div>
     </div>
@@ -246,301 +192,52 @@ scripts: |
   </div>
 </section>
 
-<!-- 3. THE SIX CORE DISCIPLINES (COLOURFUL, AESTHETIC & INVITING CARDS) -->
-<section class="py-20 bg-white border-b border-slate-200/80">
+<!-- Main services: written for property owners and facility managers -->
+<section class="py-16 sm:py-20 bg-white border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal-init">
-      <div>
-        <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-2">
-          STANDARDIZED CAPABILITIES &bull; TURNKEY EXECUTION
-        </span>
-        <h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
-          Core Fire Safety Engineering Services
-        </h2>
-      </div>
-      <a href="services.html" class="mt-4 md:mt-0 font-headline text-xs font-bold uppercase tracking-wider text-red-600 hover:text-red-700 transition-colors flex items-center space-x-1.5">
-        <span>View Full Capabilities Directory</span>
-        <span>&rarr;</span>
-      </a>
+    <div class="max-w-3xl mb-10">
+      <p class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">What we do</p>
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl text-slate-900">Fire Safety Services</h2>
+      <p class="text-base text-slate-600 mt-3 leading-7">From new installations to repairs, regular maintenance and training, we help you look after the fire safety systems at your property.</p>
     </div>
-
-    <!-- 6 Core Services Grid with Real Equipment Documentation Photos -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- 01: Fire Fighting & Hydrants (Vibrant Red) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-red-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="client_pump_manifold.jpg" class="w-full h-full object-cover" alt="Booster pump station manifold overhaul" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">10-BAR RATED</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-red-600 font-bold block mb-1">01 &bull; Active Water Suppression</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Fire Fighting Systems</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Wet risers, dry risers, yard hydrants, booster pumps, automatic sprinkler networks, hose reels, and branching nozzles.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="fire-fighting.html" class="font-headline text-xs font-bold text-red-600 hover:text-red-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-red-50 hover:bg-red-100 text-red-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
-      <!-- 02: Detection & Alarm Loops (Royal Cobalt Blue) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-blue-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init delay-100 flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="client_hosereel_floor_service.jpg" class="w-full h-full object-cover" alt="Alarm loop circuit continuity and sensor testing" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">EARLY DETECTION</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-blue-600 font-bold block mb-1">02 &bull; Automated Telemetry</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Detection &amp; Alarm Loops</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Addressable and conventional panels, optical smoke sensors, heat alarms, manual call points (MCP), and circuit continuity tracing.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="detection-alarm.html" class="font-headline text-xs font-bold text-blue-600 hover:text-blue-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-blue-50 hover:bg-blue-100 text-blue-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
-      <!-- 03: Extinguishing Equipment (Warm Saffron Amber) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-amber-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init delay-200 flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="client_hose_box_service.jpg" class="w-full h-full object-cover" alt="Fire extinguisher refilling and corridor staging box inspection" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">IS 2190 TESTED</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-amber-600 font-bold block mb-1">03 &bull; Recharging &amp; HPT</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Fire Extinguishers</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Supply of ABC Powder, CO₂, Foam, and Clean Agent cylinders. Periodic hydraulic pressure testing (HPT), chemical refilling, and tagging.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="extinguishing.html" class="font-headline text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-amber-50 hover:bg-amber-100 text-amber-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
-      <!-- 04: Passive Fire Protection (Modern Purple) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-purple-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="client_riser_installation.jpg" class="w-full h-full object-cover" alt="Pipe penetration sealing and riser shaft containment" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">COMPARTMENTATION</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-purple-600 font-bold block mb-1">04 &bull; Structural Barriers</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Passive Fire Protection</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Fire-rated doors (FRD), intumescent seals for electrical shafts, pipeline firestops, and containment boarding to stop smoke migration.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="passive-protection.html" class="font-headline text-xs font-bold text-purple-600 hover:text-purple-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-purple-50 hover:bg-purple-100 text-purple-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
-      <!-- 05: Compliance & Form B Certification (Emerald Green) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-emerald-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init delay-100 flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="license_page_1.png" class="w-full h-full object-cover" alt="Official Maharashtra Fire Services License and Form B statutory compliance document" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">STATUTORY NOC</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-emerald-600 font-bold block mb-1">05 &bull; Government Filings</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Compliance &amp; Form A/B NOC</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Physical safety walkthrough audits, gap analysis, Form A initial clearance, and bi-annual Form B filings across MMR municipal wards.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="compliance-certification.html" class="font-headline text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-emerald-50 hover:bg-emerald-100 text-emerald-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
-      <!-- 06: Training & Emergency Preparedness (Tangerine Orange) -->
-      <div class="bg-white rounded-3xl p-6 border-t-4 border-orange-500 border-x border-b border-slate-200/90 shadow-sm card-lift reveal-init delay-200 flex flex-col justify-between">
-        <div>
-          <div class="h-48 rounded-2xl overflow-hidden mb-5 relative">
-            <img src="client_hose_reel_drill.jpg" class="w-full h-full object-cover" alt="Technician conducting live pressurized hose reel deployment drill" width="380" height="192">
-            <span class="absolute top-3 left-3 bg-orange-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-xs">LIFE SAFETY DRILL</span>
-          </div>
-          <span class="font-mono text-[10px] uppercase tracking-wider text-orange-600 font-bold block mb-1">06 &bull; Practical Education</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900 mb-2">Training &amp; Preparedness</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body mb-4">
-            Hands-on compound mock drills for housing societies, extinguisher discharge technique (PASS), and certified CPR mannequin workshops.
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-          <a href="training-preparedness.html" class="font-headline text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center space-x-1">
-            <span>Explore Specifications &rarr;</span>
-          </a>
-          <a href="quote.html" class="font-headline text-xs font-bold bg-orange-50 hover:bg-orange-100 text-orange-700 px-3 py-1.5 rounded-lg transition-colors">
-            Get Quote
-          </a>
-        </div>
-      </div>
-
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Fire Alarm Systems</h3><p class="text-sm text-slate-600 mt-3 leading-7">Installation, testing, repairs, maintenance and AMC for fire alarm panels and detectors.</p><a href="detection-alarm.html" class="inline-block mt-4 text-sm font-bold text-red-700">Learn more →</a></article>
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Fire Fighting Systems</h3><p class="text-sm text-slate-600 mt-3 leading-7">Hydrants, sprinklers, pumps, hose reels and related installation and maintenance work.</p><a href="fire-fighting.html" class="inline-block mt-4 text-sm font-bold text-red-700">Learn more →</a></article>
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Fire Safety Audits</h3><p class="text-sm text-slate-600 mt-3 leading-7">Site visits to review equipment, access, maintenance and fire safety arrangements.</p><a href="audit.html" class="inline-block mt-4 text-sm font-bold text-red-700">Book a site visit →</a></article>
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Active &amp; Passive Fire Products</h3><p class="text-sm text-slate-600 mt-3 leading-7">Supply of fire safety products and materials, including fire doors, seals, alarms and hydrant equipment.</p><a href="passive-protection.html" class="inline-block mt-4 text-sm font-bold text-red-700">Learn more →</a></article>
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Fire Extinguishers</h3><p class="text-sm text-slate-600 mt-3 leading-7">Supply, installation, refilling, maintenance and related services for homes and workplaces.</p><a href="extinguishing.html" class="inline-block mt-4 text-sm font-bold text-red-700">Learn more →</a></article>
+      <article class="rounded-2xl border border-slate-200 p-6 bg-slate-50"><h3 class="font-headline font-bold text-xl text-slate-900">Fire Safety, First Aid &amp; CPR Training</h3><p class="text-sm text-slate-600 mt-3 leading-7">Practical demonstrations, fire drills, first aid and CPR training for staff and communities.</p><a href="training-preparedness.html" class="inline-block mt-4 text-sm font-bold text-red-700">Learn more →</a></article>
     </div>
-
+    <div class="text-center mt-8"><a href="services.html" class="inline-flex rounded-xl border border-slate-300 px-6 py-3 text-sm font-bold text-slate-800 hover:bg-slate-50">View all services</a></div>
   </div>
 </section>
 
-<!-- 4. OPERATIONAL METHODOLOGY: 4-STEP REALITY -->
-<section class="py-20 bg-slate-50 border-b border-slate-200/80">
+<!-- How we work -->
+<section class="py-14 bg-slate-50 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="max-w-3xl mb-14 reveal-init">
-      <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-2">
-        AUTHENTIC OPERATIONAL METHODOLOGY
-      </span>
-      <h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
-        How We Prepare Communities: A 4-Step Reality
-      </h2>
-      <p class="text-base text-slate-600 leading-relaxed font-body">
-        Most properties fail fire audits not because they lack equipment, but because valves are seized, alarms are disconnected, and occupants don't know how to act in the critical first two minutes.
-      </p>
+    <div class="max-w-3xl mb-8"><h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">A straightforward process</h2><p class="text-sm text-slate-600 mt-3 leading-7">We listen to what you need, check the site where required, explain the work and provide a quotation before starting.</p></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="rounded-2xl bg-white border border-slate-200 p-5"><strong class="text-red-700">1. Tell us</strong><p class="text-sm text-slate-600 mt-2">Share your site, the systems you have and what help you need.</p></div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-5"><strong class="text-red-700">2. We review</strong><p class="text-sm text-slate-600 mt-2">We arrange a site visit or review the details you provide.</p></div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-5"><strong class="text-red-700">3. You receive a quote</strong><p class="text-sm text-slate-600 mt-2">We explain the recommended work, materials and costs.</p></div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-5"><strong class="text-red-700">4. We do the work</strong><p class="text-sm text-slate-600 mt-2">Our team installs, services or trains your people as agreed.</p></div>
     </div>
-
-    <!-- 4 Photographic Documentary Story Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Step 1 (Red) -->
-      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift reveal-init">
-        <div class="h-48 overflow-hidden relative">
-          <img src="client_hydrant_valve_test.jpg" class="w-full h-full object-cover" alt="Technician conducting on-site hydrant pressure test and physical equipment inspection" width="380" height="192">
-          <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold">STAGE 01</span>
-        </div>
-        <div class="p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">1. On-Site Physical Audit</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body">
-            Walkthrough inspection of risers, pump starters, refuge areas, and alarms alongside committee members to identify hidden safety gaps.
-          </p>
-        </div>
-      </div>
-
-      <!-- Step 2 (Blue) -->
-      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift reveal-init delay-100">
-        <div class="h-48 overflow-hidden relative">
-          <img src="client_hose_box_service.jpg" class="w-full h-full object-cover" alt="Technician servicing corridor hose reel cabinet and branch pipe" width="380" height="192">
-          <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold">STAGE 02</span>
-        </div>
-        <div class="p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">2. Hardware Servicing</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body">
-            Gland packing lubrication, valve seat replacement, pressure gauge calibration, and non-return valve overhauls to ensure instant flow.
-          </p>
-        </div>
-      </div>
-
-      <!-- Step 3 (Amber) -->
-      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift reveal-init delay-200">
-        <div class="h-48 overflow-hidden relative">
-          <img src="client_pump_manifold.jpg" class="w-full h-full object-cover" alt="High-rise booster pump station testing and pressure stabilization" width="380" height="192">
-          <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold">STAGE 03</span>
-        </div>
-        <div class="p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">3. Pump Synchronization</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body">
-            Automated starter testing, diesel engine fallback simulation, and jockey pressure switch tuning to prevent catastrophic pipe water hammer.
-          </p>
-        </div>
-      </div>
-
-      <!-- Step 4 (Emerald) -->
-      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift reveal-init delay-300">
-        <div class="h-48 overflow-hidden relative">
-          <img src="client_hose_reel_drill.jpg" class="w-full h-full object-cover" alt="Technicians and staff conducting high-pressure hose reel water discharge drill" width="380" height="192">
-          <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full font-bold">STAGE 04</span>
-        </div>
-        <div class="p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">4. Pressurized Live Drills</h3>
-          <p class="text-xs text-slate-600 leading-relaxed font-body">
-            Full-pressure water discharge drill demonstrating how to manage branch recoil, aim streams, and suppress active structural heat.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>
 
-<!-- 5. TARGETED SPECIFICATIONS: PROPERTY PROFILES -->
-<section class="py-20 bg-white border-b border-slate-200/80">
+<!-- Industries and properties -->
+<section class="py-16 bg-white border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-2xl mx-auto mb-14 reveal-init">
-      <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-2">TARGETED SPECIFICATIONS</span>
-      <h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
-        Industries &amp; Property Profiles Served
-      </h2>
-      <p class="text-xs sm:text-sm text-slate-600 mt-2 font-body">
-        Every building layout presents distinct municipal clearance requirements and physical load limits.
-      </p>
+    <div class="max-w-3xl mb-9"><p class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Where we work</p><h2 class="font-headline font-bold text-3xl text-slate-900">Fire Safety for Different Types of Sites</h2><p class="text-sm text-slate-600 mt-3 leading-7">We work with facility managers, owners, committees and organisations in different sectors.</p></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Oil, Gas &amp; Petroleum</h3><p class="text-sm text-slate-600 mt-2">Fire equipment and maintenance for petroleum and fuel facilities, including HPCL- and BPCL-type sites.</p></div>
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Malls &amp; Retail</h3><p class="text-sm text-slate-600 mt-2">Fire systems, equipment maintenance and staff training for large shopping and retail properties such as Phoenix, R City and Inorbit-type malls.</p></div>
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Industrial &amp; Warehousing</h3><p class="text-sm text-slate-600 mt-2">Fire alarm and fire fighting systems, equipment supply and ongoing maintenance for industrial sites.</p></div>
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Offices &amp; Commercial Buildings</h3><p class="text-sm text-slate-600 mt-2">Installation, AMC, audits and training for offices, business parks and commercial buildings.</p></div>
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Hospitals &amp; Schools</h3><p class="text-sm text-slate-600 mt-2">Fire safety equipment, maintenance and training for healthcare and educational premises.</p></div>
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-5"><h3 class="font-headline font-bold text-lg text-slate-900">Housing Societies</h3><p class="text-sm text-slate-600 mt-2">Extinguishers, alarm and hydrant systems, site reviews, drills and maintenance support.</p></div>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-body text-xs text-slate-800">
-      <!-- Profile 1 -->
-      <div id="residential" class="p-6 bg-slate-50/80 rounded-2xl border-t-4 border-red-500 border-x border-b border-slate-200/80 shadow-2xs space-y-3">
-        <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
-        <h3 class="font-headline font-bold text-base text-slate-900">Residential CHS</h3>
-        <p class="text-slate-600 leading-relaxed">
-          Bi-annual Form B renewals, riser shaft audits, booster pump pressure stabilization, corridor clearances, and society resident drills.
-        </p>
-      </div>
-
-      <!-- Profile 2 -->
-      <div id="commercial" class="p-6 bg-slate-50/80 rounded-2xl border-t-4 border-blue-500 border-x border-b border-slate-200/80 shadow-2xs space-y-3">
-        <span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span>
-        <h3 class="font-headline font-bold text-base text-slate-900">Commercial Towers</h3>
-        <p class="text-slate-600 leading-relaxed">
-          Addressable smoke loops, server room gas suppression (FM200/CO₂), sprinkler drops, staircase pressurization, and mock drills.
-        </p>
-      </div>
-
-      <!-- Profile 3 -->
-      <div id="industrial" class="p-6 bg-slate-50/80 rounded-2xl border-t-4 border-amber-500 border-x border-b border-slate-200/80 shadow-2xs space-y-3">
-        <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
-        <h3 class="font-headline font-bold text-base text-slate-900">Industrial Plants</h3>
-        <p class="text-slate-600 leading-relaxed">
-          External yard hydrant ring mains, high-capacity foam stations, automated sirens, chemical fire barriers, and factory safety audits.
-        </p>
-      </div>
-
-      <!-- Profile 4 -->
-      <div id="institutional" class="p-6 bg-slate-50/80 rounded-2xl border-t-4 border-emerald-500 border-x border-b border-slate-200/80 shadow-2xs space-y-3">
-        <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
-        <h3 class="font-headline font-bold text-base text-slate-900">Institutional</h3>
-        <p class="text-slate-600 leading-relaxed">
-          Clear voice evacuation, emergency exit panic hardware, manual stations, educational clearance audits, and first-aid readiness.
-        </p>
-      </div>
-    </div>
+    <div class="mt-8 flex flex-wrap gap-3"><a href="industries.html" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-bold text-slate-800">View industries</a><a href="service-areas.html" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-bold text-slate-800">View service areas</a></div>
   </div>
 </section>
 
@@ -691,121 +388,15 @@ scripts: |
   </div>
 </section>
 
-<!-- 8. CRISP & ACCESSIBLE INTERACTIVE COST ESTIMATOR -->
-<section id="quote-calculator" class="py-20 bg-gradient-to-br from-orange-50/70 via-amber-50/40 to-white text-slate-800 relative overflow-hidden border-t border-slate-200/80">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    
-    <div class="max-w-3xl mx-auto text-center mb-12 reveal-init">
-      <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-2">
-        TRANSPARENT BUDGET ESTIMATION
-      </span>
-      <h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
-        Fire Safety &amp; NOC Cost Estimator
-      </h2>
-      <p class="text-sm text-slate-600 leading-relaxed font-body">
-        Select your property characteristics below to generate an estimated budget guideline. Export directly to our engineering desk via WhatsApp or request an itemized formal quote.
-      </p>
+<!-- Clear quotation call to action: project pricing is confirmed from the actual site requirements -->
+<section class="py-14 bg-gradient-to-br from-amber-50 via-orange-50/30 to-white border-t border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Need a price for your site?</p>
+    <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Request a Fire Safety Quotation</h2>
+    <p class="text-sm text-slate-600 mt-3 max-w-2xl mx-auto leading-7">Tell us about your building, the equipment you need or the maintenance work required. We will review the scope and contact you with the next steps.</p>
+    <div class="mt-6 flex flex-wrap gap-3 justify-center">
+      <a href="quote.html" class="inline-flex rounded-xl bg-red-600 hover:bg-red-700 px-6 py-3 text-sm font-bold text-white">Request a Quote</a>
+      <a href="tel:+919967101472" class="inline-flex rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-800">Call 99671 01472</a>
     </div>
-
-    <!-- Calculator Card -->
-    <div class="max-w-4xl mx-auto bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-xl reveal-init">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        
-        <!-- Field 1: Property Type -->
-        <div>
-          <label for="calc-prop-type" class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-2">
-            1. Property Classification
-          </label>
-          <select id="calc-prop-type" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3 text-sm focus:border-red-500 focus:bg-white focus:outline-none transition-all font-body">
-            <option value="residential" selected>Cooperative Housing Society (Residential CHS)</option>
-            <option value="commercial">Commercial Office Complex / Retail Mall</option>
-            <option value="industrial">Industrial Factory / Warehousing Facility</option>
-          </select>
-        </div>
-
-        <!-- Field 2: Building Scale / Floors -->
-        <div>
-          <label for="calc-floors" class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-2">
-            2. Approximate Storeys / Floors
-          </label>
-          <select id="calc-floors" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3 text-sm focus:border-red-500 focus:bg-white focus:outline-none transition-all font-body">
-            <option value="4">1 to 4 Floors (Low-Rise)</option>
-            <option value="7" selected>5 to 7 Floors (Mid-Rise CHS)</option>
-            <option value="15">8 to 15 Floors (High-Rise Tower)</option>
-            <option value="25">16+ Floors (Super High-Rise)</option>
-          </select>
-        </div>
-
-      </div>
-
-      <!-- Field 3: Modules -->
-      <div class="mb-8 border-t border-slate-100 pt-6">
-        <span class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-4">
-          3. Select Required Safety Modules
-        </span>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-body">
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-formb" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Form B Bi-Annual Compliance NOC</span>
-              <span class="text-slate-500 text-[11px]">Official inspection &amp; certificate submission</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-ext" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Extinguisher Refilling &amp; HPT Testing</span>
-              <span class="text-slate-500 text-[11px]">Hydro-pressure test &amp; fresh ISI chemical refilling</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-hydrant" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Hydrant &amp; Sprinkler Pump AMC</span>
-              <span class="text-slate-500 text-[11px]">Quarterly valve servicing &amp; pump pressure check</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-alarm" onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Smoke Detection &amp; Alarm Loop Audit</span>
-              <span class="text-slate-500 text-[11px]">Control panel battery test &amp; detector calibration</span>
-            </div>
-          </label>
-        </div>
-      </div>
-
-      <!-- Output Banner (High-Contrast Navy Card with Saffron/Amber Price) -->
-      <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-        <div>
-          <span class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-1">
-            Estimated Budget Guideline (Excl. GST)
-          </span>
-          <span id="calc-result-range" class="font-headline text-3xl sm:text-4xl text-amber-400 font-black">
-            ₹0
-          </span>
-          <span class="block text-[11px] text-slate-400 mt-1">
-            *Final quote provided post physical site inspection by our licensed engineer.
-          </span>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-          <a id="whatsapp-calc-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-headline text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
-            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.955 14.162.95 11.536.95c-5.445 0-9.87 4.37-9.874 9.8.001 2.036.541 4.021 1.562 5.766L2.24 20.25l4.407-1.096z"/></svg>
-            <span>Transmit via WhatsApp</span>
-          </a>
-          <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
-            <span>Get an Itemized Quote</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>

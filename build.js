@@ -499,7 +499,7 @@ for (const p of pages) {
 const articles = pages.filter(p => p.fm.type === 'article').sort((a, b) => String(b.fm.published).localeCompare(String(a.fm.published)) || a.slug.localeCompare(b.slug));
 
 /* ------------------------------------------------------------------ compile pages */
-const activeTabs = ['home', 'about', 'process', 'services', 'compliance', 'projects', 'resources', 'blog', 'contact', 'quote'];
+const activeTabs = ['home', 'about', 'process', 'services', 'compliance', 'projects', 'resources', 'blog', 'contact', 'quote', 'industries'];
 const compiled = {};
 for (const p of pages) {
   const fm = p.fm;
