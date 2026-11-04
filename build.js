@@ -55,7 +55,7 @@ const CATEGORIES = {
 const LLMS_GROUPS = {
   core: ['index', 'about', 'founder', 'certifications', 'contact', 'quote', 'audit'],
   services: ['services', 'fire-fighting', 'detection-alarm', 'extinguishing', 'passive-protection', 'compliance-certification', 'training-preparedness'],
-  reference: ['resources', 'glossary', 'service-areas', 'projects', 'process', 'blog', 'industries']
+  reference: ['resources', 'glossary', 'service-areas', 'industries', 'projects', 'process', 'blog']
 };
 
 /* ------------------------------------------------------------------ helpers */
@@ -350,7 +350,7 @@ function buildSchema(page) {
   if (page.slug !== 'index' && !hasType('BreadcrumbList') && fm.type !== '404') {
     const trail = [['Home', SITE + '/']];
     const parent = fm.parent;
-    const parents = { services: ['Services', SITE + '/services'], blog: ['Blog', SITE + '/blog'], about: ['About', SITE + '/about'], resources: ['Resources', SITE + '/resources'] };
+    const parents = { services: ['Services', SITE + '/services'], blog: ['Blogs', SITE + '/blog'], about: ['About', SITE + '/about'], resources: ['Resources', SITE + '/resources'] };
     if (parent && parents[parent]) trail.push(parents[parent]);
     trail.push([fm.crumb || fm.title.split('|')[0].trim(), page.url]);
     pageNodes.push({ '@type': 'BreadcrumbList', '@id': page.url + '#breadcrumb', itemListElement: trail.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t[0], item: t[1] })) });
@@ -390,7 +390,7 @@ function renderGuide(page, body, toc, readMin, related) {
   return `
 <section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-12 sm:py-16 border-b border-slate-200">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700" >Blog</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
+    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700">Blogs</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
     <span class="inline-flex items-center px-3 py-1 rounded-full border text-[11px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
     <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl mt-4">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
     <p class="text-base sm:text-lg text-slate-600 leading-relaxed mt-5 max-w-3xl">${esc(fm.lead || fm.description)}</p>
@@ -466,6 +466,20 @@ function renderPlainPage(page, body, toc) {
 </div></div>`;
 }
 
+// Extract section anchors for HTML-based guide templates, as well as Markdown guides.
+function extractHtmlToc(html) {
+  const entries = [];
+  const re = /<section\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/section>/gi;
+  let match;
+  while ((match = re.exec(html))) {
+    const heading = match[2].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i);
+    if (!heading) continue;
+    const label = stripTags(heading[1]).replace(/\s+/g, ' ').trim();
+    if (label) entries.push({ id: match[1], text: label });
+  }
+  return entries;
+}
+
 /* ------------------------------------------------------------------ load pages */
 const pages = [];
 const passthrough = [];
@@ -481,20 +495,6 @@ for (const file of fs.readdirSync(pagesDir)) {
   if (!fm.modified) fm.modified = gitDate('src/pages/' + file) || fm.published || null;
   const url = fm.canonical ? fm.canonical.replace(/\.html(?=[?#]|$)/, '') : urlFor(slug);
   pages.push({ file: slug + '.html', srcFile: file, slug, url, fm, raw: parsed.content, isMd: /\.md$/i.test(file) });
-}
-
-// Extract section anchors for HTML-based guide templates, as well as Markdown guides.
-function extractHtmlToc(html) {
-  const entries = [];
-  const re = /<section\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/section>/gi;
-  let match;
-  while ((match = re.exec(html))) {
-    const heading = match[2].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i);
-    if (!heading) continue;
-    const label = stripTags(heading[1]).replace(/\s+/g, ' ').trim();
-    if (label) entries.push({ id: match[1], text: label });
-  }
-  return entries;
 }
 
 // Pass 1: render bodies so we can reuse FAQs / read time / card data
@@ -540,7 +540,7 @@ for (const p of pages) {
 
   // Blog index schema is generated from the articles so new posts appear automatically
   if (fm.type === 'blog-index') {
-    fm.schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Blog', '@id': p.url + '#blog', name: BUSINESS + ' — Fire Safety Blog', url: p.url, inLanguage: 'en-IN', publisher: { '@id': ORG_ID },
+    fm.schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Blog', '@id': p.url + '#blog', name: BUSINESS + ' — Samarth Fire Safety Blog', url: p.url, inLanguage: 'en-IN', publisher: { '@id': ORG_ID },
       blogPost: articles.map(a => ({ '@type': 'BlogPosting', headline: (a.fm.h1 || a.fm.title.split('|')[0]).trim(), url: a.url, description: a.fm.description, datePublished: a.fm.published, dateModified: a.fm.modified || a.fm.published, image: a.fm.image ? withAbs(a.fm.image) : undefined, author: { '@id': ORG_ID }, publisher: { '@id': ORG_ID } })) });
   }
   // Guide pages: generate Article schema from frontmatter
@@ -620,7 +620,7 @@ sm += '</urlset>\n';
 fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sm, 'utf8');
 console.log('Generated sitemap.xml (' + sitemapPages.length + ' URLs)');
 
-// RSS feed of blog articles
+// RSS feed of safety blog articles
 const rssDate = d => new Date(d + 'T06:00:00Z').toUTCString();
 const feed = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n  <title>' + esc(BUSINESS) + ' — Fire Safety Blog</title>\n  <link>' + SITE + '/blog</link>\n  <atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n  <description>Practical fire-safety blog articles for housing societies, building owners, facility managers and businesses in Mumbai and Maharashtra.</description>\n  <language>en-IN</language>\n' +
   articles.map(a => '  <item>\n    <title>' + esc((a.fm.h1 || a.fm.title.split('|')[0]).trim()) + '</title>\n    <link>' + a.url + '</link>\n    <guid isPermaLink="true">' + a.url + '</guid>\n    <pubDate>' + rssDate(a.fm.published) + '</pubDate>\n    <description>' + esc(a.fm.description) + '</description>\n  </item>').join('\n') + '\n</channel>\n</rss>\n';

@@ -38,6 +38,7 @@ scripts: |
       const systems = Array.from(document.querySelectorAll('input[name="system"]:checked')).map(function (item) { return item.value; });
       const serviceNeeded = document.getElementById('audit-service-needed').value;
       const notes = document.getElementById('audit-notes').value.trim();
+
       const file = document.getElementById('audit-upload')?.files?.[0];
       const waText = ['Hello Samarth Fire, I have requested a fire safety site visit.', 'Building: ' + property, 'Contact: ' + contact, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Property type: ' + propertyType, 'Location: ' + location, 'Service: ' + serviceNeeded, 'Existing systems: ' + (systems.join(', ') || 'Not specified'), 'Notes: ' + (notes || 'None')].join('\n');
       const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
@@ -59,8 +60,8 @@ scripts: |
         });
         document.getElementById('audit-form').classList.add('hidden');
         document.getElementById('audit-success').classList.remove('hidden');
-        document.querySelector('#audit-success h3').textContent = 'Your site visit request has been sent';
-        document.querySelector('#audit-success p').textContent = 'Thank you. We’ve received your request. Our team will contact you shortly to understand your requirements and confirm a suitable time for the visit.';
+        document.querySelector('#audit-success h3').textContent = 'Request received';
+        document.querySelector('#audit-success p').textContent = 'Thanks. Our team will contact you shortly to discuss the site requirements and agree a suitable time for the visit.';
         document.getElementById('audit-wa-btn').href = waUrl;
       } catch (err) {
         error.textContent = err.message || 'We could not send your request. Please call or WhatsApp our team.';
@@ -94,8 +95,8 @@ scripts: |
         });
         document.getElementById('trouble-form').classList.add('hidden');
         document.getElementById('trouble-success').classList.remove('hidden');
-        document.querySelector('#trouble-success h3').textContent = 'Your fault report has been received';
-        document.querySelector('#trouble-success p').textContent = 'We’ve received your report. Our team will contact you about the issue. For an immediate emergency, call the local emergency services.';
+        document.querySelector('#trouble-success h3').textContent = 'Your fault report has been sent';
+        document.querySelector('#trouble-success p').textContent = 'We have emailed these details to the Samarth Fire team. For an urgent issue, you can also call our team.';
         document.getElementById('trouble-wa-btn').href = waUrl;
       } catch (err) {
         error.textContent = err.message || 'We could not send the alert. Please call or WhatsApp our team.';
@@ -255,10 +256,7 @@ scripts: |
             <label for="audit-notes" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Specific Observations or Notes</label>
             <textarea id="audit-notes" rows="3" placeholder="Specify any known faults, recent municipal notices, or access constraints." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all"></textarea>
           </div>
-
-          <p class="rounded-xl bg-sky-50 border border-sky-100 px-4 py-3 text-sm text-slate-600">No need to choose a date or time now. Our team will contact you to confirm a suitable visit time.</p>
-
-          <!-- Photo upload placeholder -->
+          <!-- Optional site photo or layout upload -->
           <div>
             <label for="audit-upload" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Upload Current Layout or Site Photo (Optional)</label>
             <input type="file" id="audit-upload" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" class="w-full bg-slate-50 border border-slate-200 text-slate-700 rounded-xl px-4 py-2.5 file:bg-slate-200 file:text-slate-800 file:border-0 file:rounded-lg file:px-3 file:py-1.5 file:mr-4 file:cursor-pointer file:font-semibold text-xs">
@@ -281,9 +279,9 @@ scripts: |
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Your site visit request has been sent</h3>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Request received</h3>
           <p class="text-xs text-slate-600 leading-relaxed font-body max-w-md mx-auto">
-            Thank you. Your request has been emailed to our team. We will contact you to discuss the visit.
+            Your request has been received. Our team will contact you shortly to discuss your needs and confirm a suitable time.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
             <a id="audit-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-headline text-xs font-bold uppercase tracking-wider py-3.5 px-4 rounded-xl shadow transition-all">

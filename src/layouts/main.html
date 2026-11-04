@@ -114,7 +114,7 @@
         </a>
 
         <!-- Simple, click-to-open navigation -->
-        <nav class="hidden lg:flex items-center gap-3 font-nav text-sm font-semibold text-slate-700" aria-label="Main navigation">
+        <nav class="hidden lg:flex items-center gap-5 font-nav text-sm font-semibold text-slate-700" aria-label="Main navigation">
           <a href="index.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_home}}">Home</a>
           <a href="about.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_about}}">About</a>
           <details class="service-nav relative">
@@ -135,7 +135,6 @@
           <a href="industries.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_industries}}">Industries</a>
           <a href="projects.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
           <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Blogs</a>
-          <a href="resources.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_resources}}">FAQs</a>
           <a href="contact.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_contact}}">Contact</a>
         </nav>
 
@@ -226,15 +225,15 @@
                 FIRE PROTECTION SYSTEM
               </span>
               <span class="font-mono text-[9px] text-slate-400 font-bold tracking-wider uppercase mt-0.5">
-                Fire Safety Systems &amp; Services
+                Class D Licensed Agency
               </span>
             </div>
           </div>
           <p class="text-xs leading-relaxed text-slate-400 mb-4 font-body">
-            We help buildings and businesses with fire alarm and fire fighting systems, equipment supply, maintenance, site reviews and practical safety training.
+            Directorate of Maharashtra Fire Services Licensed Class D Agency. Focused on audit-led fire safety engineering, turnkey system installations, preventative maintenance cycles, and hands-on compound emergency drills.
           </p>
           <p class="font-mono text-[11px] text-amber-300 leading-relaxed border-l-2 border-amber-500 pl-2.5">
-            "Helping people and properties stay safer through working equipment, regular care and practical training."
+            "Engineered for high-pressure readiness and unconditional life safety across the Mumbai Metropolitan Region."
           </p>
         </div>
 
@@ -242,7 +241,7 @@
         <div>
           <h3 class="font-headline text-xs uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-rose-500"></span>
-            <span>Our Services</span>
+            <span>Engineering Services</span>
           </h3>
           <ul class="space-y-2 text-xs font-mono text-[11px] text-slate-300">
             <li><a href="fire-fighting.html" class="hover:text-rose-400 transition-colors">&bull; Fire Hydrants & Sprinklers</a></li>
@@ -250,7 +249,7 @@
             <li><a href="extinguishing.html" class="hover:text-amber-400 transition-colors">&bull; Extinguisher Refilling & HPT</a></li>
             <li><a href="passive-protection.html" class="hover:text-purple-400 transition-colors">&bull; Passive Fire Stops & Doors</a></li>
             <li><a href="compliance-certification.html" class="hover:text-emerald-400 transition-colors">&bull; Form A & Form B Certification</a></li>
-            <li><a href="training-preparedness.html" class="hover:text-orange-400 transition-colors">&bull; Fire Drills, First Aid & CPR</a></li>
+            <li><a href="training-preparedness.html" class="hover:text-orange-400 transition-colors">&bull; Compound Mock Drills & CPR</a></li>
           </ul>
         </div>
 
@@ -258,18 +257,18 @@
         <div>
           <h3 class="font-headline text-xs uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-            <span>Company</span>
+            <span>Organization</span>
           </h3>
           <ul class="space-y-2 text-xs text-slate-300 font-mono text-[11px]">
-            <li><a href="about.html" class="hover:text-amber-400 transition-colors">&bull; About Samarth Fire</a></li>
+            <li><a href="about.html" class="hover:text-amber-400 transition-colors">&bull; About & 25+ Workforce</a></li>
             <li><a href="founder.html" class="hover:text-amber-400 transition-colors">&bull; Founder: Sameer M. Kangutkar</a></li>
-            <li><a href="process.html" class="hover:text-amber-400 transition-colors">&bull; How We Work</a></li>
-            <li><a href="projects.html" class="hover:text-amber-400 transition-colors">&bull; Projects & Work</a></li>
+            <li><a href="process.html" class="hover:text-amber-400 transition-colors">&bull; 7-Step Engineering Lifecycle</a></li>
+            <li><a href="projects.html" class="hover:text-amber-400 transition-colors">&bull; Infrastructure Case Studies</a></li>
             <li><a href="certifications.html" class="hover:text-amber-400 transition-colors">&bull; Official Form N License</a></li>
-            <li><a href="resources.html" class="hover:text-amber-400 transition-colors">&bull; Frequently Asked Questions</a></li>
-            <li><a href="blog.html" class="hover:text-amber-400 transition-colors">&bull; Fire Safety Blog</a></li>
+            <li><a href="resources.html" class="hover:text-amber-400 transition-colors">&bull; Safety FAQ & Codes</a></li>
+            <li><a href="blog.html" class="hover:text-amber-400 transition-colors">&bull; Technical Guides & Articles</a></li>
             <li><a href="glossary.html" class="hover:text-amber-400 transition-colors">&bull; Fire Safety Glossary</a></li>
-            <li><a href="service-areas.html" class="hover:text-amber-400 transition-colors">&bull; Service Areas</a></li>
+            <li><a href="service-areas.html" class="hover:text-amber-400 transition-colors">&bull; Service Areas (MMR)</a></li>
           </ul>
         </div>
 
@@ -546,74 +545,18 @@
         if (!menu.contains(event.target)) menu.open = false;
       });
     });
-    // Preview a prepared WhatsApp message before leaving the website.
-    (function () {
-      let dialog;
-      let messageBox;
-      let continueLink;
-
-      function makeDialog() {
-        if (dialog) return;
-        dialog = document.createElement('dialog');
-        dialog.id = 'samarth-whatsapp-preview';
-        dialog.className = 'w-[min(92vw,520px)] max-w-none rounded-2xl p-0 shadow-2xl backdrop:bg-slate-950/60';
-        dialog.innerHTML = [
-          '<div class="bg-white rounded-2xl overflow-hidden">',
-          '  <div class="flex items-start justify-between gap-4 px-5 py-4 border-b border-slate-200">',
-          '    <div><p class="text-xs font-bold uppercase tracking-wider text-emerald-700">WhatsApp message</p><h2 class="font-headline text-xl font-bold text-slate-900 mt-1">Review your message</h2><p class="text-sm text-slate-600 mt-1">This message will open in WhatsApp. You can edit it before continuing.</p></div>',
-          '    <button type="button" data-wa-close aria-label="Close" class="rounded-lg px-3 py-1 text-2xl leading-none text-slate-500 hover:bg-slate-100">&times;</button>',
-          '  </div>',
-          '  <div class="p-5">',
-          '    <label for="samarth-wa-message" class="block text-sm font-semibold text-slate-800 mb-2">Message to Samarth Fire</label>',
-          '    <textarea id="samarth-wa-message" rows="7" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-3 text-sm text-slate-800 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-100"></textarea>',
-          '    <div class="flex flex-col-reverse sm:flex-row sm:justify-end gap-2 mt-4">',
-          '      <button type="button" data-wa-close class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50">Go back</button>',
-          '      <a data-wa-continue href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-700">Continue to WhatsApp</a>',
-          '    </div>',
-          '  </div>',
-          '</div>'
-        ].join('');
-        document.body.appendChild(dialog);
-        messageBox = dialog.querySelector('#samarth-wa-message');
-        continueLink = dialog.querySelector('[data-wa-continue]');
-
-        dialog.querySelectorAll('[data-wa-close]').forEach(function (button) {
-          button.addEventListener('click', function () { dialog.close(); });
-        });
-
-        continueLink.addEventListener('click', function () {
-          const target = new URL(continueLink.href);
-          target.searchParams.set('text', messageBox.value.trim());
-          continueLink.href = target.toString();
-        });
-      }
-
-      document.addEventListener('click', function (event) {
-        const anchor = event.target.closest('a[href]');
-        if (!anchor || anchor.closest('#samarth-whatsapp-preview')) return;
-        let target;
-        try { target = new URL(anchor.href, window.location.href); } catch (_) { return; }
-        if (!['wa.me', 'api.whatsapp.com', 'web.whatsapp.com'].includes(target.hostname)) return;
-
-        event.preventDefault();
-        makeDialog();
-        const supplied = target.searchParams.get('text');
-        messageBox.value = supplied || 'Hello Samarth Fire Protection System. I would like to enquire about your fire safety services. Please contact me with the next steps.';
-        const previewUrl = new URL(target.toString());
-        previewUrl.searchParams.set('text', messageBox.value.trim());
-        continueLink.href = previewUrl.toString();
-
-        if (typeof dialog.showModal === 'function') dialog.showModal();
-        else {
-          dialog.setAttribute('open', '');
-          dialog.style.position = 'fixed';
-          dialog.style.inset = '50% auto auto 50%';
-          dialog.style.transform = 'translate(-50%, -50%)';
-          dialog.style.display = 'block';
+    // Add a ready-to-send message to every general WhatsApp link.
+    // Opening WhatsApp only prepares the message; the visitor still chooses whether to send it.
+    const defaultWhatsAppMessage = 'Hello Samarth Fire Protection System, I would like to enquire about your fire safety services. Please contact me to discuss my requirement.';
+    document.querySelectorAll('a[href^="https://wa.me/"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]').forEach(function (link) {
+      try {
+        const target = new URL(link.href);
+        if (!target.searchParams.get('text')) {
+          target.searchParams.set('text', defaultWhatsAppMessage);
+          link.href = target.toString();
         }
-        messageBox.focus();
-      });
-    })();
+      } catch (_) {}
+    });
 
 </script>
   
