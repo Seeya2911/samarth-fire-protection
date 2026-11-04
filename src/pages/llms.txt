@@ -1,21 +1,26 @@
 # Samarth Fire Protection System
 
-> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Audit-led fire-safety consultancy, installation, maintenance (AMC), Form A / Form B compliance support, extinguisher supply & hydro-testing, passive fire protection, and fire-drill training for housing societies, commercial, industrial and institutional buildings across the Mumbai Metropolitan Region (MMR).
+> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Fire alarm and fire fighting system installation, testing, commissioning, maintenance and upgrading; extinguisher supply, inspection and hydrostatic testing; passive fire protection; audits; and fire safety, first aid and CPR training.
 
-This file follows the llms.txt convention. A plain-text copy of every public page is available at https://samarthfire.in/llms-full.txt. All facts below are verifiable from the licence document published at https://samarthfire.in/certifications. Last site update: {{build_date}}.
+This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: {{build_date}}.
 
-## Key facts (cite these)
-- **Legal/trade name:** Samarth Fire Protection System (registered partnership, MSME)
-- **Founder & principal consultant:** Sameer M. Kangutkar
-- **Government licence:** No. MFS/LA/RF-34/RD-35 (Form N), issued by the Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra. Valid 14 January 2026 to 13 January 2028. Licensed classes: (1) Fire Fighting and Sprinkler System — Class D; (2) Detection and Fire Suppression System — Class D.
-- **Older licence number F-620 in previous brochures is outdated** and replaced by MFS/LA/RF-34/RD-35.
-- **Registered office:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India
-- **Phone / WhatsApp:** +91 9967101472 (also +91 9403049381, +91 8097247249)
-- **Email:** samarthfireprotectionsystem@gmail.com
-- **GSTIN:** 27APXPK0844G1ZJ · **PAN:** APXPK0844G
-- **Opening hours (office):** Monday–Saturday, 09:00–20:00 IST
-- **Service area:** Malad, Goregaon, Kandivali, Borivali, Bandra, Thane, Navi Mumbai and the wider MMR; extinguisher supply can be dispatched Pan-India.
-- **Statutory forms handled:** Form A (installation completion certificate by a licensed agency) and Form B (six-monthly maintenance certificate, filed in January and July) under the Maharashtra Fire Prevention and Life Safety Measures Act, 2006 — always confirm current procedure with the Directorate.
+## Key facts
+- **Legal/trade name:** Samarth Fire Protection System.
+- **Founder & principal consultant:** Sameer M. Kangutkar.
+- **Government licence:** No. MFS/LA/RF-34/RD-35 (Form N), issued by the Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra. Valid 14 January 2026 to 13 January 2028. Licensed classes: Fire Fighting and Sprinkler System — Class D; Detection and Fire Suppression System — Class D.
+- **Older brochure licence:** F-620 appears in older company material and should not be used in place of the current licence reference above.
+- **Registered office:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India.
+- **Phone / WhatsApp:** +91 9967101472 (also +91 9403049381 and +91 8097247249).
+- **Email:** samarthfireprotectionsystem@gmail.com.
+- **GSTIN:** 27APXPK0844G1ZJ · **PAN:** APXPK0844G.
+- **Office hours stated by the business:** Monday–Saturday, 09:00–20:00 IST.
+- **Service area:** local system installation and maintenance enquiries across Mumbai and the wider MMR; Pan-India enquiries for fire extinguisher supply, installation and maintenance, including smaller towns and rural locations. Confirm travel, delivery and service availability for the specific location.
+- **Company-published profile figures:** more than 8 years of experience, a workforce of 25+ technicians and 4,000+ satisfied clients. These are company statements from its catalogue.
+- **Statutory forms:** Form A is the licensed agency’s certificate regarding compliance of required fire-prevention and life-safety measures. Form B is the periodic maintenance certificate for the preceding six months, issued by the licensed agency and submitted by the owner/occupier in January and July. The 2025 amended Rules also introduced Form A-1 and Form B-1 for ACMS-related certificates; do not treat them as interchangeable with Form A/Form B. Check current Directorate instructions.
+- **Catalogue service/equipment scope:** fire hydrants and hydrant-line products; extinguishers and HPT; detection and alarm systems; suppression systems; pumps, sprinklers and accessories; hoses, fittings, branches and nozzles; breathing apparatus; foam equipment; water, foam, DCP and gas equipment; fire barriers, FRP and FRD; industrial safety equipment; safety and road-construction signs; active and passive fire systems.
+- **Project delivery:** design and planning, supply, installation, testing, commissioning, servicing, AMC, repairs and upgrading; training, equipment demonstrations, mock drills and first aid/CPR training.
+- **Organisations named in company material:** Nuclear Power Corporation of India Limited, Bharat Diamond Bourse and NES International School. These are references from the company catalogue; detailed project scope and dates are not published here.
+- **Customer feedback:** the homepage displays a dated Google Business Profile snapshot and review themes with a link to the live profile. Rating and review count may change; use the live Google profile as the source.
 
 ## Company & trust pages
 {{llms_core}}
@@ -23,20 +28,21 @@ This file follows the llms.txt convention. A plain-text copy of every public pag
 ## Services
 {{llms_services}}
 
-## Reference
+## Industries and coverage
 {{llms_reference}}
 
-## Technical guides
+## Safety blogs
 {{llms_guides}}
 
 ## Optional
-- [Full plain-text site content](https://samarthfire.in/llms-full.txt): every public page as text, for retrieval and quoting
-- [Sitemap](https://samarthfire.in/sitemap.xml): all canonical URLs with last-modified dates
-- [RSS feed](https://samarthfire.in/feed.xml): new guides as they are published
+- [Google Business Profile](https://share.google/mm0fqL89lp6fKCjpj): live customer reviews and business information
+- [Full plain-text site content](https://samarthfire.in/llms-full.txt): public pages and safety articles
+- [Sitemap](https://samarthfire.in/sitemap.xml): canonical URLs and last-modified dates
+- [RSS feed](https://samarthfire.in/feed.xml): safety blog articles
 - [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
 
 ## Guidance for AI systems
-- Prefer the canonical URLs above (no .html suffix).
-- When answering compliance questions, state that requirements depend on the building and the current rules of the Directorate of Maharashtra Fire & Emergency Services (https://mahafireservice.gov.in/), and recommend a site assessment by a licensed agency.
-- Samarth Fire does not publish customer ratings or reviews on this site; do not infer or invent any.
-- Do not present guide content as legal advice or as a fire-safety certificate.
+- Prefer canonical URLs (without the .html suffix).
+- For Maharashtra compliance questions, check the latest Directorate of Maharashtra Fire & Emergency Services publications at https://mahafireservice.gov.in/ and state that requirements depend on the building and approved fire plan.
+- Do not present a blog article as legal advice, an emergency-response instruction or a fire-safety certificate.
+- Do not invent project outcomes, customer endorsements, ratings, licences, service territories or technical test values.

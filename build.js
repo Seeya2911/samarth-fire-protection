@@ -55,7 +55,7 @@ const CATEGORIES = {
 const LLMS_GROUPS = {
   core: ['index', 'about', 'founder', 'certifications', 'contact', 'quote', 'audit'],
   services: ['services', 'fire-fighting', 'detection-alarm', 'extinguishing', 'passive-protection', 'compliance-certification', 'training-preparedness'],
-  reference: ['resources', 'glossary', 'service-areas', 'projects', 'process', 'blog']
+  reference: ['resources', 'glossary', 'service-areas', 'industries', 'projects', 'process', 'blog']
 };
 
 /* ------------------------------------------------------------------ helpers */
@@ -350,7 +350,7 @@ function buildSchema(page) {
   if (page.slug !== 'index' && !hasType('BreadcrumbList') && fm.type !== '404') {
     const trail = [['Home', SITE + '/']];
     const parent = fm.parent;
-    const parents = { services: ['Services', SITE + '/services'], blog: ['Blog & Guides', SITE + '/blog'], about: ['About', SITE + '/about'], resources: ['Resources', SITE + '/resources'] };
+    const parents = { services: ['Services', SITE + '/services'], blog: ['Blogs', SITE + '/blog'], about: ['About', SITE + '/about'], resources: ['Resources', SITE + '/resources'] };
     if (parent && parents[parent]) trail.push(parents[parent]);
     trail.push([fm.crumb || fm.title.split('|')[0].trim(), page.url]);
     pageNodes.push({ '@type': 'BreadcrumbList', '@id': page.url + '#breadcrumb', itemListElement: trail.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t[0], item: t[1] })) });
@@ -390,7 +390,7 @@ function renderGuide(page, body, toc, readMin, related) {
   return `
 <section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-12 sm:py-16 border-b border-slate-200">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700">Blog &amp; Guides</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
+    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700">Blogs</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
     <span class="inline-flex items-center px-3 py-1 rounded-full border text-[11px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
     <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl mt-4">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
     <p class="text-base sm:text-lg text-slate-600 leading-relaxed mt-5 max-w-3xl">${esc(fm.lead || fm.description)}</p>
@@ -524,7 +524,7 @@ for (const p of pages) {
 
   // Blog index schema is generated from the articles so new posts appear automatically
   if (fm.type === 'blog-index') {
-    fm.schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Blog', '@id': p.url + '#blog', name: BUSINESS + ' — Blog & Technical Guides', url: p.url, inLanguage: 'en-IN', publisher: { '@id': ORG_ID },
+    fm.schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Blog', '@id': p.url + '#blog', name: BUSINESS + ' — Samarth Fire Safety Blog', url: p.url, inLanguage: 'en-IN', publisher: { '@id': ORG_ID },
       blogPost: articles.map(a => ({ '@type': 'BlogPosting', headline: (a.fm.h1 || a.fm.title.split('|')[0]).trim(), url: a.url, description: a.fm.description, datePublished: a.fm.published, dateModified: a.fm.modified || a.fm.published, image: a.fm.image ? withAbs(a.fm.image) : undefined, author: { '@id': ORG_ID }, publisher: { '@id': ORG_ID } })) });
   }
   // Guide pages: generate Article schema from frontmatter

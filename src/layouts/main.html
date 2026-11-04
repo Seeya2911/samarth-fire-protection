@@ -134,7 +134,7 @@
           </details>
           <a href="industries.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_industries}}">Industries</a>
           <a href="projects.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
-          <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Guides</a>
+          <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Blogs</a>
           <a href="contact.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_contact}}">Contact</a>
         </nav>
 
@@ -187,7 +187,7 @@
         </details>
         <a href="industries.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_industries}}">Industries</a>
         <a href="projects.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_projects}}">Projects</a>
-        <a href="blog.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_blog}}">Guides</a>
+        <a href="blog.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_blog}}">Blogs</a>
         <a href="resources.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_resources}}">FAQs</a>
         <a href="contact.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50 {{active_contact}}">Contact</a>
       </nav>
@@ -545,6 +545,19 @@
         if (!menu.contains(event.target)) menu.open = false;
       });
     });
+    // Add a ready-to-send message to every general WhatsApp link.
+    // Opening WhatsApp only prepares the message; the visitor still chooses whether to send it.
+    const defaultWhatsAppMessage = 'Hello Samarth Fire Protection System, I would like to enquire about your fire safety services. Please contact me to discuss my requirement.';
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (link) {
+      try {
+        const target = new URL(link.href);
+        if (!target.searchParams.get('text')) {
+          target.searchParams.set('text', defaultWhatsAppMessage);
+          link.href = target.toString();
+        }
+      } catch (_) {}
+    });
+
 </script>
   
   {{scripts}}
