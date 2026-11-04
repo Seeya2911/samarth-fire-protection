@@ -31,58 +31,6 @@ schema: {
     "closes": "20:00"
   }
 }
-scripts: |
-  <script>
-    // Interactive Fire Safety & Form B NOC Cost Estimator
-    function calculateEstimate() {
-      const propType = document.getElementById('calc-prop-type').value;
-      const floors = parseInt(document.getElementById('calc-floors').value) || 1;
-      
-      const formB = document.getElementById('calc-opt-formb').checked;
-      const extinguishers = document.getElementById('calc-opt-ext').checked;
-      const hydrantAmc = document.getElementById('calc-opt-hydrant').checked;
-      const alarms = document.getElementById('calc-opt-alarm').checked;
-
-      let baseLow = 0;
-      let baseHigh = 0;
-
-      // Base property multipliers
-      if (propType === 'residential') {
-        if (formB) { baseLow += 6000 + (floors * 400); baseHigh += 9500 + (floors * 600); }
-        if (extinguishers) { baseLow += 3500 + (floors * 350); baseHigh += 5500 + (floors * 500); }
-        if (hydrantAmc) { baseLow += 12000 + (floors * 800); baseHigh += 18000 + (floors * 1200); }
-        if (alarms) { baseLow += 5000 + (floors * 400); baseHigh += 8500 + (floors * 600); }
-      } else if (propType === 'commercial') {
-        if (formB) { baseLow += 9000 + (floors * 600); baseHigh += 14000 + (floors * 900); }
-        if (extinguishers) { baseLow += 5000 + (floors * 500); baseHigh += 8000 + (floors * 750); }
-        if (hydrantAmc) { baseLow += 18000 + (floors * 1200); baseHigh += 26000 + (floors * 1600); }
-        if (alarms) { baseLow += 8000 + (floors * 700); baseHigh += 13000 + (floors * 1000); }
-      } else { // Industrial / Warehouse
-        if (formB) { baseLow += 12000 + (floors * 800); baseHigh += 19000 + (floors * 1200); }
-        if (extinguishers) { baseLow += 7000 + (floors * 700); baseHigh += 11000 + (floors * 1000); }
-        if (hydrantAmc) { baseLow += 22000 + (floors * 1500); baseHigh += 34000 + (floors * 2000); }
-        if (alarms) { baseLow += 10000 + (floors * 900); baseHigh += 16000 + (floors * 1400); }
-      }
-
-      if (baseLow === 0) {
-        document.getElementById('calc-result-range').innerText = "₹0";
-        document.getElementById('whatsapp-calc-btn').setAttribute('href', "https://wa.me/919967101472?text=" + encodeURIComponent("Hi Samarth Fire, I would like to request a customized site audit."));
-        return;
-      }
-
-      const formattedLow = "₹" + baseLow.toLocaleString('en-IN');
-      const formattedHigh = "₹" + baseHigh.toLocaleString('en-IN');
-      document.getElementById('calc-result-range').innerText = formattedLow + " – " + formattedHigh;
-
-      // Update WhatsApp link with formatted summary
-      const summaryText = `Hello Samarth Fire Team, I used your online estimator for my building:\n- Type: ${propType.toUpperCase()}\n- Floors: ${floors}\n- Services: ${formB ? 'Form B NOC, ' : ''}${extinguishers ? 'Extinguishers HPT, ' : ''}${hydrantAmc ? 'Hydrant AMC, ' : ''}${alarms ? 'Alarm Testing' : ''}\nEstimated Range: ${formattedLow} - ${formattedHigh}. Please schedule a site audit.`;
-      document.getElementById('whatsapp-calc-btn').setAttribute('href', "https://wa.me/919967101472?text=" + encodeURIComponent(summaryText));
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      calculateEstimate();
-    });
-  </script>
 ---
 
 <!-- 1. SUNLIT, WARM, AESTHETIC & COLOURFUL HERO SECTION -->
@@ -202,15 +150,15 @@ scripts: |
       </div>
 
       <div class="p-5 bg-white rounded-2xl border-t-4 border-amber-500 border-x border-b border-slate-200/80 shadow-xs text-center card-lift reveal-init delay-200">
-        <span class="block font-headline text-[11px] uppercase tracking-wider text-amber-600 font-bold mb-1">Skilled Field Force</span>
+        <span class="block font-headline text-[11px] uppercase tracking-wider text-amber-600 font-bold mb-1">Experienced Team</span>
         <span class="block font-headline text-3xl sm:text-4xl text-slate-900 font-extrabold">25+ Staff</span>
-        <span class="block text-xs text-slate-500 mt-1 font-body">Engineers, firemen &amp; certified fitters</span>
+        <span class="block text-xs text-slate-500 mt-1 font-body">Technicians, engineers, firemen &amp; operators</span>
       </div>
 
       <div class="p-5 bg-white rounded-2xl border-t-4 border-emerald-500 border-x border-b border-slate-200/80 shadow-xs text-center card-lift reveal-init delay-300">
-        <span class="block font-headline text-[11px] uppercase tracking-wider text-emerald-600 font-bold mb-1">Premises Serviced</span>
+        <span class="block font-headline text-[11px] uppercase tracking-wider text-emerald-600 font-bold mb-1">Satisfied Clients</span>
         <span class="block font-headline text-3xl sm:text-4xl text-slate-900 font-extrabold">4,000+</span>
-        <span class="block text-xs text-slate-500 mt-1 font-body">Residential societies, offices &amp; plants</span>
+        <span class="block text-xs text-slate-500 mt-1 font-body">As reported in the company catalogue</span>
       </div>
     </div>
 
@@ -218,25 +166,25 @@ scripts: |
     <div class="border-t border-slate-200 pt-8 reveal-init">
       <div class="text-center mb-5">
         <span class="text-xs font-mono uppercase tracking-widest text-slate-500 font-semibold">
-          Verified Installations &amp; Safety Engineering Projects Include:
+          Organisations named in our company profile:
         </span>
       </div>
       <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4 font-headline font-bold text-xs sm:text-sm text-slate-700">
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-          <span>Central Government Nuclear Facility Complex</span>
+          <span>Nuclear Power Corporation of India Limited</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-          <span>Premier Diamond Bourse Commercial Exchange, BKC</span>
+          <span>Bharat Diamond Bourse</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-          <span>Leading International IB School Campus, Mulund</span>
+          <span>NES International School</span>
         </div>
         <div class="flex items-center space-x-2 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-2xs">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-          <span>500+ Housing Societies Across Mumbai</span>
+          <span>Housing Societies &amp; Residential Buildings</span>
         </div>
       </div>
     </div>
@@ -440,121 +388,15 @@ scripts: |
   </div>
 </section>
 
-<!-- 8. CRISP & ACCESSIBLE INTERACTIVE COST ESTIMATOR -->
-<section id="quote-calculator" class="py-20 bg-gradient-to-br from-orange-50/70 via-amber-50/40 to-white text-slate-800 relative overflow-hidden border-t border-slate-200/80">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    
-    <div class="max-w-3xl mx-auto text-center mb-12 reveal-init">
-      <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-2">
-        TRANSPARENT BUDGET ESTIMATION
-      </span>
-      <h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
-        Fire Safety &amp; NOC Cost Estimator
-      </h2>
-      <p class="text-sm text-slate-600 leading-relaxed font-body">
-        Select your property characteristics below to generate an estimated budget guideline. Export directly to our engineering desk via WhatsApp or request an itemized formal quote.
-      </p>
+<!-- Clear quotation call to action: project pricing is confirmed from the actual site requirements -->
+<section class="py-14 bg-gradient-to-br from-amber-50 via-orange-50/30 to-white border-t border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Need a price for your site?</p>
+    <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Request a Fire Safety Quotation</h2>
+    <p class="text-sm text-slate-600 mt-3 max-w-2xl mx-auto leading-7">Tell us about your building, the equipment you need or the maintenance work required. We will review the scope and contact you with the next steps.</p>
+    <div class="mt-6 flex flex-wrap gap-3 justify-center">
+      <a href="quote.html" class="inline-flex rounded-xl bg-red-600 hover:bg-red-700 px-6 py-3 text-sm font-bold text-white">Request a Quote</a>
+      <a href="tel:+919967101472" class="inline-flex rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-800">Call 99671 01472</a>
     </div>
-
-    <!-- Calculator Card -->
-    <div class="max-w-4xl mx-auto bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-xl reveal-init">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        
-        <!-- Field 1: Property Type -->
-        <div>
-          <label for="calc-prop-type" class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-2">
-            1. Property Classification
-          </label>
-          <select id="calc-prop-type" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3 text-sm focus:border-red-500 focus:bg-white focus:outline-none transition-all font-body">
-            <option value="residential" selected>Cooperative Housing Society (Residential CHS)</option>
-            <option value="commercial">Commercial Office Complex / Retail Mall</option>
-            <option value="industrial">Industrial Factory / Warehousing Facility</option>
-          </select>
-        </div>
-
-        <!-- Field 2: Building Scale / Floors -->
-        <div>
-          <label for="calc-floors" class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-2">
-            2. Approximate Storeys / Floors
-          </label>
-          <select id="calc-floors" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3 text-sm focus:border-red-500 focus:bg-white focus:outline-none transition-all font-body">
-            <option value="4">1 to 4 Floors (Low-Rise)</option>
-            <option value="7" selected>5 to 7 Floors (Mid-Rise CHS)</option>
-            <option value="15">8 to 15 Floors (High-Rise Tower)</option>
-            <option value="25">16+ Floors (Super High-Rise)</option>
-          </select>
-        </div>
-
-      </div>
-
-      <!-- Field 3: Modules -->
-      <div class="mb-8 border-t border-slate-100 pt-6">
-        <span class="block font-headline text-xs uppercase text-slate-800 font-bold tracking-wider mb-4">
-          3. Select Required Safety Modules
-        </span>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-body">
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-formb" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Form B Bi-Annual Compliance NOC</span>
-              <span class="text-slate-500 text-[11px]">Official inspection &amp; certificate submission</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-ext" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Extinguisher Refilling &amp; HPT Testing</span>
-              <span class="text-slate-500 text-[11px]">Hydro-pressure test &amp; fresh ISI chemical refilling</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-hydrant" checked onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Hydrant &amp; Sprinkler Pump AMC</span>
-              <span class="text-slate-500 text-[11px]">Quarterly valve servicing &amp; pump pressure check</span>
-            </div>
-          </label>
-
-          <label class="flex items-center space-x-3 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/90 cursor-pointer hover:border-red-400 transition-colors">
-            <input type="checkbox" id="calc-opt-alarm" onchange="calculateEstimate()" class="w-4 h-4 text-red-600 accent-red-600 rounded">
-            <div>
-              <span class="font-bold text-slate-900 block">Smoke Detection &amp; Alarm Loop Audit</span>
-              <span class="text-slate-500 text-[11px]">Control panel battery test &amp; detector calibration</span>
-            </div>
-          </label>
-        </div>
-      </div>
-
-      <!-- Output Banner (High-Contrast Navy Card with Saffron/Amber Price) -->
-      <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-        <div>
-          <span class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-1">
-            Estimated Budget Guideline (Excl. GST)
-          </span>
-          <span id="calc-result-range" class="font-headline text-3xl sm:text-4xl text-amber-400 font-black">
-            ₹0
-          </span>
-          <span class="block text-[11px] text-slate-400 mt-1">
-            *Final quote provided post physical site inspection by our licensed engineer.
-          </span>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-          <a id="whatsapp-calc-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-headline text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
-            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.955 14.162.95 11.536.95c-5.445 0-9.87 4.37-9.874 9.8.001 2.036.541 4.021 1.562 5.766L2.24 20.25l4.407-1.096z"/></svg>
-            <span>Transmit via WhatsApp</span>
-          </a>
-          <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
-            <span>Get an Itemized Quote</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>
