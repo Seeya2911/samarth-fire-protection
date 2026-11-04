@@ -1,6 +1,6 @@
 ---
-title: "Get a Fire Protection Quotation & Estimate Mumbai | Samarth Fire"
-description: "Request an itemized quotation for fire hydrants, alarms, extinguishers, AMC maintenance, or Form B compliance certification from Maharashtra Fire Services Class D agency."
+title: "Request a Fire Safety Quote | Samarth Fire Mumbai"
+description: "Request a quote for fire alarm and fire fighting installation, maintenance and AMC, fire extinguishers, safety audits, equipment supply or staff training from Samarth Fire."
 active: "quote"
 schema: {
   "@context": "https://schema.org",
@@ -11,48 +11,42 @@ schema: {
 }
 scripts: |
   <script>
-    function handleQuoteForm(event) {
+    async function handleQuoteForm(event) {
       event.preventDefault();
-      
+      const form = document.getElementById('quote-form');
+      if (!form.reportValidity()) return;
       const req = document.getElementById('q-requirement').value;
       const facility = document.getElementById('q-facility').value;
-      const name = document.getElementById('q-name').value;
-      const org = document.getElementById('q-org').value;
-      const phone = document.getElementById('q-phone').value;
-      const email = document.getElementById('q-email').value || 'Not provided';
+      const name = document.getElementById('q-name').value.trim();
+      const org = document.getElementById('q-org').value.trim();
+      const phone = document.getElementById('q-phone').value.trim();
+      const email = document.getElementById('q-email').value.trim();
       const loc = document.getElementById('q-location').value;
-      const desc = document.getElementById('q-desc').value;
-
-      // Build WhatsApp message
-      const text = `*New Quotation Request - Samarth Fire Protection System*%0A` +
-        `• Requirement: ${encodeURIComponent(req)}%0A` +
-        `• Facility Type: ${encodeURIComponent(facility)}%0A` +
-        `• Contact Name: ${encodeURIComponent(name)}%0A` +
-        `• Organization: ${encodeURIComponent(org)}%0A` +
-        `• Phone: ${encodeURIComponent(phone)}%0A` +
-        `• Email: ${encodeURIComponent(email)}%0A` +
-        `• Location: ${encodeURIComponent(loc)}%0A` +
-        `• Scope Details: ${encodeURIComponent(desc)}`;
-
-      document.getElementById('quote-form-wrap').classList.add('hidden');
-      const successBox = document.getElementById('quote-success-wrap');
-      successBox.classList.remove('hidden');
-
-      // Populate review details
-      document.getElementById('rev-req').textContent = req;
-      document.getElementById('rev-facility').textContent = facility;
-      document.getElementById('rev-client').textContent = `${name} (${org})`;
-      document.getElementById('rev-phone').textContent = phone;
-      document.getElementById('rev-loc').textContent = loc;
-      
-      const waBtn = document.getElementById('rev-wa-btn');
-      waBtn.href = `https://wa.me/919967101472?text=${text}`;
-
-      const mailBtn = document.getElementById('rev-mail-btn');
-      const mailBody = `Requirement: ${req}\nFacility: ${facility}\nClient: ${name} (${org})\nPhone: ${phone}\nLocation: ${loc}\nDetails: ${desc}`;
-      mailBtn.href = `mailto:samarthfireprotectionsystem@gmail.com?subject=Quotation Request from ${encodeURIComponent(org || name)}&body=${encodeURIComponent(mailBody)}`;
-
-      console.log('Quote Request Staged:', { req, facility, name, org, phone, email, loc, desc });
+      const desc = document.getElementById('q-desc').value.trim();
+      const button = form.querySelector('button[type="submit"]');
+      const error = document.getElementById('quote-error');
+      const waText = ['Hello Samarth Fire, I have submitted a quotation request.', 'Requirement: ' + req, 'Facility: ' + facility, 'Contact: ' + name, 'Organisation: ' + org, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Location: ' + loc, 'Details: ' + desc].join('\n');
+      const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
+      error.classList.add('hidden');
+      document.getElementById('quote-error-wa').href = waUrl;
+      if (button) { button.disabled = true; button.textContent = 'Sending request…'; }
+      try {
+        await window.submitSamarthLead({ type: 'quote', name, organization: org, phone, email, requirement: req, facility, location: loc, details: desc, website: document.getElementById('quote-website').value });
+        document.getElementById('quote-form-wrap').classList.add('hidden');
+        document.getElementById('quote-success-wrap').classList.remove('hidden');
+        document.getElementById('rev-req').textContent = req;
+        document.getElementById('rev-facility').textContent = facility;
+        document.getElementById('rev-client').textContent = name + ' (' + org + ')';
+        document.getElementById('rev-phone').textContent = phone;
+        document.getElementById('rev-loc').textContent = loc;
+        document.getElementById('rev-wa-btn').href = waUrl;
+      } catch (err) {
+        error.textContent = err.message || 'We could not send your request. Please use WhatsApp or call our team.';
+        error.classList.remove('hidden');
+        document.getElementById('quote-error-wa').classList.remove('hidden');
+      } finally {
+        if (button) { button.disabled = false; button.textContent = 'Send quotation request'; }
+      }
     }
   </script>
 ---
@@ -62,13 +56,13 @@ scripts: |
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="inline-flex items-center space-x-2 bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-xs mb-3">
       <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-      <span class="font-headline text-xs font-bold uppercase tracking-wider text-amber-700">Direct Engineering Estimate</span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-amber-700">Tell Us What You Need</span>
     </div>
     <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl leading-tight">
-      Itemized Quotation &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Transparent Pricing</span>
+      Request a Fire Safety <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Quotation</span>
     </h1>
     <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
-      Maharashtra Fire Services Licensed Agency (MFS/LA/RF-34/RD-35) &bull; Rapid Walkthroughs Across Mumbai Metropolitan Region &bull; Pan-India Extinguisher Dispatch
+      Fire alarm systems &bull; Fire fighting systems &bull; Equipment supply &bull; Maintenance &amp; training
     </p>
   </div>
 </section>
@@ -85,18 +79,19 @@ scripts: |
         <div id="quote-form-wrap">
           <div class="border-b border-slate-100 pb-6 mb-8">
             <div class="inline-flex items-center space-x-2 font-mono text-xs font-bold text-brand-ember uppercase tracking-wider mb-1">
-              <span>CONFIGURATOR</span>
+              <span>YOUR REQUIREMENTS</span>
               <span>&bull;</span>
-              <span>ZERO HIDDEN MARGINS</span>
+              <span>CLEAR QUOTATIONS</span>
             </div>
-            <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Request Scope & Cost Breakdown</h2>
+            <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900">Tell Us About Your Project</h2>
             <p class="text-xs sm:text-sm text-slate-600 mt-2 font-body leading-relaxed">
-              Select your system requirement and facility type. We supply itemized quotations listing exact material standards, labor codes, and regulatory filings without hidden margins.
+              Choose the service you need and tell us a little about your property. Our team will review your request and prepare a quotation.
             </p>
           </div>
 
           <form id="quote-form" onsubmit="handleQuoteForm(event)" class="space-y-6">
             
+            <input type="text" id="quote-website" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[10000px] h-px w-px" aria-hidden="true">
             <!-- Requirement & Facility Type -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
@@ -184,15 +179,15 @@ scripts: |
             <!-- Scope Details -->
             <div>
               <label for="q-desc" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
-                Scope Description & Building Details *
+                What work do you need? *
               </label>
-              <textarea id="q-desc" required rows="4" placeholder="Briefly specify number of floors, existing equipment condition, urgent deadlines (e.g. Form B renewal due this month, 32 extinguishers needing hydro-testing, or booster pump pressure failure)." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all"></textarea>
+              <textarea id="q-desc" required rows="4" placeholder="Tell us what you need. You can include the number of floors, equipment involved or any problem you want us to look at." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all"></textarea>
             </div>
 
             <!-- Submit Options -->
             <div class="pt-4 flex flex-col sm:flex-row gap-4">
               <button type="submit" class="flex-1 bg-gradient-to-r from-brand-ember to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all focus-ring text-center">
-                Review & Stage Quotation
+                Send quotation request
               </button>
               <a href="audit.html" class="inline-flex items-center justify-center bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider transition-colors">
                 Book Physical Walkthrough Instead
@@ -200,9 +195,11 @@ scripts: |
             </div>
 
             <p class="text-[11px] font-mono text-slate-500 text-center">
-              🔒 Safe & Direct: Your requirements are processed directly by Samarth Fire's engineering desk. No third-party data sharing.
+              Your request will be emailed to the Samarth Fire team. We will contact you using the details you provide.
             </p>
           </form>
+          <p id="quote-error" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert"></p>
+          <a id="quote-error-wa" href="#" target="_blank" rel="noopener noreferrer" class="hidden mt-3 text-sm font-bold text-emerald-700 underline">Send the request through WhatsApp instead</a>
         </div>
 
         <!-- Success & Review State -->
@@ -213,9 +210,9 @@ scripts: |
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <h3 class="font-headline font-bold text-2xl text-slate-900">Quotation Request Staged</h3>
+            <h3 class="font-headline font-bold text-2xl text-slate-900">Your request has been sent</h3>
             <p class="text-xs text-slate-600 font-body max-w-lg mx-auto mt-2">
-              Your project parameters have been formatted for our engineering desk. To receive an immediate response or schedule an audit walkthrough, send details directly via WhatsApp or Email:
+              Thank you. Your request has been emailed to our team. We will review the details and contact you. You can also message us on WhatsApp.
             </p>
           </div>
 
@@ -247,12 +244,9 @@ scripts: |
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a id="rev-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-lg shadow-emerald-600/20 transition-all">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.073.043.419-.101.824z"/></svg>
-              <span>Transmit via WhatsApp</span>
+              <span>Continue on WhatsApp</span>
             </a>
-            <a id="rev-mail-btn" href="#" class="flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white py-3.5 px-6 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow transition-all">
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <span>Send via Email</span>
-            </a>
+            <span class="text-sm text-slate-600">An email copy has been sent to our team.</span>
           </div>
 
           <div class="text-center pt-2">

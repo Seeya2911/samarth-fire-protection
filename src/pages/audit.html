@@ -1,6 +1,6 @@
 ---
-title: "Fire Safety Audit & Risk Assessment Mumbai | Samarth Fire"
-description: "Schedule a professional fire safety audit. Complete our risk assessment request form or report a broken fire system for immediate rectification."
+title: "Book a Fire Safety Audit or Site Visit | Samarth Fire"
+description: "Book a fire safety visit with Samarth Fire in Mumbai. Request an audit, report a fire alarm or fire fighting system problem, and ask for maintenance or repair support."
 active: "contact"
 schema: {
   "@context": "https://schema.org",
@@ -11,57 +11,101 @@ schema: {
 }
 scripts: |
   <script>
-    function handleAuditSubmit(event) {
+    function readAuditAttachment(file) {
+      return new Promise(function (resolve, reject) {
+        const reader = new FileReader();
+        reader.onload = function () {
+          resolve({ filename: file.name, content: String(reader.result || '').split(',')[1], contentType: file.type });
+        };
+        reader.onerror = function () { reject(new Error('The selected file could not be read.')); };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleAuditSubmit(event) {
       event.preventDefault();
-      const propName = document.getElementById('audit-prop-name').value;
-      const contactPerson = document.getElementById('audit-contact-name').value;
-      const phone = document.getElementById('audit-phone').value;
-      const propType = document.getElementById('audit-prop-type').value;
+      const form = document.getElementById('audit-form');
+      if (!form.reportValidity()) return;
+      const button = form.querySelector('button[type="submit"]');
+      const error = document.getElementById('audit-error');
+      const property = document.getElementById('audit-prop-name').value.trim();
+      const contact = document.getElementById('audit-contact-name').value.trim();
+      const phone = document.getElementById('audit-phone').value.trim();
+      const email = document.getElementById('audit-email').value.trim();
+      const propertyType = document.getElementById('audit-prop-type').value;
+      const location = document.getElementById('audit-location').value;
+      const size = document.getElementById('audit-size').value.trim();
+      const systems = Array.from(document.querySelectorAll('input[name="system"]:checked')).map(function (item) { return item.value; });
       const serviceNeeded = document.getElementById('audit-service-needed').value;
-      const notesEl = document.getElementById('audit-notes');
-      const notes = notesEl ? notesEl.value : 'None';
-
-      const text = `*New Site Assessment Request - Samarth Fire*%0A` +
-        `• Property: ${encodeURIComponent(propName)}%0A` +
-        `• Contact Person: ${encodeURIComponent(contactPerson)}%0A` +
-        `• Phone: ${encodeURIComponent(phone)}%0A` +
-        `• Property Type: ${encodeURIComponent(propType)}%0A` +
-        `• Scope: ${encodeURIComponent(serviceNeeded)}%0A` +
-        `• Notes: ${encodeURIComponent(notes)}`;
-
-      document.getElementById('audit-form').classList.add('hidden');
-      const successBox = document.getElementById('audit-success');
-      successBox.classList.remove('hidden');
-
-      const waBtn = document.getElementById('audit-wa-btn');
-      if (waBtn) waBtn.href = `https://wa.me/919967101472?text=${text}`;
-
-      const mailBtn = document.getElementById('audit-mail-btn');
-      if (mailBtn) {
-        const body = `Property: ${propName}\nContact: ${contactPerson}\nPhone: ${phone}\nType: ${propType}\nScope: ${serviceNeeded}\nNotes: ${notes}`;
-        mailBtn.href = `mailto:samarthfireprotectionsystem@gmail.com?subject=Audit Request: ${encodeURIComponent(propName)}&body=${encodeURIComponent(body)}`;
+      const notes = document.getElementById('audit-notes').value.trim();
+      const preferredDate = document.getElementById('audit-date').value;
+      const preferredTime = document.getElementById('audit-time').value;
+      const file = document.getElementById('audit-upload')?.files?.[0];
+      const waText = ['Hello Samarth Fire, I have requested a fire safety site visit.', 'Building: ' + property, 'Contact: ' + contact, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Property type: ' + propertyType, 'Location: ' + location, 'Service: ' + serviceNeeded, 'Existing systems: ' + (systems.join(', ') || 'Not specified'), 'Preferred date/time: ' + preferredDate + ' / ' + preferredTime, 'Notes: ' + (notes || 'None')].join('\n');
+      const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
+      error.classList.add('hidden');
+      document.getElementById('audit-error-wa').href = waUrl;
+      if (file && file.size > 1.5 * 1024 * 1024) {
+        error.textContent = 'The attachment is larger than 1.5 MB. Please choose a smaller PDF or image.';
+        error.classList.remove('hidden');
+        document.getElementById('audit-error-wa').classList.remove('hidden');
+        return;
+      }
+      if (button) { button.disabled = true; button.textContent = 'Sending request…'; }
+      try {
+        const attachment = file ? await readAuditAttachment(file) : undefined;
+        await window.submitSamarthLead({
+          type: 'audit', property, name: contact, phone, email, propertyType,
+          location, size, systems, serviceNeeded, notes, preferredDate, preferredTime, attachment,
+          website: document.getElementById('audit-website').value
+        });
+        document.getElementById('audit-form').classList.add('hidden');
+        document.getElementById('audit-success').classList.remove('hidden');
+        document.querySelector('#audit-success h3').textContent = 'Your site visit request has been sent';
+        document.querySelector('#audit-success p').textContent = 'Thank you. We have emailed your request to the Samarth Fire team and will contact you to discuss the site visit.';
+        document.getElementById('audit-wa-btn').href = waUrl;
+      } catch (err) {
+        error.textContent = err.message || 'We could not send your request. Please call or WhatsApp our team.';
+        error.classList.remove('hidden');
+        document.getElementById('audit-error-wa').classList.remove('hidden');
+      } finally {
+        if (button) { button.disabled = false; button.textContent = 'Send site visit request'; }
       }
     }
-    
-    function handleTroubleSubmit(event) {
+
+    async function handleTroubleSubmit(event) {
       event.preventDefault();
-      const propName = document.getElementById('trouble-prop-name').value;
-      const phone = document.getElementById('trouble-phone').value;
+      const form = document.getElementById('trouble-form');
+      if (!form.reportValidity()) return;
+      const button = form.querySelector('button[type="submit"]');
+      const error = document.getElementById('trouble-error');
+      const property = document.getElementById('trouble-prop-name').value.trim();
+      const location = document.getElementById('trouble-location').value;
+      const phone = document.getElementById('trouble-phone').value.trim();
       const system = document.getElementById('trouble-system').value;
-      const desc = document.getElementById('trouble-desc').value;
-
-      const text = `*URGENT: Fire System Breakdown Reported - Samarth Fire*%0A` +
-        `• Property: ${encodeURIComponent(propName)}%0A` +
-        `• Phone: ${encodeURIComponent(phone)}%0A` +
-        `• Failing System: ${encodeURIComponent(system)}%0A` +
-        `• Fault Description: ${encodeURIComponent(desc)}`;
-
-      document.getElementById('trouble-form').classList.add('hidden');
-      const successBox = document.getElementById('trouble-success');
-      successBox.classList.remove('hidden');
-
-      const waBtn = document.getElementById('trouble-wa-btn');
-      if (waBtn) waBtn.href = `https://wa.me/919967101472?text=${text}`;
+      const details = document.getElementById('trouble-desc').value.trim();
+      const waText = ['Urgent fire safety system issue', 'Building: ' + property, 'Location: ' + location, 'Phone: ' + phone, 'System: ' + system, 'Issue: ' + details].join('\n');
+      const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
+      error.classList.add('hidden');
+      document.getElementById('trouble-error-wa').href = waUrl;
+      if (button) { button.disabled = true; button.textContent = 'Sending alert…'; }
+      try {
+        await window.submitSamarthLead({
+          type: 'fault', property, location, phone, system, details,
+          website: document.getElementById('trouble-website').value
+        });
+        document.getElementById('trouble-form').classList.add('hidden');
+        document.getElementById('trouble-success').classList.remove('hidden');
+        document.querySelector('#trouble-success h3').textContent = 'Your fault report has been sent';
+        document.querySelector('#trouble-success p').textContent = 'We have emailed these details to the Samarth Fire team. For an urgent issue, you can also call our team.';
+        document.getElementById('trouble-wa-btn').href = waUrl;
+      } catch (err) {
+        error.textContent = err.message || 'We could not send the alert. Please call or WhatsApp our team.';
+        error.classList.remove('hidden');
+        document.getElementById('trouble-error-wa').classList.remove('hidden');
+      } finally {
+        if (button) { button.disabled = false; button.textContent = 'Send fault report'; }
+      }
     }
   </script>
 ---
@@ -71,13 +115,13 @@ scripts: |
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="inline-flex items-center space-x-2 bg-white/90 border border-sky-200 px-3.5 py-1.5 rounded-full shadow-xs mb-3">
       <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-      <span class="font-headline text-xs font-bold uppercase tracking-wider text-blue-700">On-Site Technical Audit Desk</span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-blue-700">Fire Safety Site Visit</span>
     </div>
     <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl leading-tight">
-      Site Assessments &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">System Rectification</span>
+      Book a Fire Safety <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Site Visit</span>
     </h1>
     <p class="text-sm sm:text-base font-body text-slate-600 mt-2 max-w-2xl leading-relaxed">
-      Book an on-site physical engineering walkthrough across Mumbai &bull; Report continuous alarm buzzers &amp; hydraulic pressure drops for rapid emergency response
+      Tell us about your building, the systems installed and the help you need. You can also report a fire alarm or fire fighting system problem.
     </p>
   </div>
 </section>
@@ -239,10 +283,13 @@ scripts: |
           </div>
 
           <!-- Submit button -->
+          <input type="text" id="audit-website" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[10000px] h-px w-px" aria-hidden="true">
           <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-brand-cyan to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-headline uppercase tracking-wider text-xs font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-teal-500/20 focus-ring">
             Submit Assessment Request
           </button>
         </form>
+        <p id="audit-error" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert"></p>
+        <a id="audit-error-wa" href="#" target="_blank" rel="noopener noreferrer" class="hidden mt-3 text-sm font-bold text-emerald-700 underline">Send your request through WhatsApp instead</a>
 
         <!-- Staged Walkthrough State -->
         <div id="audit-success" class="hidden bg-emerald-50 border border-emerald-200 text-slate-800 p-6 rounded-2xl text-center mt-6 space-y-4">
@@ -251,17 +298,15 @@ scripts: |
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Assessment Details Staged</h3>
+          <h3 class="font-headline font-bold text-2xl tracking-tight text-slate-900">Your site visit request has been sent</h3>
           <p class="text-xs text-slate-600 leading-relaxed font-body max-w-md mx-auto">
-            Your walkthrough request has been formatted for Principal Consultant Sameer M. Kangutkar. Transmit directly to our technical desk:
+            Thank you. Your request has been emailed to our team. We will contact you to discuss the visit.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
             <a id="audit-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-headline text-xs font-bold uppercase tracking-wider py-3.5 px-4 rounded-xl shadow transition-all">
               <span>Transmit via WhatsApp</span>
             </a>
-            <a id="audit-mail-btn" href="#" class="flex-1 inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white font-headline text-xs font-bold uppercase tracking-wider py-3.5 px-4 rounded-xl shadow transition-all">
-              <span>Send via Email</span>
-            </a>
+            <span class="text-sm text-slate-600">An email copy has been sent to the Samarth Fire team.</span>
           </div>
         </div>
 
@@ -330,7 +375,10 @@ scripts: |
           <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-headline uppercase tracking-wider text-xs font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-red-600/30">
             File Troubleshooting Alert
           </button>
+          <input type="text" id="trouble-website" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[10000px] h-px w-px" aria-hidden="true">
         </form>
+        <p id="trouble-error" class="hidden mt-4 rounded-xl border border-red-700 bg-red-950 p-4 text-sm text-red-100" role="alert"></p>
+        <a id="trouble-error-wa" href="#" target="_blank" rel="noopener noreferrer" class="hidden mt-3 text-sm font-bold text-emerald-300 underline">Send the alert through WhatsApp instead</a>
 
         <!-- Emergency Fault Staged State -->
         <div id="trouble-success" class="hidden bg-slate-900 border border-red-500/50 text-white p-6 rounded-xl text-center mt-6 space-y-4">
@@ -345,7 +393,7 @@ scripts: |
           </p>
           <div class="flex flex-col gap-2.5 pt-2">
             <a id="trouble-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-headline text-xs font-bold uppercase tracking-wider py-3 px-4 rounded-xl shadow transition-all">
-              <span>Send Fault Alert via WhatsApp</span>
+              <span>Continue on WhatsApp</span>
             </a>
             <a href="tel:+919967101472" class="inline-flex items-center justify-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold py-2.5 px-4 rounded-xl border border-slate-700 transition-colors">
               <span>Call Duty Engineer: 9967101472</span>
