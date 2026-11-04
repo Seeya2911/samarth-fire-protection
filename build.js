@@ -43,13 +43,13 @@ const imgManifest = fs.existsSync(imgManifestPath) ? JSON.parse(fs.readFileSync(
 const WITHHELD_IMAGES = ['client_society_assembly.jpg', 'client_cpr_training.jpg'];
 
 const CATEGORIES = {
-  compliance: { label: 'Compliance & Law', chip: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  compliance: { label: 'Compliance & Forms', chip: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
   firefighting: { label: 'Hydrants & Pumps', chip: 'bg-rose-50 text-rose-700 border-rose-200' },
-  alarm: { label: 'Detection & Alarm', chip: 'bg-blue-50 text-blue-700 border-blue-200' },
+  alarm: { label: 'Fire Alarms', chip: 'bg-blue-50 text-blue-700 border-blue-200' },
   extinguishers: { label: 'Extinguishers', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
-  training: { label: 'Training & Drills', chip: 'bg-orange-50 text-orange-700 border-orange-200' },
+  training: { label: 'Training & First Aid', chip: 'bg-orange-50 text-orange-700 border-orange-200' },
   passive: { label: 'Passive Protection', chip: 'bg-purple-50 text-purple-700 border-purple-200' },
-  buying: { label: 'Buying & AMC', chip: 'bg-slate-100 text-slate-700 border-slate-200' }
+  buying: { label: 'Equipment & AMC', chip: 'bg-slate-100 text-slate-700 border-slate-200' }
 };
 
 const LLMS_GROUPS = {
@@ -466,6 +466,20 @@ function renderPlainPage(page, body, toc) {
 </div></div>`;
 }
 
+// Extract section anchors for HTML-based guide templates, as well as Markdown guides.
+function extractHtmlToc(html) {
+  const entries = [];
+  const re = /<section\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/section>/gi;
+  let match;
+  while ((match = re.exec(html))) {
+    const heading = match[2].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i);
+    if (!heading) continue;
+    const label = stripTags(heading[1]).replace(/\s+/g, ' ').trim();
+    if (label) entries.push({ id: match[1], text: label });
+  }
+  return entries;
+}
+
 /* ------------------------------------------------------------------ load pages */
 const pages = [];
 const passthrough = [];
@@ -490,6 +504,8 @@ for (const p of pages) {
   if (p.isMd) {
     const r = renderMarkdown(body);
     body = r.html; p.toc = r.toc;
+  } else if (p.fm.template === 'guide') {
+    p.toc = extractHtmlToc(body);
   }
   p.body = body.replace(/<main\b/gi, '<div').replace(/<\/main>/gi, '</div>'); // layout already provides <main>
   p.faqs = extractFaqs(p.body);
@@ -511,7 +527,7 @@ for (const p of pages) {
   if (fm.type === 'blog-index') {
     const cats = Object.keys(CATEGORIES).filter(c => articles.some(a => a.fm.category === c));
     content = content
-      .replace(/{{blog_filters}}/g, '<button type="button" data-filter="all" class="blog-filter is-active">All guides</button>' + cats.map(c => `<button type="button" data-filter="${c}" class="blog-filter">${CATEGORIES[c].label}</button>`).join(''))
+      .replace(/{{blog_filters}}/g, '<button type="button" data-filter="all" class="blog-filter is-active">All blogs</button>' + cats.map(c => `<button type="button" data-filter="${c}" class="blog-filter">${CATEGORIES[c].label}</button>`).join(''))
       .replace(/{{blog_featured}}/g, () => articles[0] ? articleCard(articles[0], false) : '')
       .replace(/{{blog_cards}}/g, () => articles.map(a => articleCard(a, true)).join(''))
       .replace(/{{blog_count}}/g, String(articles.length));
@@ -606,7 +622,7 @@ console.log('Generated sitemap.xml (' + sitemapPages.length + ' URLs)');
 
 // RSS feed of safety blog articles
 const rssDate = d => new Date(d + 'T06:00:00Z').toUTCString();
-const feed = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n  <title>' + esc(BUSINESS) + ' — Fire Safety Blog</title>\n  <link>' + SITE + '/blog</link>\n  <atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n  <description>Practical fire-safety blog articles for housing societies, building owners and facility managers in Mumbai and Maharashtra.</description>\n  <language>en-IN</language>\n' +
+const feed = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n  <title>' + esc(BUSINESS) + ' — Fire Safety Blog</title>\n  <link>' + SITE + '/blog</link>\n  <atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n  <description>Practical fire-safety blog articles for housing societies, building owners, facility managers and businesses in Mumbai and Maharashtra.</description>\n  <language>en-IN</language>\n' +
   articles.map(a => '  <item>\n    <title>' + esc((a.fm.h1 || a.fm.title.split('|')[0]).trim()) + '</title>\n    <link>' + a.url + '</link>\n    <guid isPermaLink="true">' + a.url + '</guid>\n    <pubDate>' + rssDate(a.fm.published) + '</pubDate>\n    <description>' + esc(a.fm.description) + '</description>\n  </item>').join('\n') + '\n</channel>\n</rss>\n';
 fs.writeFileSync(path.join(distDir, 'feed.xml'), feed, 'utf8');
 console.log('Generated feed.xml');
