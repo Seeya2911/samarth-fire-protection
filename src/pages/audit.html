@@ -38,10 +38,8 @@ scripts: |
       const systems = Array.from(document.querySelectorAll('input[name="system"]:checked')).map(function (item) { return item.value; });
       const serviceNeeded = document.getElementById('audit-service-needed').value;
       const notes = document.getElementById('audit-notes').value.trim();
-      const preferredDate = document.getElementById('audit-date').value;
-      const preferredTime = document.getElementById('audit-time').value;
       const file = document.getElementById('audit-upload')?.files?.[0];
-      const waText = ['Hello Samarth Fire, I have requested a fire safety site visit.', 'Building: ' + property, 'Contact: ' + contact, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Property type: ' + propertyType, 'Location: ' + location, 'Service: ' + serviceNeeded, 'Existing systems: ' + (systems.join(', ') || 'Not specified'), 'Preferred date/time: ' + preferredDate + ' / ' + preferredTime, 'Notes: ' + (notes || 'None')].join('\n');
+      const waText = ['Hello Samarth Fire, I have requested a fire safety site visit.', 'Building: ' + property, 'Contact: ' + contact, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Property type: ' + propertyType, 'Location: ' + location, 'Service: ' + serviceNeeded, 'Existing systems: ' + (systems.join(', ') || 'Not specified'), 'Notes: ' + (notes || 'None')].join('\n');
       const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
       error.classList.add('hidden');
       document.getElementById('audit-error-wa').href = waUrl;
@@ -56,13 +54,13 @@ scripts: |
         const attachment = file ? await readAuditAttachment(file) : undefined;
         await window.submitSamarthLead({
           type: 'audit', property, name: contact, phone, email, propertyType,
-          location, size, systems, serviceNeeded, notes, preferredDate, preferredTime, attachment,
+          location, size, systems, serviceNeeded, notes, attachment,
           website: document.getElementById('audit-website').value
         });
         document.getElementById('audit-form').classList.add('hidden');
         document.getElementById('audit-success').classList.remove('hidden');
         document.querySelector('#audit-success h3').textContent = 'Your site visit request has been sent';
-        document.querySelector('#audit-success p').textContent = 'Thank you. We have emailed your request to the Samarth Fire team and will contact you to discuss the site visit.';
+        document.querySelector('#audit-success p').textContent = 'Thank you. We’ve received your request. Our team will contact you shortly to understand your requirements and confirm a suitable time for the visit.';
         document.getElementById('audit-wa-btn').href = waUrl;
       } catch (err) {
         error.textContent = err.message || 'We could not send your request. Please call or WhatsApp our team.';
@@ -96,8 +94,8 @@ scripts: |
         });
         document.getElementById('trouble-form').classList.add('hidden');
         document.getElementById('trouble-success').classList.remove('hidden');
-        document.querySelector('#trouble-success h3').textContent = 'Your fault report has been sent';
-        document.querySelector('#trouble-success p').textContent = 'We have emailed these details to the Samarth Fire team. For an urgent issue, you can also call our team.';
+        document.querySelector('#trouble-success h3').textContent = 'Your fault report has been received';
+        document.querySelector('#trouble-success p').textContent = 'We’ve received your report. Our team will contact you about the issue. For an immediate emergency, call the local emergency services.';
         document.getElementById('trouble-wa-btn').href = waUrl;
       } catch (err) {
         error.textContent = err.message || 'We could not send the alert. Please call or WhatsApp our team.';
@@ -258,22 +256,7 @@ scripts: |
             <textarea id="audit-notes" rows="3" placeholder="Specify any known faults, recent municipal notices, or access constraints." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all"></textarea>
           </div>
 
-          <!-- Preferred Date & Time Picker -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label for="audit-date" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Preferred Walkthrough Date *</label>
-              <input type="date" id="audit-date" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
-            </div>
-            <div>
-              <label for="audit-time" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">Preferred Time Slot *</label>
-              <select id="audit-time" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 focus:bg-white focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-all">
-                <option value="">Select Time Slot</option>
-                <option value="Morning">Morning (10:00 AM - 1:00 PM)</option>
-                <option value="Afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
-                <option value="Evening">Evening (4:00 PM - 7:00 PM)</option>
-              </select>
-            </div>
-          </div>
+          <p class="rounded-xl bg-sky-50 border border-sky-100 px-4 py-3 text-sm text-slate-600">No need to choose a date or time now. Our team will contact you to confirm a suitable visit time.</p>
 
           <!-- Photo upload placeholder -->
           <div>
@@ -285,7 +268,7 @@ scripts: |
           <!-- Submit button -->
           <input type="text" id="audit-website" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[10000px] h-px w-px" aria-hidden="true">
           <button type="submit" class="w-full inline-flex justify-center items-center bg-gradient-to-r from-brand-cyan to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-headline uppercase tracking-wider text-xs font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-teal-500/20 focus-ring">
-            Submit Assessment Request
+            Request a Site Visit
           </button>
         </form>
         <p id="audit-error" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert"></p>
