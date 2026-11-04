@@ -36,14 +36,18 @@ htmlFiles.forEach(file => {
     results.metadataIssues.push({ file, issue: 'Missing or empty meta description' });
   }
 
-  // Check Canonical URL
+  // Check Canonical URL (site uses clean, extensionless URLs; "/" for the homepage)
   const canonicalMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
+  const slug = file.replace(/\.html$/i, '');
+  const expectedCanonical = slug === 'index' ? 'https://samarthfire.in/' : `https://samarthfire.in/${slug}`;
   if (!canonicalMatch) {
     results.canonicalIssues.push({ file, issue: 'Missing canonical link' });
   } else {
     const url = canonicalMatch[1];
     if (!url.startsWith('https://samarthfire.in/')) {
       results.canonicalIssues.push({ file, issue: `Canonical URL does not use https://samarthfire.in/: ${url}` });
+    } else if (url !== expectedCanonical) {
+      results.canonicalIssues.push({ file, issue: `Canonical "${url}" does not match expected "${expectedCanonical}"` });
     }
   }
 
@@ -56,27 +60,44 @@ htmlFiles.forEach(file => {
     if (imgSrc.startsWith('http://') || imgSrc.startsWith('https://') || imgSrc.startsWith('data:')) {
       continue;
     }
-    // Clean query/hash
-    const cleanSrc = imgSrc.split('?')[0].split('#')[0];
+    // Clean query/hash and strip a leading "/" (pages use root-relative paths)
+    const cleanSrc = imgSrc.split('?')[0].split('#')[0].replace(/^\//, '');
     const targetPath = path.resolve(rootDir, cleanSrc);
     if (!fs.existsSync(targetPath)) {
       results.brokenImages.push({ file, src: imgSrc, resolvedPath: targetPath });
     }
   }
 
-  // Check Internal Links
+  // Check <source srcset> inside <picture> (AVIF/WebP responsive variants)
+  const srcsetRegex = /<source[^>]+srcset=["']([^"']+)["']/gi;
+  while ((match = srcsetRegex.exec(content)) !== null) {
+    const candidates = match[1].split(',').map(s => s.trim().split(/\s+/)[0]).filter(Boolean);
+    candidates.forEach(src => {
+      const cleanSrc = src.split('?')[0].split('#')[0].replace(/^\//, '');
+      const targetPath = path.resolve(rootDir, cleanSrc);
+      if (!fs.existsSync(targetPath)) {
+        results.brokenImages.push({ file, src, resolvedPath: targetPath });
+      }
+    });
+  }
+
+  // Check Internal Links. Pages are compiled with clean, extensionless, root-relative hrefs
+  // (e.g. /about, /fire-fighting). A bare slug therefore resolves against <slug>.html on disk,
+  // and "/" resolves to index.html.
   const linkRegex = /<a[^>]+href=["']([^"']+)["']/gi;
   while ((match = linkRegex.exec(content)) !== null) {
     const href = match[1];
-    // Ignore tel, mailto, javascript, external, or pure hash links
-    if (href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('javascript:') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('#')) {
+    // Ignore tel, mailto, javascript, external, or pure hash/query links
+    if (href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('javascript:') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('#') || href.startsWith('?')) {
       continue;
     }
     const cleanHref = href.split('?')[0].split('#')[0];
-    if (!cleanHref) continue;
-    const targetPath = path.resolve(rootDir, cleanHref);
-    if (!fs.existsSync(targetPath)) {
-      results.brokenLinks.push({ file, href, resolvedPath: targetPath });
+    if (!cleanHref || cleanHref === '/') continue;
+    const relHref = cleanHref.replace(/^\//, '');
+    const candidates = /\.[a-z0-9]+$/i.test(relHref) ? [relHref] : [relHref + '.html', relHref];
+    const resolved = candidates.map(c => path.resolve(rootDir, c));
+    if (!resolved.some(p => fs.existsSync(p))) {
+      results.brokenLinks.push({ file, href, resolvedPath: resolved[0] });
     }
   }
 
@@ -86,8 +107,10 @@ htmlFiles.forEach(file => {
     const rawJson = match[1].trim();
     try {
       const parsed = JSON.parse(rawJson);
-      if (!parsed['@context'] && !parsed['@type']) {
-        results.structuredDataIssues.push({ file, issue: 'JSON-LD missing @context or @type' });
+      const hasGraph = Array.isArray(parsed['@graph']);
+      const graphNodesTyped = hasGraph && parsed['@graph'].length > 0 && parsed['@graph'].every(n => n && n['@type']);
+      if (!parsed['@context'] || (!parsed['@type'] && !graphNodesTyped)) {
+        results.structuredDataIssues.push({ file, issue: 'JSON-LD missing @context, or no typed node found (@type or populated @graph)' });
       }
     } catch (e) {
       results.structuredDataIssues.push({ file, issue: `Invalid JSON-LD syntax: ${e.message}` });
@@ -96,7 +119,7 @@ htmlFiles.forEach(file => {
 
   // Secret Scanning
   const secretPatterns = [
-    /(?:api_key|apikey|secret_key|password|bearer|private_key)\s*[:=]\s*['"][a-zA-Z0-9_\-]{16,}['"]/i,
+    /(?:api_key|apikey|secret_key|password|bearer|private_key)\s*[:=]\s*["'][a-zA-Z0-9_\-]{16,}["']/i,
     /ghp_[a-zA-Z0-9]{36}/,
     /sk_live_[a-zA-Z0-9]{24}/,
     /AIza[0-9A-Za-z-_]{35}/
@@ -117,7 +140,7 @@ if (fs.existsSync(sitemapPath)) {
   while ((locMatch = locRegex.exec(sitemapContent)) !== null) {
     const fullUrl = locMatch[1];
     let relPath = fullUrl.replace('https://samarthfire.in/', '');
-    if (!relPath || relPath === '/') relPath = 'index.html';
+    relPath = relPath ? relPath + '.html' : 'index.html';
     const diskPath = path.join(rootDir, relPath);
     if (!fs.existsSync(diskPath)) {
       results.sitemapIssues.push({ url: fullUrl, missingDiskPath: diskPath });

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-labelledby="t d">
+  <title id="t">Six steps of a building evacuation</title>
+  <desc id="d">Alarm sounds, floor wardens act, residents use stairs not lifts, assemble at the muster point, headcount is taken, then the fire brigade is briefed.</desc>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}
+    .h{font-weight:700;font-size:13px}.s{font-size:11.5px;fill:#475569}.n{font-weight:700;font-size:18px;fill:#fff}
+  </style>
+  <rect width="800" height="260" fill="#fff"/>
+  <text x="24" y="34" class="h" style="font-size:20px">Evacuation in six steps</text>
+  <g transform="translate(24,60)">
+    <g><rect width="116" height="150" rx="12" fill="#fef2f2" stroke="#fecaca"/><circle cx="58" cy="30" r="17" fill="#dc2626"/><text x="58" y="36" class="n" text-anchor="middle">1</text><text x="58" y="70" class="h" text-anchor="middle">Alarm</text><text x="58" y="90" class="s" text-anchor="middle">Raise the alarm,</text><text x="58" y="105" class="s" text-anchor="middle">call 101 / 112</text></g>
+    <g transform="translate(127,0)"><rect width="116" height="150" rx="12" fill="#fff7ed" stroke="#fed7aa"/><circle cx="58" cy="30" r="17" fill="#ea580c"/><text x="58" y="36" class="n" text-anchor="middle">2</text><text x="58" y="70" class="h" text-anchor="middle">Wardens</text><text x="58" y="90" class="s" text-anchor="middle">Check floors,</text><text x="58" y="105" class="s" text-anchor="middle">close doors</text></g>
+    <g transform="translate(254,0)"><rect width="116" height="150" rx="12" fill="#fffbeb" stroke="#fde68a"/><circle cx="58" cy="30" r="17" fill="#d97706"/><text x="58" y="36" class="n" text-anchor="middle">3</text><text x="58" y="70" class="h" text-anchor="middle">Stairs</text><text x="58" y="90" class="s" text-anchor="middle">Walk, don’t run.</text><text x="58" y="105" class="s" text-anchor="middle">No lifts</text></g>
+    <g transform="translate(381,0)"><rect width="116" height="150" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/><circle cx="58" cy="30" r="17" fill="#059669"/><text x="58" y="36" class="n" text-anchor="middle">4</text><text x="58" y="70" class="h" text-anchor="middle">Assemble</text><text x="58" y="90" class="s" text-anchor="middle">Go to the muster</text><text x="58" y="105" class="s" text-anchor="middle">point, clear of exits</text></g>
+    <g transform="translate(508,0)"><rect width="116" height="150" rx="12" fill="#eff6ff" stroke="#bfdbfe"/><circle cx="58" cy="30" r="17" fill="#2563eb"/><text x="58" y="36" class="n" text-anchor="middle">5</text><text x="58" y="70" class="h" text-anchor="middle">Headcount</text><text x="58" y="90" class="s" text-anchor="middle">Warden lists,</text><text x="58" y="105" class="s" text-anchor="middle">report missing</text></g>
+    <g transform="translate(635,0)"><rect width="116" height="150" rx="12" fill="#f5f3ff" stroke="#ddd6fe"/><circle cx="58" cy="30" r="17" fill="#7c3aed"/><text x="58" y="36" class="n" text-anchor="middle">6</text><text x="58" y="70" class="h" text-anchor="middle">Brief brigade</text><text x="58" y="90" class="s" text-anchor="middle">Share location,</text><text x="58" y="105" class="s" text-anchor="middle">hazards, hydrants</text></g>
+  </g>
+  <text x="24" y="244" class="s">General guidance — follow your building’s approved evacuation plan. © Samarth Fire Protection System</text>
+</svg>

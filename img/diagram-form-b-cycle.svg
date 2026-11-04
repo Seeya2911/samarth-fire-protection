@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d">
+  <title id="t">Yearly fire compliance cycle: Form A once, Form B every six months</title>
+  <desc id="d">Timeline: Form A when systems are installed and completed; Form B maintenance certificates filed twice a year, in January and July, supported by regular inspection and records in between.</desc>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}
+    .h{font-weight:700;font-size:14px}.s{font-size:12px;fill:#475569}.w{font-weight:700;font-size:13px;fill:#fff}
+  </style>
+  <rect width="800" height="300" fill="#fff"/>
+  <text x="24" y="34" class="h" style="font-size:20px">The compliance rhythm for an existing building</text>
+  <line x1="60" y1="150" x2="740" y2="150" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+  <g><circle cx="100" cy="150" r="22" fill="#2563eb"/><text x="100" y="155" class="w" text-anchor="middle">A</text>
+  <text x="100" y="196" class="h" text-anchor="middle">Form A</text><text x="100" y="214" class="s" text-anchor="middle">At installation /</text><text x="100" y="230" class="s" text-anchor="middle">completion of systems</text></g>
+  <g><circle cx="300" cy="150" r="26" fill="#dc2626"/><text x="300" y="155" class="w" text-anchor="middle">JAN</text>
+  <text x="300" y="96" class="h" text-anchor="middle">Form B</text><text x="300" y="114" class="s" text-anchor="middle">Half-year 1 certificate</text></g>
+  <g><circle cx="520" cy="150" r="26" fill="#ea580c"/><text x="520" y="155" class="w" text-anchor="middle">JUL</text>
+  <text x="520" y="96" class="h" text-anchor="middle">Form B</text><text x="520" y="114" class="s" text-anchor="middle">Half-year 2 certificate</text></g>
+  <g><circle cx="720" cy="150" r="26" fill="#dc2626"/><text x="720" y="155" class="w" text-anchor="middle">JAN</text>
+  <text x="720" y="96" class="h" text-anchor="middle">Form B</text><text x="720" y="114" class="s" text-anchor="middle">…and the cycle repeats</text></g>
+  <text x="410" y="196" class="h" text-anchor="middle">Between filings</text><text x="410" y="214" class="s" text-anchor="middle">inspect, test, repair, keep logs</text><text x="410" y="230" class="s" text-anchor="middle">so the certificate reflects reality</text>
+  <text x="24" y="280" class="s">Confirm current dates and procedure with the Directorate of Maharashtra Fire &amp; Emergency Services. © Samarth Fire Protection System</text>
+</svg>
