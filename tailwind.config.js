@@ -11,29 +11,29 @@ module.exports = {
       colors: {
         brand: {
           // Vibrant Aesthetic Safety Palette (Friendly, Human, Warm)
-          red: '#DC2626',         // Vibrant Safety Crimson Red
-          redDark: '#B91C1C',     // Deep Crimson
-          redLight: '#FEE2E2',    // Soft Red Tint
-          orange: '#EA580C',      // Cheerful Flame Orange
-          orangeLight: '#FFEDD5', // Soft Orange Tint
-          amber: '#F59E0B',       // Warm Saffron Gold
-          amberLight: '#FEF3C7',  // Soft Amber Tint
-          blue: '#2563EB',        // Trust Royal Blue
-          blueDark: '#1D4ED8',    // Deep Royal Navy
-          blueLight: '#DBEAFE',   // Soft Sky Blue Tint
+          red: '#9E2127',         // Vibrant Safety Crimson Red
+          redDark: '#851B22',     // Deep Crimson
+          redLight: '#F6ECE8',    // Soft Red Tint
+          orange: '#B94B3E',      // Cheerful Flame Orange
+          orangeLight: '#F6ECE8', // Soft Orange Tint
+          amber: '#E8AE36',       // Warm Saffron Gold
+          amberLight: '#F1E6D8',  // Soft Amber Tint
+          blue: '#9E2127',        // Trust Royal Blue
+          blueDark: '#851B22',    // Deep Royal Navy
+          blueLight: '#E9D4D0',   // Soft Sky Blue Tint
           emerald: '#10B981',     // Verified Green
           emeraldLight: '#D1FAE5',// Soft Mint Tint
           purple: '#7C3AED',      // Engineering Purple
           purpleLight: '#EDE9FE', // Soft Lavender Tint
           
           // Canvas & Neutral Surfaces
-          canvas: '#FFFFFF',      // Pure Clean White
-          canvasWarm: '#FAFAF9',  // Warm Stone/Ivory 50
-          canvasSlate: '#F8FAFC', // Crisp Slate 50
-          borderSubtle: '#E2E8F0',// Slate 200
-          textHead: '#0F172A',    // Deep Slate 900
-          textBody: '#334155',    // Slate 700
-          textMuted: '#64748B',   // Slate 500
+          canvas: '#FAF7F2',      // Pure Clean White
+          canvasWarm: '#F6ECE8',  // Warm Stone/Ivory 50
+          canvasSlate: '#F1E6D8', // Crisp Slate 50
+          borderSubtle: '#E8DAD2',// Slate 200
+          textHead: '#554B49',    // Deep Slate 900
+          textBody: '#665A55',    // Slate 700
+          textMuted: '#817572',   // Slate 500
 
           // Legacy Mappings for Seamless Compatibility
           ember: '#EA580C',
@@ -42,13 +42,13 @@ module.exports = {
           cyan: '#0284C7',
           maroon: '#B91C1C',
           maroonDark: '#991B1B',
-          charcoalDark: '#0F172A',
-          charcoalLight: '#334155',
-          paper: '#F1F5F9',
-          ivory: '#F8FAFC',
-          slateBg: '#F8FAFC',
-          textPrimary: '#0F172A',
-          textSecondary: '#475569',
+          charcoalDark: '#554B49',
+          charcoalLight: '#817572',
+          paper: '#F1E6D8',
+          ivory: '#FAF7F2',
+          slateBg: '#F6ECE8',
+          textPrimary: '#554B49',
+          textSecondary: '#665A55',
         }
       },
       fontFamily: {

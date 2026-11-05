@@ -1,0 +1,29 @@
+name: PR Build and Audit
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [figma-sitewide-redesign]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Build site
+        run: npm run build
+      - name: Run release gate and site audit
+        run: npm test
