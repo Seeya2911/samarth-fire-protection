@@ -162,8 +162,8 @@
  .bg-slate-950,.bg-slate-900,.bg-slate-800 { background-color:#F1E6D8 !important; }
  .bg-slate-700 { background-color:#E9D4D0 !important; }
  .border-slate-950,.border-slate-900,.border-slate-800,.border-slate-700 { border-color:#E5D6C9 !important; }
- .text-white { color:#554B49; }
- .bg-white .text-white,.bg-red-600 .text-white,.bg-\[\#9E2127\] .text-white,.samarth-brand-button .text-white { color:#fff !important; }
+ .bg-slate-950 .text-white,.bg-slate-900 .text-white,.bg-slate-800 .text-white { color:#554B49 !important; }
+ .bg-slate-950.text-white,.bg-slate-900.text-white,.bg-slate-800.text-white { color:#554B49 !important; }
  .text-slate-900 { color:#554B49; }
  .text-slate-800 { color:#665A55; }
  .text-slate-700 { color:#665A55; }
