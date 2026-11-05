@@ -135,3 +135,22 @@
 
   .trust-stat { @apply rounded-2xl border border-slate-200 bg-white p-5 shadow-xs; }
 }
+
+
+/* Samarth Figma-aligned visual refresh — layout only; preserve all content. */
+@layer base {
+ :root { --samarth-red:#9E2127; --samarth-gold:#E8AE36; --samarth-cream:#FAF7F2; --samarth-blush:#F6ECE8; --samarth-sand:#F1E6D8; --samarth-rose:#E9D4D0; --samarth-text:#554B49; --samarth-muted:#817572; }
+ body { background-color:var(--samarth-cream); color:var(--samarth-text); }
+ ::selection { background:var(--samarth-rose); color:var(--samarth-red); }
+}
+@layer components {
+ .samarth-surface { background:var(--samarth-cream); }
+ .samarth-soft-panel { background:var(--samarth-blush); border-color:#EAD9D3; }
+ .samarth-gold-accent { color:#9A6D13; }
+ .samarth-brand-button { background:var(--samarth-red); color:#fff; transition:transform .22s ease,box-shadow .22s ease,background .22s ease; }
+ .samarth-brand-button:hover { background:#851B22; transform:translateY(-2px); box-shadow:0 8px 20px rgba(158,33,39,.16); }
+ .samarth-card { background:#fff; border:1px solid #EEE4DF; border-radius:1.25rem; transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+ .samarth-card:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(112,76,65,.09); border-color:#E4C9C1; }
+ .samarth-section { padding-block:clamp(3.5rem,7vw,6.5rem); }
+}
+@media(prefers-reduced-motion:reduce){.samarth-brand-button,.samarth-card{transition:none}.samarth-brand-button:hover,.samarth-card:hover{transform:none}}
