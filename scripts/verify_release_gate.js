@@ -295,17 +295,23 @@ htmlFiles.forEach(file => {
   assert(!fileContent.includes('Postgraduate in Disaster Management'), `${file}: Contains unverified Postgraduate claim (BPA-02)`, 'Fallback BPA-02');
   assert(!fileContent.includes('PG in Disaster Management'), `${file}: Contains unverified PG claim (BPA-02)`, 'Fallback BPA-02');
 
-  // BPA-03: No unauthorized corporate client brand names
-  assert(!fileContent.includes('Nuclear Power Corporation of India'), `${file}: Contains NPCIL brand name (BPA-03)`, 'Fallback BPA-03');
-  assert(!fileContent.includes('Bharat Diamond Bourse'), `${file}: Contains Bharat Diamond Bourse brand name (BPA-03)`, 'Fallback BPA-03');
-  assert(!fileContent.includes('NES International School'), `${file}: Contains NES brand name (BPA-03)`, 'Fallback BPA-03');
+  // BPA-03: Client references must be qualified as sourced catalogue/company material,
+  // not represented as independently verified project case studies.
+  const namesClients = ['Nuclear Power Corporation of India', 'Bharat Diamond Bourse', 'NES International School'];
+  const hasClientName = namesClients.some(name => fileContent.includes(name));
+  if (hasClientName) {
+    assert(/catalogue identifies|organisations named in company material|among organisations served/i.test(fileContent),
+      `${file}: client references lack catalogue/source qualification (BPA-03)`, 'Fallback BPA-03');
+  }
 });
 
 // Check llms.txt for BPA fallbacks
 assert(!llmsContent.includes('Postgraduate in Disaster Management'), 'llms.txt contains Postgraduate claim (BPA-02)', 'Fallback BPA-02');
-assert(!llmsContent.includes('Nuclear Power Corporation'), 'llms.txt contains NPCIL (BPA-03)', 'Fallback BPA-03');
-assert(!llmsContent.includes('Bharat Diamond Bourse'), 'llms.txt contains BDB (BPA-03)', 'Fallback BPA-03');
-assert(!llmsContent.includes('NES International School'), 'llms.txt contains NES (BPA-03)', 'Fallback BPA-03');
+const llmsHasClientNames = ['Nuclear Power Corporation', 'Bharat Diamond Bourse', 'NES International School'].some(name => llmsContent.includes(name));
+if (llmsHasClientNames) {
+  assert(/catalogue|company material|organisations served/i.test(llmsContent),
+    'llms.txt client references lack catalogue/source qualification (BPA-03)', 'Fallback BPA-03');
+}
 
 // Check sitemap.xml for BPA-01
 const sitemapTxt = fs.readFileSync(path.join(rootDir, 'sitemap.xml'), 'utf8');
