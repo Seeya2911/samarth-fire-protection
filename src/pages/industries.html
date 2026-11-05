@@ -18,46 +18,97 @@ schema: {
   "description": "Fire safety installation, maintenance, audits, extinguisher supply and training for petroleum, retail, manufacturing, commercial, healthcare, education and residential properties."
 }
 ---
-<div class="not-prose">
-  <section class="rounded-3xl overflow-hidden bg-slate-950 text-white p-6 sm:p-9">
-    <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_.95fr] gap-7 lg:gap-9 items-center">
-      <div><p class="text-xs font-bold uppercase tracking-[0.18em] text-orange-300">Industry and property experience</p><h2 class="font-headline font-black text-2xl sm:text-4xl text-white mt-3">One fire safety partner. Different site needs.</h2><p class="text-sm sm:text-base text-slate-300 mt-4 leading-7">From pump rooms and hydrant lines to shopping centres, residential towers and workplaces, the right maintenance plan starts with understanding the site, its people and the systems already installed.</p><div class="mt-6 flex flex-wrap gap-3"><a href="quote.html" class="rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 px-5 py-3 text-sm font-bold">Discuss your site</a><a href="service-areas.html" class="rounded-xl border border-slate-600 text-white hover:bg-white/10 px-5 py-3 text-sm font-bold">Where we work</a></div></div>
-      <figure class="rounded-2xl overflow-hidden border border-white/10 bg-slate-800"><img src="industry-overview.jpg" alt="Residents and facility staff attending a fire safety briefing at a residential property" class="w-full h-56 sm:h-64 lg:h-72 object-cover" data-sizes="(min-width:1024px) 38vw, 100vw"></figure>
+<div class="not-prose industry-page">
+  <style>
+    @keyframes industry-rise { from { opacity:0; transform:translateY(18px) } to { opacity:1; transform:translateY(0) } }
+    .industry-page .industry-enter { animation:industry-rise .65s ease both }
+    .industry-page .industry-card { transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease }
+    .industry-page .industry-card:hover { transform:translateY(-6px); box-shadow:0 22px 48px rgba(15,23,42,.12); border-color:#fed7aa }
+    .industry-page .industry-card img { transition:transform .55s cubic-bezier(.2,.7,.2,1) }
+    .industry-page .industry-card:hover img { transform:scale(1.045) }
+    @media(prefers-reduced-motion:reduce){.industry-page .industry-enter{animation:none}.industry-page .industry-card,.industry-page .industry-card img{transition:none}.industry-page .industry-card:hover{transform:none}.industry-page .industry-card:hover img{transform:none}}
+  </style>
+
+  <!-- Clear, high-contrast hero -->
+  <section class="industry-enter relative isolate overflow-hidden rounded-[28px] bg-slate-950 text-white p-6 sm:p-10 lg:p-12">
+    <div class="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-orange-500/15 blur-3xl"></div>
+    <div class="relative grid grid-cols-1 lg:grid-cols-[1.02fr_.98fr] gap-8 lg:gap-12 items-center">
+      <div class="max-w-2xl">
+        <p class="text-xs sm:text-sm font-bold uppercase tracking-[.18em] text-orange-300">Industry &amp; property expertise</p>
+        <h2 class="!text-white font-headline font-black text-3xl sm:text-4xl lg:text-[46px] !leading-[1.12] mt-4">Fire safety that fits <span class="text-orange-300">your site.</span></h2>
+        <p class="!text-slate-300 text-base sm:text-lg mt-5 leading-7 sm:leading-8 max-w-xl">Every building has different risks, equipment and people to protect. We help facility teams plan, maintain and improve fire safety around the way each site operates.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="quote.html" class="inline-flex items-center justify-center rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 px-5 py-3.5 text-sm font-bold shadow-lg shadow-orange-950/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-300">Discuss your site <span class="ml-2" aria-hidden="true">↗</span></a>
+          <a href="service-areas.html" class="inline-flex items-center justify-center rounded-xl border border-slate-600 hover:border-slate-400 hover:bg-white/10 !text-white px-5 py-3.5 text-sm font-bold">Explore service areas</a>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs sm:text-sm !text-slate-400">
+          <span><span class="text-orange-300 mr-2">✓</span>Installation &amp; maintenance</span>
+          <span><span class="text-orange-300 mr-2">✓</span>Audits &amp; training</span>
+        </div>
+      </div>
+      <figure class="relative overflow-hidden rounded-2xl border border-white/15 bg-slate-800 shadow-2xl shadow-black/30">
+        <img src="industry-overview.jpg" alt="Residents and facility staff attending a fire safety briefing at a residential property" class="w-full aspect-[4/3] object-cover" data-sizes="(min-width:1024px) 42vw,100vw">
+        <figcaption class="absolute bottom-3 left-3 right-3 rounded-xl border border-white/15 bg-slate-950/75 px-4 py-3 text-xs sm:text-sm text-white backdrop-blur-md">Practical fire safety support for real properties and the people in them.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="mt-12">
-    <div class="max-w-3xl"><p class="text-xs font-bold uppercase tracking-wider text-red-700">Property types</p><h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 mt-2">Support shaped around your industry</h2><p class="text-sm text-slate-600 mt-3 leading-7">These are the types of properties and organisations the company works with or wants to support. Exact scope is agreed after the location, equipment and service requirement are understood.</p></div>
-    <div class="mt-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-petroleum.jpg" alt="Outdoor fire hydrant point at a building" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-red-700">01 · Petroleum and energy</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Oil, Gas &amp; Petroleum Facilities</h3><p class="text-sm text-slate-600 mt-3 leading-7">Fire fighting and alarm equipment, extinguisher supply and maintenance, site checks and safety training for fuel, storage and related facilities. Examples of the sector include large operators such as HPCL and BPCL; these names are not a claim of current customer status.</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-malls.jpg" alt="People attending a fire safety briefing in an indoor community space" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-orange-700">02 · Retail and public spaces</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Shopping Malls &amp; Retail</h3><p class="text-sm text-slate-600 mt-3 leading-7">Fire alarm and sprinkler maintenance, hydrants, extinguishers, emergency access reviews and staff awareness for malls and retail properties such as Phoenix Marketcity, R City and Inorbit. These are examples of the market segment, not claimed clients.</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-industrial.jpg" alt="Supervised fire extinguisher demonstration in an outdoor shared area" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-amber-700">03 · Industrial operations</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Factories, Warehouses &amp; Manufacturing</h3><p class="text-sm text-slate-600 mt-3 leading-7">Fire pumps, hydrants, hose systems, alarms, suppression equipment, extinguishers, passive protection, maintenance and worker training for production and storage sites.</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-offices.jpg" alt="Facility representatives attending a fire safety session in a building compound" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-blue-700">04 · Commercial property</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Offices &amp; Business Parks</h3><p class="text-sm text-slate-600 mt-3 leading-7">Alarm and fire fighting system installation, AMC, extinguisher servicing, audits and evacuation awareness for office buildings, business parks and corporate premises.</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-healthcare-education.jpg" alt="Group of participants attending a fire safety awareness session" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-emerald-700">05 · Public and institutional</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Hospitals, Schools &amp; Institutions</h3><p class="text-sm text-slate-600 mt-3 leading-7">Fire alarm and fire fighting equipment, maintenance records, evacuation planning and staff awareness for healthcare, schools and other public-facing institutions.</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow"><img src="industry-housing-societies.jpg" alt="Residents gathered for a community fire safety activity" class="w-full h-48 object-cover" data-sizes="(min-width:1280px) 360px, (min-width:768px) 50vw,100vw"><div class="p-5"><p class="text-xs font-bold uppercase tracking-wider text-purple-700">06 · Residential property</p><h3 class="font-headline font-bold text-xl text-slate-900 mt-2">Housing Societies &amp; Residential Towers</h3><p class="text-sm text-slate-600 mt-3 leading-7">Hydrant and alarm maintenance, extinguisher checks, fire safety audits, resident demonstrations, mock drills and support for society committees and facility managers.</p></div></article>
+  <!-- Industry cards -->
+  <section class="mt-12 sm:mt-16">
+    <div class="industry-enter max-w-3xl">
+      <p class="text-xs font-bold uppercase tracking-[.16em] text-red-700">Property types</p>
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl text-slate-950 mt-3 !leading-tight">One partner. Different environments.</h2>
+      <p class="text-base sm:text-lg text-slate-600 mt-4 leading-7 sm:leading-8">Explore the environments we support. Final scope is tailored after reviewing your location, installed equipment and service requirements.</p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-6">
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-petroleum.jpg" alt="Outdoor fire hydrant point at a building" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-red-700">01 · Petroleum &amp; energy</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Oil, Gas &amp; Petroleum</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Fire protection equipment, extinguisher servicing, site checks and safety training for fuel, storage and related facilities. Sector examples include HPCL and BPCL; these are not claims of current customer status.</p></div>
+      </article>
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-malls.jpg" alt="People attending a fire safety briefing in an indoor community space" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-orange-700">02 · Retail &amp; public spaces</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Shopping Malls &amp; Retail</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Fire alarm and sprinkler maintenance, hydrants, extinguishers, emergency-access reviews and staff awareness for malls and retail properties.</p></div>
+      </article>
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-industrial.jpg" alt="Supervised fire extinguisher demonstration in an outdoor shared area" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-amber-700">03 · Industrial operations</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Factories &amp; Warehouses</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Fire pumps, hydrants, hose systems, alarms, suppression equipment, passive protection, maintenance and workforce training.</p></div>
+      </article>
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-offices.jpg" alt="Facility representatives attending a fire safety session in a building compound" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-blue-700">04 · Commercial property</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Offices &amp; Business Parks</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Alarm and fire-fighting installation, AMC, extinguisher servicing, audits and evacuation awareness for corporate premises.</p></div>
+      </article>
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-healthcare-education.jpg" alt="Participants attending a fire safety awareness session" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-emerald-700">05 · Public &amp; institutional</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Hospitals &amp; Institutions</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Fire equipment, maintenance records, evacuation planning and staff awareness for healthcare, schools and public-facing institutions.</p></div>
+      </article>
+      <article class="industry-card group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-hidden bg-slate-100"><img src="industry-housing-societies.jpg" alt="Residents gathered for a community fire safety activity" class="w-full aspect-[16/9] object-cover" loading="lazy" data-sizes="(min-width:1280px) 360px,(min-width:640px) 50vw,100vw"></div>
+        <div class="p-5 sm:p-6"><p class="text-xs font-bold uppercase tracking-wider text-purple-700">06 · Residential property</p><h3 class="font-headline font-bold text-xl sm:text-2xl text-slate-950 mt-3">Housing Societies &amp; Towers</h3><p class="text-sm sm:text-base text-slate-600 mt-3 leading-7">Hydrant and alarm maintenance, extinguisher checks, audits, resident demonstrations, mock drills and support for society committees.</p></div>
+      </article>
     </div>
   </section>
 
-  <section class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
-    <h2 class="font-headline font-bold text-xl text-slate-900">Other sectors covered in the company profile</h2>
-    <div class="mt-4 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700">Government &amp; public sector</span><span class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700">Infrastructure &amp; transportation</span><span class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700">Residential &amp; real estate</span><span class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700">Corporate &amp; institutional</span><span class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700">Events &amp; temporary installations</span></div>
+  <!-- Additional sectors, simplified -->
+  <section class="mt-12 sm:mt-16 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+    <p class="text-xs font-bold uppercase tracking-[.16em] text-red-700">Also relevant</p>
+    <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-950 mt-2">More environments. Same safety-first approach.</h2>
+    <div class="mt-5 flex flex-wrap gap-2.5"><span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">Government &amp; public sector</span><span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">Infrastructure &amp; transport</span><span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">Real estate</span><span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">Corporate &amp; institutional</span><span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">Events &amp; temporary sites</span></div>
   </section>
 
-  <section class="mt-14">
-    <div class="max-w-3xl"><p class="text-xs font-bold uppercase tracking-wider text-red-700">Company profile</p><h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 mt-2">Experience and work named in the catalogue</h2><p class="text-sm text-slate-600 mt-3 leading-7">The company catalogue states more than eight years of experience, a workforce of over 25 technicians and more than 4,000 satisfied clients. These are company-published figures.</p></div>
+  <!-- Credibility, accurately attributed -->
+  <section class="mt-12 sm:mt-16">
+    <div class="max-w-3xl"><p class="text-xs font-bold uppercase tracking-[.16em] text-red-700">Company profile</p><h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-950 mt-2">Experience and work in the catalogue</h2><p class="text-base text-slate-600 mt-3 leading-7">The company catalogue states the following figures and names the organisations below. They are presented as company-published information.</p></div>
     <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl">8+</strong><span class="block text-sm text-slate-300 mt-1">Years of experience (catalogue)</span></div>
-      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl">25+</strong><span class="block text-sm text-slate-300 mt-1">Technicians across disciplines</span></div>
-      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl">4,000+</strong><span class="block text-sm text-slate-300 mt-1">Satisfied clients (catalogue)</span></div>
+      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl sm:text-4xl text-orange-300">8+</strong><span class="block text-sm text-slate-300 mt-2">Years of experience*</span></div>
+      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl sm:text-4xl text-orange-300">25+</strong><span class="block text-sm text-slate-300 mt-2">Technicians*</span></div>
+      <div class="rounded-2xl bg-slate-950 p-5 text-white"><strong class="font-headline text-3xl sm:text-4xl text-orange-300">4,000+</strong><span class="block text-sm text-slate-300 mt-2">Satisfied clients*</span></div>
     </div>
-    <div class="mt-7 rounded-2xl border border-slate-200 bg-white p-6">
-      <h3 class="font-headline font-bold text-lg text-slate-900">Organisations named in company material</h3>
-      <p class="text-sm text-slate-600 mt-2 leading-7">The company catalogue identifies Nuclear Power Corporation of India Limited, Bharat Diamond Bourse and NES International School among organisations it has served. The catalogue does not provide project dates or detailed scopes for each organisation, so this page does not invent them.</p>
-      <div class="mt-4 flex flex-wrap gap-2"><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">Nuclear Power Corporation of India Limited</span><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">Bharat Diamond Bourse</span><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">NES International School</span></div>
-    </div>
+    <p class="text-xs text-slate-500 mt-3">*Figures published in the company catalogue.</p>
+    <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 sm:p-7"><h3 class="font-headline font-bold text-lg sm:text-xl text-slate-950">Organisations named in company material</h3><p class="text-sm sm:text-base text-slate-600 mt-2 leading-7">The catalogue identifies Nuclear Power Corporation of India Limited, Bharat Diamond Bourse and NES International School. Detailed project dates and scopes are not provided here.</p><div class="mt-4 flex flex-wrap gap-2"><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">Nuclear Power Corporation of India Limited</span><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">Bharat Diamond Bourse</span><span class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800">NES International School</span></div></div>
   </section>
 
-  <section class="mt-14 rounded-3xl bg-slate-950 text-white p-7 sm:p-9">
-    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center"><div><h2 class="font-headline font-bold text-2xl text-white">Need support for your site?</h2><p class="text-sm text-slate-300 mt-3 leading-7">Tell us your property type, location and the equipment or service you need. We will review the scope and contact you to discuss the next steps.</p></div><div class="flex flex-wrap md:flex-col gap-3"><a href="quote.html" class="rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 px-5 py-3 text-sm font-bold text-center">Request a quotation</a><a href="audit.html" class="rounded-xl border border-slate-600 hover:bg-white/10 px-5 py-3 text-sm font-bold text-white text-center">Request a site visit</a></div></div>
+  <!-- Final action block -->
+  <section class="mt-12 sm:mt-16 rounded-3xl bg-slate-950 p-6 sm:p-9 lg:p-10 text-white">
+    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center"><div><p class="text-xs font-bold uppercase tracking-[.16em] text-orange-300">Plan your next step</p><h2 class="!text-white font-headline font-bold text-2xl sm:text-3xl mt-2">Let's assess your property.</h2><p class="!text-slate-300 text-sm sm:text-base mt-3 leading-7 max-w-2xl">Share your property type, location and current fire-safety requirements. We can discuss the appropriate scope and next steps.</p></div><div class="flex flex-wrap md:flex-col gap-3"><a href="quote.html" class="rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 px-5 py-3.5 text-sm font-bold text-center">Get a quotation</a><a href="audit.html" class="rounded-xl border border-slate-600 hover:bg-white/10 !text-white px-5 py-3.5 text-sm font-bold text-center">Request a site visit</a></div></div>
   </section>
 </div>
