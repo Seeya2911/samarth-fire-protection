@@ -410,12 +410,6 @@ function renderGuide(page, body, toc, readMin, related) {
         <summary class="font-headline font-bold text-sm text-slate-900 uppercase tracking-wide cursor-pointer list-none flex items-center justify-between">On this page <span class="text-slate-400 group-open:rotate-180 transition-transform" aria-hidden="true">▾</span></summary>
         <div class="mt-3 divide-y divide-slate-100">${tocHtml}</div>
       </details>
-      <div class="hidden lg:block rounded-2xl border border-orange-200 bg-orange-50/60 p-5">
-        <div class="font-headline font-bold text-sm text-slate-900">Need this done for your building?</div>
-        <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Site assessment and quotation by a Class D licensed agency in Malad East.</p>
-        <a href="quote.html" class="mt-3 inline-flex w-full items-center justify-center bg-red-600 hover:bg-red-700 text-white rounded-xl px-4 py-2.5 text-xs font-bold">Get a quotation</a>
-        <a href="tel:+919967101472" class="mt-2 inline-flex w-full items-center justify-center border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold">Call 99671 01472</a>
-      </div>
     </aside>
     <article class="min-w-0">
       <div class="prose-guide">${body}</div>
