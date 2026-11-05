@@ -218,7 +218,7 @@ htmlFiles.forEach(file => {
   // Canonical
   const canonMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
   const canon = canonMatch ? canonMatch[1].trim() : '';
-  const slug = file.replace(/\\.html$/i, '');
+  const slug = file.replace(/\.html$/i, '');
   const expectedCanon = slug === 'index' ? 'https://samarthfire.in/' : `https://samarthfire.in/${slug}`;
   assert(canon === expectedCanon, `${file}: Canonical "${canon}" does not match expected "${expectedCanon}"`, 'Canonical Match');
   assert(!canonicalsSeen.has(canon), `${file}: Duplicate canonical URL detected: "${canon}"`, 'Canonical Uniqueness');
