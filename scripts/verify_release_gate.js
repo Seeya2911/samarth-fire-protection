@@ -92,16 +92,16 @@ const quoteHtml = fs.readFileSync(path.join(rootDir, 'quote.html'), 'utf8');
 assert(quoteHtml.includes('function handleQuoteForm'), 'quote.html missing handleQuoteForm', 'Script Survival');
 assert(quoteHtml.includes('id="q-requirement"'), 'quote.html missing requirement select', 'Form Elements');
 assert(quoteHtml.includes('id="rev-wa-btn"'), 'quote.html missing review WhatsApp button', 'Form Elements');
-assert(quoteHtml.includes('id="rev-mail-btn"'), 'quote.html missing review Email button', 'Form Elements');
+assert(quoteHtml.includes("window.submitSamarthLead({ type: 'quote'"), 'quote.html missing lead submission integration', 'Form Elements');
 
 const indexHtml = fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8');
-assert(indexHtml.includes('function calculateEstimate'), 'index.html missing calculateEstimate', 'Script Survival');
+assert(indexHtml.includes('href="quote.html"') && indexHtml.includes('Request a Quote'), 'index.html missing quote CTA', 'Script Survival');
 
 const auditHtml = fs.readFileSync(path.join(rootDir, 'audit.html'), 'utf8');
 assert(auditHtml.includes('function handleAuditSubmit'), 'audit.html missing handleAuditSubmit', 'Script Survival');
 assert(auditHtml.includes('function handleTroubleSubmit'), 'audit.html missing handleTroubleSubmit', 'Script Survival');
 assert(auditHtml.includes('id="audit-wa-btn"'), 'audit.html missing audit WhatsApp dispatch button', 'Form Elements');
-assert(auditHtml.includes('id="audit-mail-btn"'), 'audit.html missing audit Email dispatch button', 'Form Elements');
+assert(auditHtml.includes('id="audit-wa-btn"') && auditHtml.includes('window.submitSamarthLead'), 'audit.html missing WhatsApp/lead submission integration', 'Form Elements');
 assert(!auditHtml.includes('Your assessment details have been registered. Sameer M. Kangutkar will review'), 
   'audit.html still contains legacy false registration message', 'False Success Prevention');
 
