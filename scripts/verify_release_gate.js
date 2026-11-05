@@ -64,10 +64,11 @@ htmlFiles.forEach(file => {
       const passesFabricationCheck = !hasFakeRatings && !hasFakeAwards;
       assert(passesFabricationCheck, `${file}: contains fabricated ratings or awards in JSON-LD`, 'JSON-LD Fabrication');
 
-      // Check essential schema fields
+      // Generated site-wide JSON-LD uses @graph; validate typed nodes within it.
       const hasContext = parsed['@context'] === 'https://schema.org';
-      const hasType = Boolean(parsed['@type']);
-      assert(hasContext && hasType, `${file}: missing @context or @type in JSON-LD`, 'JSON-LD Structure');
+      const graph = Array.isArray(parsed['@graph']) ? parsed['@graph'] : [];
+      const hasType = Boolean(parsed['@type']) || (graph.length > 0 && graph.every(node => node && node['@type']));
+      assert(hasContext && hasType, `${file}: missing @context or typed @type/@graph node in JSON-LD`, 'JSON-LD Structure');
 
       report.jsonLdValidation.push({
         file,
