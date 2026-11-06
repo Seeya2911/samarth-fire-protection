@@ -44,8 +44,8 @@
   <!-- Fonts: non-blocking (print-media swap) so text paints immediately with the fallback stack -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/styles.css">
@@ -68,73 +68,84 @@
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}a:hover,button:hover{transform:none}}
   </style>
 </head>
-<body class="bg-[#FAF7F2] text-[#554B49] font-body antialiased flex flex-col min-h-screen">
+<body class="bg-[#F5F6F8] text-[#334155] font-body antialiased flex flex-col min-h-screen">
 
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-red-700 focus:font-bold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-xl">Skip to main content</a>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-[#C81E27] focus:font-bold focus:px-4 focus:py-2 focus:border-2 focus:border-[#121518] focus:shadow-xl">Skip to main content</a>
 
-  <!-- 1. Top Regulatory Eyebrow Bar (Deep Navy with Saffron & Emerald Highlights) -->
-  <div class="bg-[#F1E6D8] text-[#665A55] text-[11px] font-body py-2 px-4 border-b border-[#E5D6C9]">
+  <!-- 1. Top Technical Regulatory Bar (Industrial Graphite & Warning Amber) -->
+  <aside class="w-full bg-[#121518] text-[#CBD5E1] text-[11px] font-mono py-2 px-4 border-b border-[#2E343B] select-none">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex items-center space-x-2">
-        <span class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-400 border border-emerald-500/40 uppercase tracking-wider">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="inline-flex items-center space-x-1.5 px-2 py-0.5 bg-[#C81E27] text-white text-[10px] font-bold uppercase tracking-wider">
           <span>Class D Agency</span>
         </span>
-        <span class="text-slate-300">Fire alarm systems &bull; Fire fighting systems &bull; Safety training</span>
+        <span class="text-white font-semibold">Licence No: MFS/LA/RF-34/RD-35</span>
+        <span class="text-[#64748B] hidden sm:inline">|</span>
+        <span class="text-[#D97706] font-semibold hidden md:inline">Maharashtra Fire Services Enlisted</span>
       </div>
-      <div class="flex items-center space-x-4 text-slate-400 text-xs">
-        <span class="hidden md:inline font-medium text-slate-400">HQ: Malad East, Mumbai</span>
-        <a href="tel:+919967101472" class="hover:text-amber-400 transition-colors flex items-center space-x-1.5 font-semibold text-[#554B49]">
-          <svg class="h-3.5 w-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          <span class="font-mono">9967101472</span>
+      <div class="flex items-center space-x-4 text-xs">
+        <span class="hidden lg:inline text-[#94A3B8]">HQ: Malad East, Mumbai</span>
+        <a href="tel:+919967101472" class="hover:text-[#D97706] transition-colors flex items-center space-x-1.5 font-bold text-white">
+          <svg class="h-3.5 w-3.5 text-[#D97706]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="font-mono">99671 01472</span>
         </a>
-        <span class="text-slate-600">/</span>
-        <a href="tel:+918097247249" class="hover:text-amber-400 transition-colors text-slate-300 font-mono">8097247249</a>
+        <span class="text-[#475569]">/</span>
+        <a href="tel:+918097247249" class="hover:text-[#D97706] transition-colors text-[#CBD5E1] font-mono">80972 47249</a>
       </div>
     </div>
-  </div>
+  </aside>
 
-  <!-- 2. Clean, Aesthetic, Sunlit White Header with Vibrant Red & Slate Brand -->
-  <header id="main-header" class="sticky top-0 z-40 bg-[#FAF7F2]/95 border-b border-[#E9DCD4] backdrop-blur-md shadow-xs transition-all duration-300">
+  <!-- 2. Industrial Engineering Navigation Header -->
+  <header id="main-header" class="sticky top-0 z-40 bg-white border-b border-[#CBD5E1] transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between min-h-[92px] py-2 transition-all duration-300" id="header-container">
+      <div class="flex items-center justify-between min-h-[84px] py-2 transition-all duration-300" id="header-container">
         
-        <!-- Logo and Brand Info -->
-        <a href="index.html" class="flex items-center space-x-3 group focus-ring rounded-xl p-1 transition-transform flex-shrink-0" aria-label="Samarth Fire Protection System Homepage">
-          <div class="relative flex items-center justify-center p-1.5 rounded-xl bg-[#F6ECE8] border border-[#E8D4CC] shadow-xs group-hover:border-orange-400 transition-colors">
-            <img src="logo.png" class="h-14 w-14 sm:h-16 sm:w-16 lg:h-[72px] lg:w-[72px] object-contain drop-shadow-xs transition-transform group-hover:scale-105" alt="Samarth Fire Protection System Emblem" width="48" height="48">
+        <!-- Logo and Brand Identity -->
+        <a href="index.html" class="flex items-center space-x-3 group focus-ring p-1 transition-transform flex-shrink-0" aria-label="Samarth Fire Protection System Homepage">
+          <div class="flex items-center justify-center p-1 bg-[#F5F6F8] border border-[#CBD5E1]">
+            <img src="logo.png" class="h-12 w-12 sm:h-14 sm:w-14 object-contain" alt="Samarth Fire Protection System Emblem" width="48" height="48">
           </div>
-          <img src="logo_name.png" class="h-14 sm:h-16 lg:h-[76px] max-w-[260px] sm:max-w-[340px] object-contain object-left" alt="Samarth Fire Protection System — Fire Detection Protection & Suppression System and Products" width="340" height="76">
+          <div class="flex flex-col">
+            <span class="font-headline font-extrabold text-xl sm:text-2xl text-[#121518] tracking-tight uppercase leading-none">
+              SAMARTH FIRE
+            </span>
+            <span class="font-headline font-bold text-xs sm:text-sm text-[#C81E27] tracking-wider uppercase mt-0.5">
+              PROTECTION SYSTEM
+            </span>
+            <span class="font-mono text-[9px] text-[#64748B] uppercase tracking-wider">
+              Class D Licensed Agency • Malad East
+            </span>
+          </div>
         </a>
 
-        <!-- Simple, click-to-open navigation -->
-        <nav class="hidden lg:flex items-center gap-5 font-nav text-sm font-semibold text-slate-700" aria-label="Main navigation">
-          <a href="index.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_home}}">Home</a>
-          <a href="about.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_about}}">About</a>
+        <!-- Industrial Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 font-headline text-base font-bold uppercase tracking-wider text-[#121518]" aria-label="Main navigation">
+          <a href="index.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_home}}">Home</a>
+          <a href="about.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_about}}">About</a>
           <details class="service-nav relative">
-            <summary class="flex items-center gap-1.5 cursor-pointer list-none py-2 hover:text-red-600 {{active_services}}">
+            <summary class="flex items-center gap-1 cursor-pointer list-none py-2 hover:text-[#C81E27] {{active_services}}">
               <span>Services</span>
-              <svg class="h-4 w-4 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.09 1.03l-4.25 4.5a.75.75 0 01-1.09 0l-4.25-4.5a.75.75 0 01.02-1.05z" clip-rule="evenodd"/></svg>
+              <svg class="h-4 w-4 transition-transform text-[#64748B]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.09 1.03l-4.25 4.5a.75.75 0 01-1.09 0l-4.25-4.5a.75.75 0 01.02-1.05z" clip-rule="evenodd"/></svg>
             </summary>
-            <div class="service-dropdown-menu absolute left-0 top-full mt-1 w-72 rounded-2xl bg-white shadow-xl border border-slate-200 p-2 z-50 text-sm">
-              <a href="services.html" class="block rounded-xl px-3 py-2.5 font-bold text-red-700 hover:bg-red-50">All services</a>
-              <a href="detection-alarm.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire alarm systems</a>
-              <a href="fire-fighting.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire fighting systems</a>
-              <a href="extinguishing.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire extinguishers &amp; equipment</a>
-              <a href="passive-protection.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Passive fire protection</a>
-              <a href="audit.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire safety audits</a>
-              <a href="training-preparedness.html" class="block rounded-xl px-3 py-2.5 hover:bg-slate-50">Fire safety, first aid &amp; CPR training</a>
+            <div class="service-dropdown-menu absolute left-0 top-full mt-1 w-72 bg-white border-2 border-[#121518] hard-shadow-spec p-2 z-50 text-sm font-sans normal-case">
+              <a href="services.html" class="block px-3 py-2 font-bold text-[#C81E27] hover:bg-[#F5F6F8]">All engineering services</a>
+              <a href="detection-alarm.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Fire alarm & detection systems</a>
+              <a href="fire-fighting.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Fire fighting & wet risers</a>
+              <a href="extinguishing.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Fire extinguishers & HPT</a>
+              <a href="passive-protection.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Passive fire protection & doors</a>
+              <a href="audit.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Fire safety audits</a>
+              <a href="training-preparedness.html" class="block px-3 py-2 text-[#121518] hover:bg-[#F5F6F8]">Mock drills, first aid & CPR</a>
             </div>
           </details>
-          <a href="industries.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_industries}}">Industries</a>
-          <a href="projects.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
-          <a href="blog.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_blog}}">Blogs</a>
-          <a href="contact.html" class="hover:text-red-600 transition-colors py-2 whitespace-nowrap {{active_contact}}">Contact</a>
+          <a href="industries.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_industries}}">Industries</a>
+          <a href="projects.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_projects}}">Projects</a>
+          <a href="blog.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_blog}}">Blogs</a>
+          <a href="contact.html" class="hover:text-[#C81E27] transition-colors py-2 whitespace-nowrap {{active_contact}}">Contact</a>
         </nav>
 
-        <!-- 5. Header Action CTAs: Vibrant Warm Coral & Royal Blue Buttons -->
+        <!-- Header Action CTA: Flat Safety Red Industrial Button -->
         <div class="hidden lg:flex items-center space-x-3">
-          <a href="quote.html" class="inline-flex items-center space-x-1.5 bg-[#9E2127] hover:bg-[#851B22] text-white px-5 py-2.5 rounded-xl font-headline text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-red-500/20 hover:shadow-red-500/30 focus-ring {{active_quote}} whitespace-nowrap">
+          <a href="quote.html" class="inline-flex items-center space-x-2 bg-[#C81E27] hover:bg-[#121518] text-white px-5 py-2.5 font-headline text-base font-bold tracking-wider uppercase transition-colors border border-[#121518] hard-shadow-spec focus-ring {{active_quote}} whitespace-nowrap">
             <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
             <span>Get a Quote</span>
           </a>
@@ -142,12 +153,53 @@
 
         <!-- Mobile Header Controls -->
         <div class="flex lg:hidden items-center space-x-2">
-          <a href="quote.html" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-gradient-to-r from-red-600 to-orange-500 text-white font-headline text-xs font-bold uppercase tracking-wider shadow-sm">
+          <a href="quote.html" class="inline-flex items-center px-3 py-1.5 bg-[#C81E27] text-white font-headline text-sm font-bold uppercase tracking-wider border border-[#121518]">
             <span>Quote</span>
           </a>
-          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-red-600 hover:bg-slate-100 focus-ring" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 text-[#121518] hover:text-[#C81E27] hover:bg-[#F5F6F8] border border-[#CBD5E1] focus-ring" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="block h-6 w-6" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="hidden h-6 w-6" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden lg:hidden bg-white border-b-2 border-[#121518] text-[#121518]" id="mobile-menu">
+      <nav class="px-4 pt-3 pb-4 space-y-1 text-sm font-headline font-bold uppercase tracking-wider" aria-label="Mobile navigation">
+        <a href="index.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_home}}">Home</a>
+        <a href="about.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_about}}">About</a>
+        <details class="service-nav">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 py-2.5 hover:bg-[#F5F6F8] {{active_services}}">Services <span aria-hidden="true">⌄</span></summary>
+          <div class="service-dropdown-menu pl-4 pb-2 text-xs font-normal normal-case">
+            <a href="services.html" class="block px-3 py-2 text-[#C81E27] font-bold">All services</a>
+            <a href="detection-alarm.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Fire alarm systems</a>
+            <a href="fire-fighting.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Fire fighting systems</a>
+            <a href="extinguishing.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Extinguishers &amp; equipment</a>
+            <a href="passive-protection.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Passive fire protection</a>
+            <a href="audit.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Fire safety audits</a>
+            <a href="training-preparedness.html" class="block px-3 py-2 hover:bg-[#F5F6F8]">Training, first aid &amp; CPR</a>
+          </div>
+        </details>
+        <a href="industries.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_industries}}">Industries</a>
+        <a href="projects.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_projects}}">Projects</a>
+        <a href="blog.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_blog}}">Blogs</a>
+        <a href="resources.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_resources}}">FAQs</a>
+        <a href="contact.html" class="block px-3 py-2.5 hover:bg-[#F5F6F8] {{active_contact}}">Contact</a>
+      </nav>
+      <div class="border-t border-[#CBD5E1] px-4 py-4 grid grid-cols-2 gap-2">
+        <a href="quote.html" class="flex items-center justify-center bg-[#C81E27] px-3 py-3 text-xs font-headline font-bold uppercase tracking-wider text-white">Get a Quote</a>
+        <a href="audit.html" class="flex items-center justify-center border border-[#121518] px-3 py-3 text-xs font-headline font-bold uppercase tracking-wider text-[#121518]">Book an Audit</a>
+        <a href="tel:+919967101472" class="col-span-2 flex items-center justify-center bg-[#121518] px-3 py-3 text-xs font-headline font-bold uppercase tracking-wider text-white">Call 99671 01472</a>
+      </div>
+    </div>
+  </header>
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             <svg class="hidden h-6 w-6" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -195,121 +247,118 @@
     {{content}}
   </main>
 
-  <!-- 3. Rich Deep Navy Footer with Warm Colorful Accents -->
-  <footer class="bg-[#F1E6D8] border-t border-[#E5D6C9] text-[#665A55] pt-16 pb-24 lg:pb-16 font-body relative overflow-hidden">
+  <!-- 3. Industrial Graphite Statutory Engineering Footer -->
+  <footer class="bg-[#121518] border-t-2 border-[#121518] text-[#94A3B8] pt-16 pb-20 font-body relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Footer Columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-slate-800 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-[#2E343B] pb-12">
         
-        <!-- Column 1: Brand Identity -->
-        <div>
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="p-1.5 rounded-xl bg-[#F6ECE8] border border-[#E8D4CC]">
-              <img src="logo.png" class="h-11 w-11 object-contain drop-shadow-sm flex-shrink-0" alt="Samarth Fire Logo" width="44" height="44">
+        <!-- Column 1: Brand Identity & Regulatory Enrolment -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="p-1 bg-[#F5F6F8] border border-[#CBD5E1]">
+              <img src="logo.png" class="h-10 w-10 object-contain" alt="Samarth Fire Logo" width="40" height="40">
             </div>
             <div class="flex flex-col">
-              <span class="font-headline font-black text-[#9E2127] tracking-tight text-lg leading-none uppercase">
-                SAMARTH
+              <span class="font-headline font-black text-white tracking-tight text-lg leading-none uppercase">
+                SAMARTH FIRE
               </span>
-              <span class="font-headline font-extrabold text-[#9E2127] tracking-wider text-[11px] leading-tight uppercase mt-0.5">
-                FIRE PROTECTION SYSTEM
+              <span class="font-headline font-bold text-[#C81E27] tracking-wider text-xs leading-tight uppercase mt-0.5">
+                PROTECTION SYSTEM
               </span>
-              <span class="font-mono text-[9px] text-slate-400 font-bold tracking-wider uppercase mt-0.5">
+              <span class="font-mono text-[9px] text-[#94A3B8] uppercase tracking-wider mt-0.5">
                 Class D Licensed Agency
               </span>
             </div>
           </div>
-          <p class="text-xs leading-relaxed text-slate-400 mb-4 font-body">
-            Directorate of Maharashtra Fire Services Licensed Class D Agency. Focused on audit-led fire safety engineering, turnkey system installations, preventative maintenance cycles, and hands-on compound emergency drills.
+          <p class="text-xs leading-relaxed text-[#CBD5E1] font-body">
+            Directorate of Maharashtra Fire Services Licensed Class D Agency (Licence No: <span class="font-mono font-bold text-white">MFS/LA/RF-34/RD-35</span>). Turnkey hydraulic engineering, wet riser testing, pump overhaul, and statutory Form B certification under Maharashtra Fire Prevention and Life Safety Measures Act, 2006.
           </p>
-          <p class="font-mono text-[11px] text-amber-300 leading-relaxed border-l-2 border-amber-500 pl-2.5">
-            "Engineered for high-pressure readiness and unconditional life safety across the Mumbai Metropolitan Region."
-          </p>
+          <div class="border-l-2 border-[#D97706] pl-3 py-1 font-mono text-[11px] text-[#CBD5E1]">
+            Standard: NBC 2016 Part 4 & Maharashtra Fire Act
+          </div>
         </div>
 
-        <!-- Column 2: SERVICES -->
+        <!-- Column 2: ENGINEERING SERVICES -->
         <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-rose-500"></span>
-            <span>Engineering Services</span>
+          <h3 class="font-headline text-base uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2 border-b border-[#2E343B] pb-2">
+            <span>Engineering Systems</span>
           </h3>
-          <ul class="space-y-2 text-xs font-mono text-[11px] text-slate-300">
-            <li><a href="fire-fighting.html" class="hover:text-rose-400 transition-colors">&bull; Fire Hydrants & Sprinklers</a></li>
-            <li><a href="detection-alarm.html" class="hover:text-blue-400 transition-colors">&bull; Detection & Alarm Loops</a></li>
-            <li><a href="extinguishing.html" class="hover:text-amber-400 transition-colors">&bull; Extinguisher Refilling & HPT</a></li>
-            <li><a href="passive-protection.html" class="hover:text-purple-400 transition-colors">&bull; Passive Fire Stops & Doors</a></li>
-            <li><a href="compliance-certification.html" class="hover:text-emerald-400 transition-colors">&bull; Form A & Form B Certification</a></li>
-            <li><a href="training-preparedness.html" class="hover:text-orange-400 transition-colors">&bull; Compound Mock Drills & CPR</a></li>
+          <ul class="space-y-2 text-xs font-mono text-[11px] text-[#CBD5E1]">
+            <li><a href="fire-fighting.html" class="hover:text-white transition-colors">Wet & Dry Risers & Hydrants</a></li>
+            <li><a href="detection-alarm.html" class="hover:text-white transition-colors">Fire Detection & Alarm Loops</a></li>
+            <li><a href="extinguishing.html" class="hover:text-white transition-colors">Extinguishers & Hydro-Testing (HPT)</a></li>
+            <li><a href="passive-protection.html" class="hover:text-white transition-colors">Passive Fire Protection & Doors</a></li>
+            <li><a href="compliance-certification.html" class="hover:text-white transition-colors">Statutory Form A & Form B Certification</a></li>
+            <li><a href="training-preparedness.html" class="hover:text-white transition-colors">Mock Evacuation Drills & CPR</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: COMPANY -->
+        <!-- Column 3: ORGANIZATION -->
         <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-            <span>Organization</span>
+          <h3 class="font-headline text-base uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2 border-b border-[#2E343B] pb-2">
+            <span>Documentation & Standards</span>
           </h3>
-          <ul class="space-y-2 text-xs text-slate-300 font-mono text-[11px]">
-            <li><a href="about.html" class="hover:text-amber-400 transition-colors">&bull; About & 25+ Workforce</a></li>
-            <li><a href="founder.html" class="hover:text-amber-400 transition-colors">&bull; Founder: Sameer M. Kangutkar</a></li>
-            <li><a href="process.html" class="hover:text-amber-400 transition-colors">&bull; 7-Step Engineering Lifecycle</a></li>
-            <li><a href="projects.html" class="hover:text-amber-400 transition-colors">&bull; Infrastructure Case Studies</a></li>
-            <li><a href="certifications.html" class="hover:text-amber-400 transition-colors">&bull; Official Form N License</a></li>
-            <li><a href="resources.html" class="hover:text-amber-400 transition-colors">&bull; Safety FAQ & Codes</a></li>
-            <li><a href="blog.html" class="hover:text-amber-400 transition-colors">&bull; Technical Guides & Articles</a></li>
-            <li><a href="glossary.html" class="hover:text-amber-400 transition-colors">&bull; Fire Safety Glossary</a></li>
-            <li><a href="service-areas.html" class="hover:text-amber-400 transition-colors">&bull; Service Areas (MMR)</a></li>
+          <ul class="space-y-2 text-xs font-mono text-[11px] text-[#CBD5E1]">
+            <li><a href="about.html" class="hover:text-[#D97706] transition-colors">About Agency & Technical Staff</a></li>
+            <li><a href="founder.html" class="hover:text-[#D97706] transition-colors">Founder: Sameer M. Kangutkar</a></li>
+            <li><a href="process.html" class="hover:text-[#D97706] transition-colors">5-Stage Engineering Lifecycle</a></li>
+            <li><a href="projects.html" class="hover:text-[#D97706] transition-colors">Field Projects & Execution Logs</a></li>
+            <li><a href="certifications.html" class="hover:text-[#D97706] transition-colors">Class D License Verification</a></li>
+            <li><a href="resources.html" class="hover:text-[#D97706] transition-colors">Fire Safety FAQs & Codes</a></li>
+            <li><a href="blog.html" class="hover:text-[#D97706] transition-colors">Knowledge Base & Guides</a></li>
+            <li><a href="glossary.html" class="hover:text-[#D97706] transition-colors">Engineering Glossary</a></li>
+            <li><a href="service-areas.html" class="hover:text-[#D97706] transition-colors">MMR Service Territories</a></li>
           </ul>
         </div>
 
-        <!-- Column 4: CONTACT -->
+        <!-- Column 4: DISPATCH HQ -->
         <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>Headquarters</span>
+          <h3 class="font-headline text-base uppercase tracking-wider text-white mb-4 font-bold flex items-center space-x-2 border-b border-[#2E343B] pb-2">
+            <span>Dispatch Headquarters</span>
           </h3>
-          <p class="text-xs mb-3 leading-relaxed font-mono text-[11px] text-slate-300">
-            <strong>Office:</strong> C/611, Parekh Nagar, CTS 710, Kurar Village / Pathan Wadi, Malad (East), Mumbai – 400097
+          <p class="text-xs mb-3 leading-relaxed font-mono text-[11px] text-[#CBD5E1]">
+            <strong class="text-white">Office:</strong> C/611, Parekh Nagar, CTS 710, Kurar Village / Pathan Wadi, Malad (East), Mumbai – 400097
           </p>
-          <ul class="space-y-1.5 text-xs font-mono text-[11px] mb-4 text-slate-300">
-            <li><strong>Email:</strong> <a href="mailto:samarthfireprotectionsystem@gmail.com" class="hover:text-amber-400 transition-colors">samarthfireprotectionsystem@gmail.com</a></li>
-            <li><strong>Phones:</strong> +91 9967101472 / +91 8097247249</li>
+          <ul class="space-y-1.5 text-xs font-mono text-[11px] mb-4 text-[#CBD5E1]">
+            <li><strong class="text-white">Email:</strong> <a href="mailto:samarthfireprotectionsystem@gmail.com" class="hover:text-[#D97706] transition-colors">samarthfireprotectionsystem@gmail.com</a></li>
+            <li><strong class="text-white">Direct:</strong> +91 99671 01472 / +91 80972 47249</li>
           </ul>
-          <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-amber-400 font-bold flex justify-between items-center">
+          <div class="pt-2 border-t border-[#2E343B] text-[10px] font-mono text-[#D97706] font-bold flex justify-between items-center">
             <span>GSTIN: 27APXPK0844G1ZJ</span>
-            <span class="text-slate-400">Govt. Form N</span>
+            <span class="text-[#94A3B8]">Govt. Form N</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Credential & License Band -->
-      <div class="pt-2 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-4 bg-[#FAF7F2] p-5 rounded-2xl border border-[#E5D6C9] shadow-sm">
-        <div class="font-mono text-xs text-slate-300">
-          <span class="inline-block bg-orange-950 border border-orange-500/40 text-orange-400 text-[10px] px-2.5 py-0.5 rounded-full font-mono mr-2 font-bold uppercase tracking-wider">
-            LICENSED CLASS D AGENCY
+      <!-- Credential & License Band (Industrial Specplate) -->
+      <div class="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-4 bg-[#1A1E24] p-4 border border-[#2E343B]">
+        <div class="font-mono text-xs text-[#CBD5E1]">
+          <span class="inline-block bg-[#C81E27] text-white text-[10px] px-2 py-0.5 font-bold uppercase mr-2">
+            CLASS D ENLISTED
           </span>
-          License No: <strong class="text-white">MFS/LA/RF-34/RD-35</strong> | Directorate of Maharashtra Fire Services | Valid until 13 Jan 2028
+          Licence No: <strong class="text-white font-mono">MFS/LA/RF-34/RD-35</strong> | Directorate of Maharashtra Fire Services | Validity: 13 Jan 2028
         </div>
         <div class="flex items-center space-x-3">
-          <button onclick="openLicenseModal()" class="text-xs font-headline uppercase tracking-wider bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white px-4 py-2 rounded-xl transition-all focus-ring font-bold shadow-md">
-            View Official License
+          <button onclick="openLicenseModal()" class="text-xs font-headline uppercase tracking-wider bg-[#C81E27] hover:bg-white hover:text-[#121518] text-white px-4 py-2 border border-[#121518] transition-colors font-bold">
+            Inspect License PDF
           </button>
-          <a href="license.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-headline uppercase tracking-wider text-slate-200 hover:text-white border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-xl transition-colors focus-ring font-bold">
-            Download PDF
+          <a href="license.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-headline uppercase tracking-wider text-white hover:bg-[#2E343B] border border-[#CBD5E1] px-4 py-2 transition-colors font-bold">
+            Direct PDF Download
           </a>
         </div>
       </div>
 
-      <!-- Copyright -->
-      <div class="border-t border-slate-800 mt-8 pt-6 flex flex-col md:flex-row justify-between text-[11px] text-slate-500">
-        <p>&copy; 2026 Samarth Fire Protection System. All Rights Reserved. Engineered for Safety & Preparedness.</p>
+      <!-- Copyright & Regulatory Meta -->
+      <div class="border-t border-[#2E343B] mt-8 pt-6 flex flex-col md:flex-row justify-between text-[11px] text-[#64748B]">
+        <p>&copy; 2026 Samarth Fire Protection System. Licensed under Section 9 of the Maharashtra Fire Prevention Act, 2006.</p>
         <div class="flex space-x-4 mt-2 md:mt-0 font-mono">
-          <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors underline">Google Business Profile</a>
-          <a href="feed.xml" class="hover:text-amber-400 transition-colors underline">RSS</a>
-          <a href="sitemap.xml" class="hover:text-amber-400 transition-colors underline">Sitemap</a>
-          <a href="llms.txt" class="hover:text-amber-400 transition-colors underline">llms.txt</a>
+          <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline">Google Business Profile (5.0 Reviews)</a>
+          <a href="feed.xml" class="hover:text-white transition-colors underline">RSS</a>
+          <a href="sitemap.xml" class="hover:text-white transition-colors underline">Sitemap</a>
+          <a href="llms.txt" class="hover:text-white transition-colors underline">llms.txt</a>
         </div>
       </div>
 

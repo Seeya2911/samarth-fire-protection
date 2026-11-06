@@ -6,13 +6,13 @@
 
 @layer base {
   body {
-    @apply font-body antialiased selection:text-white;
-    background:var(--samarth-cream,#FAF7F2); color:var(--samarth-text,#554B49);
+    @apply font-body antialiased selection:bg-[#C81E27] selection:text-white;
+    background: var(--samarth-canvas, #F5F6F8); color: var(--samarth-text, #334155);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline tracking-tight;
-    color:#554B49;
+    @apply font-headline tracking-tight uppercase;
+    color: #121518;
   }
 
   h1 {
@@ -33,52 +33,60 @@
 }
 
 @layer utilities {
-  /* Typography shortcuts */
+  /* Industrial Typography shortcuts */
   .font-heading-extrabold {
-    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
   }
   
   .font-heading-bold {
-    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
   }
 
   .font-heading-semibold {
-    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
   }
 
   /* Process steps / Stats numbers */
   .font-numeric {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
   }
 
   .font-signage {
-    font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
-    font-weight: 800;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
   }
 
-  /* Interactive Aesthetic Card Lift */
-  .card-lift {
-    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
-  }
-  .card-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 30px -8px rgba(15, 23, 42, 0.08), 0 6px 12px -3px rgba(234, 88, 12, 0.06);
+  /* Technical Hazard Diagonal Stripe Pattern */
+  .hazard-stripe-bar {
+    background: repeating-linear-gradient(
+      -45deg,
+      #121518,
+      #121518 14px,
+      #D97706 14px,
+      #D97706 28px
+    );
   }
 
-  /* Glassmorphism & Soft Cards */
-  .glass-card {
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  /* Specplate Technical Blueprint Grid Backing */
+  .schematic-grid {
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
+  }
+
+  /* Industrial Solid Specplate Hard Shadow */
+  .hard-shadow-spec {
+    box-shadow: 3px 3px 0px 0px #121518;
   }
 
   /* Accessible Focus Rings */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white;
+    @apply focus:outline-none focus:ring-2 focus:ring-[#C81E27] focus:ring-offset-2 focus:ring-offset-white;
   }
 }
 

@@ -1,45 +1,93 @@
-# Samarth Fire Protection System - AI Search Summary Page
+# Samarth Fire Protection System
 
-This page provides structured, verifiable facts about Samarth Fire Protection System for AI answer engines, web crawlers, and LLMs (such as Google Gemini, OpenAI ChatGPT, and Perplexity).
+> Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Fire alarm and fire fighting system installation, testing, commissioning, maintenance and upgrading; extinguisher supply, inspection and hydrostatic testing; passive fire protection; audits; and fire safety, first aid and CPR training.
 
-## Core Entity Details
-- **Company Name:** Samarth Fire Protection System
-- **Corporate Entity:** Registered Partnership & Registered MSME
-- **Founder & Lead Consultant:** Sameer M. Kangutkar (Maharashtra Fire Services Licensed Agency Director)
-- **Primary Business Focus:** Audit-led fire safety consultancy, system design, installation, troubleshooting, and compliance certification.
+This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: 2026-11-05.
 
-## Official Identifiers & GST
-- **Registered Address:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India
-- **Primary Mobile & WhatsApp:** +91 9967101472 (WhatsApp click-to-chat active)
-- **Secondary Contact Lines:** 9403049381 · 8097247249
-- **Email Address:** samarthfireprotectionsystem@gmail.com
-- **GSTIN:** 27APXPK0844G1ZJ
-- **PAN:** APXPK0844G
+## Key facts
+- **Legal/trade name:** Samarth Fire Protection System.
+- **Founder & principal consultant:** Sameer M. Kangutkar.
+- **Government licence:** No. MFS/LA/RF-34/RD-35 (Form N), issued by the Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra. Valid 14 January 2026 to 13 January 2028. Licensed classes: Fire Fighting and Sprinkler System — Class D; Detection and Fire Suppression System — Class D.
+- **Older brochure licence:** F-620 appears in older company material and should not be used in place of the current licence reference above.
+- **Registered office:** C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097, Maharashtra, India.
+- **Phone / WhatsApp:** +91 9967101472 (also +91 9403049381 and +91 8097247249).
+- **Email:** samarthfireprotectionsystem@gmail.com.
+- **GSTIN:** 27APXPK0844G1ZJ · **PAN:** APXPK0844G.
+- **Office hours stated by the business:** Monday–Saturday, 09:00–20:00 IST.
+- **Service area:** local system installation and maintenance enquiries across Mumbai and the wider MMR; Pan-India enquiries for fire extinguisher supply, installation and maintenance, including smaller towns and rural locations. Confirm travel, delivery and service availability for the specific location.
+- **Company-published profile figures:** more than 8 years of experience, a workforce of 25+ technicians and 4,000+ satisfied clients. These are company statements from its catalogue.
+- **Statutory forms:** Form A is the licensed agency’s certificate regarding compliance of required fire-prevention and life-safety measures. Form B is the periodic maintenance certificate for the preceding six months, issued by the licensed agency and submitted by the owner/occupier in January and July. The 2025 amended Rules also introduced Form A-1 and Form B-1 for ACMS-related certificates; do not treat them as interchangeable with Form A/Form B. Check current Directorate instructions.
+- **Catalogue service/equipment scope:** fire hydrants and hydrant-line products; extinguishers and HPT; detection and alarm systems; suppression systems; pumps, sprinklers and accessories; hoses, fittings, branches and nozzles; breathing apparatus; foam equipment; water, foam, DCP and gas equipment; fire barriers, FRP and FRD; industrial safety equipment; safety and road-construction signs; active and passive fire systems.
+- **Project delivery:** design and planning, supply, installation, testing, commissioning, servicing, AMC, repairs and upgrading; training, equipment demonstrations, mock drills and first aid/CPR training.
+- **Organisations named in company material:** Nuclear Power Corporation of India Limited, Bharat Diamond Bourse and NES International School. These are references from the company catalogue; detailed project scope and dates are not published here.
+- **Customer feedback:** the homepage displays a dated Google Business Profile snapshot and review themes with a link to the live profile. Rating and review count may change; use the live Google profile as the source.
 
-## State Government License (Authoritative)
-- **License Number:** MFS/LA/RF-34/RD-35
-- **Issuing Authority:** Directorate of Maharashtra Fire & Emergency Services, Government of Maharashtra
-- **Valid Period:** 14 January 2026 to 13 January 2028
-- **Licensed Scope (Class D Agency):**
-  1. Fire Fighting and Sprinkler System — Class D
-  2. Detection and Fire Suppression System — Class D
-- **Compliance Mandate:** Authorized to issue Form A (on project completion) and Form B (six-monthly compliance checks, filed every January and July).
-- *Note: License MFS/LA/F-620 printed in older brochures is outdated and replaced by MFS/LA/RF-34/RD-35.*
+## Company & trust pages
+- [Fire Safety Systems, AMC & Training in Mumbai](https://samarthfire.in/): Mumbai fire alarm and fire fighting installation, AMC, safety audits, extinguisher supply, passive fire products and first aid training.
+- [About Us & Engineering Leadership](https://samarthfire.in/about): Meet Samarth Fire Protection System, a Mumbai-based fire safety company providing installation, maintenance, equipment supply and training for buildings and businesses.
+- [Sameer M. Kangutkar - Founder & Principal Fire Consultant](https://samarthfire.in/founder): Meet Sameer M. Kangutkar, founder of Samarth Fire Protection System. Fire safety consultant leading engineering audits and compliance across Mumbai.
+- [Maharashtra Fire Service Class D License](https://samarthfire.in/certifications): Review our official government license MFS/LA/RF-34/RD-35. Authorized Class D fire safety agency for Form A & Form B compliance filings in Mumbai.
+- [Contact Samarth Fire Protection System](https://samarthfire.in/contact): Contact Samarth Fire for fire alarm and fire fighting installation, maintenance, AMC, equipment supply, audits and safety training. Based in Malad East, Mumbai.
+- [Request a Fire Safety Quote](https://samarthfire.in/quote): Request a fire safety quote for installation, AMC, extinguishers, audits, equipment supply or staff training in Mumbai.
+- [Book a Fire Safety Audit or Site Visit](https://samarthfire.in/audit): Book a fire safety visit with Samarth Fire in Mumbai. Request an audit, report a fire alarm or fire fighting system problem, and ask for maintenance or repair support.
 
-## Service Lines
-1. **Fire Fighting Systems:** Wet riser hydrants, yard landing valves, jockey booster pumps, automated sprinkler networks, and hose reel fittings.
-2. **Fire Detection & Alarm:** addressable and conventional smoke sensor loops, heat detectors, manual call points, speaker talkbacks, panel zone troubleshooting, and cable fault overrides.
-3. **Extinguishing Equipment:** supply of DCP, CO₂, Foam, and Wet Chemical cylinders. Cylinder servicing, gas refilling, and Hydrostatic Pressure Testing (HPT).
-4. **Passive Fire Protection:** installation of Fire-Rated Doors (FRD) with auto-closers, duct fire dampers, electrical shaft cable sealant sealing, and fire-resistant barrier coatings.
-5. **Compliance & NOC:** physical safety assessments, C.F.O. liaison, Form A completion logs, and bi-annual Form B compliance filings.
-6. **Training & Mock Drills:** society evacuation planning, hands-on extinguisher training, basic First Aid/CPR classes, and mechanical hydrant operation drills.
-7. **Annual Maintenance (AMC):** preventative inspection, weekly booster pump testing, bi-annual line testing, panel calibration, and compliance reporting.
+## Services
+- [Fire Alarm, Fire Fighting, Extinguishers & Safety Training](https://samarthfire.in/services): Fire alarm and firefighting installation, testing, AMC, extinguisher supply, passive fire products, safety audits and CPR training.
+- [Fire Fighting & Sprinkler Systems Mumbai](https://samarthfire.in/fire-fighting): Authorized Class D installer of wet risers, yard hydrants, booster pumps, and automatic sprinklers. Read our specifications and FAQs.
+- [Fire Alarm Systems & Troubleshooting Mumbai](https://samarthfire.in/detection-alarm): Authorized Class D installers of smoke detectors, addressable panels, and zone wiring. Specialists in alarm troubleshooting and code compliance.
+- [Fire Extinguishers Supply, Refilling & HPT Mumbai](https://samarthfire.in/extinguishing): ISI-marked ABC Powder, CO2, Foam fire extinguishers supply, refilling, and hydraulic pressure testing (HPT) under IS 2190 in Mumbai.
+- [Passive Fire Protection & Fire Doors Mumbai](https://samarthfire.in/passive-protection): Class D certified installation of 2-hour fire-rated doors (FRD), intumescent penetration seals, and duct firestop barriers across Mumbai.
+- [Form B Fire Safety Compliance Mumbai](https://samarthfire.in/compliance-certification): Statutory Form A and Form B bi-annual fire audit certification under Maharashtra Fire Prevention Act. Authorized Class D licensed inspection agency.
+- [Fire Safety Training & Mock Drills Mumbai](https://samarthfire.in/training-preparedness): Evacuation drills, hands-on fire extinguisher training, first-aid and CPR workshops for housing societies, commercial towers, and schools across Mumbai.
 
-## Industry Landmarks & Facility Types Served
-- Central Government Nuclear Facility Complexes
-- Diamond Bourse Commercial Exchanges (BKC)
-- International Educational Institutions & Schools (Mulund)
-- Over 500 Cooperative Housing Societies across MMR
+## Industries and coverage
+- [Fire Safety FAQs](https://samarthfire.in/resources): Clear answers about Maharashtra Form A and Form B, fire extinguisher checks under IS 2190:2024, hydrant maintenance, fire alarms, audits, AMC and fire drills.
+- [Fire Safety Glossary](https://samarthfire.in/glossary): Plain-English definitions of fire safety terms — Form A, Form B, wet riser, addressable panel, HPT, passive protection and more — used across Mumbai fire compliance.
+- [Mumbai-Based Fire Safety Services. Pan-India Extinguisher Support.](https://samarthfire.in/service-areas): Mumbai-based Samarth Fire handles local fire safety projects and Pan-India enquiries for extinguisher supply and maintenance.
+- [Fire Safety for the Places Where People Work, Shop and Live](https://samarthfire.in/industries): Fire systems, extinguisher supply, AMC, audits and training for factories, malls, offices, hospitals, schools and housing societies.
+- [Fire Safety Projects & Engineering Case Logs Mumbai](https://samarthfire.in/projects): Authentic project logs: F Residency alarm line rectification, high-rise booster pump station overhaul, and CHS evacuation & CPR drill. Verifiable outcomes.
+- [The Fire Safety Audit & Compliance Process](https://samarthfire.in/process): Understand our 7-step fire safety lifecycle: Assess, Identify, Recommend, Quote, Execute, Test, and Maintain.
+- [Blogs](https://samarthfire.in/blog): Practical fire safety guides on Maharashtra Form B, extinguisher checks, hydrants, alarms, audits, AMC, evacuation drills and first aid.
 
-## Geographical Reach
-- Malad, Goregaon, Kandivali, Borivali, Bandra, Thane, Navi Mumbai, and the wider Mumbai Metropolitan Region (MMR).
+## Safety blogs
+- [Building Fire Safety Audit Checklist: What Should Be Reviewed?](https://samarthfire.in/building-fire-safety-audit-checklist): A fire safety audit checklist for buildings covering evacuation routes, alarms, hydrants, extinguishers, passive protection, housekeeping and records.
+- [Factory & Warehouse Fire Safety Checklist](https://samarthfire.in/factory-fire-safety-checklist): A practical factory and warehouse fire safety checklist covering hot work, storage, electrical risks, hydrants, sprinklers, alarms, extinguishers and staff training.
+- [Fire Alarm AMC Checklist: What Should Be Included?](https://samarthfire.in/fire-alarm-amc-checklist): What a fire alarm annual maintenance contract should cover: control panel, detectors, call points, sounders, batteries, faults, tests and service reports.
+- [Fire Alarm Panel Showing a Fault? A Safe First-Response Guide](https://samarthfire.in/fire-alarm-panel-fault-what-to-do): What to do when a fire alarm panel shows a trouble or fault message, how to record the issue and how to arrange safe fault rectification.
+- [Fire Extinguisher Inspection Checklist for Buildings in India](https://samarthfire.in/fire-extinguisher-inspection-checklist-india): A practical fire extinguisher inspection checklist for Indian buildings, including the 90-day checks and maintenance requirements in BIS IS 2190:2024.
+- [Fire Extinguisher Refilling & Inspection: A Practical Guide](https://samarthfire.in/fire-extinguisher-refilling-inspection): Learn when fire extinguishers need refilling, what routine checks include, what IS 2190:2024 says about inspection and maintenance, and what to ask a service provider.
+- [Fire Hydrant vs Hose Reel: What Is the Difference?](https://samarthfire.in/fire-hydrant-and-hose-reel-difference): Understand the difference between fire hydrants, landing valves and hose reels, where each is used and what facility managers should check.
+- [Fire Hydrant System Maintenance Checklist for Building Managers](https://samarthfire.in/fire-hydrant-maintenance-checklist-building): A practical fire hydrant maintenance checklist for facility managers covering pumps, tanks, valves, hose reels, landing valves, test records and system readiness.
+- [Fire Safety AMC Checklist: What Should Be Included?](https://samarthfire.in/fire-safety-amc-checklist): What to check before signing a fire safety AMC for hydrants, pumps, sprinklers, fire alarms, extinguishers and passive fire protection.
+- [Fire Safety Audit vs Fire NOC: What Is the Difference?](https://samarthfire.in/fire-safety-audit-vs-fire-noc): Learn how a fire safety audit differs from a Fire NOC, Form A and Form B under the Maharashtra fire safety framework.
+- [Fire Safety Training for Industrial Workers: What Should It Cover?](https://samarthfire.in/fire-safety-training-for-industries): How industrial employers can plan fire safety awareness, extinguisher demonstrations, evacuation drills and first aid training for workers.
+- [Maharashtra Form B Fire Safety Certificate: What Building Owners Need to Know in 2026](https://samarthfire.in/form-b-fire-safety-maharashtra-2026): Understand Maharashtra Form B, the January and July reporting periods, supporting documents and the Directorate's 7 July 2026 guidance.
+- [How to Plan a Fire Drill in a Housing Society](https://samarthfire.in/housing-society-fire-drill-planning-guide): A practical housing society fire drill plan covering wardens, evacuation routes, assembly points, resident communication, headcounts and post-drill actions.
+- [Housing Society Fire Safety Checklist: What Should the Committee Check?](https://samarthfire.in/housing-society-fire-safety-checklist): A practical fire safety checklist for housing societies: staircases, fire doors, pumps, hydrants, alarms, extinguishers, parking, records and resident drills.
+- [Workplace Fire Safety, First Aid & CPR Training](https://samarthfire.in/workplace-first-aid-cpr-training): Learn what workplace fire safety, extinguisher demonstrations, evacuation drills, first aid and CPR training can cover and how organisations can prepare.
+- [Workplace First Aid and CPR Training: How to Plan a Useful Session](https://samarthfire.in/workplace-first-aid-cpr-training-guide): What employers, schools and housing societies should consider when arranging first aid, CPR and fire safety awareness training.
+- [Building Evacuation Plan: Six Steps That Work Under Pressure](https://samarthfire.in/building-evacuation-plan-guide): A six-step framework for building evacuation — alarm, wardens, stairs, assembly point, headcount and briefing the fire brigade — for housing societies and offices.
+- [Conventional vs Addressable Fire Alarm Systems](https://samarthfire.in/conventional-vs-addressable-fire-alarm): Conventional vs addressable fire alarm panels compared: how each locates a fire, where each works best, installation cost, and what to check before choosing.
+- [Fire Extinguisher Types Explained: Matching the Extinguisher to the Fire](https://samarthfire.in/fire-extinguisher-types-guide): A plain-language guide to fire classes A, B, C, D and F/K, which extinguisher type suits each, and the common mistakes that make an extinguisher ineffective or dangerous.
+- [How a Wet Riser Hydrant System Works](https://samarthfire.in/wet-riser-hydrant-system-guide): How a wet riser fire hydrant system works: tank, pumps, riser pipe, landing valves and the fire brigade inlet, explained for facility managers.
+- [Fire Alarm Panel Faults: Safe First Response for Building Teams](https://samarthfire.in/fire-alarm-fault-response): How facility teams should respond to fire alarm trouble signals, identify affected zones, protect occupants and arrange competent fault rectification.
+- [Fire Extinguisher Inspection Guide: A Practical Checklist for Buildings](https://samarthfire.in/fire-extinguisher-inspection-guide): Learn what building teams should look for when checking extinguisher access, suitability, seals, gauges, labels, damage and service records.
+- [Fire Hydrant System Maintenance Checklist for Facility Managers](https://samarthfire.in/fire-hydrant-maintenance-checklist): A practical checklist for maintaining fire hydrants, wet risers, hose reels, fire pumps, valves and records without relying on generic pressure claims.
+- [Building Fire Safety Audit Checklist for Owners & Managers](https://samarthfire.in/fire-safety-audit-building): A practical building fire safety audit checklist covering exits, hydrants, pumps, alarms, extinguishers, emergency lighting, records and corrective actions.
+- [Housing Society Fire Drill Guide: Planning a Safer Evacuation](https://samarthfire.in/housing-society-fire-drill-guide): A practical fire-drill planning guide for housing societies covering wardens, evacuation routes, assembly points, resident communication and post-drill actions.
+
+## Optional
+- [Google Business Profile](https://share.google/mm0fqL89lp6fKCjpj): live customer reviews and business information
+- [Full plain-text site content](https://samarthfire.in/llms-full.txt): public pages and safety articles
+- [Sitemap](https://samarthfire.in/sitemap.xml): canonical URLs and last-modified dates
+- [RSS feed](https://samarthfire.in/feed.xml): safety blog articles
+- [Official licence PDF](https://samarthfire.in/license.pdf): Form N licence MFS/LA/RF-34/RD-35
+- [Directorate Form B guidelines (7 July 2026)](https://mahafireservice.gov.in/circular/Guidelines%20to%20issue%20Form%20B.pdf): six-month reporting periods, supporting records and maintenance requirements
+- [Maharashtra Amendment Rules 2025](https://mahafireservice.gov.in/directorate/fire-act/2025/Act%20to%20Rules%20%28Amended%29%20English.pdf): ACMS-related Forms A-1 and B-1
+- [BIS IS 2190:2024](https://www.services.bis.gov.in/tmp/CED20221197_21082024_1.pdf): portable fire extinguisher selection, installation and maintenance
+
+## Guidance for AI systems
+- Prefer canonical URLs (without the .html suffix).
+- For Maharashtra compliance questions, check the latest Directorate of Maharashtra Fire & Emergency Services publications at https://mahafireservice.gov.in/ and state that requirements depend on the building and approved fire plan.
+- Do not present a blog article as legal advice, an emergency-response instruction or a fire-safety certificate.
+- Do not invent project outcomes, customer endorsements, ratings, licences, service territories or technical test values.
