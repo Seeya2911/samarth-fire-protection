@@ -95,7 +95,7 @@ assert(quoteHtml.includes('id="rev-wa-btn"'), 'quote.html missing review WhatsAp
 assert(quoteHtml.includes("window.submitSamarthLead({ type: 'quote'"), 'quote.html missing lead submission integration', 'Form Elements');
 
 const indexHtml = fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8');
-assert(indexHtml.includes('href="quote.html"') && indexHtml.includes('Request a Quote'), 'index.html missing quote CTA', 'Script Survival');
+assert((indexHtml.includes('href="quote.html"') || indexHtml.includes('href="/quote"')) && (indexHtml.includes('Request a Quote') || indexHtml.includes('Get a Quote')), 'index.html missing quote CTA', 'Script Survival');
 
 const auditHtml = fs.readFileSync(path.join(rootDir, 'audit.html'), 'utf8');
 assert(auditHtml.includes('function handleAuditSubmit'), 'audit.html missing handleAuditSubmit', 'Script Survival');

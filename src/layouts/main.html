@@ -196,31 +196,31 @@
   </main>
 
   <!-- 3. Rich Deep Navy Footer with Warm Colorful Accents -->
-  <footer class="bg-[#F1E6D8] border-t border-[#E5D6C9] text-[#665A55] pt-16 pb-24 lg:pb-16 font-body relative overflow-hidden">
+  <footer class="bg-[#1C1917] border-t border-stone-800 text-stone-300 pt-16 pb-24 lg:pb-16 font-body relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Footer Columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-slate-800 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-stone-700 pb-12">
         
         <!-- Column 1: Brand Identity -->
         <div>
           <div class="flex items-center space-x-3 mb-4">
-            <div class="p-1.5 rounded-xl bg-[#F6ECE8] border border-[#E8D4CC]">
+            <div class="p-1.5 rounded-xl bg-stone-800 border border-stone-700">
               <img src="logo.png" class="h-11 w-11 object-contain drop-shadow-sm flex-shrink-0" alt="Samarth Fire Logo" width="44" height="44">
             </div>
             <div class="flex flex-col">
-              <span class="font-headline font-black text-[#9E2127] tracking-tight text-lg leading-none uppercase">
+              <span class="font-headline font-black text-red-500 tracking-tight text-lg leading-none uppercase">
                 SAMARTH
               </span>
-              <span class="font-headline font-extrabold text-[#9E2127] tracking-wider text-[11px] leading-tight uppercase mt-0.5">
+              <span class="font-headline font-extrabold text-red-500 tracking-wider text-[11px] leading-tight uppercase mt-0.5">
                 FIRE PROTECTION SYSTEM
               </span>
-              <span class="font-mono text-[9px] text-slate-400 font-bold tracking-wider uppercase mt-0.5">
+              <span class="font-mono text-[9px] text-stone-400 font-bold tracking-wider uppercase mt-0.5">
                 Class D Licensed Agency
               </span>
             </div>
           </div>
-          <p class="text-xs leading-relaxed text-slate-400 mb-4 font-body">
+          <p class="text-xs leading-relaxed text-stone-400 mb-4 font-body">
             Directorate of Maharashtra Fire Services Licensed Class D Agency. Focused on audit-led fire safety engineering, turnkey system installations, preventative maintenance cycles, and hands-on compound emergency drills.
           </p>
           <p class="font-mono text-[11px] text-amber-300 leading-relaxed border-l-2 border-amber-500 pl-2.5">
@@ -285,8 +285,8 @@
       </div>
 
       <!-- Credential & License Band -->
-      <div class="pt-2 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-4 bg-[#FAF7F2] p-5 rounded-2xl border border-[#E5D6C9] shadow-sm">
-        <div class="font-mono text-xs text-slate-300">
+      <div class="pt-2 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-4 bg-stone-900 p-5 rounded-2xl border border-stone-800 shadow-sm">
+        <div class="font-mono text-xs text-stone-300">
           <span class="inline-block bg-orange-950 border border-orange-500/40 text-orange-400 text-[10px] px-2.5 py-0.5 rounded-full font-mono mr-2 font-bold uppercase tracking-wider">
             LICENSED CLASS D AGENCY
           </span>
@@ -296,7 +296,7 @@
           <button onclick="openLicenseModal()" class="text-xs font-headline uppercase tracking-wider bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white px-4 py-2 rounded-xl transition-all focus-ring font-bold shadow-md">
             View Official License
           </button>
-          <a href="license.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-headline uppercase tracking-wider text-slate-200 hover:text-white border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-xl transition-colors focus-ring font-bold">
+          <a href="license.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-headline uppercase tracking-wider text-stone-200 hover:text-white border border-stone-700 hover:border-stone-500 px-4 py-2 rounded-xl transition-colors focus-ring font-bold">
             Download PDF
           </a>
         </div>
@@ -315,6 +315,16 @@
 
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Action Button for Desktop & Tablet -->
+  <div class="fixed bottom-6 right-6 z-50 hidden sm:block">
+    <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white pl-3.5 pr-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 focus-ring" aria-label="Chat with Engineer on WhatsApp">
+      <svg class="h-6 w-6 fill-current text-white flex-shrink-0" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.955 14.162.95 11.536.95c-5.445 0-9.87 4.37-9.874 9.8.001 2.036.541 4.021 1.562 5.766L2.24 20.25l4.407-1.096zM17.95 14.93c-.347-.172-2.054-1.002-2.37-1.117-.318-.116-.55-.173-.78.172-.23.347-.893 1.117-1.094 1.348-.2.23-.401.259-.748.087-.348-.172-1.468-.536-2.793-1.707-1.031-.909-1.727-2.03-1.929-2.375-.202-.347-.021-.534.152-.706.156-.154.347-.4.52-.6.174-.2.23-.347.348-.577.117-.23.058-.431-.029-.603-.087-.172-.78-1.859-1.069-2.55-.282-.676-.569-.587-.78-.598-.201-.01-.432-.011-.662-.011-.23 0-.603.087-.92.431-.317.347-1.21 1.176-1.21 2.87 0 1.695 1.238 3.33 1.41 3.56.173.229 2.436 3.676 5.899 5.147.824.35 1.467.559 1.97.717.828.26 1.58.224 2.179.135.667-.099 2.054-.83 2.344-1.63.29-.8.29-1.488.203-1.63-.087-.142-.318-.23-.665-.402z"/>
+      </svg>
+      <span class="font-headline font-bold text-xs uppercase tracking-wider text-white">Chat on WhatsApp</span>
+    </a>
+  </div>
 
   <!-- Sticky Bottom Quick Action Bar for Mobile -->
   <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 border-t border-slate-200 text-slate-800 backdrop-blur-md flex items-center justify-around py-2.5 px-3 shadow-2xl">
