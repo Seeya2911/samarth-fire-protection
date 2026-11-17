@@ -116,7 +116,7 @@ module.exports = async function leadHandler(req, res) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.EMAIL_FROM;
-  const recipients = (process.env.LEADS_TO || 'greencure240@gmail.com')
+  const recipients = (process.env.LEADS_TO || 'samarthfireprotectionsystem@gmail.com')
     .split(',')
     .map(value => value.trim())
     .filter(Boolean);
