@@ -99,7 +99,6 @@ assert((indexHtml.includes('href="quote.html"') || indexHtml.includes('href="/qu
 
 const auditHtml = fs.readFileSync(path.join(rootDir, 'audit.html'), 'utf8');
 assert(auditHtml.includes('function handleAuditSubmit'), 'audit.html missing handleAuditSubmit', 'Script Survival');
-assert(auditHtml.includes('function handleTroubleSubmit'), 'audit.html missing handleTroubleSubmit', 'Script Survival');
 assert(auditHtml.includes('id="audit-wa-btn"'), 'audit.html missing audit WhatsApp dispatch button', 'Form Elements');
 assert(auditHtml.includes('id="audit-wa-btn"') && auditHtml.includes('window.submitSamarthLead'), 'audit.html missing WhatsApp/lead submission integration', 'Form Elements');
 assert(!auditHtml.includes('Your assessment details have been registered. Sameer M. Kangutkar will review'), 

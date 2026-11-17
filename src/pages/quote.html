@@ -25,6 +25,27 @@ scripts: |
       const desc = document.getElementById('q-desc').value.trim();
       const button = form.querySelector('button[type="submit"]');
       const error = document.getElementById('quote-error');
+      
+      // Strict phone validation: must be 10-digit mobile starting with 6-9
+      const phoneClean = phone.replace(/\D/g, '');
+      if (!/^(?:91|0)?[6-9]\d{9}$/.test(phoneClean)) {
+        error.textContent = 'Please enter a valid 10-digit mobile number (e.g. 9967101472).';
+        error.classList.remove('hidden');
+        document.getElementById('q-phone').focus();
+        return;
+      }
+      if (name.length < 2) {
+        error.textContent = 'Please enter a valid contact person name.';
+        error.classList.remove('hidden');
+        document.getElementById('q-name').focus();
+        return;
+      }
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        error.textContent = 'Please enter a valid email address.';
+        error.classList.remove('hidden');
+        document.getElementById('q-email').focus();
+        return;
+      }
       const waText = ['Hello Samarth Fire, I have submitted a quotation request.', 'Requirement: ' + req, 'Facility: ' + facility, 'Contact: ' + name, 'Organisation: ' + org, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Location: ' + loc, 'Details: ' + desc].join('\n');
       const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
       error.classList.add('hidden');
@@ -149,7 +170,7 @@ scripts: |
                 <label for="q-phone" class="block font-mono text-xs text-slate-700 font-bold uppercase tracking-wider mb-2">
                   Phone Number *
                 </label>
-                <input type="tel" id="q-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
+                <input type="tel" id="q-phone" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile (e.g. 9967101472)" title="Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl p-3 text-xs font-body text-slate-900 focus:bg-white focus:border-brand-ember focus:outline-none focus:ring-2 focus:ring-brand-ember/20 transition-all">
               </div>
 
               <div>

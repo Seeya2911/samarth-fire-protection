@@ -57,16 +57,26 @@ module.exports = async function leadHandler(req, res) {
     return res.status(400).json({ success: false, message: 'The request type is not recognised.' });
   }
 
-  const name = clean(payload.name || payload.contactPerson || payload.property || 'Website visitor', 120);
+  const name = clean(payload.name || payload.contactPerson || payload.property || '', 120);
   const phone = clean(payload.phone, 40);
   const email = clean(payload.email, 180);
 
-  if (!phone || (type !== 'fault' && !name)) {
-    return res.status(400).json({ success: false, message: 'Please enter your name and phone number.' });
+  // Validate Name
+  if (!name || name.length < 2) {
+    return res.status(400).json({ success: false, message: 'Please enter a valid name (at least 2 letters).' });
+  }
+
+  // Validate Indian / International Phone Number (10 digits, optional country code +91 or 0)
+  const phoneDigits = phone.replace(/\D/g, '');
+  if (!/^(?:91|0)?[6-9]\d{9}$/.test(phoneDigits)) {
+    return res.status(400).json({
+      success: false,
+      message: 'Please enter a valid 10-digit mobile number (e.g. 9967101472).'
+    });
   }
 
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return res.status(400).json({ success: false, message: 'Please enter a valid email address.' });
+    return res.status(400).json({ success: false, message: 'Please enter a valid email address (e.g. name@example.com).' });
   }
 
   const labels = {

@@ -233,7 +233,7 @@
             <!-- Phone -->
             <div>
               <label for="contact-phone" class="block text-slate-700 uppercase tracking-wider mb-2 font-bold">Phone Number *</label>
-              <input type="tel" id="contact-phone" required placeholder="e.g. 9967101472" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
+              <input type="tel" id="contact-phone" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile (e.g. 9967101472)" title="Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9" class="w-full bg-slate-50 border border-slate-200 text-slate-900 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm">
             </div>
           </div>
 
@@ -763,6 +763,27 @@
       const message = document.getElementById('contact-msg').value.trim();
       const button = form.querySelector('button[type="submit"]');
       const error = document.getElementById('contact-error');
+      
+      // Strict phone & name validation
+      const phoneClean = phone.replace(/\D/g, '');
+      if (!/^(?:91|0)?[6-9]\d{9}$/.test(phoneClean)) {
+        error.textContent = 'Please enter a valid 10-digit mobile number (e.g. 9967101472).';
+        error.classList.remove('hidden');
+        document.getElementById('contact-phone').focus();
+        return;
+      }
+      if (name.length < 2) {
+        error.textContent = 'Please enter a valid name.';
+        error.classList.remove('hidden');
+        document.getElementById('contact-name').focus();
+        return;
+      }
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        error.textContent = 'Please enter a valid email address.';
+        error.classList.remove('hidden');
+        document.getElementById('contact-email').focus();
+        return;
+      }
       const waText = ['Hello Samarth Fire, I have sent a website enquiry.', 'Name: ' + name, 'Phone: ' + phone, 'Email: ' + (email || 'Not provided'), 'Subject: ' + subject, 'Message: ' + message].join('\n');
       const waUrl = 'https://wa.me/919967101472?text=' + encodeURIComponent(waText);
       error.classList.add('hidden');
