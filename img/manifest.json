@@ -1,0 +1,642 @@
+{
+  "blog-amc-checklist.jpg": {
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-amc-checklist-480.webp",
+        "avif": "blog-amc-checklist-480.avif"
+      }
+    ]
+  },
+  "blog-audit-vs-noc.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-audit-vs-noc-480.webp",
+        "avif": "blog-audit-vs-noc-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-audit-vs-noc-800.webp",
+        "avif": "blog-audit-vs-noc-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-audit-vs-noc-1200.webp",
+        "avif": "blog-audit-vs-noc-1200.avif"
+      }
+    ]
+  },
+  "blog-extinguisher-inspection.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-extinguisher-inspection-480.webp",
+        "avif": "blog-extinguisher-inspection-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-extinguisher-inspection-800.webp",
+        "avif": "blog-extinguisher-inspection-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-extinguisher-inspection-1200.webp",
+        "avif": "blog-extinguisher-inspection-1200.avif"
+      }
+    ]
+  },
+  "blog-fire-hydrant-hose-reel.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-fire-hydrant-hose-reel-480.webp",
+        "avif": "blog-fire-hydrant-hose-reel-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-fire-hydrant-hose-reel-800.webp",
+        "avif": "blog-fire-hydrant-hose-reel-800.avif"
+      }
+    ]
+  },
+  "blog-fire-safety-audit.jpg": {
+    "width": 900,
+    "height": 1600,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-fire-safety-audit-480.webp",
+        "avif": "blog-fire-safety-audit-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-fire-safety-audit-800.webp",
+        "avif": "blog-fire-safety-audit-800.avif"
+      }
+    ]
+  },
+  "blog-first-aid-cpr.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-first-aid-cpr-480.webp",
+        "avif": "blog-first-aid-cpr-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-first-aid-cpr-800.webp",
+        "avif": "blog-first-aid-cpr-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-first-aid-cpr-1200.webp",
+        "avif": "blog-first-aid-cpr-1200.avif"
+      }
+    ]
+  },
+  "blog-form-b.jpg": {
+    "width": 1599,
+    "height": 899,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-form-b-480.webp",
+        "avif": "blog-form-b-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-form-b-800.webp",
+        "avif": "blog-form-b-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-form-b-1200.webp",
+        "avif": "blog-form-b-1200.avif"
+      }
+    ]
+  },
+  "blog-housing-fire-drill.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-housing-fire-drill-480.webp",
+        "avif": "blog-housing-fire-drill-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-housing-fire-drill-800.webp",
+        "avif": "blog-housing-fire-drill-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-housing-fire-drill-1200.webp",
+        "avif": "blog-housing-fire-drill-1200.avif"
+      }
+    ]
+  },
+  "blog-hydrant-maintenance.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-hydrant-maintenance-480.webp",
+        "avif": "blog-hydrant-maintenance-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-hydrant-maintenance-800.webp",
+        "avif": "blog-hydrant-maintenance-800.avif"
+      }
+    ]
+  },
+  "blog-industrial-fire-training.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog-industrial-fire-training-480.webp",
+        "avif": "blog-industrial-fire-training-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog-industrial-fire-training-800.webp",
+        "avif": "blog-industrial-fire-training-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog-industrial-fire-training-1200.webp",
+        "avif": "blog-industrial-fire-training-1200.avif"
+      }
+    ]
+  },
+  "client_drill_live.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_drill_live-480.webp",
+        "avif": "client_drill_live-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_drill_live-800.webp",
+        "avif": "client_drill_live-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_drill_live-1200.webp",
+        "avif": "client_drill_live-1200.avif"
+      }
+    ]
+  },
+  "client_extinguisher_lecture.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_extinguisher_lecture-480.webp",
+        "avif": "client_extinguisher_lecture-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_extinguisher_lecture-800.webp",
+        "avif": "client_extinguisher_lecture-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_extinguisher_lecture-1200.webp",
+        "avif": "client_extinguisher_lecture-1200.avif"
+      }
+    ]
+  },
+  "client_founder_coaching.jpg": {
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_founder_coaching-480.webp",
+        "avif": "client_founder_coaching-480.avif"
+      }
+    ]
+  },
+  "client_highrise_assembly.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_highrise_assembly-480.webp",
+        "avif": "client_highrise_assembly-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_highrise_assembly-800.webp",
+        "avif": "client_highrise_assembly-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_highrise_assembly-1200.webp",
+        "avif": "client_highrise_assembly-1200.avif"
+      }
+    ]
+  },
+  "client_hosereel_floor_service.jpg": {
+    "width": 900,
+    "height": 1600,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_hosereel_floor_service-480.webp",
+        "avif": "client_hosereel_floor_service-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_hosereel_floor_service-800.webp",
+        "avif": "client_hosereel_floor_service-800.avif"
+      }
+    ]
+  },
+  "client_hose_box_service.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_hose_box_service-480.webp",
+        "avif": "client_hose_box_service-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_hose_box_service-800.webp",
+        "avif": "client_hose_box_service-800.avif"
+      }
+    ]
+  },
+  "client_hose_reel_drill.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_hose_reel_drill-480.webp",
+        "avif": "client_hose_reel_drill-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_hose_reel_drill-800.webp",
+        "avif": "client_hose_reel_drill-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_hose_reel_drill-1200.webp",
+        "avif": "client_hose_reel_drill-1200.avif"
+      }
+    ]
+  },
+  "client_hydrant_valve_test.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_hydrant_valve_test-480.webp",
+        "avif": "client_hydrant_valve_test-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_hydrant_valve_test-800.webp",
+        "avif": "client_hydrant_valve_test-800.avif"
+      }
+    ]
+  },
+  "client_lobby_demo.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_lobby_demo-480.webp",
+        "avif": "client_lobby_demo-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_lobby_demo-800.webp",
+        "avif": "client_lobby_demo-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_lobby_demo-1200.webp",
+        "avif": "client_lobby_demo-1200.avif"
+      }
+    ]
+  },
+  "client_pump_manifold.jpg": {
+    "width": 1599,
+    "height": 899,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_pump_manifold-480.webp",
+        "avif": "client_pump_manifold-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_pump_manifold-800.webp",
+        "avif": "client_pump_manifold-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_pump_manifold-1200.webp",
+        "avif": "client_pump_manifold-1200.avif"
+      }
+    ]
+  },
+  "client_riser_installation.jpg": {
+    "width": 900,
+    "height": 1600,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_riser_installation-480.webp",
+        "avif": "client_riser_installation-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_riser_installation-800.webp",
+        "avif": "client_riser_installation-800.avif"
+      }
+    ]
+  },
+  "client_youth_training.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "client_youth_training-480.webp",
+        "avif": "client_youth_training-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "client_youth_training-800.webp",
+        "avif": "client_youth_training-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "client_youth_training-1200.webp",
+        "avif": "client_youth_training-1200.avif"
+      }
+    ]
+  },
+  "industry-healthcare-education.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-healthcare-education-480.webp",
+        "avif": "industry-healthcare-education-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-healthcare-education-800.webp",
+        "avif": "industry-healthcare-education-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-healthcare-education-1200.webp",
+        "avif": "industry-healthcare-education-1200.avif"
+      }
+    ]
+  },
+  "industry-housing-societies.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-housing-societies-480.webp",
+        "avif": "industry-housing-societies-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-housing-societies-800.webp",
+        "avif": "industry-housing-societies-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-housing-societies-1200.webp",
+        "avif": "industry-housing-societies-1200.avif"
+      }
+    ]
+  },
+  "industry-industrial.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-industrial-480.webp",
+        "avif": "industry-industrial-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-industrial-800.webp",
+        "avif": "industry-industrial-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-industrial-1200.webp",
+        "avif": "industry-industrial-1200.avif"
+      }
+    ]
+  },
+  "industry-malls.jpg": {
+    "width": 1280,
+    "height": 570,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-malls-480.webp",
+        "avif": "industry-malls-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-malls-800.webp",
+        "avif": "industry-malls-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-malls-1200.webp",
+        "avif": "industry-malls-1200.avif"
+      }
+    ]
+  },
+  "industry-offices.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-offices-480.webp",
+        "avif": "industry-offices-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-offices-800.webp",
+        "avif": "industry-offices-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-offices-1200.webp",
+        "avif": "industry-offices-1200.avif"
+      }
+    ]
+  },
+  "industry-overview.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-overview-480.webp",
+        "avif": "industry-overview-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-overview-800.webp",
+        "avif": "industry-overview-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry-overview-1200.webp",
+        "avif": "industry-overview-1200.avif"
+      }
+    ]
+  },
+  "industry-petroleum.jpg": {
+    "width": 900,
+    "height": 1600,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "industry-petroleum-480.webp",
+        "avif": "industry-petroleum-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "industry-petroleum-800.webp",
+        "avif": "industry-petroleum-800.avif"
+      }
+    ]
+  },
+  "intent_repair.jpg": {
+    "width": 400,
+    "height": 265,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "intent_repair-400.webp",
+        "avif": "intent_repair-400.avif"
+      }
+    ]
+  },
+  "license_page_1.png": {
+    "width": 1241,
+    "height": 1754,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "license_page_1-480.webp",
+        "avif": null
+      },
+      {
+        "width": 800,
+        "webp": "license_page_1-800.webp",
+        "avif": null
+      },
+      {
+        "width": 1200,
+        "webp": "license_page_1-1200.webp",
+        "avif": null
+      }
+    ]
+  },
+  "license_page_2.png": {
+    "width": 1241,
+    "height": 1754,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "license_page_2-480.webp",
+        "avif": null
+      },
+      {
+        "width": 800,
+        "webp": "license_page_2-800.webp",
+        "avif": null
+      },
+      {
+        "width": 1200,
+        "webp": "license_page_2-1200.webp",
+        "avif": null
+      }
+    ]
+  },
+  "service_alarm.jpg": {
+    "width": 400,
+    "height": 267,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "service_alarm-400.webp",
+        "avif": "service_alarm-400.avif"
+      }
+    ]
+  },
+  "service_extinguisher.jpg": {
+    "width": 400,
+    "height": 267,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "service_extinguisher-400.webp",
+        "avif": "service_extinguisher-400.avif"
+      }
+    ]
+  },
+  "service_fighting.jpg": {
+    "width": 400,
+    "height": 267,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "service_fighting-400.webp",
+        "avif": "service_fighting-400.avif"
+      }
+    ]
+  },
+  "__og": {
+    "file": "img/og-default.jpg",
+    "width": 1200,
+    "height": 630
+  }
+}

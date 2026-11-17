@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://samarthfire.in/</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
@@ -60,7 +60,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/audit</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/contact</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/fire-fighting</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
