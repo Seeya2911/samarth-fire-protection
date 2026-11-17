@@ -10,53 +10,49 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          // Vibrant Aesthetic Safety Palette (Friendly, Human, Warm)
-          red: '#9E2127',         // Vibrant Safety Crimson Red
-          redDark: '#851B22',     // Deep Crimson
-          redLight: '#F6ECE8',    // Soft Red Tint
-          orange: '#B94B3E',      // Cheerful Flame Orange
-          orangeLight: '#F6ECE8', // Soft Orange Tint
-          amber: '#E8AE36',       // Warm Saffron Gold
-          amberLight: '#F1E6D8',  // Soft Amber Tint
-          blue: '#9E2127',        // Trust Royal Blue
-          blueDark: '#851B22',    // Deep Royal Navy
-          blueLight: '#E9D4D0',   // Soft Sky Blue Tint
-          emerald: '#10B981',     // Verified Green
-          emeraldLight: '#D1FAE5',// Soft Mint Tint
-          purple: '#7C3AED',      // Engineering Purple
-          purpleLight: '#EDE9FE', // Soft Lavender Tint
-          
-          // Canvas & Neutral Surfaces
-          canvas: '#FAF7F2',      // Pure Clean White
-          canvasWarm: '#F6ECE8',  // Warm Stone/Ivory 50
-          canvasSlate: '#F1E6D8', // Crisp Slate 50
-          borderSubtle: '#E8DAD2',// Slate 200
-          textHead: '#554B49',    // Deep Slate 900
-          textBody: '#665A55',    // Slate 700
-          textMuted: '#817572',   // Slate 500
+          // Industrial Fire Engineering Grounded Palette
+          base: '#121518',        // Machinery Graphite (Base dark)
+          red: '#C81E27',         // Flat Safety Crimson (RAL 3000)
+          redDark: '#A10016',     // Deep Engineering Red
+          redLight: '#FEE2E2',    // Subtle Red Tint
+          amber: '#D97706',       // ISO 3864 Warning Amber
+          amberLight: '#FEF3C7',  // Soft Amber Warning Tint
+          canvas: '#F5F6F8',      // Blueprint Drafting Off-White
+          surface: '#FFFFFF',     // Specplate White
+          line: '#CBD5E1',        // Galvanized Steel Line Gray
+          lineDark: '#94A3B8',    // Steel Outline Gray
+          textHead: '#121518',    // Machinery Iron Black
+          textBody: '#334155',    // Technical Charcoal
+          textMuted: '#64748B',   // Steel Gray Text
+          borderSubtle: '#CBD5E1',
 
-          // Legacy Mappings for Seamless Compatibility
-          ember: '#EA580C',
-          emberDark: '#C2410C',
-          gold: '#F59E0B',
-          cyan: '#0284C7',
-          maroon: '#B91C1C',
-          maroonDark: '#991B1B',
-          charcoalDark: '#554B49',
-          charcoalLight: '#817572',
-          paper: '#F1E6D8',
-          ivory: '#FAF7F2',
-          slateBg: '#F6ECE8',
-          textPrimary: '#554B49',
-          textSecondary: '#665A55',
+          // Compatibility Mappings
+          orange: '#D97706',
+          orangeLight: '#FEF3C7',
+          blue: '#0284C7',
+          blueDark: '#0369A1',
+          blueLight: '#E0F2FE',
+          emerald: '#10B981',
+          emeraldLight: '#D1FAE5',
+          purple: '#6D28D9',
+          purpleLight: '#EDE9FE',
+          canvasWarm: '#F5F6F8',
+          canvasSlate: '#F1F5F9',
+          charcoalDark: '#121518',
+          charcoalLight: '#64748B',
+          paper: '#F5F6F8',
+          ivory: '#FFFFFF',
+          slateBg: '#F8FAFC',
+          textPrimary: '#121518',
+          textSecondary: '#334155',
         }
       },
       fontFamily: {
-        headline: ['"Plus Jakarta Sans"', 'Outfit', 'Inter', 'sans-serif'],
+        headline: ['"Barlow Condensed"', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
-        nav: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-        numeric: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-        signage: ['"Plus Jakarta Sans"', 'Outfit', 'sans-serif'],
+        nav: ['"Barlow Condensed"', 'sans-serif'],
+        numeric: ['"IBM Plex Mono"', 'monospace'],
+        signage: ['"Barlow Condensed"', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       boxShadow: {

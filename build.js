@@ -364,41 +364,41 @@ function buildSchema(page) {
 
 /* ------------------------------------------------------------------ guide / page templates */
 const CTA_BLOCK = (heading, text) => `
-<div class="mt-12 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 text-white p-7 sm:p-9 relative overflow-hidden">
-  <div class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-orange-500/20 blur-3xl pointer-events-none"></div>
-  <h2 class="font-headline font-bold text-xl sm:text-2xl text-white">${heading}</h2>
-  <p class="text-sm sm:text-base text-slate-300 mt-2 leading-relaxed max-w-2xl">${text}</p>
-  <div class="flex flex-wrap gap-3 mt-6 relative">
-    <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white rounded-xl px-5 py-3 text-sm font-bold shadow-lg">Request a quotation</a>
-    <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#25D366] hover:opacity-90 text-white rounded-xl px-5 py-3 text-sm font-bold">WhatsApp 99671 01472</a>
-    <a href="tel:+919967101472" class="inline-flex items-center justify-center border border-slate-600 hover:bg-slate-700 text-white rounded-xl px-5 py-3 text-sm font-bold">Call now</a>
+<div class="mt-12 bg-brand-base text-white p-7 sm:p-9 border-t-4 border-brand-red hard-shadow-spec relative">
+  <div class="inline-block px-2 py-0.5 border border-white/20 bg-white/10 font-mono text-[10px] uppercase font-bold text-amber-400 mb-2">Direct Field Engineering Support</div>
+  <h2 class="font-headline font-bold text-2xl uppercase tracking-wide text-white">${heading}</h2>
+  <p class="text-xs sm:text-sm text-slate-300 font-body mt-2 leading-relaxed max-w-2xl">${text}</p>
+  <div class="flex flex-wrap gap-3 mt-6">
+    <a href="quote.html" class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-redDark text-white px-5 py-3 text-xs font-mono uppercase font-bold tracking-wider focus-ring">Request a quotation</a>
+    <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#25D366] text-white px-5 py-3 text-xs font-mono uppercase font-bold tracking-wider">WhatsApp 99671 01472</a>
+    <a href="tel:+919967101472" class="inline-flex items-center justify-center border border-white/30 hover:border-white text-white px-5 py-3 text-xs font-mono uppercase font-bold tracking-wider">Call Dispatch</a>
   </div>
 </div>`;
 
 const AUTHOR_BLOCK = `
-<aside class="mt-8 flex gap-4 items-start rounded-2xl border border-slate-200 bg-slate-50 p-5" aria-label="About the publisher">
+<aside class="mt-8 flex gap-4 items-start border border-brand-line bg-brand-canvas p-5 hard-shadow-spec" aria-label="About the publisher">
   <img src="logo.png" alt="Samarth Fire Protection System emblem" width="48" height="48" class="h-12 w-12 object-contain flex-shrink-0">
-  <div class="text-sm text-slate-600 leading-relaxed"><strong class="text-slate-900">Published by Samarth Fire Protection System</strong> — a Class D licensed fire agency (Licence No. ${LICENCE_NO}, Directorate of Maharashtra Fire &amp; Emergency Services) based in Malad East, Mumbai. Principal consultant: <a href="founder.html" class="text-red-700 font-semibold underline">Sameer M. Kangutkar</a>.</div>
+  <div class="text-xs sm:text-sm text-slate-700 font-body leading-relaxed"><strong class="text-brand-base uppercase font-mono font-bold">Published by Samarth Fire Protection System</strong> — Directorate of Maharashtra Fire &amp; Emergency Services Class D Licensed Agency (Licence No. <span class="font-mono font-bold">${LICENCE_NO}</span>) based in Malad East, Mumbai. Principal consultant: <a href="founder.html" class="text-brand-red font-semibold underline">Sameer M. Kangutkar</a>.</div>
 </aside>
-<p class="mt-6 text-xs text-slate-500 leading-relaxed">This article is general information. It is not legal advice, an emergency-response instruction, a substitute for approved site drawings or a fire-safety certificate. Requirements depend on the building, its occupancy and the current rules of the competent authority — always confirm with the Directorate of Maharashtra Fire &amp; Emergency Services or a licensed agency.</p>`;
+<p class="mt-6 text-[11px] font-mono text-slate-500 leading-relaxed uppercase">Statutory Notice: This technical bulletin provides general engineering context. It is not legal counsel, emergency instruction, or substitute for approved building drawings or statutory fire-safety certification under Maharashtra Fire Prevention and Life Safety Measures Act, 2006.</p>`;
 
 function renderGuide(page, body, toc, readMin, related) {
   const fm = page.fm;
   const cat = CATEGORIES[fm.category] || CATEGORIES.compliance;
-  const tocHtml = toc.map((t, i) => `<a class="block text-sm text-slate-600 hover:text-red-700 py-1.5 leading-snug" href="#${t.id}">${i + 1}. ${esc(t.text)}</a>`).join('');
-  const hero = fm.image ? `<figure class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm mb-10 bg-slate-100"><img src="${fm.image}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full max-h-[460px] object-cover" data-sizes="(min-width: 1152px) 1100px, 100vw"></figure>` : '';
+  const tocHtml = toc.map((t, i) => `<a class="block text-xs font-mono uppercase text-slate-600 hover:text-brand-red py-1.5 leading-snug" href="#${t.id}">[${i + 1}] ${esc(t.text)}</a>`).join('');
+  const hero = fm.image ? `<figure class="border border-brand-line hard-shadow-spec mb-10 bg-brand-canvas"><img src="${fm.image}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full max-h-[460px] object-cover" data-sizes="(min-width: 1152px) 1100px, 100vw"></figure>` : '';
   return `
-<section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-12 sm:py-16 border-b border-slate-200">
+<section class="bg-brand-canvas py-12 sm:py-16 border-b border-brand-line">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700">Blogs</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
-    <span class="inline-flex items-center px-3 py-1 rounded-full border text-[11px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
-    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl mt-4">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
-    <p class="text-base sm:text-lg text-slate-600 leading-relaxed mt-5 max-w-3xl">${esc(fm.lead || fm.description)}</p>
-    <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-slate-500">
-      <span class="inline-flex items-center gap-1.5"><svg class="h-4 w-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M5 11h14M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><time datetime="${fm.published}">Published ${fmtDate(fm.published)}</time></span>
+    <nav aria-label="Breadcrumb" class="text-xs font-mono text-slate-500 mb-4 flex items-center gap-2"><a href="index.html" class="hover:text-brand-red">HOME</a> <span>/</span> <a href="blog.html" class="hover:text-brand-red">BULLETINS</a> <span>/</span> <span class="text-brand-base font-bold uppercase">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
+    <span class="inline-flex items-center px-2.5 py-0.5 border border-brand-line text-[10px] font-mono font-bold uppercase tracking-wider bg-white text-brand-base">${cat.label}</span>
+    <h1 class="font-headline font-bold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide text-brand-base max-w-4xl mt-3">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
+    <p class="text-base sm:text-lg text-slate-700 font-body leading-relaxed mt-4 max-w-3xl">${esc(fm.lead || fm.description)}</p>
+    <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-mono text-slate-500">
+      <span class="inline-flex items-center gap-1.5"><time datetime="${fm.published}">Published ${fmtDate(fm.published)}</time></span>
       ${fm.modified && fm.modified !== fm.published ? `<span>Updated <time datetime="${fm.modified}">${fmtDate(fm.modified)}</time></span>` : ''}
-      <span>${readMin} min read</span>
-      <span>By Samarth Fire Protection System · Licence ${LICENCE_NO}</span>
+      <span>${readMin} MIN READ</span>
+      <span>LICENCE ${LICENCE_NO}</span>
     </div>
   </div>
 </section>
@@ -406,8 +406,8 @@ function renderGuide(page, body, toc, readMin, related) {
   ${hero}
   <div class="grid grid-cols-1 lg:grid-cols-[270px_minmax(0,1fr)] gap-8 lg:gap-12 items-start">
     <aside class="lg:sticky lg:top-28 space-y-4">
-      <details class="bg-slate-50 border border-slate-200 rounded-2xl p-5 group" open>
-        <summary class="font-headline font-bold text-sm text-slate-900 uppercase tracking-wide cursor-pointer list-none flex items-center justify-between">On this page <span class="text-slate-400 group-open:rotate-180 transition-transform" aria-hidden="true">▾</span></summary>
+      <details class="bg-brand-canvas border border-brand-line hard-shadow-spec p-5 group" open>
+        <summary class="font-headline font-bold text-sm text-brand-base uppercase tracking-wider cursor-pointer list-none flex items-center justify-between">Section Index <span class="text-slate-400 font-mono group-open:rotate-180 transition-transform" aria-hidden="true">▾</span></summary>
         <div class="mt-3 divide-y divide-slate-100">${tocHtml}</div>
       </details>
     </aside>
@@ -426,31 +426,38 @@ function renderRelated(current, articles) {
   const same = others.filter(a => a.fm.category === current.fm.category);
   const pick = [...same, ...others.filter(a => !same.includes(a))].slice(0, 3);
   if (!pick.length) return '';
-  return `<section class="bg-slate-50 border-t border-slate-200 py-12"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><h2 class="font-headline font-bold text-2xl text-slate-900 mb-6">Keep reading</h2><div class="grid grid-cols-1 md:grid-cols-3 gap-6">${pick.map(a => articleCard(a, false)).join('')}</div></div></section>`;
+  return `<section class="bg-brand-canvas border-t border-brand-line py-12"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="mb-6"><div class="inline-block px-2.5 py-0.5 border border-brand-line bg-white font-mono text-[10px] uppercase font-bold text-brand-base mb-1">Index Reference</div><h2 class="font-headline font-bold text-2xl uppercase tracking-wide text-brand-base">Related Engineering Bulletins</h2></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6">${pick.map(a => articleCard(a, false)).join('')}</div></div></section>`;
 }
 
 function articleCard(a, withData) {
   const fm = a.fm;
   const cat = CATEGORIES[fm.category] || CATEGORIES.compliance;
-  return `<article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col"${withData ? ' data-cat="' + (fm.category || '') + '"' : ''}>
-  <a href="${a.slug}.html" class="block aspect-[16/10] overflow-hidden bg-slate-100" tabindex="-1" aria-hidden="true"><img src="${fm.image || 'hero_panel.jpg'}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"></a>
+  return `<article class="group bg-white border border-brand-line overflow-hidden hard-shadow-spec hover:border-brand-base transition-colors duration-200 flex flex-col"${withData ? ' data-cat="' + (fm.category || '') + '"' : ''}>
+  <a href="${a.slug}.html" class="block aspect-[16/10] overflow-hidden bg-brand-canvas border-b border-brand-line relative" tabindex="-1" aria-hidden="true">
+    <img src="${fm.image || 'hero_panel.jpg'}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full h-full object-cover filter contrast-[1.02] group-hover:scale-102 transition-transform duration-300" data-sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw">
+    <div class="absolute top-2 left-2 px-2 py-0.5 bg-brand-base text-white font-mono text-[10px] uppercase font-bold tracking-wider">SEC ${fm.category ? fm.category.substring(0, 4).toUpperCase() : 'DOC'}</div>
+  </a>
   <div class="p-5 flex flex-col flex-1">
-    <span class="self-start inline-flex px-2.5 py-0.5 rounded-full border text-[10px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
-    <h3 class="font-headline font-bold text-lg text-slate-900 mt-3 leading-snug"><a href="${a.slug}.html" class="hover:text-red-700 transition-colors">${esc(fm.cardTitle || fm.crumb || fm.title.split('|')[0].trim())}</a></h3>
-    <p class="text-sm text-slate-600 mt-2 leading-relaxed flex-1">${esc(fm.cardText || fm.description)}</p>
-    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500"><span>${fm.published ? fmtDate(fm.published) : ''}</span><span class="font-semibold text-red-700 group-hover:underline">${a.readMin || 6} min read →</span></div>
+    <span class="self-start inline-flex px-2 py-0.5 border border-brand-line text-[10px] font-mono font-bold uppercase tracking-wider bg-brand-canvas text-brand-base">${cat.label}</span>
+    <h3 class="font-headline font-bold text-lg text-brand-base uppercase tracking-tight mt-3 leading-snug"><a href="${a.slug}.html" class="hover:text-brand-red transition-colors">${esc(fm.cardTitle || fm.crumb || fm.title.split('|')[0].trim())}</a></h3>
+    <p class="text-xs text-slate-600 font-body mt-2 leading-relaxed flex-1">${esc(fm.cardText || fm.description)}</p>
+    <div class="mt-4 pt-3 border-t border-brand-line/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+      <span>${fm.published ? fmtDate(fm.published) : 'BULLETIN'}</span>
+      <span class="font-bold text-brand-red uppercase group-hover:underline">Read Spec [${a.readMin || 6} MIN]</span>
+    </div>
   </div></article>`;
 }
 
 function renderPlainPage(page, body, toc) {
   const fm = page.fm;
-  const tocHtml = toc.length > 3 ? `<nav aria-label="Contents" class="mt-8 flex flex-wrap gap-2">${toc.map(t => `<a href="#${t.id}" class="text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-red-300 hover:text-red-700">${esc(t.text)}</a>`).join('')}</nav>` : '';
+  const tocHtml = toc.length > 3 ? `<nav aria-label="Contents" class="mt-8 flex flex-wrap gap-2">${toc.map(t => `<a href="#${t.id}" class="text-xs font-mono font-semibold px-3 py-1 bg-white border border-brand-line text-slate-700 hover:border-brand-base hover:text-brand-base">${esc(t.text)}</a>`).join('')}</nav>` : '';
   return `
-<section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-14 sm:py-20 border-b border-slate-200">
+<section class="bg-brand-canvas py-12 sm:py-16 border-b border-brand-line relative">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
-    <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
-    <p class="text-base sm:text-lg text-slate-600 leading-relaxed mt-5 max-w-3xl">${esc(fm.lead || fm.description)}</p>
+    <nav aria-label="Breadcrumb" class="text-xs font-mono text-slate-500 mb-4 flex items-center gap-2"><a href="index.html" class="hover:text-brand-red">HOME</a> <span>/</span> <span class="text-brand-base font-bold uppercase">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
+    <div class="inline-block px-2.5 py-0.5 border border-brand-line bg-white font-mono text-[10px] uppercase font-bold text-brand-base mb-3">Statutory Engineering Specification</div>
+    <h1 class="font-headline font-bold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide text-brand-base max-w-4xl">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>
+    <p class="text-base sm:text-lg text-slate-700 font-body leading-relaxed mt-4 max-w-3xl">${esc(fm.lead || fm.description)}</p>
     ${tocHtml}
   </div>
 </section>

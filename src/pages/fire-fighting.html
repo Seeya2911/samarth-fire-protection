@@ -15,77 +15,79 @@ schema: {
 }
 ---
 
-<!-- 1. SUNLIT, WARM, AESTHETIC SERVICE HERO -->
-<section class="relative bg-gradient-to-br from-red-50/90 via-orange-50/40 to-amber-50/20 text-slate-900 pt-10 pb-16 sm:pt-14 sm:pb-20 border-b border-slate-200/80 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- 1. TECHNICAL SERVICE HERO -->
+<section class="bg-brand-canvas border-b border-brand-line py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- Breadcrumb Navigation -->
-    <nav class="flex items-center space-x-2 text-xs font-headline text-slate-500 mb-6" aria-label="Breadcrumb">
-      <a href="index.html" class="hover:text-red-600 transition-colors">Home</a>
+    <!-- Technical Breadcrumb -->
+    <nav class="flex items-center space-x-2 text-xs font-mono text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-brand-red transition-colors">HOME</a>
       <span>/</span>
-      <a href="services.html" class="hover:text-red-600 transition-colors">Services</a>
+      <a href="services.html" class="hover:text-brand-red transition-colors">SERVICES</a>
       <span>/</span>
-      <span class="text-red-600 font-bold" aria-current="page">Fire Fighting Systems</span>
+      <span class="text-brand-base font-bold" aria-current="page">FIRE FIGHTING &amp; SPRINKLERS</span>
     </nav>
 
-    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
       
-      <!-- Left Column: Service Details & CTAs -->
+      <!-- Hero Narrative -->
       <div class="lg:col-span-7 space-y-5">
-        <div class="inline-flex items-center space-x-2 bg-white/90 border border-red-200 px-3.5 py-1.5 rounded-full shadow-xs">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span class="font-headline text-xs font-bold uppercase tracking-wider text-red-700">
-            Maharashtra Fire Services &bull; Class D Authorized
+        <div class="inline-flex items-center gap-2 border border-brand-line bg-white px-3 py-1 hard-shadow-spec">
+          <span class="w-2 h-2 bg-emerald-600"></span>
+          <span class="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-base">
+            Class D Suppression Directive &bull; Licence MFS/LA/RF-34/RD-35
           </span>
         </div>
 
-        <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-[46px] tracking-tight text-slate-900 leading-[1.14]">
-          Fire Fighting &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Sprinkler Systems</span>
+        <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight text-brand-base leading-[1.08]">
+          High-Pressure Suppression Networks &amp; Riser Systems
         </h1>
 
-        <p class="text-base sm:text-lg text-slate-700 font-body leading-relaxed max-w-xl">
-          Turnkey engineering, hydraulic calculation, installation, and bi-annual pressure testing of high-capacity wet risers, yard hydrants, booster pump stations, and automated sprinkler rings across Mumbai &amp; MMR.
+        <p class="text-base sm:text-lg text-slate-700 font-body leading-relaxed max-w-2xl">
+          Turnkey hydraulic engineering, wet riser erection, automatic sprinkler distribution, booster station overhaul, and statutory bi-annual pressure testing across housing societies, commercial complexes, and industrial sites in Mumbai and the MMR.
         </p>
 
-        <!-- Service Quick CTAs -->
+        <!-- Primary Action Triggers -->
         <div class="flex flex-col sm:flex-row gap-3 pt-2">
-          <a href="quote.html" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all shadow-md shadow-red-500/20 focus-ring">
-            <span>Get a Quote for this System</span>
-            <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          <a href="quote.html" class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-redDark text-white font-headline text-sm font-bold px-6 py-3.5 uppercase tracking-wider transition-colors hard-shadow-spec focus-ring">
+            <span>Request Line-Item Quotation</span>
           </a>
-          <a href="audit.html" class="inline-flex items-center justify-center bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-headline text-xs font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider transition-all focus-ring shadow-xs">
-            <span>Schedule Hydraulic Audit</span>
+          <a href="audit.html" class="inline-flex items-center justify-center bg-white hover:bg-brand-canvas border border-brand-base text-brand-base font-headline text-sm font-bold px-6 py-3.5 uppercase tracking-wider transition-colors hard-shadow-spec focus-ring">
+            <span>Schedule Hydraulic Site Audit</span>
           </a>
         </div>
 
-        <!-- Verified Licence & Regulatory Eyebrow -->
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-200/80 pt-4 text-xs font-body text-slate-600">
-          <div class="flex items-center space-x-1.5">
-            <svg class="h-4 w-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span>Licence: <strong class="text-red-600 font-mono font-bold">MFS/LA/RF-34/RD-35</strong></span>
+        <!-- Technical Specification Metadata -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 border-t border-brand-line pt-5 text-xs font-mono text-slate-600">
+          <div>
+            <span class="block text-[10px] text-slate-500 uppercase">Statutory Standard</span>
+            <strong class="text-brand-base font-bold">NBC 2016 Part 4</strong>
           </div>
-          <div class="flex items-center space-x-1.5">
-            <svg class="h-4 w-4 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <span class="font-semibold text-slate-800">NBC 2016 Part 4 &amp; Maharashtra Fire Act</span>
+          <div>
+            <span class="block text-[10px] text-slate-500 uppercase">State Authorization</span>
+            <strong class="text-brand-base font-bold">MFS Class D Agency</strong>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <span class="block text-[10px] text-slate-500 uppercase">Statutory Filings</span>
+            <strong class="text-brand-base font-bold">Form A &amp; Form B</strong>
           </div>
         </div>
       </div>
 
-      <!-- Right Column: Clean White Bezel Photo Frame -->
-      <div class="mt-8 lg:mt-0 lg:col-span-5 relative">
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white card-lift">
-          <div class="relative rounded-2xl overflow-hidden">
-            <img src="client_pump_manifold.jpg" alt="Fire pump station manifold overhaul and valve calibration by Samarth Fire" class="w-full h-[360px] object-cover object-center" width="480" height="360">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-            
-            <div class="absolute bottom-4 left-4 right-4 text-white">
-              <span class="inline-block bg-red-600 text-white text-[10px] font-headline uppercase px-2.5 py-0.5 rounded-full font-bold mb-1 tracking-wider shadow">
-                System Benchmark
-              </span>
-              <p class="text-xs font-body text-slate-100 leading-relaxed">
-                Multi-stage booster pump station manifold with synchronized electric, diesel backup, and jockey pressure stabilizers.
-              </p>
-            </div>
+      <!-- Real Field Photo Specplate -->
+      <div class="lg:col-span-5">
+        <div class="border border-brand-line bg-white hard-shadow-spec">
+          <div class="px-4 py-2.5 bg-brand-base text-white flex items-center justify-between font-mono text-xs">
+            <span class="uppercase tracking-wider font-bold">FIELD SPECIMEN: PUMP MANIFOLD</span>
+            <span class="text-amber-400 font-bold">REF #ENG-PUMP</span>
+          </div>
+          <div class="aspect-[4/3] overflow-hidden bg-brand-canvas relative border-b border-brand-line">
+            <img src="client_pump_manifold.jpg" alt="Fire pump station manifold overhaul and valve calibration by Samarth Fire" class="w-full h-full object-cover filter contrast-[1.02]" width="480" height="360">
+          </div>
+          <div class="p-4 bg-brand-canvas">
+            <p class="text-xs font-body text-slate-700 leading-relaxed">
+              <strong class="text-brand-base font-mono uppercase font-bold">On-Site Overhaul:</strong> Multi-pump booster manifold assembly featuring primary electric drive, auxiliary diesel engine backup, and jockey pump line stabilizer for high-rise residential towers.
+            </p>
           </div>
         </div>
       </div>
@@ -94,246 +96,369 @@ schema: {
   </div>
 </section>
 
-<!-- 2. SYSTEM SPECIFICATIONS & DEFINITION -->
-<section class="py-16 bg-white text-slate-800 border-b border-slate-200/80">
+<!-- Structural Hazard Stripe -->
+<div class="h-2 hazard-stripe-bar border-y border-brand-base" aria-hidden="true"></div>
+
+<!-- 2. TECHNICAL SCHEMATIC SPOTLIGHT -->
+<section class="py-14 bg-white border-b border-brand-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <div class="lg:col-span-5 space-y-4">
+        <div class="inline-block px-2.5 py-0.5 border border-brand-line bg-brand-canvas font-mono text-[10px] uppercase font-bold text-brand-base">
+          System Schematic Line-Work
+        </div>
+        <h2 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-tight text-brand-base">
+          Dual-Zone Wet Riser &amp; Booster Configuration
+        </h2>
+        <p class="text-sm text-slate-700 font-body leading-relaxed">
+          High-rise structures demand dedicated hydraulic vertical mains permanently charged with pressurized water. Our engineering team calculates static pressure heads, frictional line loss, and flow delivery to ensure compliant coverage at every landing valve.
+        </p>
+        <ul class="space-y-2 text-xs font-mono text-slate-700 border-l-2 border-brand-red pl-4">
+          <li><strong>01.</strong> Underground reservoir suction manifold with anti-vortex plates</li>
+          <li><strong>02.</strong> Staged electric, diesel, and jockey pump automation loop</li>
+          <li><strong>03.</strong> Non-return check valves and calibrated pressure relief stations</li>
+          <li><strong>04.</strong> Dual 63mm gunmetal landing valves per floor landing</li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="border border-brand-line bg-brand-canvas p-4 sm:p-6 hard-shadow-spec schematic-grid">
+          <div class="border border-brand-line bg-white p-4">
+            <img src="img/diagram-wet-riser-system.svg" alt="Technical line drawing of building wet riser system and pump loop" class="w-full h-auto block max-h-[380px] object-contain mx-auto" width="600" height="380">
+          </div>
+          <figcaption class="mt-3 px-2 text-[11px] font-mono text-slate-500 leading-relaxed uppercase">
+            [Schematic Specification] Illustrative engineering schematic — actual riser pipe diameters, pump ratings, and riser zoning vary by site structure and hydraulic plan.
+          </figcaption>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 3. CORE SYSTEM CAPABILITIES SPECPLATES -->
+<section class="py-14 bg-brand-canvas border-b border-brand-line">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- Definition Callout -->
-    <div class="bg-red-50/60 border-l-4 border-red-600 p-6 rounded-r-2xl mb-14 text-slate-800 font-body text-sm leading-relaxed shadow-2xs">
-      <div class="flex items-start space-x-3">
-        <div class="p-1 bg-red-600 text-white rounded-lg mt-0.5 flex-shrink-0">
-          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <div class="inline-block px-2.5 py-0.5 border border-brand-line bg-white font-mono text-[10px] uppercase font-bold text-brand-base mb-2">
+          Engineering Scope Matrix
         </div>
-        <p>
-          <strong class="text-red-700 font-bold font-headline">Engineering Definition:</strong> Fire fighting systems are pressurized water distribution networks consisting of reservoirs, booster pumps, piping, valves, and sprinkler heads designed to suppress fires. Samarth Fire Protection System installs, overhauls, and commissions these systems under a Class D government license in Malad, Goregaon, and the wider Mumbai Metropolitan Region.
-        </p>
+        <h2 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-tight text-brand-base">
+          Active Fire Suppression Capabilities
+        </h2>
       </div>
+      <p class="text-xs font-mono text-slate-600 max-w-md">
+        All installations, retrofits, and overhauls executed strictly under Directorate of Maharashtra Fire Services statutory licensing.
+      </p>
     </div>
 
-    <!-- Core Engineering Capabilities Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
-      <!-- Left 8 Cols: 4 System Capability Cards -->
-      <div class="lg:col-span-8 space-y-6">
-        <div>
-          <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-1">TECHNICAL CAPABILITIES</span>
-          <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 tracking-tight">System Integration Specifications</h2>
-          <p class="text-sm text-slate-600 font-body mt-2 leading-relaxed">
-            We install and overhaul high-capacity active suppression networks. Every system is built to survive high-pressure loads and operate automatically during power grid failures.
-          </p>
+      <!-- Specplate 1 -->
+      <div class="border border-brand-line bg-white p-6 hard-shadow-spec">
+        <div class="flex items-center justify-between border-b border-brand-line pb-3 mb-4">
+          <span class="font-mono text-xs font-bold uppercase text-brand-red">DISCIPLINE 01</span>
+          <span class="font-mono text-[11px] text-slate-500 uppercase">NBC 2016 Compliant</span>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-          
-          <div class="p-6 bg-slate-50 rounded-2xl border-t-4 border-red-500 border-x border-b border-slate-200/80 shadow-2xs hover:shadow-xs transition-all">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
-              01
-            </div>
-            <h3 class="font-headline font-bold text-lg text-slate-900 mb-2">Wet &amp; Dry Risers</h3>
-            <p class="text-xs text-slate-600 font-body leading-relaxed">
-              Vertical galvanized iron (GI) piping networks from basement booster stations to terrace tanks with calibrated 63mm gunmetal landing valves on every floor landing.
-            </p>
-          </div>
-
-          <div class="p-6 bg-slate-50 rounded-2xl border-t-4 border-red-500 border-x border-b border-slate-200/80 shadow-2xs hover:shadow-xs transition-all">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
-              02
-            </div>
-            <h3 class="font-headline font-bold text-lg text-slate-900 mb-2">Automatic Sprinkler Networks</h3>
-            <p class="text-xs text-slate-600 font-body leading-relaxed">
-              Quartzoid glass-bulb sprinkler heads rated at 68°C/79°C for commercial basements, parking podiums, and retail floors with flow-switch alarm triggers.
-            </p>
-          </div>
-
-          <div class="p-6 bg-slate-50 rounded-2xl border-t-4 border-red-500 border-x border-b border-slate-200/80 shadow-2xs hover:shadow-xs transition-all">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
-              03
-            </div>
-            <h3 class="font-headline font-bold text-lg text-slate-900 mb-2">Booster Pump Automation</h3>
-            <p class="text-xs text-slate-600 font-body leading-relaxed">
-              Multi-pump synchronization: main electric motor, auxiliary diesel-engine backup, and continuous jockey pressure stabilizer ensuring 7 to 10.5 bar constant line pressure.
-            </p>
-          </div>
-
-          <div class="p-6 bg-slate-50 rounded-2xl border-t-4 border-red-500 border-x border-b border-slate-200/80 shadow-2xs hover:shadow-xs transition-all">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
-              04
-            </div>
-            <h3 class="font-headline font-bold text-lg text-slate-900 mb-2">Hose Reels &amp; Hydrant Rings</h3>
-            <p class="text-xs text-slate-600 font-body leading-relaxed">
-              High-pressure swing-type hose reel drums with 30-meter non-kinking hoses, shut-off jet/spray branch nozzles, and external yard hydrant ring mains.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Right 4 Cols: Class D Authority Panel -->
-      <div class="lg:col-span-4 bg-slate-50 border border-slate-200/90 rounded-3xl p-6 sm:p-7 space-y-6">
-        <div>
-          <span class="text-red-600 font-headline font-bold text-xs uppercase tracking-wider block mb-1">REGULATORY AUTHORIZATION</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900">Class D Certified Agency</h3>
-        </div>
-
-        <p class="text-xs text-slate-600 leading-relaxed font-body">
-          Under the Maharashtra Fire Prevention and Life Safety Measures Act, 2006, all high-rise firefighting networks must be installed, audited, and maintained by a licensed agency to remain legally compliant.
+        <h3 class="font-headline font-bold text-xl uppercase tracking-wide text-brand-base mb-2">
+          Wet &amp; Dry Riser Networks
+        </h3>
+        <p class="text-sm text-slate-700 font-body leading-relaxed mb-4">
+          Vertical galvanized heavy-grade steel piping networks connecting basement or podium pump manifolds to terrace storage tanks. Equipped with calibrated landing valves on each floor landing and external ground breeching inlets for municipal fire brigade connections.
         </p>
-
-        <div class="bg-white p-4 rounded-2xl border border-slate-200 space-y-2 text-xs font-mono text-slate-800">
-          <div class="flex justify-between border-b border-slate-100 pb-1.5">
-            <span class="text-slate-500">Licence No:</span>
-            <strong class="text-red-600">MFS/LA/RF-34/RD-35</strong>
-          </div>
-          <div class="flex justify-between border-b border-slate-100 pb-1.5">
-            <span class="text-slate-500">Class Scope:</span>
-            <span class="font-bold">Class D Firefighting</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-slate-500">Form B Validity:</span>
-            <span class="text-emerald-600 font-semibold">Active &bull; Jan 2028</span>
-          </div>
+        <div class="border-t border-brand-line/60 pt-3 text-xs font-mono text-slate-600 space-y-1">
+          <div><strong class="text-brand-base">Components:</strong> Galvanized pipes, 63mm gunmetal valves, air release valves</div>
+          <div><strong class="text-brand-base">Verification:</strong> Hydrostatic pressure testing to applicable standards</div>
         </div>
+      </div>
 
-        <div class="pt-2">
-          <a href="quote.html" class="w-full inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-headline text-xs font-bold py-3.5 px-4 rounded-xl uppercase tracking-wider transition-all shadow-md">
-            <span>Request Line-Item Proposal</span>
-          </a>
+      <!-- Specplate 2 -->
+      <div class="border border-brand-line bg-white p-6 hard-shadow-spec">
+        <div class="flex items-center justify-between border-b border-brand-line pb-3 mb-4">
+          <span class="font-mono text-xs font-bold uppercase text-brand-red">DISCIPLINE 02</span>
+          <span class="font-mono text-[11px] text-slate-500 uppercase">Automated Suppression</span>
+        </div>
+        <h3 class="font-headline font-bold text-xl uppercase tracking-wide text-brand-base mb-2">
+          Automatic Sprinkler Arrays
+        </h3>
+        <p class="text-sm text-slate-700 font-body leading-relaxed mb-4">
+          Thermally triggered quartzoid glass-bulb sprinkler networks covering basement car parking, podium levels, and commercial work floors. Integrated with zone control valves, waterflow indicator switches, and localized alarm gongs for rapid containment.
+        </p>
+        <div class="border-t border-brand-line/60 pt-3 text-xs font-mono text-slate-600 space-y-1">
+          <div><strong class="text-brand-base">Configuration:</strong> Pendant, upright, and sidewall head distribution</div>
+          <div><strong class="text-brand-base">Monitoring:</strong> Electrical flow switches linked to main fire alarm panel</div>
+        </div>
+      </div>
+
+      <!-- Specplate 3 -->
+      <div class="border border-brand-line bg-white p-6 hard-shadow-spec">
+        <div class="flex items-center justify-between border-b border-brand-line pb-3 mb-4">
+          <span class="font-mono text-xs font-bold uppercase text-brand-red">DISCIPLINE 03</span>
+          <span class="font-mono text-[11px] text-slate-500 uppercase">Mechanical Automation</span>
+        </div>
+        <h3 class="font-headline font-bold text-xl uppercase tracking-wide text-brand-base mb-2">
+          Booster Pump Staging &amp; Controls
+        </h3>
+        <p class="text-sm text-slate-700 font-body leading-relaxed mb-4">
+          Triple-tier pump station synchronization comprising main electric motor pump, auto-start auxiliary diesel engine fallback, and continuous jockey pump for line pressure maintenance. Staged automatically through sensory pressure switch manifolds.
+        </p>
+        <div class="border-t border-brand-line/60 pt-3 text-xs font-mono text-slate-600 space-y-1">
+          <div><strong class="text-brand-base">Control Panel:</strong> Microprocessor-based auto-sequencing control cabinet</div>
+          <div><strong class="text-brand-base">Testing:</strong> Weekly auto-start cycle calibration and battery health checks</div>
+        </div>
+      </div>
+
+      <!-- Specplate 4 -->
+      <div class="border border-brand-line bg-white p-6 hard-shadow-spec">
+        <div class="flex items-center justify-between border-b border-brand-line pb-3 mb-4">
+          <span class="font-mono text-xs font-bold uppercase text-brand-red">DISCIPLINE 04</span>
+          <span class="font-mono text-[11px] text-slate-500 uppercase">First-Aid Response</span>
+        </div>
+        <h3 class="font-headline font-bold text-xl uppercase tracking-wide text-brand-base mb-2">
+          Yard Hydrants &amp; Hose Reels
+        </h3>
+        <p class="text-sm text-slate-700 font-body leading-relaxed mb-4">
+          External compound yard hydrant ring mains with standposts and instantaneous couplings for perimeter defense. Internal swing-drum first-aid hose reels equipped with non-kinking hydraulic hose and dual shut-off jet/spray branch nozzles.
+        </p>
+        <div class="border-t border-brand-line/60 pt-3 text-xs font-mono text-slate-600 space-y-1">
+          <div><strong class="text-brand-base">Hose Drum:</strong> 19mm/25mm swing-arm drums with 30-meter hose length</div>
+          <div><strong class="text-brand-base">Cabinetry:</strong> Weatherproof MS/CRCA enamel-coated landing cabinets</div>
         </div>
       </div>
 
     </div>
-
-    <!-- 3. REAL FIELD DOCUMENTATION & GALLERY -->
-    <div class="mb-16">
-      <div class="mb-8">
-        <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-1">FIELD DOCUMENTATION</span>
-        <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 tracking-tight">On-Site Execution Evidence</h2>
-        <p class="text-sm text-slate-600 font-body mt-1">Authentic field operations conducted by our certified engineers across residential and commercial towers in Mumbai.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift">
-          <div class="h-52 overflow-hidden">
-            <img src="client_pump_manifold.jpg" alt="Booster pump station manifold overhaul and valve calibration" class="w-full h-full object-cover" width="380" height="208">
-          </div>
-          <div class="p-5">
-            <span class="text-xs font-headline text-red-600 font-bold uppercase tracking-wider block mb-1">Pump Station Overhaul</span>
-            <h3 class="font-headline font-bold text-base text-slate-900 mb-2">High-Rise Pump Overhaul</h3>
-            <p class="text-xs text-slate-600 leading-relaxed font-body">
-              Complete overhaul of booster station: non-return valve replacement, pressure sensor switch calibration, and automated diesel backup testing.
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift">
-          <div class="h-52 overflow-hidden">
-            <img src="client_hydrant_valve_test.jpg" alt="Technician inspecting landing valve and testing water pressure" class="w-full h-full object-cover" width="380" height="208">
-          </div>
-          <div class="p-5">
-            <span class="text-xs font-headline text-red-600 font-bold uppercase tracking-wider block mb-1">Landing Valve Test</span>
-            <h3 class="font-headline font-bold text-base text-slate-900 mb-2">Hydrostatic Flow Verification</h3>
-            <p class="text-xs text-slate-600 leading-relaxed font-body">
-              Physical static and running flow measurement at terrace level landing valves to guarantee 3.5 bar minimum operating pressure under NBC 2016.
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs card-lift">
-          <div class="h-52 overflow-hidden">
-            <img src="client_hose_box_service.jpg" alt="Corridor hose reel cabinet servicing and maintenance" class="w-full h-full object-cover" width="380" height="208">
-          </div>
-          <div class="p-5">
-            <span class="text-xs font-headline text-red-600 font-bold uppercase tracking-wider block mb-1">Corridor First-Response</span>
-            <h3 class="font-headline font-bold text-base text-slate-900 mb-2">Hose Box &amp; Valve Servicing</h3>
-            <p class="text-xs text-slate-600 leading-relaxed font-body">
-              Cabinet hardware alignment, swing-drum gland lubrication, and branch nozzle shut-off validation across multi-wing housing societies.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 4. FREQUENTLY ASKED QUESTIONS -->
-    <div class="max-w-4xl mx-auto mb-16">
-      <div class="text-center mb-8">
-        <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-1">COMMON QUESTIONS</span>
-        <h2 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 tracking-tight">Frequently Asked Questions</h2>
-      </div>
-
-      <div class="space-y-4">
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">What is the difference between a Wet Riser and a Dry Riser?</h3>
-          <p class="font-body text-xs sm:text-sm text-slate-600 leading-relaxed">
-            A <strong>Wet Riser</strong> is permanently charged with water under pressure from terrace tanks and booster pumps, ready for instantaneous operation during an emergency. A <strong>Dry Riser</strong> remains empty during normal conditions and is pressurized by fire brigade pump engines connecting to external inlet breeching valves at ground level.
-          </p>
-        </div>
-
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">What pressure must a residential fire hydrant system maintain?</h3>
-          <p class="font-body text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Under National Building Code (NBC) 2016 Part 4 and Maharashtra Fire Prevention standards, high-rise risers must maintain a minimum running pressure of <strong>3.5 kg/cm² (bar)</strong> at the topmost hydrant outlet, while withstanding a test pressure of <strong>10 kg/cm²</strong> at the basement pump manifold without leakage.
-          </p>
-        </div>
-
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5">
-          <h3 class="font-headline font-bold text-base text-slate-900 mb-2">How frequently must fire fighting pumps and hydrants be serviced?</h3>
-          <p class="font-body text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Pumps should undergo automated weekly test-runs to ensure battery starters and diesel fallback engines engage smoothly. Full physical servicing, gland packing inspection, and statutory bi-annual <strong>Form B certification</strong> must be filed with the municipal fire department twice yearly (January and July).
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. RELATED SERVICES DIRECTORY -->
-    <div class="border-t border-slate-200 pt-12">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
-        <div>
-          <span class="font-headline text-xs uppercase tracking-wider text-red-600 font-bold block mb-1">COMPREHENSIVE PROTECTION</span>
-          <h3 class="font-headline font-bold text-xl text-slate-900">Explore Related Engineering Capabilities</h3>
-        </div>
-        <a href="services.html" class="inline-flex items-center text-xs font-headline font-bold text-red-600 hover:text-red-700">
-          <span>View All Capabilities &rarr;</span>
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <a href="detection-alarm.html" class="p-5 bg-white rounded-2xl border border-slate-200/80 hover:border-blue-400 shadow-2xs transition-all group">
-          <h4 class="font-headline font-bold text-base text-slate-900 group-hover:text-blue-600 mb-1">Detection &amp; Alarm Loops &rarr;</h4>
-          <p class="font-body text-xs text-slate-600">Smoke detectors, heat sensors, MCPs, and panels.</p>
-        </a>
-        <a href="extinguishing.html" class="p-5 bg-white rounded-2xl border border-slate-200/80 hover:border-amber-400 shadow-2xs transition-all group">
-          <h4 class="font-headline font-bold text-base text-slate-900 group-hover:text-amber-600 mb-1">Fire Extinguishers &rarr;</h4>
-          <p class="font-body text-xs text-slate-600">ABC Powder, CO₂, Foam cylinders and HPT pressure testing.</p>
-        </a>
-        <a href="passive-protection.html" class="p-5 bg-white rounded-2xl border border-slate-200/80 hover:border-purple-400 shadow-2xs transition-all group">
-          <h4 class="font-headline font-bold text-base text-slate-900 group-hover:text-purple-600 mb-1">Passive Protection &rarr;</h4>
-          <p class="font-body text-xs text-slate-600">Fire-rated doors, intumescent seals, and shaft barriers.</p>
-        </a>
-        <a href="compliance-certification.html" class="p-5 bg-white rounded-2xl border border-slate-200/80 hover:border-emerald-400 shadow-2xs transition-all group">
-          <h4 class="font-headline font-bold text-base text-slate-900 group-hover:text-emerald-600 mb-1">Form B NOC Audits &rarr;</h4>
-          <p class="font-body text-xs text-slate-600">Bi-annual statutory inspections and compliance renewals.</p>
-        </a>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- 6. DIRECT ENQUIRY STRIP -->
-<section class="py-16 bg-gradient-to-r from-red-600 to-orange-500 text-white text-center relative overflow-hidden">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
-    <h3 class="font-headline font-black text-2xl sm:text-3xl text-white">Need a Firefighting System Installation or Overhaul?</h3>
-    <p class="font-body text-xs sm:text-sm text-red-100 max-w-xl mx-auto leading-relaxed">
-      Speak directly with Sameer M. Kangutkar and our certified engineering team for technical evaluations across Mumbai &amp; MMR.
-    </p>
-    <div class="pt-3 flex flex-wrap justify-center gap-4">
-      <a href="tel:+919967101472" class="inline-flex items-center space-x-2 bg-white text-slate-900 hover:bg-slate-100 px-6 py-3.5 rounded-xl font-headline text-xs font-bold uppercase tracking-wider shadow-lg transition-all focus-ring">
-        <span>Call: 9967101472</span>
+<!-- 4. CLASS D REGULATORY AUTHORITY GAZETTE PANEL -->
+<section class="py-14 bg-white border-b border-brand-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="border-2 border-brand-base bg-brand-canvas p-6 sm:p-8 hard-shadow-spec">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-3">
+          <div class="inline-block px-2.5 py-0.5 border border-brand-base bg-brand-base text-white font-mono text-[10px] uppercase font-bold tracking-wider">
+            Statutory Legal Authority
+          </div>
+          <h2 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-wide text-brand-base">
+            Directorate of Maharashtra Fire Services Class D Licensure
+          </h2>
+          <p class="text-sm text-slate-700 font-body leading-relaxed">
+            Under Section 9 of the Maharashtra Fire Prevention and Life Safety Measures Act, 2006, all high-rise water distribution networks, wet risers, booster pump stations, and sprinkler loops must be installed, inspected, and maintained by a certified Licensed Agency.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 font-mono text-xs">
+            <div class="p-3 bg-white border border-brand-line">
+              <span class="block text-[10px] text-slate-500 uppercase">Licence Number</span>
+              <strong class="text-brand-red text-sm">MFS/LA/RF-34/RD-35</strong>
+            </div>
+            <div class="p-3 bg-white border border-brand-line">
+              <span class="block text-[10px] text-slate-500 uppercase">Agency Class</span>
+              <strong class="text-brand-base text-sm">Class D Suppression</strong>
+            </div>
+            <div class="p-3 bg-white border border-brand-line">
+              <span class="block text-[10px] text-slate-500 uppercase">Statutory Certification</span>
+              <strong class="text-brand-base text-sm">Form A &amp; Form B</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 border-t lg:border-t-0 lg:border-l border-brand-line pt-6 lg:pt-0 lg:pl-8 space-y-4">
+          <div class="font-mono text-xs text-slate-600 uppercase">
+            <span class="block font-bold text-brand-base text-sm mb-1">Direct Technical Support</span>
+            Field engineering team based in Malad East, deploying across Mumbai, Thane, Navi Mumbai, and Palghar.
+          </div>
+          <a href="quote.html" class="block text-center bg-brand-base hover:bg-brand-red text-white font-headline text-sm font-bold uppercase tracking-wider py-3.5 px-4 transition-colors hard-shadow-spec focus-ring">
+            Request Line-Item Proposal
+          </a>
+          <a href="tel:+919967101472" class="block text-center border border-brand-base bg-white hover:bg-brand-canvas text-brand-base font-mono text-xs font-bold uppercase py-2.5 px-4 transition-colors">
+            Dispatch Desk: 99671 01472
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ON-SITE EXECUTION EVIDENCE (SOURCED PHOTOGRAPHY) -->
+<section class="py-14 bg-brand-canvas border-b border-brand-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="mb-10">
+      <div class="inline-block px-2.5 py-0.5 border border-brand-line bg-white font-mono text-[10px] uppercase font-bold text-brand-base mb-2">
+        Field Verification Records
+      </div>
+      <h2 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-tight text-brand-base">
+        On-Site Field Operations
+      </h2>
+      <p class="text-xs font-mono text-slate-600 mt-1 uppercase">
+        Real project photography from residential and commercial installations across Mumbai.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Photo 1 -->
+      <div class="border border-brand-line bg-white hard-shadow-spec">
+        <div class="px-3 py-2 bg-brand-base text-white font-mono text-[11px] uppercase flex justify-between">
+          <span>PUMP MANIFOLD OVERHAUL</span>
+          <span class="text-amber-400">LOG #01</span>
+        </div>
+        <div class="aspect-[16/10] overflow-hidden bg-brand-canvas border-b border-brand-line">
+          <img src="client_pump_manifold.jpg" alt="Fire pump station manifold overhaul and valve calibration by Samarth Fire" class="w-full h-full object-cover filter contrast-[1.02]" width="380" height="238">
+        </div>
+        <div class="p-4">
+          <h3 class="font-headline font-bold text-base uppercase text-brand-base mb-1">Booster Station Overhaul</h3>
+          <p class="text-xs font-body text-slate-600 leading-relaxed">
+            Multi-stage booster pump station manifold overhaul, check valve refurbishment, and automated diesel backup starting calibration.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="border border-brand-line bg-white hard-shadow-spec">
+        <div class="px-3 py-2 bg-brand-base text-white font-mono text-[11px] uppercase flex justify-between">
+          <span>VALVE CALIBRATION TEST</span>
+          <span class="text-amber-400">LOG #02</span>
+        </div>
+        <div class="aspect-[16/10] overflow-hidden bg-brand-canvas border-b border-brand-line">
+          <img src="client_hydrant_valve_test.jpg" alt="Technician inspecting landing valve and testing water pressure" class="w-full h-full object-cover filter contrast-[1.02]" width="380" height="238">
+        </div>
+        <div class="p-4">
+          <h3 class="font-headline font-bold text-base uppercase text-brand-base mb-1">Hydrostatic Flow Verification</h3>
+          <p class="text-xs font-body text-slate-600 leading-relaxed">
+            Static and running flow verification at terrace landing valves to ensure compliant discharge under statutory fire protection standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="border border-brand-line bg-white hard-shadow-spec">
+        <div class="px-3 py-2 bg-brand-base text-white font-mono text-[11px] uppercase flex justify-between">
+          <span>HOSE BOX SERVICING</span>
+          <span class="text-amber-400">LOG #03</span>
+        </div>
+        <div class="aspect-[16/10] overflow-hidden bg-brand-canvas border-b border-brand-line">
+          <img src="client_hose_box_service.jpg" alt="Corridor hose reel cabinet servicing and maintenance" class="w-full h-full object-cover filter contrast-[1.02]" width="380" height="238">
+        </div>
+        <div class="p-4">
+          <h3 class="font-headline font-bold text-base uppercase text-brand-base mb-1">Hose Reel Gland Maintenance</h3>
+          <p class="text-xs font-body text-slate-600 leading-relaxed">
+            Corridor landing box inspection, swivel drum gland packing lubrication, and branch shut-off nozzle readiness checks in residential towers.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. FREQUENTLY ASKED QUESTIONS -->
+<section class="py-14 bg-white border-b border-brand-line">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="mb-8">
+      <div class="inline-block px-2.5 py-0.5 border border-brand-line bg-brand-canvas font-mono text-[10px] uppercase font-bold text-brand-base mb-2">
+        Statutory Reference
+      </div>
+      <h2 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-tight text-brand-base">
+        Frequently Asked Technical Questions
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      
+      <details class="faq-item" open>
+        <summary>What is the functional difference between a Wet Riser and a Dry Riser?</summary>
+        <div class="faq-answer">
+          <p>
+            A <strong>Wet Riser</strong> is permanently charged with water under constant pressure from an underground/overhead reservoir and automated booster pumps, ready for instantaneous water delivery during an emergency.
+          </p>
+          <p>
+            A <strong>Dry Riser</strong> remains empty under normal building conditions and is only pressurized when the municipal fire brigade arrives and pumps water into the external four-way breeching inlet at the building entrance.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What hydraulic pressure must a residential fire hydrant system maintain?</summary>
+        <div class="faq-answer">
+          <p>
+            Under the National Building Code (NBC) 2016 Part 4 and Maharashtra Fire Prevention standards, high-rise wet riser networks must maintain the prescribed statutory running pressure at the topmost landing valve outlet while sustaining the designated hydrostatic test pressure across the riser column and pump manifold without leakage or pressure loss.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How frequently must fire fighting pumps and risers be inspected for Form B compliance?</summary>
+        <div class="faq-answer">
+          <p>
+            Pumps should undergo routine weekly test runs to ensure starter panels, batteries, and diesel engines engage without delay. Complete physical servicing, gland repacking, valve lubrication, and statutory <strong>Form B certification</strong> must be completed and submitted twice yearly (in January and July) under Maharashtra Fire Prevention and Life Safety Measures Act rules.
+          </p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- 7. CROSS-CAPABILITY DIRECTORY -->
+<section class="py-12 bg-brand-canvas border-b border-brand-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-3">
+      <div>
+        <div class="font-mono text-[10px] uppercase font-bold text-slate-500">Related Systems</div>
+        <h3 class="font-headline font-bold text-xl uppercase tracking-wide text-brand-base">Explore Related Disciplines</h3>
+      </div>
+      <a href="services.html" class="font-mono text-xs font-bold text-brand-red uppercase hover:underline">View All Services</a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="detection-alarm.html" class="p-4 bg-white border border-brand-line hover:border-brand-base hard-shadow-spec transition-colors block">
+        <span class="font-mono text-[10px] uppercase text-slate-500 block">Discipline 02</span>
+        <h4 class="font-headline font-bold text-base uppercase text-brand-base mt-1">Detection &amp; Alarm</h4>
+        <p class="text-xs text-slate-600 font-body mt-1">Smoke sensors, MCPs, and addressable panels.</p>
       </a>
-      <a href="quote.html" class="inline-flex items-center space-x-2 bg-red-950/40 border border-white/30 text-white hover:bg-red-950/60 px-6 py-3.5 rounded-xl font-headline text-xs font-bold uppercase tracking-wider transition-all focus-ring">
-        <span>Request Line-Item Quote</span>
+      <a href="extinguishing.html" class="p-4 bg-white border border-brand-line hover:border-brand-base hard-shadow-spec transition-colors block">
+        <span class="font-mono text-[10px] uppercase text-slate-500 block">Discipline 03</span>
+        <h4 class="font-headline font-bold text-base uppercase text-brand-base mt-1">Extinguishers</h4>
+        <p class="text-xs text-slate-600 font-body mt-1">ABC Powder, CO₂, Foam cylinders and HPT testing.</p>
+      </a>
+      <a href="passive-protection.html" class="p-4 bg-white border border-brand-line hover:border-brand-base hard-shadow-spec transition-colors block">
+        <span class="font-mono text-[10px] uppercase text-slate-500 block">Discipline 04</span>
+        <h4 class="font-headline font-bold text-base uppercase text-brand-base mt-1">Passive Protection</h4>
+        <p class="text-xs text-slate-600 font-body mt-1">Fire doors, intumescent seals, and shaft barriers.</p>
+      </a>
+      <a href="compliance-certification.html" class="p-4 bg-white border border-brand-line hover:border-brand-base hard-shadow-spec transition-colors block">
+        <span class="font-mono text-[10px] uppercase text-slate-500 block">Discipline 05</span>
+        <h4 class="font-headline font-bold text-base uppercase text-brand-base mt-1">Form B NOC Audits</h4>
+        <p class="text-xs text-slate-600 font-body mt-1">Bi-annual statutory inspections and renewals.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. DIRECT DISPATCH & QUOTATION STRIP -->
+<section class="py-12 bg-brand-base text-white border-t-4 border-brand-red">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+    <div class="inline-block px-2.5 py-0.5 border border-white/20 bg-white/10 font-mono text-[10px] uppercase font-bold text-amber-400">
+      Direct Field Consultation
+    </div>
+    <h3 class="font-headline font-extrabold text-2xl sm:text-3xl uppercase tracking-wide text-white">
+      Need a Firefighting System Installation or Overhaul?
+    </h3>
+    <p class="text-xs sm:text-sm text-slate-300 font-body max-w-xl mx-auto leading-relaxed">
+      Consult directly with Sameer M. Kangutkar and our certified engineering team for technical evaluations, site visits, and line-item quotations across Mumbai and the MMR.
+    </p>
+    <div class="pt-2 flex flex-wrap justify-center gap-4">
+      <a href="tel:+919967101472" class="inline-flex items-center justify-center bg-white text-brand-base hover:bg-slate-100 px-6 py-3 font-headline text-xs font-bold uppercase tracking-wider hard-shadow-spec transition-colors focus-ring">
+        <span>Call Dispatch: 99671 01472</span>
+      </a>
+      <a href="quote.html" class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-redDark text-white px-6 py-3 font-headline text-xs font-bold uppercase tracking-wider hard-shadow-spec transition-colors focus-ring">
+        <span>Request Line-Item Quotation</span>
       </a>
     </div>
   </div>

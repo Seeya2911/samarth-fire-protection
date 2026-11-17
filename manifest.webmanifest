@@ -1,0 +1,15 @@
+{
+  "name": "Samarth Fire Protection System",
+  "short_name": "Samarth Fire",
+  "description": "Class D licensed fire protection agency in Malad East, Mumbai.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#DC2626",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
