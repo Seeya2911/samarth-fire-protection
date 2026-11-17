@@ -115,16 +115,16 @@ module.exports = async function leadHandler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.EMAIL_FROM;
+  const from = process.env.EMAIL_FROM || 'onboarding@resend.dev';
   const recipients = (process.env.LEADS_TO || 'megaplast1701@gmail.com')
     .split(',')
     .map(value => value.trim())
     .filter(Boolean);
 
-  if (!apiKey || !from) {
+  if (!apiKey) {
     return res.status(503).json({
       success: false,
-      message: 'Email sending is not configured yet. Please call 99671 01472 or use WhatsApp while we finish setup.'
+      message: 'Email sending is not configured yet. Please check that RESEND_API_KEY is configured in Vercel Environment Variables.'
     });
   }
 
@@ -172,9 +172,10 @@ module.exports = async function leadHandler(req, res) {
     const result = await response.json().catch(() => ({}));
     if (!response.ok) {
       console.error('Resend email send failed:', response.status, result);
+      const resendMsg = (result && (result.message || result.error)) ? String(result.message || result.error) : '';
       return res.status(502).json({
         success: false,
-        message: 'The email could not be sent just now. Please use WhatsApp or call our team.'
+        message: resendMsg ? `Resend API Error: ${resendMsg}` : 'The email could not be sent just now. Please use WhatsApp or call our team.'
       });
     }
 
