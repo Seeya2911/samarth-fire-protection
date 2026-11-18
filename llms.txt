@@ -2,7 +2,7 @@
 
 > Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Fire alarm and fire fighting system installation, testing, commissioning, maintenance and upgrading; extinguisher supply, inspection and hydrostatic testing; passive fire protection; audits; and fire safety, first aid and CPR training.
 
-This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: 2026-11-17.
+This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: 2026-11-18.
 
 ## Key facts
 - **Legal/trade name:** Samarth Fire Protection System.
@@ -44,7 +44,7 @@ This file follows the llms.txt convention. A plain-text copy of public service a
 - [Fire Safety FAQs](https://samarthfire.in/resources): Clear answers about Maharashtra Form A and Form B, fire extinguisher checks under IS 2190:2024, hydrant maintenance, fire alarms, audits, AMC and fire drills.
 - [Fire Safety Glossary](https://samarthfire.in/glossary): Plain-English definitions of fire safety terms — Form A, Form B, wet riser, addressable panel, HPT, passive protection and more — used across Mumbai fire compliance.
 - [Mumbai-Based Fire Safety Services. Pan-India Extinguisher Support.](https://samarthfire.in/service-areas): Mumbai-based Samarth Fire handles local fire safety projects and Pan-India enquiries for extinguisher supply and maintenance.
-- [Fire Safety for the Places Where People Work, Shop and Live](https://samarthfire.in/industries): Fire systems, extinguisher supply, AMC, audits and training for factories, malls, offices, hospitals, schools and housing societies.
+- [Fire Safety for Industries, Commercial & Residential](https://samarthfire.in/industries): Turnkey fire protection systems, AMC maintenance, extinguishers, audits and compliance for factories, business parks, malls, hospitals, and housing societies in Mumbai.
 - [Fire Safety Projects & Engineering Case Logs Mumbai](https://samarthfire.in/projects): Authentic project logs: F Residency alarm line rectification, high-rise booster pump station overhaul, and CHS evacuation & CPR drill. Verifiable outcomes.
 - [The Fire Safety Audit & Compliance Process](https://samarthfire.in/process): Understand our 7-step fire safety lifecycle: Assess, Identify, Recommend, Quote, Execute, Test, and Maintain.
 - [Blogs](https://samarthfire.in/blog): Practical fire safety guides on Maharashtra Form B, extinguisher checks, hydrants, alarms, audits, AMC, evacuation drills and first aid.

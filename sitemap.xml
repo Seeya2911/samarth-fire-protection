@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://samarthfire.in/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
@@ -24,15 +24,15 @@
   </url>
   <url>
     <loc>https://samarthfire.in/industries</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/industry_hero_overview.jpg</image:loc></image:image>
     <image:image><image:loc>https://samarthfire.in/industry_card_oil_gas_petroleum.jpg</image:loc></image:image>
     <image:image><image:loc>https://samarthfire.in/industry_card_shopping_malls_retail.jpg</image:loc></image:image>
     <image:image><image:loc>https://samarthfire.in/industry_card_factories_warehouses.jpg</image:loc></image:image>
     <image:image><image:loc>https://samarthfire.in/industry_card_offices_business_parks.jpg</image:loc></image:image>
     <image:image><image:loc>https://samarthfire.in/industry_card_hospitals_institutions.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_housing_societies_towers.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/resources</loc>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/about</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/about_team_training_session.jpg</image:loc></image:image>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/compliance-certification</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
@@ -108,7 +108,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/detection-alarm</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
@@ -117,7 +117,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/extinguishing</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/fire-fighting</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/founder</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/about_founder_coaching.jpg</image:loc></image:image>
@@ -288,7 +288,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/passive-protection</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
@@ -303,7 +303,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/projects</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
@@ -320,7 +320,7 @@
   </url>
   <url>
     <loc>https://samarthfire.in/training-preparedness</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>

@@ -47,7 +47,7 @@ const CATEGORIES = {
   firefighting: { label: 'Hydrants & Pumps', chip: 'bg-rose-50 text-rose-700 border-rose-200' },
   alarm: { label: 'Fire Alarms', chip: 'bg-red-50 text-red-700 border-red-200' },
   extinguishers: { label: 'Extinguishers', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
-  training: { label: 'Training & First Aid', chip: 'bg-orange-50 text-orange-700 border-orange-200' },
+  training: { label: 'Training & First Aid', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
   passive: { label: 'Passive Protection', chip: 'bg-stone-100 text-stone-700 border-stone-200' },
   buying: { label: 'Equipment & AMC', chip: 'bg-slate-100 text-slate-700 border-slate-200' }
 };
@@ -375,7 +375,7 @@ const CTA_BLOCK = (heading, text) => `
     
     <!-- Action Buttons -->
     <div class="flex flex-wrap gap-3 mt-6">
-      <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white rounded-xl px-5 py-3 text-sm font-bold shadow-md transition-all">Get a Quote &rarr;</a>
+      <a href="quote.html" class="inline-flex items-center justify-center bg-[#9E2127] hover:bg-[#851B22] text-white rounded-xl px-5 py-3 text-sm font-bold shadow-md transition-all">Get a Quote &rarr;</a>
       <a href="contact.html" class="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 text-white border border-white/20 rounded-xl px-5 py-3 text-sm font-bold transition-all">Contact Us</a>
       <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl px-4 py-3 text-sm font-bold transition-all">
         <svg class="h-4 w-4 mr-1.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.955 14.162.95 11.536.95c-5.445 0-9.87 4.37-9.874 9.8.001 2.036.541 4.021 1.562 5.766L2.24 20.25l4.407-1.096zM17.95 14.93c-.347-.172-2.054-1.002-2.37-1.117-.318-.116-.55-.173-.78.172-.23.347-.893 1.117-1.094 1.348-.2.23-.401.259-.748.087-.348-.172-1.468-.536-2.793-1.707-1.031-.909-1.727-2.03-1.929-2.375-.202-.347-.021-.534.152-.706.156-.154.347-.4.52-.6.174-.2.23-.347.348-.577.117-.23.058-.431-.029-.603-.087-.172-.78-1.859-1.069-2.55-.282-.676-.569-.587-.78-.598-.201-.01-.432-.011-.662-.011-.23 0-.603.087-.92.431-.317.347-1.21 1.176-1.21 2.87 0 1.695 1.238 3.33 1.41 3.56.173.229 2.436 3.676 5.899 5.147.824.35 1.467.559 1.97.717.828.26 1.58.224 2.179.135.667-.099 2.054-.83 2.344-1.63.29-.8.29-1.488.203-1.63-.087-.142-.318-.23-.665-.402z"/></svg>
@@ -412,7 +412,7 @@ function renderGuide(page, body, toc, readMin, related) {
   }).join('');
   const hero = fm.image ? `<figure class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm mb-10 bg-slate-100"><img src="${fm.image}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full max-h-[460px] object-cover" data-sizes="(min-width: 1152px) 1100px, 100vw"></figure>` : '';
   return `
-<section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-12 sm:py-16 border-b border-slate-200">
+<section class="bg-gradient-to-br from-[#FAF7F2] via-[#F6ECE8] to-[#F1E6D8] py-12 sm:py-16 border-b border-slate-200">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><a href="blog.html" class="hover:text-red-700">Blogs</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
     <span class="inline-flex items-center px-3 py-1 rounded-full border text-[11px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
@@ -470,7 +470,7 @@ function renderPlainPage(page, body, toc) {
   const fm = page.fm;
   const tocHtml = toc.length > 3 ? `<nav aria-label="Contents" class="mt-8 flex flex-wrap gap-2">${toc.map(t => `<a href="#${t.id}" class="text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-red-300 hover:text-red-700">${esc(t.text)}</a>`).join('')}</nav>` : '';
   return `
-<section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-14 sm:py-20 border-b border-slate-200">
+<section class="bg-gradient-to-br from-[#FAF7F2] via-[#F6ECE8] to-[#F1E6D8] py-14 sm:py-20 border-b border-slate-200">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-5"><a href="index.html" class="hover:text-red-700">Home</a> <span class="mx-2">/</span><span class="text-slate-700">${esc(fm.crumb || fm.title.split('|')[0].trim())}</span></nav>
     <h1 class="font-headline font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-900 max-w-4xl">${esc(fm.h1 || fm.title.split('|')[0].trim())}</h1>

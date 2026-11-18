@@ -485,27 +485,6 @@
       }
     ]
   },
-  "industry_hero_overview.jpg": {
-    "width": 1280,
-    "height": 960,
-    "variants": [
-      {
-        "width": 480,
-        "webp": "industry_hero_overview-480.webp",
-        "avif": "industry_hero_overview-480.avif"
-      },
-      {
-        "width": 800,
-        "webp": "industry_hero_overview-800.webp",
-        "avif": "industry_hero_overview-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "industry_hero_overview-1200.webp",
-        "avif": "industry_hero_overview-1200.avif"
-      }
-    ]
-  },
   "license_page_1.png": {
     "width": 1241,
     "height": 1754,
