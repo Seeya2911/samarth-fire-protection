@@ -45,10 +45,10 @@ const WITHHELD_IMAGES = ['client_society_assembly.jpg', 'client_cpr_training.jpg
 const CATEGORIES = {
   compliance: { label: 'Compliance & Forms', chip: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
   firefighting: { label: 'Hydrants & Pumps', chip: 'bg-rose-50 text-rose-700 border-rose-200' },
-  alarm: { label: 'Fire Alarms', chip: 'bg-blue-50 text-blue-700 border-blue-200' },
+  alarm: { label: 'Fire Alarms', chip: 'bg-red-50 text-red-700 border-red-200' },
   extinguishers: { label: 'Extinguishers', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
   training: { label: 'Training & First Aid', chip: 'bg-orange-50 text-orange-700 border-orange-200' },
-  passive: { label: 'Passive Protection', chip: 'bg-purple-50 text-purple-700 border-purple-200' },
+  passive: { label: 'Passive Protection', chip: 'bg-stone-100 text-stone-700 border-stone-200' },
   buying: { label: 'Equipment & AMC', chip: 'bg-slate-100 text-slate-700 border-slate-200' }
 };
 
@@ -364,14 +364,35 @@ function buildSchema(page) {
 
 /* ------------------------------------------------------------------ guide / page templates */
 const CTA_BLOCK = (heading, text) => `
-<div class="mt-12 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 text-white p-7 sm:p-9 relative overflow-hidden">
-  <div class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-orange-500/20 blur-3xl pointer-events-none"></div>
-  <h2 class="font-headline font-bold text-xl sm:text-2xl text-white">${heading}</h2>
-  <p class="text-sm sm:text-base text-slate-300 mt-2 leading-relaxed max-w-2xl">${text}</p>
-  <div class="flex flex-wrap gap-3 mt-6 relative">
-    <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white rounded-xl px-5 py-3 text-sm font-bold shadow-lg">Request a quotation</a>
-    <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#25D366] hover:opacity-90 text-white rounded-xl px-5 py-3 text-sm font-bold">WhatsApp 99671 01472</a>
-    <a href="tel:+919967101472" class="inline-flex items-center justify-center border border-slate-600 hover:bg-slate-700 text-white rounded-xl px-5 py-3 text-sm font-bold">Call now</a>
+<div class="mt-12 rounded-3xl bg-[#2E2422] text-white p-7 sm:p-9 relative overflow-hidden border border-stone-800 shadow-xl">
+  <div class="absolute -top-12 -right-12 w-56 h-56 rounded-full bg-red-600/15 blur-3xl pointer-events-none"></div>
+  <div class="relative z-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider mb-3">
+      <span>Class D Licensed Agency</span> · <span>Directorate of Maharashtra Fire Services</span>
+    </div>
+    <h2 class="font-headline font-bold text-xl sm:text-2xl text-white tracking-tight">${heading}</h2>
+    <p class="text-sm sm:text-base text-stone-300 mt-2 leading-relaxed max-w-2xl">${text}</p>
+    
+    <!-- Action Buttons -->
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="quote.html" class="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white rounded-xl px-5 py-3 text-sm font-bold shadow-md transition-all">Get a Quote &rarr;</a>
+      <a href="contact.html" class="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 text-white border border-white/20 rounded-xl px-5 py-3 text-sm font-bold transition-all">Contact Us</a>
+      <a href="https://wa.me/919967101472" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl px-4 py-3 text-sm font-bold transition-all">
+        <svg class="h-4 w-4 mr-1.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.955 14.162.95 11.536.95c-5.445 0-9.87 4.37-9.874 9.8.001 2.036.541 4.021 1.562 5.766L2.24 20.25l4.407-1.096zM17.95 14.93c-.347-.172-2.054-1.002-2.37-1.117-.318-.116-.55-.173-.78.172-.23.347-.893 1.117-1.094 1.348-.2.23-.401.259-.748.087-.348-.172-1.468-.536-2.793-1.707-1.031-.909-1.727-2.03-1.929-2.375-.202-.347-.021-.534.152-.706.156-.154.347-.4.52-.6.174-.2.23-.347.348-.577.117-.23.058-.431-.029-.603-.087-.172-.78-1.859-1.069-2.55-.282-.676-.569-.587-.78-.598-.201-.01-.432-.011-.662-.011-.23 0-.603.087-.92.431-.317.347-1.21 1.176-1.21 2.87 0 1.695 1.238 3.33 1.41 3.56.173.229 2.436 3.676 5.899 5.147.824.35 1.467.559 1.97.717.828.26 1.58.224 2.179.135.667-.099 2.054-.83 2.344-1.63.29-.8.29-1.488.203-1.63-.087-.142-.318-.23-.665-.402z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <!-- Company Contact Details -->
+    <div class="mt-6 pt-5 border-t border-white/10 flex flex-wrap gap-x-6 gap-y-2 text-xs font-mono text-stone-300">
+      <span class="flex items-center gap-1.5">
+        <strong class="text-white">Email:</strong> <a href="mailto:samarthfireprotectionsystem@gmail.com" class="hover:text-amber-300 underline">samarthfireprotectionsystem@gmail.com</a>
+      </span>
+      <span class="flex items-center gap-1.5">
+        <strong class="text-white">Call:</strong> <a href="tel:+919967101472" class="hover:text-amber-300 underline">+91 9967101472</a> / <a href="tel:+918097247249" class="hover:text-amber-300 underline">+91 8097247249</a>
+      </span>
+      <span class="text-stone-400">Malad (East), Mumbai – 400097</span>
+    </div>
   </div>
 </div>`;
 
@@ -385,7 +406,10 @@ const AUTHOR_BLOCK = `
 function renderGuide(page, body, toc, readMin, related) {
   const fm = page.fm;
   const cat = CATEGORIES[fm.category] || CATEGORIES.compliance;
-  const tocHtml = toc.map((t, i) => `<a class="block text-sm text-slate-600 hover:text-red-700 py-1.5 leading-snug" href="#${t.id}">${i + 1}. ${esc(t.text)}</a>`).join('');
+  const tocHtml = toc.map((t, i) => {
+    const prefix = /^\d+[\.\)]\s*/.test(t.text) ? '' : `${i + 1}. `;
+    return `<a class="block text-sm text-slate-600 hover:text-red-700 py-1.5 leading-snug" href="#${t.id}">${prefix}${esc(t.text)}</a>`;
+  }).join('');
   const hero = fm.image ? `<figure class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm mb-10 bg-slate-100"><img src="${fm.image}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full max-h-[460px] object-cover" data-sizes="(min-width: 1152px) 1100px, 100vw"></figure>` : '';
   return `
 <section class="bg-gradient-to-br from-red-50 via-orange-50/40 to-white py-12 sm:py-16 border-b border-slate-200">
@@ -413,7 +437,7 @@ function renderGuide(page, body, toc, readMin, related) {
     </aside>
     <article class="min-w-0">
       <div class="prose-guide">${body}</div>
-      ${CTA_BLOCK(esc(fm.ctaHeading || 'Need a building-specific assessment?'), esc(fm.ctaText || 'Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.'))}
+      ${CTA_BLOCK(esc(fm.ctaHeading || 'Ready to Protect Your Facility or Building?'), esc(fm.ctaText || 'Samarth Fire Protection System provides licensed system installation, preventative maintenance (AMC), extinguisher servicing and Maharashtra Form B certification across Mumbai & MMR.'))}
       ${AUTHOR_BLOCK}
     </article>
   </div>
@@ -433,7 +457,7 @@ function articleCard(a, withData) {
   const fm = a.fm;
   const cat = CATEGORIES[fm.category] || CATEGORIES.compliance;
   return `<article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col"${withData ? ' data-cat="' + (fm.category || '') + '"' : ''}>
-  <a href="${a.slug}.html" class="block aspect-[16/10] overflow-hidden bg-slate-100" tabindex="-1" aria-hidden="true"><img src="${fm.image || 'hero_panel.jpg'}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"></a>
+  <a href="${a.slug}.html" class="block aspect-[16/10] overflow-hidden bg-slate-100" tabindex="-1" aria-hidden="true"><img src="${fm.image || 'default_blog_fallback_hero.jpg'}" alt="${esc(fm.imageAlt || fm.title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"></a>
   <div class="p-5 flex flex-col flex-1">
     <span class="self-start inline-flex px-2.5 py-0.5 rounded-full border text-[10px] font-bold uppercase tracking-wider ${cat.chip}">${cat.label}</span>
     <h3 class="font-headline font-bold text-lg text-slate-900 mt-3 leading-snug"><a href="${a.slug}.html" class="hover:text-red-700 transition-colors">${esc(fm.cardTitle || fm.crumb || fm.title.split('|')[0].trim())}</a></h3>
@@ -456,22 +480,54 @@ function renderPlainPage(page, body, toc) {
 </section>
 <div class="py-12 sm:py-16 bg-white"><div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="prose-guide">${body}</div>
-  ${CTA_BLOCK(esc(fm.ctaHeading || 'Talk to a licensed fire agency in Malad East'), esc(fm.ctaText || 'Tell us about your building and we will confirm scope, statutory requirements and a quotation after a site assessment.'))}
+  ${(fm.noCta || page.slug === 'resources') ? '' : CTA_BLOCK(esc(fm.ctaHeading || 'Ready to Protect Your Facility or Building?'), esc(fm.ctaText || 'Tell us about your building and we will confirm scope, statutory requirements and a quotation after a site review.'))}
 </div></div>`;
 }
 
 // Extract section anchors for HTML-based guide templates, as well as Markdown guides.
-function extractHtmlToc(html) {
-  const entries = [];
+function extractHtmlTocAndProcess(html) {
+  // 1. Check for existing <section id="...">...<h2>...</h2>
+  const sectionEntries = [];
   const re = /<section\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/section>/gi;
   let match;
   while ((match = re.exec(html))) {
     const heading = match[2].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i);
     if (!heading) continue;
     const label = stripTags(heading[1]).replace(/\s+/g, ' ').trim();
-    if (label) entries.push({ id: match[1], text: label });
+    if (label) sectionEntries.push({ id: match[1], text: label });
   }
-  return entries;
+
+  if (sectionEntries.length > 0) {
+    return { html, toc: sectionEntries };
+  }
+
+  // 2. If no section tags found, process <h2> tags directly and inject ids if missing
+  const entries = [];
+  const usedIds = new Set();
+  let counter = 0;
+  const processedHtml = html.replace(/<h2(\b[^>]*)>([\s\S]*?)<\/h2>/gi, (m, attrs, inner) => {
+    const label = stripTags(inner).replace(/\s+/g, ' ').trim();
+    if (!label) return m;
+
+    let idMatch = attrs.match(/\bid=["']([^"']+)["']/i);
+    let id;
+    if (idMatch) {
+      id = idMatch[1];
+    } else {
+      let baseId = slugify(label) || ('heading-' + (++counter));
+      id = baseId;
+      let dup = 1;
+      while (usedIds.has(id)) {
+        id = `${baseId}-${++dup}`;
+      }
+      attrs = attrs + ` id="${id}" class="scroll-mt-28"`;
+    }
+    usedIds.add(id);
+    entries.push({ id, text: label });
+    return `<h2${attrs}>${inner}</h2>`;
+  });
+
+  return { html: processedHtml, toc: entries };
 }
 
 /* ------------------------------------------------------------------ load pages */
@@ -499,7 +555,8 @@ for (const p of pages) {
     const r = renderMarkdown(body);
     body = r.html; p.toc = r.toc;
   } else if (p.fm.template === 'guide') {
-    p.toc = extractHtmlToc(body);
+    const r = extractHtmlTocAndProcess(body);
+    body = r.html; p.toc = r.toc;
   }
   p.body = body.replace(/<main\b/gi, '<div').replace(/<\/main>/gi, '</div>'); // layout already provides <main>
   p.faqs = extractFaqs(p.body);
@@ -528,7 +585,7 @@ for (const p of pages) {
     p.faqs = extractFaqs(content);
   }
 
-  p.ogImage = withAbs(fm.ogImage || (imgManifest.__og ? imgManifest.__og.file : 'client_hydrant_valve_test.jpg'));
+  p.ogImage = withAbs(fm.ogImage || (imgManifest.__og ? imgManifest.__og.file : 'homepage_hero_hydrant_inspection.jpg'));
   if (fm.image && !fm.ogImage) p.ogImage = withAbs(fm.image);
   p.isArticle = fm.type === 'article';
 

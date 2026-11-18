@@ -5,10 +5,10 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/blog</loc>
@@ -27,12 +27,12 @@
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/industry-overview.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/industry-petroleum.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/industry-malls.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/industry-industrial.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/industry-offices.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/industry-healthcare-education.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_hero_overview.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_oil_gas_petroleum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_shopping_malls_retail.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_factories_warehouses.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_offices_business_parks.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/industry_card_hospitals_institutions.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/resources</loc>
@@ -51,12 +51,12 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_founder_coaching.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_riser_installation.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/about_team_training_session.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/about_founder_coaching.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/audit</loc>
@@ -69,14 +69,14 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_highrise_assembly.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_building_evacuation_assembly.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/building-fire-safety-audit-checklist</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-fire-safety-audit.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_building_fire_safety_audit.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/certifications</loc>
@@ -89,9 +89,9 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_box_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/contact</loc>
@@ -104,160 +104,160 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/intent_repair.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_conventional_vs_addressable_alarm.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/detection-alarm</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_riser_installation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/extinguishing</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hose_box_service.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/factory-fire-safety-checklist</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/service_fighting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/services_fire_hydrant_fighting.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-alarm-amc-checklist</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/service_alarm.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/services_alarm_panel_system.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-alarm-fault-response</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-alarm-panel-fault-what-to-do</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/service_alarm.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/services_alarm_panel_system.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-extinguisher-inspection-checklist-india</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-extinguisher-inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_extinguisher_inspection.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-extinguisher-inspection-guide</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_extinguisher_lecture.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/about_team_training_session.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-extinguisher-refilling-inspection</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/service_extinguisher.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/services_extinguisher_refilling.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-extinguisher-types-guide</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hose_box_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-fighting</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_box_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-hydrant-and-hose-reel-difference</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-fire-hydrant-hose-reel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_hydrant_hose_reel_difference.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-hydrant-maintenance-checklist</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-hydrant-maintenance-checklist-building</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-hydrant-maintenance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_hydrant_maintenance_checklist.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-safety-amc-checklist</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-amc-checklist.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_safety_amc_checklist.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-safety-audit-building</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-safety-audit-vs-fire-noc</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-audit-vs-noc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_safety_audit_vs_noc.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/fire-safety-training-for-industries</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-industrial-fire-training.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_industrial_fire_safety_training.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/form-b-fire-safety-maharashtra</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/service_compliance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/services_compliance_form_b.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/form-b-fire-safety-maharashtra-2026</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-form-b.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_form_b_compliance_maharashtra.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/founder</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_founder_coaching.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/about_founder_coaching.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/glossary</loc>
@@ -270,30 +270,30 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_drill_live.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_live_mock_drill.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/housing-society-fire-drill-planning-guide</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-housing-fire-drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_housing_society_fire_drill_planning.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/housing-society-fire-safety-checklist</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_lobby_demo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_housing_society_lobby_demo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/passive-protection</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_riser_installation.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_box_service.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_hose_box_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/process</loc>
@@ -306,15 +306,15 @@
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_pump_manifold.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_riser_installation.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_drill_live.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_pump_manifold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_live_mock_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/quote</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -323,29 +323,29 @@
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://samarthfire.in/client_hose_reel_drill.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hydrant_valve_test.jpg</image:loc></image:image>
-    <image:image><image:loc>https://samarthfire.in/client_hosereel_floor_service.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_hose_drill.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/homepage_field_alarm_tracing.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/wet-riser-hydrant-system-guide</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_riser_installation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/projects_riser_pipe_installation.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/workplace-first-aid-cpr-training</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/client_youth_training.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_fire_safety_youth_training.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samarthfire.in/workplace-first-aid-cpr-training-guide</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://samarthfire.in/blog-first-aid-cpr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://samarthfire.in/blog_workplace_first_aid_cpr_training.jpg</image:loc></image:image>
   </url>
 </urlset>

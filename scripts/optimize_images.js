@@ -66,7 +66,7 @@ const WITHHELD = new Set(['client_society_assembly.jpg', 'client_cpr_training.jp
   }
 
   // Social share image: 1200x630 crop from an approved field photo
-  const ogName = 'client_hydrant_valve_test.jpg';
+  const ogName = 'homepage_hero_hydrant_inspection.jpg';
   const ogPageSource = path.join(root, 'src', 'pages', ogName);
   const ogSrc = fs.existsSync(ogPageSource) ? ogPageSource : path.join(root, ogName);
   await sharp(ogSrc).resize(1200, 630, { fit: 'cover', position: 'attention' }).jpeg({ quality: 82, mozjpeg: true }).toFile(path.join(outDir, 'og-default.jpg'));

@@ -4135,6 +4135,7 @@ People & training
 
 ### What is the difference between Form A and Form B?
 Form A is the licensed agency’s certificate regarding compliance of the fire-prevention and life-safety measures required in a building or part of it; it is commonly relevant to the installation or approval stage. Form B is the periodic certificate about maintenance of those measures during the preceding six months. They have different purposes. The building’s approved fire plan and current Maharashtra rules determine which systems and records apply.
+Learn more about our Form A and Form B certification services or read the in-depth Maharashtra Form B guide .
 See the Maharashtra Fire & Emergency Services Acts and Rules and the Directorate circulars .
 
 
@@ -4179,6 +4180,7 @@ Form B sits within the licensed-agency framework under Maharashtra fire-safety l
 
 ### How often should a portable fire extinguisher be checked?
 IS 2190:2024 says extinguishers should be checked when first placed in service and thereafter at approximately 90-day intervals, with more frequent checks where circumstances require. Checks include location, access, visibility, legible instructions, seals, fullness, damage or leakage, the pressure indicator where provided, and the inspection and HPT tags. Follow the current standard and the equipment manufacturer’s instructions.
+Explore our fire extinguisher refilling and HPT services and guide to fire extinguisher types .
 Reference: BIS IS 2190:2024 .
 
 
@@ -4211,11 +4213,13 @@ Do not apply a water jet to energised electrical equipment or burning oil. It ca
 
 ### What should a building fire safety audit cover?
 A building-specific review can cover the installed fire pumps, hydrants and wet risers, hose reels, sprinklers, extinguishers, alarm and detection systems, fire doors, exits, emergency lighting, signage, access routes, housekeeping and maintenance records. The scope depends on the building’s use, height, approved fire plans and applicable requirements. A generic checklist cannot confirm that a building is compliant.
+Review our building fire safety audit checklist or request a professional site audit .
 
 
 
 ### Is there one pressure value for every fire hydrant system?
 No. Required pressure and flow depend on the building, system design, hydraulic calculations, pump duty, outlet location, approved documents and applicable standards. Use the design and test criteria for that specific installation. Do not set or advertise a universal pressure value for every building.
+Read our technical guide on wet riser and hydrant systems or see our fire fighting installation details .
 
 
 
@@ -4226,6 +4230,7 @@ An AMC should clearly state which systems and locations are covered, the inspect
 
 ### What should we do when a fire alarm panel shows a fault?
 Do not switch off, bypass or repeatedly reset a panel simply to silence the buzzer. Follow your building’s response plan, check for signs of an actual fire from a safe location, record the message or affected zone/device, inform the responsible person and arrange a competent technician. If there is smoke, heat or a suspected fire, activate the emergency response and evacuate as required.
+Follow our step-by-step fire alarm panel fault response guide or view our fire alarm system services .
 
 
 
@@ -4246,6 +4251,7 @@ A wet riser is normally kept charged with water and connected to the building’
 
 ### What should a housing society fire drill include?
 A practical drill should follow the building’s approved emergency plan. It normally includes a coordinator and floor wardens, resident communication, safe exit routes, an assembly point, arrangements for people needing assistance, headcount and a written review of what should improve. Equipment demonstrations should be planned and supervised by competent trainers. The Directorate’s July 2026 Form B guidance also refers to periodic mock drills and supporting records.
+Read our step-by-step housing society fire drill planning guide or see our fire training & demonstration sessions .
 
 
 
@@ -5110,13 +5116,13 @@ Record the use of the building, height, floor count, basements, high-risk rooms,
 
 ## 3. Review active fire protection systems
 
-Check the systems provided for the building: fire pumps, hydrants and risers, landing valves, hose reels, sprinklers, extinguishers, fire alarm panels, detectors, manual call points and any special suppression system. Look for visible damage, missing equipment, leakage, inaccessible cabinets, recurring alarms and records of testing or maintenance.
+Check the systems provided for the building: fire pumps, hydrants and risers , landing valves, hose reels, sprinklers, extinguishers , fire alarm panels , detectors, manual call points and any special suppression system. Look for visible damage, missing equipment, leakage, inaccessible cabinets, recurring alarms and records of testing or maintenance.
 
 
 
 ## 4. Review passive fire protection
 
-Look for fire doors that are wedged open or damaged, missing door closers, unsealed service penetrations, damaged fire barriers and any change that may have compromised a protected shaft or compartment. Repairs or alterations should use products and methods suitable for the specific fire-rated construction and approved design.
+Look for fire doors that are wedged open or damaged, missing door closers, unsealed service penetrations, damaged fire barriers and any change that may have compromised a protected shaft or compartment. See our passive fire protection range for fire doors, barriers and fire stop solutions.
 
 
 
@@ -5139,7 +5145,7 @@ Look for fire doors that are wedged open or damaged, missing door closers, unsea
 
 ## 6. Check people, training and records
 
-Confirm who is responsible for raising an alarm, guiding occupants, checking assigned areas and meeting emergency responders. Review resident or staff training, fire drill reports, equipment demonstrations, service reports, fault logs and current emergency contact details.
+Confirm who is responsible for raising an alarm, guiding occupants, checking assigned areas and meeting emergency responders. Review resident or staff training, fire drill reports , equipment demonstrations, service reports, fault logs and current emergency contact details.
 
 
 
@@ -5151,7 +5157,7 @@ For every defect, record the location, evidence, risk, immediate action, permane
 
 ## Audit, statutory inspection and certification are not interchangeable
 
-A site review can identify risks and maintenance gaps, but it does not automatically replace statutory approvals or prescribed certificates. In Maharashtra, Form A and Form B have specific roles under the fire-safety framework. Check the official Acts and Rules and the latest Directorate circulars for current requirements.
+A site review can identify risks and maintenance gaps, but it does not automatically replace statutory approvals or prescribed certificates. In Maharashtra, Form A and Form B (see our Form B compliance guide ) have specific roles under the fire-safety framework. Check the official Acts and Rules and the latest Directorate circulars for current requirements.
 
 
 ---
@@ -6007,7 +6013,7 @@ A housing society committee can use this checklist to identify visible issues an
 
 ## 2. Check the fire safety equipment
 
-Make a list of the equipment installed in the building. Depending on the approved plan, this may include fire pumps, hydrants, wet risers, landing valves, hose reels, sprinklers, extinguishers, fire alarm panels, detectors and manual call points. Check that the equipment is visible, accessible and not obviously damaged. Keep service and test records.
+Make a list of the equipment installed in the building. Depending on the approved plan, this may include fire pumps, hydrants and wet risers , landing valves, hose reels, sprinklers, extinguishers , fire alarm panels , detectors and manual call points. Check that the equipment is visible, accessible and not obviously damaged. Keep service and test records.
 
 
 
@@ -6025,7 +6031,7 @@ Keep the pump room locked against unauthorised access but available to responsib
 
 ## 4. Check fire extinguishers
 
-Confirm extinguishers are in their assigned locations, easy to reach, correctly identified and visibly in serviceable condition. Check their inspection tags and service records. The correct type and number depend on the risks and layout of the building; do not assume one extinguisher type is suitable for every area.
+Confirm extinguishers are in their assigned locations, easy to reach, correctly identified and visibly in serviceable condition. Check their inspection tags and service records. See our fire extinguisher refilling and HPT services ; do not assume one extinguisher type is suitable for every area.
 
 
 
@@ -6052,7 +6058,7 @@ Confirm extinguishers are in their assigned locations, easy to reach, correctly 
 
 ## 6. Prepare residents, guards and staff
 
-Make sure people know how to raise the alarm, which exits to use, where the assembly point is and whom to contact. Agree how assistance will be arranged for older residents, children and people who may need help using stairs. Train security staff to report faults and follow the building’s emergency plan rather than improvise repairs.
+Make sure people know how to raise the alarm, which exits to use, where the assembly point is and whom to contact (see our building evacuation plan and fire drill guide ). Agree how assistance will be arranged for older residents, children and people who may need help using stairs. Train security staff to report faults and follow the building’s emergency plan rather than improvise repairs.
 
 
 
@@ -6061,7 +6067,7 @@ Make sure people know how to raise the alarm, which exits to use, where the asse
 
 ## 7. Keep the records together
 
-Keep the approved fire plan, equipment list, AMC/work orders, pump and system test reports, extinguisher service tags, fault register, drill records and statutory documents in one place. Give the committee and facility manager a way to see which defects are still open.
+Keep the approved fire plan, equipment list, AMC work orders , pump and system test reports, extinguisher service tags, fault register, drill records and statutory Form B compliance documents in one place. Give the committee and facility manager a way to see which defects are still open.
 
 
 
@@ -6595,13 +6601,20 @@ This is general guidance. It does not replace emergency services, the building�
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.
@@ -6681,13 +6694,20 @@ This guide is an awareness checklist, not a substitute for servicing, refilling 
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.
@@ -6772,13 +6792,20 @@ Hydrant testing can create high-pressure water discharge and can affect fire-sys
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.
@@ -6862,13 +6889,20 @@ This checklist is an educational starting point, not a statutory audit format an
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.
@@ -6965,13 +6999,20 @@ This guide is general information, not legal advice or a site-specific certifica
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.
@@ -7055,13 +7096,20 @@ This guide is general resident-awareness material, not a replacement for a site-
 
 
 
+Class D Licensed Agency · Directorate of Maharashtra Fire Services
 
-## Need a building-specific assessment?
+## Ready to Discuss Your Fire Safety Requirements?
 
-Samarth Fire Protection System provides fire-safety assessment, system maintenance and compliance support across Mumbai and the wider MMR. Scope and statutory requirements are confirmed for each property.
+Samarth Fire Protection System provides licensed system installation, maintenance (AMC), testing and compliance certification across Mumbai and the wider MMR.
 
-Request an assessment Call 99671 01472
+Get a Quote &rarr;
+Contact Us
 
+WhatsApp
+
+Email: samarthfireprotectionsystem@gmail.com
+Call: +91 9967101472
+Malad (East), Mumbai – 400097
 
 
 This article is for general information. It is not legal advice, an emergency-response instruction, a substitute for approved site documentation or a fire-safety certificate.

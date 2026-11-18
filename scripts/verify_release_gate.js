@@ -315,7 +315,7 @@ if (llmsHasClientNames) {
 // Check sitemap.xml for BPA-01
 const sitemapTxt = fs.readFileSync(path.join(rootDir, 'sitemap.xml'), 'utf8');
 assert(!sitemapTxt.includes('client_cpr_training.jpg'), 'sitemap.xml still lists client_cpr_training.jpg (BPA-01)', 'Fallback BPA-01');
-assert(sitemapTxt.includes('client_hose_reel_drill.jpg'), 'sitemap.xml does not list replacement client_hose_reel_drill.jpg (BPA-01)', 'Fallback BPA-01');
+assert(sitemapTxt.includes('homepage_field_hose_drill.jpg'), 'sitemap.xml does not list replacement homepage_field_hose_drill.jpg (BPA-01)', 'Fallback BPA-01');
 
 console.log('\n===============================================================');
 console.log(`TOTAL CHECKS: ${report.summary.totalTests}`);
