@@ -8,7 +8,7 @@
 
 Source: https://samarthfire.in/
 Title: Fire Safety Systems, AMC & Training in Mumbai | Samarth Fire
-Last updated: 2026-11-18
+Last updated: 2026-11-19
 
 Fire Safety Installation • Maintenance • Training
 
@@ -196,40 +196,165 @@ Housing Societies & Residential Buildings
 What we do
 
 
-## Fire Safety Services
+## Fire Protection Equipment & Services
 
-From new installations to repairs, regular maintenance and training, we help you look after the fire safety systems at your property.
-
-
+From firefighting equipment and automatic detection to ongoing maintenance, safety training and demonstrations, we support the fire protection needs described in our company catalogue.
 
 
 
-### Fire Alarm Systems
-Installation, testing, repairs, maintenance and AMC for fire alarm panels and detectors.
-Learn more → 
-
-### Fire Fighting Systems
-Hydrants, sprinklers, pumps, hose reels and related installation and maintenance work.
-Learn more → 
-
-### Fire Safety Audits
-Site visits to review equipment, access, maintenance and fire safety arrangements.
-Book a site visit → 
-
-### Active & Passive Fire Products
-Supply of fire safety products and materials, including fire doors, seals, alarms and hydrant equipment.
-Learn more → 
-
-### Fire Extinguishers
-Supply, installation, refilling, maintenance and related services for homes and workplaces.
-Learn more → 
-
-### Fire Safety, First Aid & CPR Training
-Practical demonstrations, fire drills, first aid and CPR training for staff and communities.
-Learn more → 
 
 
-View all services
+
+01 · Firefighting equipment
+
+
+### Fire Hydrants & Hydrant-Line Products
+
+Fire hydrants, hydrant-line products, hoses, hose fittings, branches and nozzles for firefighting installations.
+
+Explore fire fighting systems → 
+
+
+
+02 · Portable equipment
+
+
+### Fire Extinguishers & HPT
+
+Fire extinguisher supply and servicing, including hydrostatic pressure testing (HPT) as listed in the company catalogue.
+
+Explore extinguisher services → 
+
+
+
+03 · Detection
+
+
+### Fire Detection & Alarm Systems
+
+Automatic fire alarm systems and different types of fire detectors, with supply, installation, testing and commissioning.
+
+Explore detection systems → 
+
+
+
+04 · Suppression
+
+
+### Fire Suppression & Foam Equipment
+
+Fire suppression systems, foam equipment and accessories, and water, foam, DCP and gas equipment.
+
+Explore fire protection systems → 
+
+
+
+05 · Sprinkler systems
+
+
+### Sprinklers, Valves & Accessories
+
+Sprinklers and accessories, safety valves and related components for active firefighting systems.
+
+Explore system installation → 
+
+
+
+06 · Breathing equipment
+
+
+### Breathing Apparatus Sets
+
+Breathing apparatus sets are included in the firefighting equipment range presented in the company catalogue.
+
+Enquire about equipment → 
+
+
+
+07 · Passive protection
+
+
+### Fire Barriers, FRP & FRD
+
+Fire barriers and the FRP and FRD product categories specifically listed in the company catalogue.
+
+Explore passive protection → 
+
+
+
+08 · Fire services
+
+
+### Installation, Testing & Commissioning
+
+Supply, installation, testing, commissioning and servicing of fire equipment and systems.
+
+View service scope → 
+
+
+
+09 · Maintenance
+
+
+### Annual Maintenance & System Upgrades
+
+Annual maintenance and upgrading of existing firefighting systems, with after-sales follow-up and servicing.
+
+Discuss maintenance → 
+
+
+
+10 · Safety
+
+
+### Industrial Safety Equipment & Signage
+
+Industrial safety equipment, plus safety and road-construction signs as listed in the catalogue.
+
+Enquire about safety products → 
+
+
+
+11 · Training & awareness
+
+
+### Fire Training, Demonstrations & Drills
+
+Fire training, demonstrations on equipment use and fire drills to build practical awareness among occupants and teams.
+
+Explore training → 
+
+
+
+12 · Documentation
+
+
+### NOC, Forms & Certification Support
+
+The catalogue lists NOC and certification-related work, Form A and Form B. Requirements and statutory outcomes depend on the applicable authority and site documents.
+
+Explore compliance information → 
+
+
+
+
+
+
+
+
+### First Aid & CPR Training
+
+First Aid / CPR training is also listed among the certificates and training services in the company catalogue.
+
+
+
+Training details → 
+
+
+
+
+
+View complete service range
 
 
 
@@ -4880,7 +5005,7 @@ Book Site Assessment
 
 Source: https://samarthfire.in/process
 Title: The Fire Safety Audit & Compliance Process | Samarth Fire Protection
-Last updated: 2026-10-25
+Last updated: 2026-11-18
 
 Our Methodology 
 

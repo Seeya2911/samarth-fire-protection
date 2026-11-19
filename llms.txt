@@ -2,7 +2,7 @@
 
 > Government-licensed (Class D) fire protection agency in Malad East, Mumbai. Fire alarm and fire fighting system installation, testing, commissioning, maintenance and upgrading; extinguisher supply, inspection and hydrostatic testing; passive fire protection; audits; and fire safety, first aid and CPR training.
 
-This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: 2026-11-18.
+This file follows the llms.txt convention. A plain-text copy of public service and reference pages and the safety blog articles is available at https://samarthfire.in/llms-full.txt. Licence status should be confirmed with the Directorate of Maharashtra Fire & Emergency Services. Last site update: 2026-11-19.
 
 ## Key facts
 - **Legal/trade name:** Samarth Fire Protection System.
