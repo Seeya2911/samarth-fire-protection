@@ -69,13 +69,23 @@
     ]
   },
   "blog_conventional_vs_addressable_alarm.jpg": {
-    "width": 400,
-    "height": 265,
+    "width": 2752,
+    "height": 1536,
     "variants": [
       {
-        "width": 400,
-        "webp": "blog_conventional_vs_addressable_alarm-400.webp",
-        "avif": "blog_conventional_vs_addressable_alarm-400.avif"
+        "width": 480,
+        "webp": "blog_conventional_vs_addressable_alarm-480.webp",
+        "avif": "blog_conventional_vs_addressable_alarm-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog_conventional_vs_addressable_alarm-800.webp",
+        "avif": "blog_conventional_vs_addressable_alarm-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog_conventional_vs_addressable_alarm-1200.webp",
+        "avif": "blog_conventional_vs_addressable_alarm-1200.avif"
       }
     ]
   },
@@ -181,8 +191,8 @@
     ]
   },
   "blog_fire_safety_youth_training.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 2752,
+    "height": 1536,
     "variants": [
       {
         "width": 480,
@@ -223,8 +233,8 @@
     ]
   },
   "blog_housing_society_fire_drill_planning.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -265,8 +275,8 @@
     ]
   },
   "blog_industrial_fire_safety_training.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -287,7 +297,7 @@
   },
   "blog_workplace_first_aid_cpr_training.jpg": {
     "width": 1280,
-    "height": 960,
+    "height": 570,
     "variants": [
       {
         "width": 480,

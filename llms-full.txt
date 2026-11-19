@@ -1492,6 +1492,92 @@ What happens next?
 3. You receive an itemized technical evaluation report and statutory compliance checklist.
 
 
+
+
+
+
+
+
+
+
+
+
+AUDIT METHODOLOGY 
+
+## What We Inspect During a Fire Safety Audit
+
+
+Every site visit is conducted by certified engineers to identify operational bottlenecks, maintenance gaps, and statutory non-compliance before municipal inspections.
+
+
+
+
+
+
+
+01
+
+
+### Fire Pump & Water Systems
+
+Main electric, diesel engine backup, and jockey pump operational testing, automatic pressure switch calibration, water tank reserve levels, and delivery manifold pressure verification.
+
+
+
+
+
+02
+
+
+### Hydrants, Risers & Sprinklers
+
+Physical check of 63mm landing valves, swinging hose reels, branch nozzles, fire brigade suction inlets, riser pipe corrosion, and sprinkler head obstructions in parking basements.
+
+
+
+
+
+03
+
+
+### Fire Detection & Alarm Loops
+
+Panel trouble status, battery health, simulated smoke/heat sensor triggers, manual call point accessibility, sounder audibility across residential corridors, and repeater mimic panels.
+
+
+
+
+
+04
+
+
+### Portable Fire Extinguishers
+
+Verification of extinguisher chemical types (ABC, CO₂, Foam), pressure gauge charge levels, weight checks, nozzle discharge hoses, hydrostatic testing dates, and wall-mounting heights.
+
+
+
+
+
+05
+
+
+### Passive Protection & Exits
+
+Inspection of fire doors (FRD), hydraulic closer self-latching, intumescent smoke seals, electrical/plumbing shaft firestops, clear escape corridors, and photoluminescent emergency exit signs.
+
+
+
+
+
+06
+
+
+### Statutory Form B Report
+
+Comprehensive audit documentation outlining identified defects, immediate corrective recommendations, cost estimates for repairs, and guidance for filing Form B biannual compliance certificates.
+
+
 ---
 
 Source: https://samarthfire.in/services
@@ -1836,6 +1922,234 @@ Active • Jan 2028
 
 
 Request Line-Item Proposal 
+
+
+
+
+
+
+
+
+
+
+
+
+COMPANY CATALOGUE OFFERINGS 
+
+## Firefighting Equipment & Product Range
+
+
+As listed in our company catalogue, Samarth Fire Protection System supplies, installs, tests, commissions, and services a comprehensive range of firefighting equipment across Mumbai, Navi Mumbai, Thane, and Maharashtra.
+
+
+
+
+
+
+
+
+
+01
+
+
+### Fire Hydrants & Landing Valves
+
+
+Single and double outlet landing valves (63mm gunmetal/stainless steel), instantaneous couplings, standpost columns, draw-out connections, butterfly valves, and non-return valves compliant with IS 5290.
+
+
+
+
+- • 63mm Oblique & Right-Angle Landing Valves 
+
+- • Yard Hydrants & Standpost Pillars 
+
+- • Four-way & Two-way Fire Brigade Inlets 
+
+
+
+
+
+
+
+02
+
+
+### Hoses & Hose Fittings
+
+
+Reinforced Rubber Lined (RRL) Type A & Type B hoses (15m and 30m lengths), CP hoses, heavy-duty swinging hose reel drums with 30m high-pressure braided tubing, instantaneous male/female couplings, and hose cabinets.
+
+
+
+
+- • IS 636 Type A & Type B RRL Fire Hoses 
+
+- • 19mm/25mm Swinging Hose Reel Drums 
+
+- • Stainless Steel & Gunmetal Instantaneous Couplings 
+
+
+
+
+
+
+
+03
+
+
+### Branches & Nozzles
+
+
+Short branch pipes with nozzles (IS 903), triple-purpose fog and jet diffuser nozzles, curtain nozzles, revolving nozzles, and specialized foam making branch pipes for industrial fire containment.
+
+
+
+
+- • Standard Short Branch Pipes (63mm GM/SS) 
+
+- • Triple-Purpose Fog / Jet Shut-off Nozzles 
+
+- • Water Curtain & High-Pressure Diffusers 
+
+
+
+
+
+
+
+04
+
+
+### Sprinklers & Accessories
+
+
+Automatic glass-bulb sprinklers (pendent, upright, horizontal sidewall) rated at 57°C, 68°C, 79°C, and 93°C, flexible stainless steel dropper assemblies, installation alarm valves, retard chambers, and water motor gongs.
+
+
+
+
+- • UL/FM & IS Approved Quartzoid Bulb Sprinklers 
+
+- • Flexible Dropper Pipes with Ceiling Brackets 
+
+- • Alarm Check Valves & Waterflow Detectors 
+
+
+
+
+
+
+
+05
+
+
+### Breathing Apparatus (SCBA) Sets
+
+
+Self-Contained Breathing Apparatus (SCBA) sets for emergency search, rescue, and hazardous smoke entry. Includes carbon-composite or steel cylinders (300 bar), positive pressure demand valves, full-face silicon masks, and audible alarm whistles.
+
+
+
+
+- • 30-Minute & 45-Minute Rated Air Cylinders 
+
+- • Ergonomic Backplates with Padded Harnesses 
+
+- • Full Face Masks with Speech Diaphragms 
+
+
+
+
+
+
+
+06
+
+
+### Foam Equipment & Accessories
+
+
+Mechanical foam systems for Class B flammable liquid hazards: mobile foam units (100L / 200L trolleys), in-line variable foam inductors, foam branch pipes (FB 5X / FB 10X), foam pourers, and AFFF / AR-AFFF concentrates.
+
+
+
+
+- • Mobile Foam Trolley Units (100L / 200L) 
+
+- • In-Line Inductors & Pickup Tubes 
+
+- • Aqueous Film-Forming Foam (AFFF) Concentrates 
+
+
+
+
+
+
+
+07
+
+
+### Fire Suppression Systems
+
+
+Clean agent gas flooding systems (FM-200, Novec 1230 / FK-5-1-12) and CO₂ total flooding systems for high-value assets, server rooms, data centres, UPS rooms, electrical panels, and commercial kitchen hoods.
+
+
+
+
+- • Server Room Clean Agent Gas Flooding 
+
+- • Electrical Panel Micro-Tubing Suppression 
+
+- • Commercial Kitchen Hood Wet Chemical Systems 
+
+
+
+
+
+
+
+08
+
+
+### AMC & System Upgrades
+
+
+Annual Maintenance Contracts (AMC), periodic pump run testing, pipe leak rectification, replacement of degraded valves, flow rate calibration, and upgrading legacy manual firefighting systems to automated standards.
+
+
+
+
+- • Scheduled Quarterly / Half-Yearly Servicing 
+
+- • Diesel & Electric Fire Pump Overhauls 
+
+- • Form B Statutory Maintenance Certificates 
+
+
+
+
+
+
+
+09
+
+
+### Supply, Installation & Testing
+
+
+Turnkey execution covering supply, installation, testing, commissioning, and servicing of all fire equipment under licensed engineering supervision with testing records and handover dossiers.
+
+
+
+
+- • Hydrostatic Pressure Testing of Pipelines 
+
+- • Complete Turnkey Project Execution 
+
+- • Fire Department Compliance Handover 
+
 
 
 
@@ -2280,6 +2594,165 @@ Request Diagnostic Audit
 
 
 
+COMPANY CATALOGUE OFFERINGS 
+
+## Fire Detection Equipment & Service Range
+
+
+From full automatic fire alarm system installation to troubleshooting existing addressable loops, Samarth Fire delivers end-to-end fire detection solutions across Mumbai and Maharashtra.
+
+
+
+
+
+
+
+
+
+01
+
+
+### Automatic Fire Alarm Systems
+
+
+1 to 8-loop microprocessor addressable panels and 2 to 32-zone conventional panels. Includes battery backup, event memory logging, LCD touchscreens, and building management system (BMS) integration.
+
+
+
+
+- • Addressable & Conventional Fire Alarm Panels 
+
+- • Networked Main & Repeater Mimic Panels 
+
+- • Integrated BMS & Lift Grounding Relays 
+
+
+
+
+
+
+
+02
+
+
+### Optical Smoke Detectors
+
+
+Photoelectric smoke detectors with chamber drift compensation, insect-proof screening, and dual omnidirectional LEDs. Ideal for residential lobbies, offices, hotel corridors, and hospital rooms.
+
+
+
+
+- • Photoelectric Light Scattering Chamber 
+
+- • Automatic Drift Compensation for Dust 
+
+- • Removable Sensor Head for Ultrasonic Cleaning 
+
+
+
+
+
+
+
+03
+
+
+### Heat & Thermal Detectors
+
+
+Dual-action rate-of-rise and fixed temperature (57°C / 68°C / 90°C) thermal detectors designed for kitchens, DG rooms, boiler rooms, and parking basements where smoke or fumes are naturally present.
+
+
+
+
+- • Rate-of-Rise & Fixed Temperature Thermistors 
+
+- • Dust & Exhaust Fume Immune Operation 
+
+- • IS 2175 Compliant Commercial Thermal Units 
+
+
+
+
+
+
+
+04
+
+
+### Beam & Specialized Detectors
+
+
+Reflective optical beam detectors covering up to 100-meter spans in high-ceiling warehouses, airport hangars, factory atriums, and shopping malls, plus Linear Heat Sensing (LHS) cables for cable trays.
+
+
+
+
+- • Optical Projected Beam Detectors (10m - 100m) 
+
+- • Linear Heat Sensing (LHS) Digital Cables 
+
+- • Air Sampling / Aspirating Smoke Detection (ASD) 
+
+
+
+
+
+
+
+05
+
+
+### Manual Call Points & Hooters
+
+
+Break-glass and re-settable push-type manual call points, dual-tone electronic fire hooters, xenon flashing strobe beacons, and response indicators for enclosed server rooms and concealed voids.
+
+
+
+
+- • IP65 Weatherproof MCP for Outdoor Riser Landings 
+
+- • 90+ dB Electronic Hooters with Strobe Beacons 
+
+- • Remote Response Indicators for Concealed Detectors 
+
+
+
+
+
+
+
+06
+
+
+### Testing, Commissioning & AMC
+
+
+Full commissioning under engineering supervision: decibel loudness testing, loop continuity testing, simulated smoke canister triggering, quarterly AMC visits, and Form B compliance reporting.
+
+
+
+
+- • Periodic Sensor Sensitivity & Battery Testing 
+
+- • Ground Fault & Open Loop Troubleshooting 
+
+- • Form B Bi-Annual Maintenance Certificates 
+
+
+
+
+
+
+
+
+
+
+
+
+
 FIELD DOCUMENTATION 
 
 ## On-Site Execution Evidence
@@ -2712,6 +3185,165 @@ Get Refilling Quotation
 
 
 
+COMPANY CATALOGUE OFFERINGS 
+
+## Fire Extinguisher Supply, Refilling & HPT Range
+
+
+From supplying new ISI-marked fire extinguishers to on-site refilling, hydraulic pressure testing, and periodic maintenance, Samarth Fire supports residential buildings, commercial towers, and industrial premises across Mumbai and all-India.
+
+
+
+
+
+
+
+
+
+01
+
+
+### ABC Dry Chemical Powder (DCP)
+
+
+Multi-purpose extinguishers utilizing Monoammonium Phosphate (MAP 50% / 90%) pressurized with dry nitrogen gas. Certified for Class A (wood, paper), Class B (flammable liquids), and Class C (electrical) fires.
+
+
+
+
+- • Portable: 1 kg, 2 kg, 4 kg, 6 kg, 9 kg 
+
+- • Wheeled Mobile Trolley: 25 kg, 50 kg 
+
+- • ISI Marked under IS 15683 with Pressure Gauges 
+
+
+
+
+
+
+
+02
+
+
+### Carbon Dioxide (CO₂) Cylinders
+
+
+High-pressure seamless manganese steel cylinders with residue-free CO₂ gas. Essential for server rooms, computer labs, electrical panels, motor control centres (MCC), and elevator machine rooms.
+
+
+
+
+- • Portable: 2 kg, 3 kg, 4.5 kg with Non-Conductive Horn 
+
+- • Mobile Trolley: 6.5 kg, 9 kg, 22.5 kg 
+
+- • PESO (CCOE) Approved Seamless Cylinders 
+
+
+
+
+
+
+
+03
+
+
+### Foam & Water CO₂ Units
+
+
+Aqueous Film Forming Foam (AFFF) extinguishers for liquid fuels, paints, solvents, and parking garages, alongside water-type units for heavy paper, timber, textile, and packaging storage warehouses.
+
+
+
+
+- • Mechanical Foam: 9 Litres & 50 Litre Trolley 
+
+- • Water CO₂: 9 Litres with Internal Gas Cartridge 
+
+- • Internal Plastic / Epoxy Anti-Corrosive Coating 
+
+
+
+
+
+
+
+04
+
+
+### Hydrostatic Pressure Testing (HPT)
+
+
+Mandatory shell pressure testing conducted under IS 2190 at 30 bar to 250 bar hydraulic pressure to verify metal cylinder wall integrity, check expansion, and issue statutory safety test certificates.
+
+
+
+
+- • Pressure Testing Every 3 Years for Foam / Water 
+
+- • Pressure Testing Every 5 Years for ABC & CO₂ 
+
+- • Stamped Test Date & HPT Test Certificates 
+
+
+
+
+
+
+
+05
+
+
+### Periodic Refilling & Recharging
+
+
+Thorough internal cylinder cleaning, chemical replacement with fresh genuine powder/gas, valve O-ring replacement, nitrogen gas pressurization, immersion leak testing, and tamper-evident sealing.
+
+
+
+
+- • Full Discharge, Clean & Chemical Recharging 
+
+- • Nitrogen Pressure Calibration to 15 kg/cm² 
+
+- • New Pull Pin, Lead Seal & Service Date Tag 
+
+
+
+
+
+
+
+06
+
+
+### Standby Cylinders & AMC
+
+
+We provide temporary standby cylinders during batch refilling so your property is never left unprotected. Includes wall brackets, floor stands, weather covers, and annual maintenance contracts.
+
+
+
+
+- • Free Standby Cylinders During Site Refilling 
+
+- • Heavy-Duty Powder-Coated Floor Stands 
+
+- • Form B Record Keeping & Monthly Audit Logs 
+
+
+
+
+
+
+
+
+
+
+
+
+
 FIELD DOCUMENTATION 
 
 ## On-Site Execution Evidence
@@ -3132,6 +3764,165 @@ Panic Bars & Closers
 
 
 Get Passive Fire Quote 
+
+
+
+
+
+
+
+
+
+
+
+
+COMPANY CATALOGUE OFFERINGS 
+
+## Passive Fire Protection, Safety & Signage Range
+
+
+Our company catalogue covers passive containment products, FRP/FRD fire barriers, industrial personal protective equipment, and statutory safety signage for sites across Mumbai and Maharashtra.
+
+
+
+
+
+
+
+
+
+01
+
+
+### Fire Retardant Doors (FRD)
+
+
+60-minute, 120-minute, and 180-minute steel and composite fire retardant doors tested under IS 3614. Equipped with certified hardware: panic crash exit devices, heavy-duty hydraulic door closers, and intumescent smoke perimeter seals.
+
+
+
+
+- • Galvanized Steel 120-Min Fire Doors 
+
+- • Emergency Exit Panic Push-Bars 
+
+- • Fire-Rated Vision Panels & Mortise Locks 
+
+
+
+
+
+
+
+02
+
+
+### Fire Barriers & FRP Products
+
+
+Fire-resistant Fibre Reinforced Plastic (FRP) and fire barrier boards for structural compartmentation, electrical riser enclosures, transformer yard blast barriers, and industrial partition walls.
+
+
+
+
+- • Fire Barrier Boards & Mortar Systems 
+
+- • Fire Retardant FRP Structural Grating & Sheets 
+
+- • Electrical Substation Wall Partitions 
+
+
+
+
+
+
+
+03
+
+
+### Shaft Firestops & Sealants
+
+
+Intumescent firestop acrylic and silicone mastics, mineral wool batts, and firestop pipe collars for PVC and CPVC pipes that expand when exposed to heat, sealing plumbing and electrical wall penetrations.
+
+
+
+
+- • Pipe Collars & Intumescent Pipe Wraps 
+
+- • Ablative Firestop Mortar & Mastic Coatings 
+
+- • Cable Transit Frames for Server Rooms 
+
+
+
+
+
+
+
+04
+
+
+### Industrial Safety Equipment
+
+
+Personal Protective Equipment (PPE) for manufacturing plants, warehouses, construction projects, and facility engineering staff complying with statutory industrial safety standards.
+
+
+
+
+- • Industrial Safety Helmets & Visors 
+
+- • Full-Body Fall Arrest Safety Harnesses 
+
+- • Steel-Toe Safety Shoes & Heat-Resistant Gloves 
+
+
+
+
+
+
+
+05
+
+
+### Safety & Road Signs
+
+
+High-intensity retro-reflective road construction signs, warning boards, speed limiters, directional arrows, and photoluminescent (glow-in-the-dark) emergency evacuation and extinguisher signage.
+
+
+
+
+- • Retro-Reflective Road Construction Caution Signs 
+
+- • Glow-in-the-Dark Escape Route & Exit Signs 
+
+- • Fire Hydrant & Extinguisher Identification Plates 
+
+
+
+
+
+
+
+06
+
+
+### Duct Dampers & Shaft Integrity
+
+
+Motorized smoke dampers and fusible-link fire dampers for air handling units (AHU) and HVAC ducting networks to prevent toxic smoke recirculation during fire emergencies.
+
+
+
+
+- • UL 555 Rated Fire & Smoke Dampers 
+
+- • Fusible Link Thermal Release Assemblies 
+
+- • Annual Shaft Seal Inspection & Certification 
+
 
 
 
@@ -3996,6 +4787,165 @@ Emergency procedure charts and bilingual handouts
 
 
 Get Drill Quotation 
+
+
+
+
+
+
+
+
+
+
+
+
+COMPANY CATALOGUE OFFERINGS 
+
+## Fire Training, Drills & CPR Course Range
+
+
+As featured in our company catalogue, Samarth Fire delivers practical, life-saving training sessions for housing societies, corporate offices, schools, and industrial facilities across Mumbai and Maharashtra.
+
+
+
+
+
+
+
+
+
+01
+
+
+### Fire Training & Live Demos
+
+
+Direct demonstrations on operating fire equipment. Participants gain real hands-on experience using portable fire extinguishers against controlled target fires using the PASS technique (Pull, Aim, Squeeze, Sweep).
+
+
+
+
+- • Live Controlled Fire Extinguishing Demonstration 
+
+- • Class A, B, C & Electrical Fire Chemistry 
+
+- • Dedicated Training Cylinders Provided on Site 
+
+
+
+
+
+
+
+02
+
+
+### Mock Fire Drills & Evacuation
+
+
+Full-scale simulated building evacuation drills: alarm recognition, emergency stairway routing without using elevators, smoke barrier navigation, assembly point rendezvous, and roll-call headcount procedures.
+
+
+
+
+- • Floor-by-Floor Evacuation Timing Audits 
+
+- • Floor Marshal & Fire Warden Coordination 
+
+- • Stairwell Smoke-Avoidance Crawl Postures 
+
+
+
+
+
+
+
+03
+
+
+### First Aid & CPR Training
+
+
+Certified Basic Life Support (BLS) training with medical-grade CPR practice mannequins. Covers adult and child chest compressions, rescue breathing, choking relief (Heimlich manoeuvre), and emergency burn dressings.
+
+
+
+
+- • Hands-on CPR Practice on Certified Mannequins 
+
+- • Burn Treatment, Splinting & Bleeding Control 
+
+- • Recovery Posture for Unconscious Casualties 
+
+
+
+
+
+
+
+04
+
+
+### Hydrant & Hose Practical Drills
+
+
+Hands-on training for security guards, facility supervisors, and active residents in uncoiling 63mm RRL hoses, locking instantaneous branch couplings, turning landing valves, and operating swinging hose reels.
+
+
+
+
+- • Coupling & Running 15m/30m RRL Fire Hoses 
+
+- • Nozzle Water Jet Kickback Stance Practice 
+
+- • Fast First-Strike Hose Reel Drum Deployment 
+
+
+
+
+
+
+
+05
+
+
+### Guard Emergency Response Protocols
+
+
+Specialized protocols for gate security and facility control room staff: identifying alarm zone coordinates, calling Mumbai Fire Brigade (101/112), clearing entrance access gates, and operating manual fire lift overrides.
+
+
+
+
+- • Immediate Fire Alarm Panel Zone Verification 
+
+- • Fire Engine Access Obstruction Clearance 
+
+- • Emergency Services First-Information Protocol 
+
+
+
+
+
+
+
+06
+
+
+### Drill Certification & Compliance
+
+
+Formal drill completion certificate issued upon session conclusion, with participant attendance logs, photographic evidence, drill timing evaluation, and documentation required for Form B submission.
+
+
+
+
+- • Formal Certificate of Fire Drill Completion 
+
+- • Participant Attendance Records & Photo Logs 
+
+- • Form B Statutory Evacuation Drill Filing 
+
 
 
 
