@@ -53,8 +53,8 @@
     ]
   },
   "blog_building_fire_safety_audit.jpg": {
-    "width": 900,
-    "height": 1600,
+    "width": 1080,
+    "height": 720,
     "variants": [
       {
         "width": 480,
@@ -79,30 +79,31 @@
       }
     ]
   },
+  "blog_fire_alarm_panel_fault.jpg": {
+    "width": 739,
+    "height": 415,
+    "variants": [
+      {
+        "width": 480,
+        "webp": "blog_fire_alarm_panel_fault-480.webp",
+        "avif": "blog_fire_alarm_panel_fault-480.avif"
+      }
+    ]
+  },
   "blog_fire_extinguisher_inspection.jpg": {
-    "width": 1280,
-    "height": 960,
+    "width": 664,
+    "height": 462,
     "variants": [
       {
         "width": 480,
         "webp": "blog_fire_extinguisher_inspection-480.webp",
         "avif": "blog_fire_extinguisher_inspection-480.avif"
-      },
-      {
-        "width": 800,
-        "webp": "blog_fire_extinguisher_inspection-800.webp",
-        "avif": "blog_fire_extinguisher_inspection-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "blog_fire_extinguisher_inspection-1200.webp",
-        "avif": "blog_fire_extinguisher_inspection-1200.avif"
       }
     ]
   },
   "blog_fire_hydrant_hose_reel_difference.jpg": {
-    "width": 960,
-    "height": 1280,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -113,6 +114,11 @@
         "width": 800,
         "webp": "blog_fire_hydrant_hose_reel_difference-800.webp",
         "avif": "blog_fire_hydrant_hose_reel_difference-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog_fire_hydrant_hose_reel_difference-1200.webp",
+        "avif": "blog_fire_hydrant_hose_reel_difference-1200.avif"
       }
     ]
   },
@@ -133,19 +139,29 @@
     ]
   },
   "blog_fire_safety_amc_checklist.jpg": {
-    "width": 768,
-    "height": 1024,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
         "webp": "blog_fire_safety_amc_checklist-480.webp",
         "avif": "blog_fire_safety_amc_checklist-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "blog_fire_safety_amc_checklist-800.webp",
+        "avif": "blog_fire_safety_amc_checklist-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "blog_fire_safety_amc_checklist-1200.webp",
+        "avif": "blog_fire_safety_amc_checklist-1200.avif"
       }
     ]
   },
   "blog_fire_safety_audit_vs_noc.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -328,8 +344,8 @@
     ]
   },
   "homepage_field_pump_manifold.jpg": {
-    "width": 1599,
-    "height": 899,
+    "width": 1200,
+    "height": 800,
     "variants": [
       {
         "width": 480,
@@ -349,8 +365,8 @@
     ]
   },
   "homepage_hero_hydrant_inspection.jpg": {
-    "width": 960,
-    "height": 1280,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -361,6 +377,11 @@
         "width": 800,
         "webp": "homepage_hero_hydrant_inspection-800.webp",
         "avif": "homepage_hero_hydrant_inspection-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "homepage_hero_hydrant_inspection-1200.webp",
+        "avif": "homepage_hero_hydrant_inspection-1200.avif"
       }
     ]
   },
@@ -581,13 +602,13 @@
     ]
   },
   "services_alarm_panel_system.jpg": {
-    "width": 400,
-    "height": 267,
+    "width": 447,
+    "height": 447,
     "variants": [
       {
-        "width": 400,
-        "webp": "services_alarm_panel_system-400.webp",
-        "avif": "services_alarm_panel_system-400.avif"
+        "width": 447,
+        "webp": "services_alarm_panel_system-447.webp",
+        "avif": "services_alarm_panel_system-447.avif"
       }
     ]
   },
@@ -603,24 +624,29 @@
     ]
   },
   "services_extinguisher_refilling.jpg": {
-    "width": 400,
-    "height": 267,
+    "width": 800,
+    "height": 532,
     "variants": [
       {
-        "width": 400,
-        "webp": "services_extinguisher_refilling-400.webp",
-        "avif": "services_extinguisher_refilling-400.avif"
+        "width": 480,
+        "webp": "services_extinguisher_refilling-480.webp",
+        "avif": "services_extinguisher_refilling-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "services_extinguisher_refilling-800.webp",
+        "avif": "services_extinguisher_refilling-800.avif"
       }
     ]
   },
   "services_fire_hydrant_fighting.jpg": {
-    "width": 400,
-    "height": 267,
+    "width": 579,
+    "height": 530,
     "variants": [
       {
-        "width": 400,
-        "webp": "services_fire_hydrant_fighting-400.webp",
-        "avif": "services_fire_hydrant_fighting-400.avif"
+        "width": 480,
+        "webp": "services_fire_hydrant_fighting-480.webp",
+        "avif": "services_fire_hydrant_fighting-480.avif"
       }
     ]
   },
