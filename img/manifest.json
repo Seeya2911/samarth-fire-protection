@@ -396,29 +396,19 @@
     ]
   },
   "industry_card_factories_warehouses.jpg": {
-    "width": 1280,
-    "height": 960,
+    "width": 400,
+    "height": 267,
     "variants": [
       {
-        "width": 480,
-        "webp": "industry_card_factories_warehouses-480.webp",
-        "avif": "industry_card_factories_warehouses-480.avif"
-      },
-      {
-        "width": 800,
-        "webp": "industry_card_factories_warehouses-800.webp",
-        "avif": "industry_card_factories_warehouses-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "industry_card_factories_warehouses-1200.webp",
-        "avif": "industry_card_factories_warehouses-1200.avif"
+        "width": 400,
+        "webp": "industry_card_factories_warehouses-400.webp",
+        "avif": "industry_card_factories_warehouses-400.avif"
       }
     ]
   },
   "industry_card_hospitals_institutions.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 920,
+    "height": 533,
     "variants": [
       {
         "width": 480,
@@ -429,59 +419,34 @@
         "width": 800,
         "webp": "industry_card_hospitals_institutions-800.webp",
         "avif": "industry_card_hospitals_institutions-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "industry_card_hospitals_institutions-1200.webp",
-        "avif": "industry_card_hospitals_institutions-1200.avif"
       }
     ]
   },
   "industry_card_housing_societies_towers.jpg": {
-    "width": 1280,
-    "height": 720,
+    "width": 691,
+    "height": 444,
     "variants": [
       {
         "width": 480,
         "webp": "industry_card_housing_societies_towers-480.webp",
         "avif": "industry_card_housing_societies_towers-480.avif"
-      },
-      {
-        "width": 800,
-        "webp": "industry_card_housing_societies_towers-800.webp",
-        "avif": "industry_card_housing_societies_towers-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "industry_card_housing_societies_towers-1200.webp",
-        "avif": "industry_card_housing_societies_towers-1200.avif"
       }
     ]
   },
   "industry_card_offices_business_parks.jpg": {
-    "width": 1280,
-    "height": 960,
+    "width": 319,
+    "height": 158,
     "variants": [
       {
-        "width": 480,
-        "webp": "industry_card_offices_business_parks-480.webp",
-        "avif": "industry_card_offices_business_parks-480.avif"
-      },
-      {
-        "width": 800,
-        "webp": "industry_card_offices_business_parks-800.webp",
-        "avif": "industry_card_offices_business_parks-800.avif"
-      },
-      {
-        "width": 1200,
-        "webp": "industry_card_offices_business_parks-1200.webp",
-        "avif": "industry_card_offices_business_parks-1200.avif"
+        "width": 319,
+        "webp": "industry_card_offices_business_parks-319.webp",
+        "avif": "industry_card_offices_business_parks-319.avif"
       }
     ]
   },
   "industry_card_oil_gas_petroleum.jpg": {
-    "width": 900,
-    "height": 1600,
+    "width": 3992,
+    "height": 2242,
     "variants": [
       {
         "width": 480,
@@ -492,12 +457,17 @@
         "width": 800,
         "webp": "industry_card_oil_gas_petroleum-800.webp",
         "avif": "industry_card_oil_gas_petroleum-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "industry_card_oil_gas_petroleum-1200.webp",
+        "avif": "industry_card_oil_gas_petroleum-1200.avif"
       }
     ]
   },
   "industry_card_shopping_malls_retail.jpg": {
-    "width": 1280,
-    "height": 570,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "width": 480,
@@ -623,13 +593,23 @@
     ]
   },
   "services_compliance_form_b.jpg": {
-    "width": 400,
-    "height": 267,
+    "width": 1280,
+    "height": 960,
     "variants": [
       {
-        "width": 400,
-        "webp": "services_compliance_form_b-400.webp",
-        "avif": "services_compliance_form_b-400.avif"
+        "width": 480,
+        "webp": "services_compliance_form_b-480.webp",
+        "avif": "services_compliance_form_b-480.avif"
+      },
+      {
+        "width": 800,
+        "webp": "services_compliance_form_b-800.webp",
+        "avif": "services_compliance_form_b-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "services_compliance_form_b-1200.webp",
+        "avif": "services_compliance_form_b-1200.avif"
       }
     ]
   },
