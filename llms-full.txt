@@ -1602,33 +1602,33 @@ Every engagement begins with understanding your property, the fire safety system
 01 · Detection
 
 ### Fire Alarm & Detection Systems
-Supply, installation, testing, commissioning, repair, maintenance and AMC for automatic fire alarm panels, smoke detectors, heat detectors, manual call points and all types of fire detectors used in Mumbai residential and commercial buildings.
-Fire alarm service details →
+We supply, install, wire, program, troubleshoot, and maintain automatic addressable and conventional fire alarm panels, smoke/heat detectors, manual call points, and strobe hooters with buzzer fault repairs and AMC contracts.
+Explore fire alarm offerings →
 02 · Fire fighting
 
 ### Fire Fighting Systems
-Installation, testing, commissioning, servicing, maintenance and upgrading of fire hydrants, fire pumps, sprinkler systems, hose reels, safety valves and related pipework. We provide annual maintenance contracts (AMC) for fire fighting systems across Mumbai and Navi Mumbai.
-Fire fighting system details →
+We design, erect, test, commission, overhaul, and maintain wet/dry risers, yard hydrants, booster pump automation stations, sprinkler networks, and hose reel drums with comprehensive AMC and emergency repair services.
+Explore firefighting offerings →
 03 · Review
 
-### Fire Safety Audits & Site Assessments
-On-site reviews of installed fire safety equipment, escape routes, access points, maintenance records and compliance gaps. We provide detailed findings with recommended next steps tailored to your property — whether a housing society, hospital, hotel or industrial facility in Mumbai.
-Request a site visit →
+### Fire Safety Audits & Compliance
+We conduct on-site physical audits, pump/line pressure testing, and defect gap-analysis, issuing official statutory Form A and bi-annual Form B maintenance compliance certificates under Class D licence MFS/LA/RF-34/RD-35.
+Explore audit & compliance offerings →
 04 · Equipment
 
 ### Fire Extinguisher Supply, Refilling & HPT
-Supply, installation, inspection, refilling, maintenance and hydrostatic pressure testing (HPT) of all types of fire extinguishers — ABC, CO₂, water, foam and DCP — based on extinguisher type, service condition and BIS standards. We also accept extinguisher service enquiries from across India.
-Extinguisher services →
+We supply new ISI-marked ABC, CO₂, Foam, and Clean Agent cylinders, provide scheduled on-site refilling, execute IS 2190 Hydraulic Pressure Testing (HPT), and provide rotational standby loan cylinders during service.
+Explore extinguisher offerings →
 05 · Passive protection
 
-### Passive Fire Protection & Safety Products
-Supply of passive fire protection equipment and materials, including fire barriers, fire stops, FRP and FRD products, fire doors, hose fittings, hydrant accessories, fire suppression equipment and foam equipment used in commercial and industrial buildings.
-Passive fire products →
+### Passive Fire Protection & Fire Doors
+We supply, install, and certify 120-minute Fire Rated Doors (FRD), panic crash hardware, electrical shaft rockwool firestops, intumescent cable coatings, and duct fire barriers to isolate fire and protect exit corridors.
+Explore passive fire offerings →
 06 · People
 
 ### Fire Safety, First Aid & CPR Training
-Fire safety awareness sessions, live equipment-use demonstrations, mock fire drills, first aid and CPR training for workplace teams, schools, housing societies and corporate offices in Mumbai and Maharashtra. Training helps meet Maharashtra Fire Prevention and Life Safety Measures Act compliance.
-Training details →
+We bring training equipment right to your compound for live extinguisher practice (PASS technique), building evacuation mock drills, fire hose drills, and certified First Aid & CPR life-support sessions with formal completion certificates.
+Explore training & drill offerings →
 
 What we offer you
 
@@ -1791,7 +1791,7 @@ Multi-stage booster pump station manifold with synchronized electric, diesel bac
 
 
 
-Engineering Definition: Fire fighting systems are pressurized water distribution networks consisting of reservoirs, booster pumps, piping, valves, and sprinkler heads designed to suppress fires. Samarth Fire Protection System installs, overhauls, and commissions these systems under a Class D government license in Malad, Goregaon, and the wider Mumbai Metropolitan Region.
+What We Offer in Fire Fighting Systems: Turnkey execution from initial design, hydraulic planning, and equipment supply to site fabrication, installation, testing, commissioning, and ongoing maintenance. Under government licence MFS/LA/RF-34/RD-35, our team of 25+ certified technicians installs and maintains wet risers, yard hydrants, booster pumps, automatic sprinklers, and complete pipeline networks across Mumbai and the wider MMR.
 
 
 
@@ -1805,12 +1805,12 @@ Engineering Definition: Fire fighting systems are pressurized water distribution
 
 
 
-TECHNICAL CAPABILITIES 
+WHAT WE OFFER 
 
-## System Integration Specifications
+## Turnkey Firefighting System Offerings
 
 
-We install and overhaul high-capacity active suppression networks. Every system is built to survive high-pressure loads and operate automatically during power grid failures.
+From new building pipeline erection to complete pump room overhauls and annual maintenance contracts, we handle every stage of your firefighting water network.
 
 
 
@@ -1824,10 +1824,10 @@ We install and overhaul high-capacity active suppression networks. Every system 
 
 
 
-### Wet & Dry Risers
+### Turnkey Supply & Installation
 
 
-Vertical galvanized iron (GI) piping networks from basement booster stations to terrace tanks with calibrated 63mm gunmetal landing valves on every floor landing.
+We supply and install complete GI wet and dry risers, yard hydrant ring mains, landing valves, hose boxes, non-kinking hose reels, and automatic sprinkler grids for residential and commercial buildings.
 
 
 
@@ -1839,10 +1839,10 @@ Vertical galvanized iron (GI) piping networks from basement booster stations to 
 
 
 
-### Automatic Sprinkler Networks
+### Booster Pump Station Automation
 
 
-Quartzoid glass-bulb sprinkler heads rated at 68°C/79°C for commercial basements, parking podiums, and retail floors with flow-switch alarm triggers.
+We design, erect, and automate multi-pump stations integrating main electric pumps, auxiliary diesel engine backups, and jockey pumps with synchronized automatic cut-in/cut-out control panels.
 
 
 
@@ -1854,10 +1854,10 @@ Quartzoid glass-bulb sprinkler heads rated at 68°C/79°C for commercial basemen
 
 
 
-### Booster Pump Automation
+### Comprehensive AMC & Upgrades
 
 
-Multi-pump synchronization: main electric motor, auxiliary diesel-engine backup, and continuous jockey pressure stabilizer ensuring 7 to 10.5 bar constant line pressure.
+We provide periodic preventive maintenance contracts, valve gland repacking, pipe descaling, urgent leak repairs, manifold welding overhauls, and modernization of aged or defunct systems.
 
 
 
@@ -1869,10 +1869,10 @@ Multi-pump synchronization: main electric motor, auxiliary diesel-engine backup,
 
 
 
-### Hose Reels & Hydrant Rings
+### Pressure Testing & Form B Certification
 
 
-High-pressure swing-type hose reel drums with 30-meter non-kinking hoses, shut-off jet/spray branch nozzles, and external yard hydrant ring mains.
+We conduct hydrostatic pressure testing, terrace nozzle flow tests, and issue statutory Form A (new commissioning) and bi-annual Form B maintenance compliance certificates under Maharashtra Fire Services.
 
 
 
@@ -2451,7 +2451,7 @@ Optical smoke sensor continuity testing and addressable loop troubleshooting on 
 
 
 
-Engineering Definition: Fire detection and alarm systems are automated electrical sensor networks that continuously monitor for airborne combustion particles, thermal spikes, or manual emergency button inputs. Samarth Fire designs, tests, and repairs both addressable and conventional networks under a Class D government license.
+What We Offer in Fire Detection & Alarms: Complete lifecycle alarm engineering from system design, loop wiring layout, and device supply to programming, commissioning, fault diagnostics, and annual maintenance contracts (AMC). Under Class D licence MFS/LA/RF-34/RD-35, our electronic technicians install and service both addressable and conventional alarm systems across residential towers, commercial offices, and industrial complexes in Mumbai.
 
 
 
@@ -2465,12 +2465,12 @@ Engineering Definition: Fire detection and alarm systems are automated electrica
 
 
 
-TECHNICAL CAPABILITIES 
+WHAT WE OFFER 
 
-## Detection Loop Specifications
+## Turnkey Fire Alarm & Detection Services
 
 
-We isolate open ground faults, replace dead optical heads, and synchronize sounder hooters with staircase pressurization dampers.
+We deliver complete fire alarm solutions — from turnkey new installations to emergency buzzer troubleshooting, open loop tracing, and statutory compliance certifications.
 
 
 
@@ -2484,10 +2484,10 @@ We isolate open ground faults, replace dead optical heads, and synchronize sound
 
 
 
-### Addressable Control Panels
+### Turnkey Supply & System Installation
 
 
-Multi-loop microprocessor panels capable of pinpointing the exact room, floor, or electrical riser where smoke particulate density exceeds safety thresholds.
+We design and install microprocessor-based addressable and conventional fire alarm panels, fire-rated loop cabling, manual call points (MCP), and multi-tone sounder hooters with visual strobe alerts.
 
 
 
@@ -2499,10 +2499,10 @@ Multi-loop microprocessor panels capable of pinpointing the exact room, floor, o
 
 
 
-### Optical & Thermal Sensors
+### Sensor Fitting & Detection Arrays
 
 
-Photoelectric smoke detectors for living areas and corridors, rate-of-rise heat sensors for kitchen and generator rooms, and duct sensors for HVAC lines.
+We supply and calibrate optical photoelectric smoke sensors for corridors and homes, rate-of-rise thermal heat sensors for kitchens and DG rooms, and beam detectors for large industrial warehouses.
 
 
 
@@ -2514,10 +2514,10 @@ Photoelectric smoke detectors for living areas and corridors, rate-of-rise heat 
 
 
 
-### Manual Call Points (MCP)
+### Buzzer Diagnostics & Fault Repair
 
 
-Break-glass and push-type manual triggers located adjacent to every staircase exit landing, equipped with dual-action reset keys and visual status LEDs.
+We diagnose and silence false alarm panel buzzers, trace open loop breaks, rectify earthing/ground faults, replace defective zone cards, and clean dust-contaminated optical sensor chambers.
 
 
 
@@ -2529,10 +2529,10 @@ Break-glass and push-type manual triggers located adjacent to every staircase ex
 
 
 
-### Sounders, Strobes & Voice
+### Alarm AMC & Form B Certification
 
 
-Electronic hooters with integrated xenon or LED visual strobe lights (90+ dB sound output) and automated multi-lingual voice evacuation audio controllers.
+We provide scheduled quarterly AMC maintenance, battery backup load testing, sounder audibility checks, and issue statutory Form B compliance certificates for CFO filings in January and July.
 
 
 
@@ -3042,7 +3042,7 @@ Corridor fire extinguisher station and landing valve pressure audit in residenti
 
 
 
-Engineering Definition: Portable fire extinguishers are first-line defensive appliances designed to suppress incipient fires before sprinkler systems activate. Samarth Fire supplies, refills, and hydraulically tests all chemical types under IS 2190 guidelines with tamper-evident seals and inspection verification tags.
+What We Offer in Fire Extinguishers & HPT: Complete cylinder lifecycle management from new ISI-marked equipment supply and wall mounting to scheduled on-site refilling, hydraulic pressure testing (HPT), valve overhaul, and annual maintenance contracts (AMC). Under Class D licence MFS/LA/RF-34/RD-35, our certified team handles all extinguisher types under IS 2190 standards with temporary standby cylinders provided during testing.
 
 
 
@@ -3056,12 +3056,12 @@ Engineering Definition: Portable fire extinguishers are first-line defensive app
 
 
 
-TECHNICAL CAPABILITIES 
+WHAT WE OFFER 
 
-## Cylinder Engineering Specifications
+## Turnkey Fire Extinguisher & Testing Services
 
 
-Every refilled extinguisher undergoes nitrogen pressurization, scale weighing, and leak immersion testing before site delivery.
+We provide comprehensive extinguisher services — from supply and on-site refilling to hydraulic shell testing and statutory compliance recordkeeping.
 
 
 
@@ -3075,10 +3075,10 @@ Every refilled extinguisher undergoes nitrogen pressurization, scale weighing, a
 
 
 
-### ABC Dry Chemical Powder
+### New ISI-Marked Cylinder Supply
 
 
-Monoammonium Phosphate (MAP 50% / 90%) pressurized with dry nitrogen gas. Multi-purpose suppression for Class A (wood), Class B (fuels), and Class C (electrical).
+We supply brand-new, factory-tested ABC Dry Chemical Powder (1kg to 9kg), Carbon Dioxide (CO₂ 2kg to 4.5kg), Mechanical Foam (AFFF 9L to 50L), and Clean Agent cylinders complete with heavy-duty brackets and photoluminescent location signs.
 
 
 
@@ -3090,10 +3090,10 @@ Monoammonium Phosphate (MAP 50% / 90%) pressurized with dry nitrogen gas. Multi-
 
 
 
-### Carbon Dioxide (CO₂) Gas
+### On-Site Refilling & Gas Recharging
 
 
-Seamless manganese steel or carbon-steel cylinders filled with liquid CO₂ gas for server rooms, elevator shafts, electrical panels, and clean laboratories.
+We execute annual refilling, chemical replacement, CO₂ gas cartridge replacement, precision nitrogen pressurization, and electronic scale check-weighing with tamper-evident safety seals and dated service tags.
 
 
 
@@ -3105,10 +3105,10 @@ Seamless manganese steel or carbon-steel cylinders filled with liquid CO₂ gas 
 
 
 
-### Mechanical Foam (AFFF)
+### Hydraulic Pressure Testing (HPT)
 
 
-Aqueous Film Forming Foam creates an airtight blanket over diesel generator rooms, solvent tanks, and parking oil leaks, cutting oxygen supply instantly.
+We conduct statutory hydraulic pressure proof testing under IS 2190 at designated test pressures (30 to 250 kg/cm²) to verify cylinder wall integrity, followed by certified test stamping and certificate issuance.
 
 
 
@@ -3120,10 +3120,10 @@ Aqueous Film Forming Foam creates an airtight blanket over diesel generator room
 
 
 
-### Hydraulic Pressure Test (HPT)
+### Standby Support & Register Management
 
 
-Mandatory shell expansion testing at 30 to 250 kg/cm² to detect micro-cracks and seam fatigue before recharging cylinders with working pressures.
+We provide rotational standby loan cylinders so your facility is never left unprotected during off-site servicing, accompanied by official asset registers and Form B audit documentation.
 
 
 
@@ -3633,7 +3633,7 @@ Vertical plumbing and electrical shaft intumescent firestop installation in mult
 
 
 
-Engineering Definition: Passive fire protection contains active fires and lethal smoke within their compartment of origin for a specified duration (typically 60 to 120 minutes), preserving escape stairwells and structural integrity. Samarth Fire supplies and installs certified barriers under Class D regulatory oversight.
+What We Offer in Passive Fire Protection: End-to-end supply and installation of structural containment solutions — including certified fire-rated doors (FRD), utility shaft penetration firestopping, duct dampers, and fire barriers. Under Class D licence MFS/LA/RF-34/RD-35, we seal critical vertical and horizontal openings in high-rise buildings and industrial plants across Mumbai, preventing smoke migration and protecting evacuation stairwells.
 
 
 
@@ -3647,12 +3647,12 @@ Engineering Definition: Passive fire protection contains active fires and lethal
 
 
 
-TECHNICAL CAPABILITIES 
+WHAT WE OFFER 
 
-## Passive Containment Specifications
+## Passive Containment & Firestop Services
 
 
-We stop vertical smoke spread through open service shafts and install certified fire doors on escape stairwells.
+We supply, install, and certify specialized passive fire protection systems that isolate fires, safeguard emergency exit corridors, and ensure full NBC compliance.
 
 
 
@@ -3666,10 +3666,10 @@ We stop vertical smoke spread through open service shafts and install certified 
 
 
 
-### 120-Min Fire Doors (FRD)
+### Fire Rated Doors (FRD) Supply & Fitting
 
 
-Galvanized steel doors with mineral wool cores, intumescent smoke perimeter seals, heavy-duty hydraulic door closers, and panic crash bars.
+We supply and install 120-minute fire-rated galvanized steel doors with rockwool cores, intumescent smoke perimeter seals, heavy-duty hydraulic door closers, and panic crash exit bars for staircases and lift lobbies.
 
 
 
@@ -3681,10 +3681,10 @@ Galvanized steel doors with mineral wool cores, intumescent smoke perimeter seal
 
 
 
-### Shaft Penetration Firestops
+### Electrical & Plumbing Shaft Firestops
 
 
-High-density rockwool battings coated with ablative firestop mastic sealant to prevent vertical fire spread through electric and plumbing shafts.
+We install high-density rockwool battings and elastomeric ablative firestop mastics to permanently seal open floor penetrations in electric risers and plumbing shafts, stopping chimney-effect smoke spread.
 
 
 
@@ -3696,10 +3696,10 @@ High-density rockwool battings coated with ablative firestop mastic sealant to p
 
 
 
-### Intumescent Cable Coatings
+### Cable Bunch Coating & Fire Barriers
 
 
-Flame-retardant chemical coats applied directly to high-voltage cable bunches in electrical substations to prevent cable tray propagation.
+We apply certified intumescent flame-retardant coatings across high-voltage cable runs and erect FRP/FRD fire barriers to prevent electrical short-circuit flames from traveling along cable trays.
 
 
 
@@ -3711,10 +3711,10 @@ Flame-retardant chemical coats applied directly to high-voltage cable bunches in
 
 
 
-### Smoke & Fire Dampers
+### Duct Fire Dampers & Audit Handover
 
 
-Motorized and fusible-link dampers fitted inside HVAC ventilation ducts that automatically snap shut when temperatures reach 72°C.
+We install and test motorized/fusible fire dampers in HVAC ducts and provide thorough compartmentation audit sign-offs with photo documentation for Maharashtra Fire Service compliance.
 
 
 
@@ -4224,7 +4224,7 @@ Directorate of Maharashtra Fire Services official licensed agency credential cer
 
 
 
-Statutory Law Requirement: Under Section 3(1) of the Maharashtra Fire Prevention and Life Safety Measures Act, 2006, the owner or occupier of every building must maintain fire prevention systems in good repair and submit a statutory certificate (Form B) issued by a Licensed Agency twice a year in January and July to the Chief Fire Officer.
+What We Offer in Audits & Compliance Certification: Comprehensive physical walkthrough inspections, defect identification reports, and official statutory certification — including Form A for new system commissioning and bi-annual Form B maintenance compliance certificates. As a Directorate-authorized Class D licensed agency (Licence: MFS/LA/RF-34/RD-35), we test pumps, hydrants, risers, and alarms to ensure your property remains legally compliant under the Maharashtra Fire Act.
 
 
 
@@ -4238,12 +4238,12 @@ Statutory Law Requirement: Under Section 3(1) of the Maharashtra Fire Prevention
 
 
 
-AUDIT METHODOLOGY 
+WHAT WE OFFER 
 
-## Form B Certification Scope
+## Statutory Fire Audit & Certification Services
 
 
-Our audit is an engineering verification of operational pressure, pump synchronization, and escape path clearances.
+We conduct on-site physical audits, perform live equipment operational tests, and execute official statutory Form B compliance certificates for Chief Fire Officer (CFO) filings.
 
 
 
@@ -4257,10 +4257,10 @@ Our audit is an engineering verification of operational pressure, pump synchroni
 
 
 
-### Walkthrough Safety Audit
+### On-Site Walkthrough Safety Audit
 
 
-Physical verification of terrace water tanks, landing valves, hose reels, fire doors, refuge floor emergency lights, and unobstructed staircase passageways.
+Our licensed engineers physically verify terrace and underground water tanks, landing valves, hose boxes, booster pumps, fire doors, refuge floor signage, and emergency exit routes against NBC 2016 norms.
 
 
 
@@ -4272,10 +4272,10 @@ Physical verification of terrace water tanks, landing valves, hose reels, fire d
 
 
 
-### Pressure & Pump Test
+### Pump, Hydrant & Alarm Testing
 
 
-Testing electric booster, diesel backup, and jockey pump starters; logging hydrostatic running pressure at the highest landing valve to confirm 3.5 bar minimum.
+We test automatic pump cut-in controls (electric, diesel, and jockey), measure running pressure at the top-most landing valve (confirming 3.5 bar minimum), and trigger smoke alarm detector zones.
 
 
 
@@ -4287,10 +4287,10 @@ Testing electric booster, diesel backup, and jockey pump starters; logging hydro
 
 
 
-### Defect Rectification Plan
+### Defect Rectification & Remediation
 
 
-Itemized diagnostic report identifying jammed landing valves, discharged extinguishers, or alarm open loops with rapid turn-around servicing quotes.
+We provide an itemized engineering report highlighting jammed valves, discharged cylinders, or loop breaks, accompanied by rapid-response repair proposals to bring all systems up to standard.
 
 
 
@@ -4302,10 +4302,10 @@ Itemized diagnostic report identifying jammed landing valves, discharged extingu
 
 
 
-### Form B Statutory Signing
+### Form A & Bi-Annual Form B Issuance
 
 
-Execution of official Form B certificate under Maharashtra Fire Services licence number MFS/LA/RF-34/RD-35 for municipal submission and legal compliance.
+We sign and issue official Form A (new commissioning) and Form B bi-annual compliance certificates under Class D licence MFS/LA/RF-34/RD-35 for prompt submission to municipal fire departments in January and July.
 
 
 
@@ -4656,7 +4656,7 @@ Technician-led pressurized hose reel discharge and nozzle control training for s
 
 
 
-The Life Safety Principle: A housing society or commercial tower can possess high-capacity sprinklers and risers, but if occupants or security personnel hesitate during the first two minutes, catastrophe strikes. Samarth conducts hands-on, practical mock drills, controlled extinguisher discharges, and life-saving first-aid workshops across Mumbai.
+What We Offer in Fire Training & CPR Drills: Structured on-site practical training packages delivered right at your compound or facility — including hands-on fire extinguisher operation (PASS protocol), live mock evacuation drills, fire hose running, and certified First Aid & CPR life-support workshops for housing society residents, security staff, and corporate workforces across Mumbai.
 
 
 
@@ -4670,12 +4670,12 @@ The Life Safety Principle: A housing society or commercial tower can possess hig
 
 
 
-TRAINING CURRICULUM 
+WHAT WE OFFER 
 
-## Structured Practical Modules
+## Practical On-Site Fire Safety & CPR Training
 
 
-Our training is not an abstract slide presentation. We assemble residents and staff in open compounds, explain equipment physics, and provide direct hands-on practice.
+We provide interactive, compound-level training sessions where your people physically handle firefighting equipment and master emergency response protocols.
 
 
 
@@ -4689,10 +4689,10 @@ Our training is not an abstract slide presentation. We assemble residents and st
 
 
 
-### Evacuation Drills
+### Hands-On Extinguisher Drills
 
 
-Simulated building alarm triggers, designated assembly area rendezvous, smoke avoidance crawl postures, and stairwell crowd management.
+We bring training cylinders to your building compound, teach fire classification (Class A, B, C), and give every resident and guard direct, hands-on practice executing the PASS technique (Pull, Aim, Squeeze, Sweep).
 
 
 
@@ -4704,10 +4704,10 @@ Simulated building alarm triggers, designated assembly area rendezvous, smoke av
 
 
 
-### Extinguisher Operation
+### Building Evacuation & Mock Drills
 
 
-Understanding Class A, B, and C fires, correct chemical selection (ABC Dry Powder vs. CO₂ gas), and the PASS operational protocol (Pull, Aim, Squeeze, Sweep).
+We coordinate full-scale building evacuation exercises, simulating alarm activation, demonstrating smoke-crawl postures, clearing stairways, and verifying headcounts at designated open-air assembly points.
 
 
 
@@ -4719,10 +4719,10 @@ Understanding Class A, B, and C fires, correct chemical selection (ABC Dry Powde
 
 
 
-### Hydrant & Hose Running
+### Hydrant & Hose Reel Training
 
 
-Coupling canvas hoses, opening landing valves, managing nozzle water pressure kickback, and operating swing-type hose reel drums effectively.
+We train security guards and facility operators to unreel swing-type hose drums, couple canvas hoses to landing valves, open water supplies, and manage high-pressure branch nozzle kickback safely.
 
 
 
@@ -4734,10 +4734,10 @@ Coupling canvas hoses, opening landing valves, managing nozzle water pressure ki
 
 
 
-### Staff & Guard Certification
+### First Aid, CPR & Certification
 
 
-Formal attendance documentation, emergency contact protocol checklists, and certificate issuance for security agencies and facility management staff.
+We teach life-saving cardio-pulmonary resuscitation (CPR), AED awareness, burn management, and bleeding control, issuing formal certificates of participation and compliance documentation for society audits.
 
 
 
