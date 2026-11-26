@@ -23,7 +23,7 @@ This file follows the llms.txt convention. A plain-text copy of public service a
 - **Customer feedback:** the homepage displays a dated Google Business Profile snapshot and review themes with a link to the live profile. Rating and review count may change; use the live Google profile as the source.
 
 ## Company & trust pages
-- [Fire Safety Systems, AMC & Training in Mumbai](https://samarth-fire-protection.vercel.app/): Mumbai fire alarm and fire fighting installation, AMC, safety audits, extinguisher supply, passive fire products and first aid training.
+- [Samarth Fire Protection System](https://samarth-fire-protection.vercel.app/): Mumbai fire alarm and fire fighting installation, AMC, safety audits, extinguisher supply, passive fire products and first aid training.
 - [About Us & Engineering Leadership](https://samarth-fire-protection.vercel.app/about): Meet Samarth Fire Protection System, a Mumbai-based fire safety company providing installation, maintenance, equipment supply and training for buildings and businesses.
 - [Sameer M. Kangutkar - Founder & Principal Fire Consultant](https://samarth-fire-protection.vercel.app/founder): Meet Sameer M. Kangutkar, founder of Samarth Fire Protection System. Fire safety consultant leading engineering audits and compliance across Mumbai.
 - [Maharashtra Fire Service Class D License](https://samarth-fire-protection.vercel.app/certifications): Review our official government license MFS/LA/RF-34/RD-35. Authorized Class D fire safety agency for Form A & Form B compliance filings in Mumbai.

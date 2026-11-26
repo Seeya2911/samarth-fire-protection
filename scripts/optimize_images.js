@@ -65,16 +65,45 @@ const WITHHELD = new Set(['client_society_assembly.jpg', 'client_cpr_training.jp
     console.log(`${file.padEnd(40)} ${meta.width}x${meta.height}  -> ${variants.length} sizes, WebP total ${(total / 1024).toFixed(0)} KB`);
   }
 
-  // Social share image: 1200x630 crop from an approved field photo
-  const ogName = 'homepage_hero_hydrant_inspection.jpg';
-  const ogPageSource = path.join(root, 'src', 'pages', ogName);
-  const ogSrc = fs.existsSync(ogPageSource) ? ogPageSource : path.join(root, ogName);
-  await sharp(ogSrc).resize(1200, 630, { fit: 'cover', position: 'attention' }).jpeg({ quality: 82, mozjpeg: true }).toFile(path.join(outDir, 'og-default.jpg'));
-  manifest['__og'] = { file: 'img/og-default.jpg', width: 1200, height: 630 };
-
-  // Favicon / app icons from the brand mark
+  // Favicon / app icons and branded social share card (1200x630) from the brand mark
   const logoPageSource = path.join(root, 'src', 'pages', 'logo.png');
   const logo = fs.existsSync(logoPageSource) ? logoPageSource : path.join(root, 'logo.png');
+
+  const logoCard = await sharp(logo)
+    .resize(210, 210, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 0 } })
+    .png()
+    .toBuffer();
+
+  const ogSvg = Buffer.from(`
+    <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FAF7F2"/>
+          <stop offset="100%" stop-color="#F1E6D8"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#bg)"/>
+      <rect x="0" y="0" width="1200" height="14" fill="#9E2127"/>
+      <rect x="0" y="616" width="1200" height="14" fill="#9E2127"/>
+      <rect x="76" y="155" width="270" height="270" rx="36" fill="#FFFFFF" stroke="#E2D2C3" stroke-width="4"/>
+      <rect x="390" y="155" width="330" height="42" rx="21" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="2"/>
+      <circle cx="416" cy="176" r="6" fill="#059669"/>
+      <text x="434" y="182" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#065F46" letter-spacing="1.2">CLASS D LICENSED AGENCY</text>
+      <text x="390" y="256" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#9E2127">SAMARTH FIRE</text>
+      <text x="390" y="314" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#2E2422" letter-spacing="1.5">PROTECTION SYSTEM</text>
+      <text x="390" y="372" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" fill="#554B49">Fire Fighting  •  Detection &amp; Alarms  •  Extinguishers</text>
+      <text x="390" y="410" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" fill="#554B49">Form A &amp; Form B Audits  •  AMC  •  Safety Training</text>
+      <line x1="390" y1="448" x2="1110" y2="448" stroke="#DFD5C6" stroke-width="2"/>
+      <text x="390" y="492" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#8C4B00">Malad East, Mumbai  •  Licence: MFS/LA/RF-34/RD-35  •  +91 9967101472</text>
+    </svg>
+  `);
+
+  await sharp(ogSvg)
+    .composite([{ input: logoCard, left: 106, top: 185 }])
+    .jpeg({ quality: 88, mozjpeg: true })
+    .toFile(path.join(outDir, 'og-default.jpg'));
+  manifest['__og'] = { file: 'img/og-default.jpg', width: 1200, height: 630 };
+
   for (const s of [32, 180, 192, 512]) {
     await sharp(logo).resize(s, s, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 0 } }).png({ compressionLevel: 9 }).toFile(path.join(outDir, `icon-${s}.png`));
   }
