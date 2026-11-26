@@ -296,6 +296,11 @@
     <image:image><image:loc>https://samarthfire.in/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://samarthfire.in/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samarthfire.in/process</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
