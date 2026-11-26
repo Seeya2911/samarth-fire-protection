@@ -60,46 +60,86 @@
     font-weight: 800;
   }
 
-  /* Interactive 3D Aesthetic Card Lift */
-  .card-lift {
+  /* Interactive 3D Aesthetic Card Lift & Spotlight */
+  .card-lift,
+  .motion-card {
+    position: relative;
     transform-style: preserve-3d;
     will-change: transform;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+    transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.38s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.25s ease;
   }
-  .card-lift:hover {
-    transform: perspective(900px) translateY(-5px) rotateX(1.5deg);
-    box-shadow: 0 20px 36px -10px rgba(46, 36, 34, 0.12), 0 8px 16px -4px rgba(158, 33, 39, 0.08);
+  .card-lift::before,
+  .motion-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(280px circle at var(--mx, 50%) var(--my, 50%), rgba(158, 33, 39, 0.08), transparent 70%);
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  .card-lift:hover::before,
+  .motion-card:hover::before {
+    opacity: 1;
+  }
+  .card-lift:hover,
+  .motion-card:hover {
+    transform: perspective(900px) translateY(-6px) scale(1.012) rotateX(1.5deg);
+    box-shadow: 0 22px 42px -12px rgba(46, 36, 34, 0.14), 0 8px 18px -4px rgba(158, 33, 39, 0.10);
+    border-color: #D8B4AC !important;
+  }
+  .card-lift img,
+  .motion-card img {
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .card-lift:hover img,
+  .motion-card:hover img {
+    transform: scale(1.045);
   }
 
-  /* 3D Scroll Reveal Motion */
+  /* Rich 3D Scroll Reveal Motion */
   .reveal-init {
     opacity: 0;
-    transform: perspective(900px) translateY(24px) rotateX(4deg);
-    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: perspective(950px) translateY(36px) scale(0.96) rotateX(6deg);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .reveal-init.revealed {
     opacity: 1;
-    transform: perspective(900px) translateY(0) rotateX(0deg);
+    transform: perspective(950px) translateY(0) scale(1) rotateX(0deg);
   }
 
-  /* Subtle 3D Float & CTA Shimmer */
+  /* Hero Entrance & Subtle 3D Float */
+  @keyframes samarth-hero-in {
+    from { opacity: 0; transform: translateY(20px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-hero-in {
+    animation: samarth-hero-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
   @keyframes samarth-float {
     0%, 100% { transform: translateY(0px) translateZ(0); }
-    50% { transform: translateY(-6px) translateZ(8px); }
+    50% { transform: translateY(-7px) translateZ(10px); }
   }
   .animate-float-3d {
-    animation: samarth-float 5s ease-in-out infinite;
+    animation: samarth-float 4.5s ease-in-out infinite;
   }
   .btn-shimmer {
     position: relative;
     overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, background-color 0.2s ease;
+  }
+  .btn-shimmer:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 24px -6px rgba(158, 33, 39, 0.35);
   }
   .btn-shimmer::after {
     content: "";
     position: absolute;
     inset: 0;
     transform: translateX(-120%) skewX(-20deg);
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
     transition: transform 0.65s ease;
     pointer-events: none;
   }
