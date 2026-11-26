@@ -35,7 +35,7 @@
     { "source": "/(sitemap\\.xml|feed\\.xml)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }, { "key": "X-Robots-Tag", "value": "noindex" }] },
     { "source": "/company-catalogue\\.pdf", "headers": [
       { "key": "Content-Type", "value": "application/pdf" },
-      { "key": "Content-Disposition", "value": "inline; filename=\"Samarth-Fire-Protection-Catalogue.pdf\"" },
+      { "key": "Content-Disposition", "value": "attachment; filename=\"Samarth-Fire-Protection-Catalogue.pdf\"" },
       { "key": "Cache-Control", "value": "public, max-age=86400" },
       { "key": "X-Robots-Tag", "value": "index, follow" }
     ] },
