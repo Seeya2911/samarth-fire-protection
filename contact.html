@@ -64,10 +64,8 @@
     #main-header { --pointer-x: 50%; --pointer-y: 50%; }
     #main-header::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.16; background:radial-gradient(320px circle at var(--pointer-x) var(--pointer-y),rgba(249,115,22,.22),transparent 72%); transition:opacity .25s ease; }
     #header-container, #main-header nav { position:relative; z-index:1; }
-    a, button, summary { transition:color .2s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease; }
-    a:hover, button:hover { transform:translateY(-1px); }
-    a:active, button:active { transform:translateY(0) scale(.985); }
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}a:hover,button:hover{transform:none}}
+    a, button, summary { transition:color .2s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease; }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body class="bg-[#FAF7F2] text-[#554B49] font-body antialiased flex flex-col min-h-screen">
@@ -806,14 +804,17 @@
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               entry.target.classList.add('revealed');
-              // Clear stagger delay after entrance so hover transitions feel instant
-              setTimeout(() => { entry.target.style.transitionDelay = '0ms'; }, 750);
+              // Clean up reveal classes after entrance so hover transitions have zero conflict
+              setTimeout(() => {
+                entry.target.classList.remove('reveal-init', 'revealed');
+                entry.target.style.transitionDelay = '';
+              }, 700);
               observer.unobserve(entry.target);
             }
           });
         }, {
-          threshold: 0.08,
-          rootMargin: '0px 0px -25px 0px'
+          threshold: 0.06,
+          rootMargin: '0px 0px -20px 0px'
         });
 
         revealElements.forEach(el => revealObserver.observe(el));
@@ -821,22 +822,21 @@
         revealElements.forEach(el => el.classList.add('revealed'));
       }
 
-      // 3D Perspective Pointer Tilt + Spotlight tracking on desktop hover devices
+      // Smooth rAF spotlight tracking on desktop hover devices (no transform fighting)
       if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
         document.querySelectorAll('.motion-card, [data-tilt]').forEach((card) => {
+          let rafId = null;
           card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const px = ((e.clientX - rect.left) / rect.width) * 100;
-            const py = ((e.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty('--mx', px.toFixed(1) + '%');
-            card.style.setProperty('--my', py.toFixed(1) + '%');
-            const rotateY = ((px / 100) - 0.5) * 9;
-            const rotateX = (0.5 - (py / 100)) * 9;
-            card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-6px) scale3d(1.015,1.015,1.015)`;
-          });
-          card.addEventListener('mouseleave', () => {
-            card.style.transform = '';
-          });
+            if (rafId) return;
+            rafId = requestAnimationFrame(() => {
+              const rect = card.getBoundingClientRect();
+              const px = ((e.clientX - rect.left) / rect.width) * 100;
+              const py = ((e.clientY - rect.top) / rect.height) * 100;
+              card.style.setProperty('--mx', px.toFixed(1) + '%');
+              card.style.setProperty('--my', py.toFixed(1) + '%');
+              rafId = null;
+            });
+          }, { passive: true });
         });
       }
     });
