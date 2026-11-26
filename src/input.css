@@ -5,6 +5,10 @@
 /* Fonts are loaded (non-blocking) from the layout <head>; a CSS @import here would block rendering. */
 
 @layer base {
+  html, body {
+    overflow-x: clip;
+    max-width: 100%;
+  }
   body {
     @apply font-body antialiased selection:text-white;
     background:var(--samarth-cream,#FAF7F2); color:var(--samarth-text,#554B49);
