@@ -218,7 +218,7 @@ htmlFiles.forEach(file => {
   const canonMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
   const canon = canonMatch ? canonMatch[1].trim() : '';
   const slug = file.replace(/\.html$/i, '');
-  const expectedCanon = slug === 'index' ? 'https://samarthfire.in/' : `https://samarthfire.in/${slug}`;
+  const expectedCanon = slug === 'index' ? 'https://samarth-fire-protection.vercel.app/' : `https://samarth-fire-protection.vercel.app/${slug}`;
   assert(canon === expectedCanon, `${file}: Canonical "${canon}" does not match expected "${expectedCanon}"`, 'Canonical Match');
   assert(!canonicalsSeen.has(canon), `${file}: Duplicate canonical URL detected: "${canon}"`, 'Canonical Uniqueness');
   canonicalsSeen.add(canon);
@@ -246,7 +246,7 @@ htmlFiles.forEach(file => {
   while ((linkMatch = extLinkRegex.exec(content)) !== null) {
     const fullTag = linkMatch[0];
     const href = linkMatch[1];
-    if (href.startsWith('https://samarthfire.in')) continue; // internal absolute
+    if (href.startsWith('https://samarth-fire-protection.vercel.app')) continue; // internal absolute
     const hasRel = /rel=["'][^"']*noopener[^"']*["']/i.test(fullTag);
     assert(hasRel, `${file}: External link "${href}" missing rel="noopener"`, 'External Link Hardening');
   }

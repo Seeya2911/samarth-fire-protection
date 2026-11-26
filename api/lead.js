@@ -144,7 +144,7 @@ module.exports = async function leadHandler(req, res) {
     '',
     ...fields.map(([label, value]) => label + ': ' + value),
     '',
-    'Submitted from samarthfire.in'
+    'Submitted from samarth-fire-protection.vercel.app'
   ].join('\n');
 
   const htmlRows = fields.map(([label, value]) =>

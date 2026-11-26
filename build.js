@@ -14,7 +14,7 @@ const { execSync } = require('child_process');
 let marked = null;
 try { ({ marked } = require('marked')); } catch (e) { /* only needed for .md pages */ }
 
-const SITE = 'https://samarthfire.in';
+const SITE = 'https://samarth-fire-protection.vercel.app';
 const ORG_ID = SITE + '/#organization';
 const SITE_ID = SITE + '/#website';
 const FOUNDER_ID = SITE + '/founder#person';
@@ -315,7 +315,7 @@ function buildSchema(page) {
   let pageNodes = [];
   if (fm.schema) {
     try {
-      const raw = fm.schema.replace(/https:\/\/samarthfire\.in\/([^"\s]+?)\.html(?=["\s])/g, 'https://samarthfire.in/$1');
+      const raw = fm.schema.replace(/https:\/\/samarth-fire-protection\\.vercel\\.app\/([^"\s]+?)\.html(?=["\s])/g, 'https://samarth-fire-protection.vercel.app/$1');
       const parsed = JSON.parse(raw);
       const list = parsed['@graph'] ? parsed['@graph'] : [parsed];
       pageNodes = list.map(n => { const c = Object.assign({}, n); delete c['@context']; return dedupeEntities(c); });

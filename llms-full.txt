@@ -1,12 +1,12 @@
 # Samarth Fire Protection System — full site text
 
-> Plain-text copy of the public pages of https://samarthfire.in for AI systems and answer engines. Source of truth is the website; confirm licence status with the Directorate of Maharashtra Fire & Emergency Services.
+> Plain-text copy of the public pages of https://samarth-fire-protection.vercel.app for AI systems and answer engines. Source of truth is the website; confirm licence status with the Directorate of Maharashtra Fire & Emergency Services.
 
 
 
 ---
 
-Source: https://samarthfire.in/
+Source: https://samarth-fire-protection.vercel.app/
 Title: Fire Safety Systems, AMC & Training in Mumbai | Samarth Fire
 Last updated: 2026-11-19
 
@@ -670,7 +670,7 @@ Call 99671 01472
 
 ---
 
-Source: https://samarthfire.in/about
+Source: https://samarth-fire-protection.vercel.app/about
 Title: About Us & Engineering Leadership | Samarth Fire Protection System
 Last updated: 2026-11-19
 
@@ -1091,7 +1091,7 @@ Schedule Physical Walkthrough
 
 ---
 
-Source: https://samarthfire.in/founder
+Source: https://samarth-fire-protection.vercel.app/founder
 Title: Sameer M. Kangutkar - Founder & Principal Fire Consultant | Samarth Fire
 Last updated: 2026-11-18
 
@@ -1200,7 +1200,7 @@ Direct WhatsApp Consultation
 
 ---
 
-Source: https://samarthfire.in/certifications
+Source: https://samarth-fire-protection.vercel.app/certifications
 Title: Maharashtra Fire Service Class D License | Samarth Fire Protection
 Last updated: 2026-11-17
 
@@ -1375,7 +1375,7 @@ Samarth Fire Protection System's Class D license is registered on the Maharashtr
 
 ---
 
-Source: https://samarthfire.in/audit
+Source: https://samarth-fire-protection.vercel.app/audit
 Title: Book a Fire Safety Audit or Site Visit | Samarth Fire
 Last updated: 2026-11-19
 
@@ -1578,7 +1578,7 @@ Comprehensive audit documentation outlining identified defects, immediate correc
 
 ---
 
-Source: https://samarthfire.in/services
+Source: https://samarth-fire-protection.vercel.app/services
 Title: Fire Safety Services & Equipment in Mumbai | Samarth Fire Protection
 Last updated: 2026-11-19
 
@@ -1698,7 +1698,7 @@ Email: samarthfireprotectionsystem@gmail.com • Call: +91 99671 01472
 
 ---
 
-Source: https://samarthfire.in/fire-fighting
+Source: https://samarth-fire-protection.vercel.app/fire-fighting
 Title: Fire Fighting & Sprinkler Systems Mumbai | Licensed Installer Samarth Fire
 Last updated: 2026-11-23
 
@@ -2358,7 +2358,7 @@ Request Line-Item Quote
 
 ---
 
-Source: https://samarthfire.in/detection-alarm
+Source: https://samarth-fire-protection.vercel.app/detection-alarm
 Title: Fire Alarm Systems & Troubleshooting Mumbai | Samarth Fire
 Last updated: 2026-11-23
 
@@ -2949,7 +2949,7 @@ Request Panel Diagnostic
 
 ---
 
-Source: https://samarthfire.in/extinguishing
+Source: https://samarth-fire-protection.vercel.app/extinguishing
 Title: Fire Extinguishers Supply, Refilling & HPT Mumbai | Samarth Fire
 Last updated: 2026-11-23
 
@@ -3540,7 +3540,7 @@ Request Batch Quote
 
 ---
 
-Source: https://samarthfire.in/passive-protection
+Source: https://samarth-fire-protection.vercel.app/passive-protection
 Title: Passive Fire Protection & Fire Doors Mumbai | Samarth Fire
 Last updated: 2026-11-23
 
@@ -4131,7 +4131,7 @@ Request Containment Quote
 
 ---
 
-Source: https://samarthfire.in/compliance-certification
+Source: https://samarth-fire-protection.vercel.app/compliance-certification
 Title: Form B Fire Safety Compliance Mumbai | Licensed Class D Samarth Fire
 Last updated: 2026-11-23
 
@@ -4563,7 +4563,7 @@ Schedule Form B Inspection
 
 ---
 
-Source: https://samarthfire.in/training-preparedness
+Source: https://samarth-fire-protection.vercel.app/training-preparedness
 Title: Fire Safety Training & Mock Drills Mumbai | Samarth Fire
 Last updated: 2026-11-23
 
@@ -5172,7 +5172,7 @@ Guide Building evacuation plan: 6 steps Guide Housing society fire drill guide
 
 ---
 
-Source: https://samarthfire.in/resources
+Source: https://samarth-fire-protection.vercel.app/resources
 Title: Fire Safety FAQs for Buildings, Societies & Businesses | Samarth Fire
 Last updated: 2026-11-04
 
@@ -5345,7 +5345,7 @@ BIS IS 2190:2024
 
 ---
 
-Source: https://samarthfire.in/glossary
+Source: https://samarth-fire-protection.vercel.app/glossary
 Title: Fire Safety Glossary: Terms Every Building Owner Should Know | Samarth Fire
 Last updated: 2026-11-02
 
@@ -5425,7 +5425,7 @@ Penetration seal / fire stop Fire-resistant sealant or collar used where pipes o
 
 ---
 
-Source: https://samarthfire.in/service-areas
+Source: https://samarth-fire-protection.vercel.app/service-areas
 Title: Fire Extinguisher Services Across India | Samarth Fire
 Last updated: 2026-11-04
 
@@ -5466,7 +5466,7 @@ Request a quotation or contact Samarth Fire .
 
 ---
 
-Source: https://samarthfire.in/industries
+Source: https://samarth-fire-protection.vercel.app/industries
 Title: Fire Safety for Industries, Commercial & Residential | Samarth Fire
 Last updated: 2026-11-18
 
@@ -5587,7 +5587,7 @@ Request a site visit
 
 ---
 
-Source: https://samarthfire.in/projects
+Source: https://samarth-fire-protection.vercel.app/projects
 Title: Fire Safety Projects & Engineering Case Logs Mumbai | Samarth Fire
 Last updated: 2026-11-19
 
@@ -5928,7 +5928,7 @@ Book Site Assessment
 
 ---
 
-Source: https://samarthfire.in/process
+Source: https://samarth-fire-protection.vercel.app/process
 Title: The Fire Safety Audit & Compliance Process | Samarth Fire Protection
 Last updated: 2026-11-18
 
@@ -6099,7 +6099,7 @@ Open Audit Desk Form
 
 ---
 
-Source: https://samarthfire.in/building-fire-safety-audit-checklist
+Source: https://samarth-fire-protection.vercel.app/building-fire-safety-audit-checklist
 Title: Building Fire Safety Audit Checklist for Owners and Facility Managers
 Last updated: 2026-11-04
 
@@ -6180,7 +6180,7 @@ A site review can identify risks and maintenance gaps, but it does not automatic
 
 ---
 
-Source: https://samarthfire.in/factory-fire-safety-checklist
+Source: https://samarth-fire-protection.vercel.app/factory-fire-safety-checklist
 Title: Factory & Warehouse Fire Safety Checklist for Owners and Managers
 Last updated: 2026-11-04
 
@@ -6277,7 +6277,7 @@ A generic checklist cannot confirm statutory compliance for a factory or warehou
 
 ---
 
-Source: https://samarthfire.in/fire-alarm-amc-checklist
+Source: https://samarth-fire-protection.vercel.app/fire-alarm-amc-checklist
 Title: Fire Alarm AMC Checklist: What Should Be Included in Maintenance?
 Last updated: 2026-11-04
 
@@ -6366,7 +6366,7 @@ There is no single interval that applies to every panel and every building. The 
 
 ---
 
-Source: https://samarthfire.in/fire-alarm-panel-fault-what-to-do
+Source: https://samarth-fire-protection.vercel.app/fire-alarm-panel-fault-what-to-do
 Title: Fire Alarm Panel Fault: What Should a Building Manager Do?
 Last updated: 2026-11-04
 
@@ -6422,7 +6422,7 @@ Maintenance and testing should follow the installed system’s design, manufactu
 
 ---
 
-Source: https://samarthfire.in/fire-extinguisher-inspection-checklist-india
+Source: https://samarth-fire-protection.vercel.app/fire-extinguisher-inspection-checklist-india
 Title: Fire Extinguisher Inspection Checklist in India | IS 2190:2024
 Last updated: 2026-11-04
 
@@ -6490,7 +6490,7 @@ Read the BIS IS 2190:2024 standard . This article is a practical overview, not a
 
 ---
 
-Source: https://samarthfire.in/fire-extinguisher-refilling-inspection
+Source: https://samarth-fire-protection.vercel.app/fire-extinguisher-refilling-inspection
 Title: Fire Extinguisher Refilling & Inspection: What Building Owners Should Know
 Last updated: 2026-11-04
 
@@ -6579,7 +6579,7 @@ Do not dismantle, recharge or pressure-test an extinguisher yourself. If there i
 
 ---
 
-Source: https://samarthfire.in/fire-hydrant-and-hose-reel-difference
+Source: https://samarth-fire-protection.vercel.app/fire-hydrant-and-hose-reel-difference
 Title: Fire Hydrant vs Hose Reel: What Is the Difference in a Building?
 Last updated: 2026-11-04
 
@@ -6618,7 +6618,7 @@ That depends on occupancy, building height, approved fire plans, water supply an
 
 ---
 
-Source: https://samarthfire.in/fire-hydrant-maintenance-checklist-building
+Source: https://samarth-fire-protection.vercel.app/fire-hydrant-maintenance-checklist-building
 Title: Fire Hydrant System Maintenance Checklist for Buildings
 Last updated: 2026-11-04
 
@@ -6693,7 +6693,7 @@ The Directorate’s July 2026 Form B guidance refers to standards for external a
 
 ---
 
-Source: https://samarthfire.in/fire-safety-amc-checklist
+Source: https://samarth-fire-protection.vercel.app/fire-safety-amc-checklist
 Title: Fire Safety AMC Checklist: What Should a Maintenance Contract Include?
 Last updated: 2026-11-04
 
@@ -6755,7 +6755,7 @@ Compare the scope against the building’s equipment register, approved plans, p
 
 ---
 
-Source: https://samarthfire.in/fire-safety-audit-vs-fire-noc
+Source: https://samarth-fire-protection.vercel.app/fire-safety-audit-vs-fire-noc
 Title: Fire Safety Audit vs Fire NOC: What Is the Difference?
 Last updated: 2026-11-04
 
@@ -6795,7 +6795,7 @@ Start with the property’s approved fire plan, occupancy, current status and th
 
 ---
 
-Source: https://samarthfire.in/fire-safety-training-for-industries
+Source: https://samarth-fire-protection.vercel.app/fire-safety-training-for-industries
 Title: Fire Safety Training for Industrial Workers: A Practical Planning Guide
 Last updated: 2026-11-04
 
@@ -6840,7 +6840,7 @@ Keep the date, topics, instructor details, attendance and any action items. Revi
 
 ---
 
-Source: https://samarthfire.in/form-b-fire-safety-maharashtra-2026
+Source: https://samarth-fire-protection.vercel.app/form-b-fire-safety-maharashtra-2026
 Title: Form B Fire Safety Certificate Maharashtra: 2026 Guide
 Last updated: 2026-11-04
 
@@ -6938,7 +6938,7 @@ Read the Directorate’s 7 July 2026 Guidelines to issue Form B (PDF) , the offi
 
 ---
 
-Source: https://samarthfire.in/housing-society-fire-drill-planning-guide
+Source: https://samarth-fire-protection.vercel.app/housing-society-fire-drill-planning-guide
 Title: Housing Society Fire Drill: How to Plan a Safe Evacuation
 Last updated: 2026-11-04
 
@@ -7000,7 +7000,7 @@ A drill is not a replacement for maintenance of alarms, hydrants, sprinklers, ex
 
 ---
 
-Source: https://samarthfire.in/housing-society-fire-safety-checklist
+Source: https://samarth-fire-protection.vercel.app/housing-society-fire-safety-checklist
 Title: Housing Society Fire Safety Checklist for Committee Members
 Last updated: 2026-11-04
 
@@ -7108,7 +7108,7 @@ Use the current Maharashtra fire-safety rules, the building’s approved fire pl
 
 ---
 
-Source: https://samarthfire.in/workplace-first-aid-cpr-training
+Source: https://samarth-fire-protection.vercel.app/workplace-first-aid-cpr-training
 Title: Workplace Fire Safety, First Aid & CPR Training: What to Expect
 Last updated: 2026-11-04
 
@@ -7182,7 +7182,7 @@ Training is not a substitute for an approved emergency plan, working equipment o
 
 ---
 
-Source: https://samarthfire.in/workplace-first-aid-cpr-training-guide
+Source: https://samarth-fire-protection.vercel.app/workplace-first-aid-cpr-training-guide
 Title: Workplace First Aid and CPR Training: What Should a Session Cover?
 Last updated: 2026-11-04
 
@@ -7240,7 +7240,7 @@ Keep attendance records, training topics, trainer details, completion documents 
 
 ---
 
-Source: https://samarthfire.in/building-evacuation-plan-guide
+Source: https://samarth-fire-protection.vercel.app/building-evacuation-plan-guide
 Title: Building Evacuation Plan: 6 Steps Every Housing Society Should Know
 Last updated: 2026-11-02
 
@@ -7310,7 +7310,7 @@ Wardens should be nominated and trained in advance, and the sequence rehearsed t
 
 ---
 
-Source: https://samarthfire.in/conventional-vs-addressable-fire-alarm
+Source: https://samarth-fire-protection.vercel.app/conventional-vs-addressable-fire-alarm
 Title: Conventional vs Addressable Fire Alarm Systems: Key Differences
 Last updated: 2026-11-02
 
@@ -7385,7 +7385,7 @@ The applicable building and fire code, building height, occupancy and the approv
 
 ---
 
-Source: https://samarthfire.in/fire-extinguisher-types-guide
+Source: https://samarth-fire-protection.vercel.app/fire-extinguisher-types-guide
 Title: Fire Extinguisher Types Explained: A, B, C, D & F/K Classes
 Last updated: 2026-11-02
 
@@ -7491,7 +7491,7 @@ The right number, size and placement of extinguishers depends on floor area, occ
 
 ---
 
-Source: https://samarthfire.in/wet-riser-hydrant-system-guide
+Source: https://samarth-fire-protection.vercel.app/wet-riser-hydrant-system-guide
 Title: Wet Riser Hydrant System Explained: How Building Fire Water Works
 Last updated: 2026-11-02
 
@@ -7552,7 +7552,7 @@ A wet riser system is only as good as its last inspection. Weekly pump run-tests
 
 ---
 
-Source: https://samarthfire.in/fire-alarm-fault-response
+Source: https://samarth-fire-protection.vercel.app/fire-alarm-fault-response
 Title: Fire Alarm Panel Faults: Safe First Response for Building Teams
 Last updated: 2026-11-01
 
@@ -7640,7 +7640,7 @@ This article is for general information. It is not legal advice, an emergency-re
 
 ---
 
-Source: https://samarthfire.in/fire-extinguisher-inspection-guide
+Source: https://samarth-fire-protection.vercel.app/fire-extinguisher-inspection-guide
 Title: Fire Extinguisher Inspection Guide: A Practical Checklist for Buildings
 Last updated: 2026-11-01
 
@@ -7733,7 +7733,7 @@ This article is for general information. It is not legal advice, an emergency-re
 
 ---
 
-Source: https://samarthfire.in/fire-hydrant-maintenance-checklist
+Source: https://samarth-fire-protection.vercel.app/fire-hydrant-maintenance-checklist
 Title: Fire Hydrant System Maintenance Checklist for Facility Managers
 Last updated: 2026-11-01
 
@@ -7831,7 +7831,7 @@ This article is for general information. It is not legal advice, an emergency-re
 
 ---
 
-Source: https://samarthfire.in/fire-safety-audit-building
+Source: https://samarth-fire-protection.vercel.app/fire-safety-audit-building
 Title: Building Fire Safety Audit Checklist for Owners & Managers
 Last updated: 2026-11-01
 
@@ -7928,7 +7928,7 @@ This article is for general information. It is not legal advice, an emergency-re
 
 ---
 
-Source: https://samarthfire.in/form-b-fire-safety-maharashtra
+Source: https://samarth-fire-protection.vercel.app/form-b-fire-safety-maharashtra
 Title: Form B Fire Safety Certificate in Maharashtra: A Building Owner’s Guide
 Last updated: 2026-11-01
 
@@ -8038,7 +8038,7 @@ This article is for general information. It is not legal advice, an emergency-re
 
 ---
 
-Source: https://samarthfire.in/housing-society-fire-drill-guide
+Source: https://samarth-fire-protection.vercel.app/housing-society-fire-drill-guide
 Title: Housing Society Fire Drill Guide: Planning a Safer Evacuation
 Last updated: 2026-11-01
 

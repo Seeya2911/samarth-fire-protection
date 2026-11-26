@@ -1,5 +1,5 @@
 # robots.txt — Samarth Fire Protection System
-# https://samarthfire.in/
+# https://samarth-fire-protection.vercel.app/
 #
 # Policy: this is a business website that WANTS to be crawled, indexed and cited —
 # by search engines AND by AI answer engines. Only internal/dev folders are blocked.
@@ -75,7 +75,7 @@ Disallow: /package.json
 Disallow: /package-lock.json
 
 # ---- Machine-readable entry points -------------------------------------------
-Sitemap: https://samarthfire.in/sitemap.xml
-# LLM summary:      https://samarthfire.in/llms.txt
-# LLM full text:    https://samarthfire.in/llms-full.txt
-# RSS (guides):     https://samarthfire.in/feed.xml
+Sitemap: https://samarth-fire-protection.vercel.app/sitemap.xml
+# LLM summary:      https://samarth-fire-protection.vercel.app/llms.txt
+# LLM full text:    https://samarth-fire-protection.vercel.app/llms-full.txt
+# RSS (guides):     https://samarth-fire-protection.vercel.app/feed.xml

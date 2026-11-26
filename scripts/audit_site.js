@@ -39,13 +39,13 @@ htmlFiles.forEach(file => {
   // Check Canonical URL (site uses clean, extensionless URLs; "/" for the homepage)
   const canonicalMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
   const slug = file.replace(/\.html$/i, '');
-  const expectedCanonical = slug === 'index' ? 'https://samarthfire.in/' : `https://samarthfire.in/${slug}`;
+  const expectedCanonical = slug === 'index' ? 'https://samarth-fire-protection.vercel.app/' : `https://samarth-fire-protection.vercel.app/${slug}`;
   if (!canonicalMatch) {
     results.canonicalIssues.push({ file, issue: 'Missing canonical link' });
   } else {
     const url = canonicalMatch[1];
-    if (!url.startsWith('https://samarthfire.in/')) {
-      results.canonicalIssues.push({ file, issue: `Canonical URL does not use https://samarthfire.in/: ${url}` });
+    if (!url.startsWith('https://samarth-fire-protection.vercel.app/')) {
+      results.canonicalIssues.push({ file, issue: `Canonical URL does not use https://samarth-fire-protection.vercel.app/: ${url}` });
     } else if (url !== expectedCanonical) {
       results.canonicalIssues.push({ file, issue: `Canonical "${url}" does not match expected "${expectedCanonical}"` });
     }
@@ -135,11 +135,11 @@ htmlFiles.forEach(file => {
 const sitemapPath = path.join(rootDir, 'sitemap.xml');
 if (fs.existsSync(sitemapPath)) {
   const sitemapContent = fs.readFileSync(sitemapPath, 'utf8');
-  const locRegex = /<loc>(https:\/\/samarthfire\.in\/[^<]*)<\/loc>/g;
+  const locRegex = /<loc>(https:\/\/samarth-fire-protection\\.vercel\\.app\/[^<]*)<\/loc>/g;
   let locMatch;
   while ((locMatch = locRegex.exec(sitemapContent)) !== null) {
     const fullUrl = locMatch[1];
-    let relPath = fullUrl.replace('https://samarthfire.in/', '');
+    let relPath = fullUrl.replace('https://samarth-fire-protection.vercel.app/', '');
     relPath = relPath ? relPath + '.html' : 'index.html';
     const diskPath = path.join(rootDir, relPath);
     if (!fs.existsSync(diskPath)) {
