@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://samarth-fire-protection.vercel.app/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://samarth-fire-protection.vercel.app/homepage_hero_hydrant_inspection.jpg</image:loc></image:image>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/about</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarth-fire-protection.vercel.app/about_team_training_session.jpg</image:loc></image:image>
@@ -60,7 +60,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/audit</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/certifications</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/contact</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -309,7 +309,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/projects</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://samarth-fire-protection.vercel.app/homepage_field_alarm_tracing.jpg</image:loc></image:image>
@@ -320,7 +320,7 @@
   </url>
   <url>
     <loc>https://samarth-fire-protection.vercel.app/quote</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
