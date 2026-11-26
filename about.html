@@ -72,6 +72,9 @@
 </head>
 <body class="bg-[#FAF7F2] text-[#554B49] font-body antialiased flex flex-col min-h-screen">
 
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true" class="fixed top-0 left-0 h-[3px] w-0 bg-gradient-to-r from-[#9E2127] via-[#D97706] to-[#9E2127] z-[60] pointer-events-none transition-[width] duration-75"></div>
+
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-red-700 focus:font-bold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-xl">Skip to main content</a>
 
   <!-- 1. Top Regulatory Eyebrow Bar (Warm Stone with High-Contrast Badges) -->
@@ -524,98 +527,90 @@
 </section>
   </main>
 
-  <!-- 3. Warm Subtle Stone Footer with Unified Palette -->
-  <footer class="bg-[#F5EFEB] border-t border-[#DFD5C6] text-[#4A3F3D] pt-16 pb-24 lg:pb-16 font-body relative overflow-hidden">
+  <!-- 3. Compact, Balanced 4-Column Stone Footer -->
+  <footer class="bg-[#F5EFEB] border-t border-[#DFD5C6] text-[#4A3F3D] pt-10 pb-20 lg:pb-10 font-body relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      
-      <!-- Footer Columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-[#DFD5C6] pb-12">
-        
-        <!-- Column 1: Brand Identity -->
-        <div>
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="p-1.5 rounded-xl bg-white border border-[#DFD5C6] shadow-2xs">
-              <img src="/logo.png" class="h-11 w-11 object-contain drop-shadow-sm flex-shrink-0" alt="Samarth Fire Logo" width="44" height="44" decoding="async" loading="eager">
+
+      <!-- 4 Balanced Columns in 1 Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-8 border-b border-[#DFD5C6] pb-8">
+
+        <!-- Column 1: Brand Identity + Catalogue (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col justify-between gap-4">
+          <div>
+            <div class="flex items-center space-x-3 mb-3">
+              <div class="p-1.5 rounded-xl bg-white border border-[#DFD5C6] shadow-2xs">
+                <img src="/logo.png" class="h-10 w-10 object-contain drop-shadow-sm flex-shrink-0" alt="Samarth Fire Logo" width="40" height="40" decoding="async" loading="eager">
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline font-black text-[#9E2127] tracking-tight text-base leading-none uppercase">
+                  SAMARTH
+                </span>
+                <span class="font-headline font-extrabold text-[#9E2127] tracking-wider text-[10px] leading-tight uppercase mt-0.5">
+                  FIRE PROTECTION SYSTEM
+                </span>
+                <span class="font-mono text-[9px] text-[#7A6E6A] font-bold tracking-wider uppercase mt-0.5">
+                  Class D Licensed Agency
+                </span>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <span class="font-headline font-black text-[#9E2127] tracking-tight text-lg leading-none uppercase">
-                SAMARTH
-              </span>
-              <span class="font-headline font-extrabold text-[#9E2127] tracking-wider text-[11px] leading-tight uppercase mt-0.5">
-                FIRE PROTECTION SYSTEM
-              </span>
-              <span class="font-mono text-[9px] text-[#7A6E6A] font-bold tracking-wider uppercase mt-0.5">
-                Class D Licensed Agency
-              </span>
-            </div>
+            <p class="text-xs leading-relaxed text-[#5A4F4C] mb-3 font-body">
+              Maharashtra Fire Services Licensed Class D Agency for audit-led fire engineering, turnkey installations, AMC &amp; mock drills across MMR.
+            </p>
           </div>
-          <p class="text-xs leading-relaxed text-[#5A4F4C] mb-4 font-body">
-            Directorate of Maharashtra Fire Services Licensed Class D Agency. Focused on audit-led fire safety engineering, turnkey system installations, preventative maintenance cycles, and hands-on compound emergency drills.
-          </p>
-          <p class="font-mono text-[11px] text-[#8C4B00] leading-relaxed border-l-2 border-[#D97706] pl-2.5">
-            "Engineered for high-pressure readiness and unconditional life safety across the Mumbai Metropolitan Region."
-          </p>
+          <div>
+            <a href="/company-catalogue.pdf" download="Samarth-Fire-Protection-Catalogue.pdf" class="btn-shimmer inline-flex items-center gap-2 rounded-xl bg-[#9E2127] hover:bg-[#851B22] text-white px-3.5 py-2 text-[11px] font-headline font-bold uppercase tracking-wider shadow-sm">
+              <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>
+              Download Catalogue (PDF)
+            </a>
+          </div>
         </div>
 
-        <!-- Column 2: SERVICES -->
-        <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-4 font-bold flex items-center space-x-2">
+        <!-- Column 2: Engineering Services (3 cols) -->
+        <div class="lg:col-span-3">
+          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-3 font-bold flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-[#9E2127]"></span>
             <span>Engineering Services</span>
           </h3>
-          <ul class="space-y-2 text-xs font-mono text-[11px] text-[#5A4F4C]">
-            <li><a href="/fire-fighting" class="hover:text-[#9E2127] transition-colors">&bull; Fire Hydrants & Sprinklers</a></li>
-            <li><a href="/detection-alarm" class="hover:text-[#9E2127] transition-colors">&bull; Detection & Alarm Loops</a></li>
-            <li><a href="/extinguishing" class="hover:text-[#9E2127] transition-colors">&bull; Extinguisher Refilling & HPT</a></li>
-            <li><a href="/passive-protection" class="hover:text-[#9E2127] transition-colors">&bull; Passive Fire Stops & Doors</a></li>
-            <li><a href="/compliance-certification" class="hover:text-[#9E2127] transition-colors">&bull; Form A & Form B Certification</a></li>
-            <li><a href="/training-preparedness" class="hover:text-[#9E2127] transition-colors">&bull; Compound Mock Drills & CPR</a></li>
+          <ul class="space-y-1.5 font-mono text-[11px] text-[#5A4F4C]">
+            <li><a href="/fire-fighting" class="hover:text-[#9E2127] transition-colors">&bull; Fire Hydrants &amp; Sprinklers</a></li>
+            <li><a href="/detection-alarm" class="hover:text-[#9E2127] transition-colors">&bull; Detection &amp; Alarm Loops</a></li>
+            <li><a href="/extinguishing" class="hover:text-[#9E2127] transition-colors">&bull; Extinguisher Refilling &amp; HPT</a></li>
+            <li><a href="/passive-protection" class="hover:text-[#9E2127] transition-colors">&bull; Passive Fire Stops &amp; Doors</a></li>
+            <li><a href="/compliance-certification" class="hover:text-[#9E2127] transition-colors">&bull; Form A &amp; Form B Certification</a></li>
+            <li><a href="/training-preparedness" class="hover:text-[#9E2127] transition-colors">&bull; Compound Mock Drills &amp; CPR</a></li>
           </ul>
         </div>
 
-        <!-- Company catalogue download -->
-        <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-4 font-bold flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-[#9E2127]"></span>
-            <span>Company Catalogue</span>
-          </h3>
-          <p class="text-xs leading-relaxed text-[#5A4F4C] mb-4">Explore the company profile, firefighting equipment range, fire services, safety products and training information in our catalogue.</p>
-          <a href="/company-catalogue.pdf" download="Samarth-Fire-Protection-Catalogue.pdf" class="inline-flex items-center gap-2 rounded-xl bg-[#9E2127] hover:bg-[#851B22] text-white px-4 py-2.5 text-xs font-headline font-bold uppercase tracking-wider shadow-sm">
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>
-            Download Company Catalogue (PDF)
-          </a>
-        </div>
-
-        <!-- Column 3: COMPANY -->
-        <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-4 font-bold flex items-center space-x-2">
+        <!-- Column 3: Organization (2 cols) -->
+        <div class="lg:col-span-2">
+          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-3 font-bold flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-[#B94B3E]"></span>
             <span>Organization</span>
           </h3>
-          <ul class="space-y-2 text-xs text-[#5A4F4C] font-mono text-[11px]">
-            <li><a href="/about" class="hover:text-[#9E2127] transition-colors">&bull; About & 25+ Workforce</a></li>
-            <li><a href="/founder" class="hover:text-[#9E2127] transition-colors">&bull; Founder: Sameer M. Kangutkar</a></li>
-            <li><a href="/process" class="hover:text-[#9E2127] transition-colors">&bull; 7-Step Engineering Lifecycle</a></li>
-            <li><a href="/projects" class="hover:text-[#9E2127] transition-colors">&bull; Infrastructure Case Studies</a></li>
-            <li><a href="/certifications" class="hover:text-[#9E2127] transition-colors">&bull; Official Form N License</a></li>
-            <li><a href="/resources" class="hover:text-[#9E2127] transition-colors">&bull; Safety FAQ & Codes</a></li>
-            <li><a href="/blog" class="hover:text-[#9E2127] transition-colors">&bull; Technical Guides & Articles</a></li>
-            <li><a href="/glossary" class="hover:text-[#9E2127] transition-colors">&bull; Fire Safety Glossary</a></li>
-            <li><a href="/service-areas" class="hover:text-[#9E2127] transition-colors">&bull; Service Areas (MMR)</a></li>
+          <ul class="space-y-1.5 text-[#5A4F4C] font-mono text-[11px]">
+            <li><a href="/about" class="hover:text-[#9E2127] transition-colors">&bull; About Us</a></li>
+            <li><a href="/founder" class="hover:text-[#9E2127] transition-colors">&bull; Founder</a></li>
+            <li><a href="/process" class="hover:text-[#9E2127] transition-colors">&bull; 7-Step Process</a></li>
+            <li><a href="/projects" class="hover:text-[#9E2127] transition-colors">&bull; Case Studies</a></li>
+            <li><a href="/certifications" class="hover:text-[#9E2127] transition-colors">&bull; Form N License</a></li>
+            <li><a href="/resources" class="hover:text-[#9E2127] transition-colors">&bull; Safety FAQs</a></li>
+            <li><a href="/blog" class="hover:text-[#9E2127] transition-colors">&bull; Guides &amp; Blog</a></li>
+            <li><a href="/glossary" class="hover:text-[#9E2127] transition-colors">&bull; Glossary</a></li>
+            <li><a href="/service-areas" class="hover:text-[#9E2127] transition-colors">&bull; Service Areas</a></li>
           </ul>
         </div>
 
-        <!-- Column 4: CONTACT -->
-        <div>
-          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-4 font-bold flex items-center space-x-2">
+        <!-- Column 4: Headquarters & Contact (3 cols) -->
+        <div class="lg:col-span-3">
+          <h3 class="font-headline text-xs uppercase tracking-wider text-[#2E2422] mb-3 font-bold flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-[#9A6D13]"></span>
             <span>Headquarters</span>
           </h3>
-          <p class="text-xs mb-3 leading-relaxed font-mono text-[11px] text-[#5A4F4C]">
-            <strong>Office:</strong> C/611, Parekh Nagar, CTS 710, Kurar Village / Pathan Wadi, Malad (East), Mumbai – 400097
+          <p class="mb-2.5 leading-relaxed font-mono text-[11px] text-[#5A4F4C]">
+            <strong>Office:</strong> C/611, Parekh Nagar, CTS 710, Pathan Wadi, Malad (East), Mumbai – 400097
           </p>
-          <ul class="space-y-1.5 text-xs font-mono text-[11px] mb-4 text-[#5A4F4C]">
-            <li><strong>Email:</strong> <a href="mailto:samarthfireprotectionsystem@gmail.com" class="text-[#2E2422] hover:text-[#9E2127] font-semibold transition-colors">samarthfireprotectionsystem@gmail.com</a></li>
+          <ul class="space-y-1 font-mono text-[11px] mb-3 text-[#5A4F4C]">
+            <li><strong>Email:</strong> <a href="mailto:samarthfireprotectionsystem@gmail.com" class="text-[#2E2422] hover:text-[#9E2127] font-semibold transition-colors break-all">samarthfireprotectionsystem@gmail.com</a></li>
             <li><strong>Phones:</strong> <a href="tel:+919967101472" class="text-[#2E2422] hover:text-[#9E2127] font-semibold transition-colors">+91 9967101472</a> / <a href="tel:+918097247249" class="text-[#2E2422] hover:text-[#9E2127] font-semibold transition-colors">+91 8097247249</a></li>
           </ul>
           <div class="pt-2 border-t border-[#DFD5C6] text-[10px] font-mono text-[#8C4B00] font-bold flex justify-between items-center">
@@ -626,36 +621,34 @@
 
       </div>
 
-      <!-- Credential & License Band -->
-      <div class="pt-2 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-4 bg-white p-5 rounded-2xl border border-[#DFD5C6] shadow-xs">
-        <div class="font-mono text-xs text-[#4A3F3D]">
-          <span class="inline-block bg-[#FDF5E6] border border-[#E8C28A] text-[#8C4B00] text-[10px] px-2.5 py-0.5 rounded-full font-mono mr-2 font-bold uppercase tracking-wider">
+      <!-- Compact Credential & License Band -->
+      <div class="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-3 bg-white px-4 py-3.5 rounded-2xl border border-[#DFD5C6] shadow-xs">
+        <div class="font-mono text-[11px] text-[#4A3F3D]">
+          <span class="inline-block bg-[#FDF5E6] border border-[#E8C28A] text-[#8C4B00] text-[10px] px-2 py-0.5 rounded-full font-mono mr-2 font-bold uppercase tracking-wider">
             LICENSED CLASS D AGENCY
           </span>
-          License No: <strong class="text-[#2E2422]">MFS/LA/RF-34/RD-35</strong> | Directorate of Maharashtra Fire Services | Valid until 13 Jan 2028
+          License No: <strong class="text-[#2E2422]">MFS/LA/RF-34/RD-35</strong> &bull; Valid until 13 Jan 2028
         </div>
-        <div class="flex items-center space-x-3">
-          <button onclick="openLicenseModal()" class="text-xs font-headline uppercase tracking-wider bg-[#9E2127] hover:bg-[#851B22] text-white px-4 py-2 rounded-xl transition-all focus-ring font-bold shadow-md">
+        <div class="flex items-center space-x-2.5">
+          <button onclick="openLicenseModal()" class="text-[11px] font-headline uppercase tracking-wider bg-[#9E2127] hover:bg-[#851B22] text-white px-3.5 py-1.5 rounded-xl transition-all focus-ring font-bold shadow-sm">
             View Official License
           </button>
-          <a href="/license.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-headline uppercase tracking-wider text-[#4A3F3D] hover:text-[#2E2422] bg-[#FAF7F2] hover:bg-white border border-[#DFD5C6] hover:border-[#B5A89B] px-4 py-2 rounded-xl transition-colors focus-ring font-bold">
+          <a href="/license.pdf" target="_blank" rel="noopener noreferrer" class="text-[11px] font-headline uppercase tracking-wider text-[#4A3F3D] hover:text-[#2E2422] bg-[#FAF7F2] hover:bg-white border border-[#DFD5C6] hover:border-[#B5A89B] px-3.5 py-1.5 rounded-xl transition-colors focus-ring font-bold">
             Download PDF
           </a>
         </div>
       </div>
 
-      <!-- Imagery & Transparency Disclaimer -->
-      <div class="mt-6 pt-4 border-t border-[#DFD5C6]/60 text-[11px] text-[#817572] leading-relaxed">
-        <p><strong class="font-semibold text-[#554B49]">Imagery &amp; Authenticity Notice:</strong> Photographs depicting live field work, client training sessions, and system installations represent authentic documentary records of Samarth Fire Protection System. Certain educational diagrams, conceptual schematics, and industry representations across blog guides may be illustrative, curated, or AI-assisted to aid visual comprehension of fire engineering principles.</p>
-      </div>
-
-      <!-- Copyright -->
-      <div class="border-t border-[#DFD5C6] mt-6 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-[#7A6E6A]">
-        <p>&copy; 2026 Samarth Fire Protection System. All Rights Reserved. Engineered for Safety &amp; Preparedness.</p>
-        <div class="flex items-center space-x-4 font-mono">
-          <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="hover:text-[#9E2127] transition-colors underline">Google Business Profile</a>
-          <span class="text-[#C9B9AA]">&bull;</span>
-          <a href="/privacy-policy" class="hover:text-[#9E2127] transition-colors underline">Privacy Policy</a>
+      <!-- Imagery & Copyright Bottom Bar -->
+      <div class="mt-4 pt-4 border-t border-[#DFD5C6]/70 text-[11px] text-[#817572] leading-relaxed space-y-2.5">
+        <p><strong class="font-semibold text-[#554B49]">Imagery &amp; Authenticity Notice:</strong> Field work, client training, and installation photos are authentic records of Samarth Fire Protection System; educational diagrams and conceptual visuals across guides may be illustrative, curated, or AI-assisted.</p>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-2 pt-2 border-t border-[#DFD5C6]/50 text-[#7A6E6A]">
+          <p>&copy; 2026 Samarth Fire Protection System. All Rights Reserved.</p>
+          <div class="flex items-center space-x-4 font-mono">
+            <a href="https://share.google/mm0fqL89lp6fKCjpj" target="_blank" rel="noopener noreferrer" class="hover:text-[#9E2127] transition-colors underline">Google Business Profile</a>
+            <span class="text-[#C9B9AA]">&bull;</span>
+            <a href="/privacy-policy" class="hover:text-[#9E2127] transition-colors underline">Privacy Policy</a>
+          </div>
         </div>
       </div>
 
@@ -858,10 +851,33 @@
       }
     });
 
-    // Lightweight Scroll Reveal using IntersectionObserver
+    // Lightweight Scroll Reveal, 3D Tilt & Scroll Progress
     document.addEventListener('DOMContentLoaded', () => {
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      
+      const progressBar = document.getElementById('scroll-progress');
+
+      if (progressBar && !prefersReducedMotion) {
+        const updateProgress = () => {
+          const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+          const pct = scrollable > 0 ? Math.min(100, Math.max(0, (window.scrollY / scrollable) * 100)) : 0;
+          progressBar.style.width = pct + '%';
+        };
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+      }
+
+      // Automatically enhance below-the-fold sections and cards with scroll reveal
+      const autoTargets = document.querySelectorAll('#main-content section:not(:first-child), #main-content .card-lift, #main-content .samarth-card, #main-content .trust-stat');
+      autoTargets.forEach((el, idx) => {
+        if (!el.classList.contains('reveal-init') && !el.closest('#quote-calculator')) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top > window.innerHeight * 0.92) {
+            el.classList.add('reveal-init');
+            el.style.transitionDelay = ((idx % 4) * 70) + 'ms';
+          }
+        }
+      });
+
       const revealElements = document.querySelectorAll('.reveal-init');
       if (prefersReducedMotion) {
         revealElements.forEach(el => el.classList.add('revealed'));
@@ -877,13 +893,31 @@
             }
           });
         }, {
-          threshold: 0.12,
-          rootMargin: '0px 0px -40px 0px'
+          threshold: 0.08,
+          rootMargin: '0px 0px -30px 0px'
         });
 
         revealElements.forEach(el => revealObserver.observe(el));
       } else {
         revealElements.forEach(el => el.classList.add('revealed'));
+      }
+
+      // 3D Perspective Pointer Tilt for cards on desktop hover devices
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        const tiltCards = document.querySelectorAll('.card-lift, .samarth-card, [data-tilt]');
+        tiltCards.forEach((card) => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const rotateY = (x - 0.5) * 7;
+            const rotateX = (0.5 - y) * 7;
+            card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px) scale3d(1.01,1.01,1.01)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
       }
     });
       // Email submissions are sent by a private server-side Vercel function.
